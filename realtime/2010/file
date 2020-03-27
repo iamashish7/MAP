@@ -137,17 +137,15 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 206425.mgmt03   ssvivek  large    2order        --   16 128    --  72:00 H   -- 
     -- 
-206638.mgmt03   dgautam  small    5.3         18311   4  32    --  120:0 R 66:28
+206638.mgmt03   dgautam  small    5.3         18311   4  32    --  120:0 R 73:26
    cn302/0*8+cn325/0*8+cn315/0*8+cn301/0*8
-206693.mgmt03   vrahul   medium   umb_-0.4    29825   6  48    --  96:00 R 66:33
+206693.mgmt03   vrahul   medium   umb_-0.4    29825   6  48    --  96:00 R 73:31
    cn253/0*8+cn219/0*8+cn252/0*8+cn185/0*8+cn224/0*8+cn264/0*8
-206695.mgmt03   abhigpt  medium   umb_0.3     19888   6  48    --  96:00 R 80:57
-   cn261/0*8+cn249/0*8+cn255/0*8+cn257/0*8+cn248/0*8+cn234/0*8
-206702.mgmt03   vthakkur medium   umb_-0.3    18241   6  48    --  96:00 R 39:18
+206702.mgmt03   vthakkur medium   umb_-0.3    18241   6  48    --  96:00 R 46:16
    cn247/0*8+cn196/0*8+cn227/0*8+cn238/0*8+cn230/0*8+cn200/0*8
-206716.mgmt03   kashishm smallsb  6.7         28782   2  16    --  120:0 R 98:43
+206716.mgmt03   kashishm smallsb  6.7         28782   2  16    --  120:0 R 105:4
    cn425/0*8+cn448/0*8
-206726.mgmt03   bhavanap medium   6.2         32256   4  32    --  96:00 R 41:14
+206726.mgmt03   bhavanap medium   6.2         32256   4  32    --  96:00 R 48:12
    cn191/0*8+cn194/0*8+cn275/0*8+cn195/0*8
 206727.mgmt03   bhavanap medium   6.1           --    4  32    --  96:00 H   -- 
     -- 
@@ -155,55 +153,55 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 206729.mgmt03   bhavanap large    5.9           --   16 128    --  72:00 H   -- 
     -- 
-206734.mgmt03   pkpandey mediumsb 5.8          1141   4  32    --  96:00 R 04:21
+206734.mgmt03   pkpandey mediumsb 5.8          1141   4  32    --  96:00 R 11:17
    cn404/0*8+cn410/0*8+cn411/0*8+cn375/0*8
 206735.mgmt03   pkpandey mediumsb 5.8           --    4  32    --  96:00 H   -- 
     -- 
-206738.mgmt03   rshreya  large    6.4         30687  16 128    --  72:00 R 60:08
+206738.mgmt03   rshreya  large    6.4         30687  16 128    --  72:00 R 67:06
    cn179/0*8+cn031/0*8+cn110/0*8+cn036/0*8+cn059/0*8+cn086/0*8+cn182/0*8
    +cn010/0*8+cn016/0*8+cn027/0*8+cn029/0*8+cn051/0*8+cn071/0*8+cn008/0*8
    +cn072/0*8+cn105/0*8
-206816.mgmt03   kashishm small    6.8          5667   4  32    --  120:0 R 80:42
+206816.mgmt03   kashishm small    6.8          5667   4  32    --  120:0 R 87:40
    cn329/0*8+cn286/0*8+cn316/0*8+cn290/0*8
-206896.mgmt03   beno     medium   Au_48atoms  26312  12  96    --  96:00 R 05:43
+206896.mgmt03   beno     medium   Au_48atoms  26312  12  96    --  96:00 R 12:41
    cn213/0*8+cn282/0*8+cn197/0*8+cn265/0*8+cn263/0*8+cn239/0*8+cn232/0*8
    +cn199/0*8+cn279/0*8+cn217/0*8+cn237/0*8+cn206/0*8
-206930.mgmt03   kmashok  smallsb  PS-1        64444   2  32    --  120:0 R 85:56
+206930.mgmt03   kmashok  smallsb  PS-1        64444   2  32    --  120:0 R 92:52
    cn436/0*16+cn460/0*16
-206931.mgmt03   kmashok  mediumsb PS-2        18640   6  96    --  96:00 R 85:53
+206931.mgmt03   kmashok  mediumsb PS-2        18640   6  96    --  96:00 R 92:51
    cn399/0*16+cn382/0*16+cn396/0*16+cn398/0*16+cn372/0*16+cn388/0*16
-206932.mgmt03   kmashok  small    PS-3        19832   4  32    --  120:0 R 85:50
+206932.mgmt03   kmashok  small    PS-3        19832   4  32    --  120:0 R 92:48
    cn312/0*8+cn292/0*8+cn338/0*8+cn333/0*8
-206933.mgmt03   kmashok  medium   PS-4        17612  12  96    --  96:00 R 85:50
+206933.mgmt03   kmashok  medium   PS-4        17612  12  96    --  96:00 R 92:46
    cn190/0*8+cn198/0*8+cn203/0*8+cn207/0*8+cn218/0*8+cn278/0*8+cn228/0*8
    +cn260/0*8+cn266/0*8+cn225/0*8+cn262/0*8+cn216/0*8
-206936.mgmt03   kmashok  large    PS-6        21375  32 256    --  72:00 R 13:45
+206936.mgmt03   kmashok  large    PS-6        21375  32 256    --  72:00 R 20:43
    cn097/0*8+cn090/0*8+cn085/0*8+cn166/0*8+cn132/0*8+cn167/0*8+cn047/0*8
    +cn066/0*8+cn078/0*8+cn109/0*8+cn152/0*8+cn044/0*8+cn058/0*8+cn178/0*8
    +cn033/0*8+cn170/0*8+cn032/0*8+cn023/0*8+cn135/0*8+cn114/0*8+cn067/0*8
    +cn158/0*8+cn074/0*8+cn115/0*8+cn146/0*8+cn180/0*8+cn080/0*8+cn155/0*8
    +cn141/0*8+cn143/0*8+cn006/0*8+cn068/0*8
-206937.mgmt03   dgautam  medium   5.4          4066   4  32    --  96:00 R 57:57
+206937.mgmt03   dgautam  medium   5.4          4066   4  32    --  96:00 R 64:55
    cn192/0*8+cn214/0*8+cn202/0*8+cn268/0*8
-206938.mgmt03   dgautam  smallsb  5.2         18083   2  16    --  120:0 R 67:46
+206938.mgmt03   dgautam  smallsb  5.2         18083   2  16    --  120:0 R 74:44
    cn425/1*8+cn435/0*8
-206939.mgmt03   dgautam  mediumsb 5.8         55316   4  32    --  96:00 R 53:38
+206939.mgmt03   dgautam  mediumsb 5.8         55316   4  32    --  96:00 R 60:35
    cn387/0*8+cn390/0*8+cn395/0*8+cn408/0*8
 206940.mgmt03   kashishm smallsb  6.7           --    2  16    --  120:0 Q   -- 
     -- 
-206941.mgmt03   kashishm mediumsb 4            2993   4  32    --  96:00 R 27:06
+206941.mgmt03   kashishm mediumsb 4            2993   4  32    --  96:00 R 34:02
    cn400/0*8+cn414/0*8+cn369/0*8+cn379/0*8
-206953.mgmt03   agaur    mediumsb CNT-trans   41789   3  48    --  96:00 R 65:19
+206953.mgmt03   agaur    mediumsb CNT-trans   41789   3  48    --  96:00 R 72:16
    cn413/0*16+cn412/0*16+cn383/0*16
 206959[].mgmt03 prasanna large    3D_LNSE_W2    --   32 256    --  72:00 B   -- 
     -- 
-206963.mgmt03   waquar   small    AW10.dat    19936   3  24    --  120:0 R 52:17
+206963.mgmt03   waquar   small    AW10.dat    19936   3  24    --  120:0 R 59:14
    cn313/0*8+cn323/0*8+cn321/0*8
 206966[].mgmt03 prasanna smallsb  S32           --    2  32    --  120:0 B   -- 
     -- 
 206967[].mgmt03 prasanna small    Ae0.0002      --    4  32    --  120:0 B   -- 
     -- 
-206969.mgmt03   harshi   mediumsb d-3.0_T     52908   3  48    --  96:00 R 48:58
+206969.mgmt03   harshi   mediumsb d-3.0_T     52908   3  48    --  96:00 R 55:56
    cn391/0*16+cn402/0*16+cn405/0*16
 206973[].mgmt03 prasanna mediumsb Msb96         --    6  96    --  96:00 B   -- 
     -- 
@@ -229,29 +227,29 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 206988[].mgmt03 mbraj    smallsb  S32           --    2  32    --  120:0 B   -- 
     -- 
-206991.mgmt03   pkpandey medium   5.4         31800   4  32    --  96:00 R 03:41
+206991.mgmt03   pkpandey medium   5.4         31800   4  32    --  96:00 R 10:38
    cn243/0*8+cn251/0*8+cn233/0*8+cn283/0*8
 206992.mgmt03   pkpandey medium   5.4           --    4  32    --  96:00 Q   -- 
     -- 
-206993.mgmt03   pkpandey small    5.3         20410   4  32    --  120:0 R 03:31
+206993.mgmt03   pkpandey small    5.3         20410   4  32    --  120:0 R 10:29
    cn296/0*8+cn339/0*8+cn317/0*8+cn331/0*8
 206994.mgmt03   pkpandey small    5.3           --    4  32    --  120:0 Q   -- 
     -- 
-206996.mgmt03   pkpandey smallsb  5.2         28866   2  16    --  120:0 R 03:25
+206996.mgmt03   pkpandey smallsb  5.2         28866   2  16    --  120:0 R 10:23
    cn433/0*8+cn457/0*8
 206997.mgmt03   pkpandey smallsb  5.2           --    2  16    --  120:0 Q   -- 
     -- 
-206999.mgmt03   himkv    medium   6.3          8317   4  32    --  96:00 R 03:19
+206999.mgmt03   himkv    medium   6.3          8317   4  32    --  96:00 R 10:16
    cn222/0*8+cn231/0*8+cn215/0*8+cn236/0*8
 207000.mgmt03   mitesht  workq    STDIN       15500   1   1    --  02:00 R 00:08
    cn364/0
-207001.mgmt03   mitesht  large    RT           3555  32 256    --  72:00 R 03:15
+207001.mgmt03   mitesht  large    RT           3555  32 256    --  72:00 R 10:13
    cn079/0*8+cn129/0*8+cn091/0*8+cn145/0*8+cn107/0*8+cn174/0*8+cn062/0*8
    +cn076/0*8+cn102/0*8+cn103/0*8+cn106/0*8+cn136/0*8+cn088/0*8+cn128/0*8
    +cn169/0*8+cn153/0*8+cn127/0*8+cn120/0*8+cn096/0*8+cn104/0*8+cn138/0*8
    +cn038/0*8+cn075/0*8+cn142/0*8+cn144/0*8+cn011/0*8+cn094/0*8+cn126/0*8
    +cn140/0*8+cn084/0*8+cn181/0*8+cn055/0*8
-207002.mgmt03   kritama  small    5.4         23040   4  32    --  120:0 R 03:13
+207002.mgmt03   kritama  small    5.4         23040   4  32    --  120:0 R 10:11
    cn310/0*8+cn289/0*8+cn334/0*8+cn343/0*8
 207003.mgmt03   mitesht  large    RT            --   32 256    --  72:00 Q   -- 
     -- 
@@ -259,7 +257,7 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 207005.mgmt03   kritama  smallsb  5.4           --    2  16    --  120:0 H   -- 
     -- 
-207006.mgmt03   kritama  smallsb  5.3         10185   2  16    --  120:0 R 03:09
+207006.mgmt03   kritama  smallsb  5.3         10185   2  16    --  120:0 R 10:06
    cn421/0*8+cn442/0*8
 207007.mgmt03   kritama  medium   5.3           --    4  32    --  96:00 H   -- 
     -- 
@@ -267,13 +265,13 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 207009.mgmt03   kritama  mediumsb 5.3           --    4  32    --  96:00 H   -- 
     -- 
-207010.mgmt03   kritama  mediumsb 5.2         35195   4  32    --  96:00 R 03:05
+207010.mgmt03   kritama  mediumsb 5.2         35195   4  32    --  96:00 R 10:01
    cn381/0*8+cn384/0*8+cn403/0*8+cn406/0*8
 207012.mgmt03   kritama  large    5.2           --   16 128    --  72:00 H   -- 
     -- 
 207013.mgmt03   kritama  large    5.2           --   16 128    --  72:00 H   -- 
     -- 
-207014.mgmt03   himkv    small    4.7         16149   4  32    --  120:0 R 02:56
+207014.mgmt03   himkv    small    4.7         16149   4  32    --  120:0 R 09:54
    cn304/0*8+cn293/0*8+cn295/0*8+cn332/0*8
 207015.mgmt03   himkv    small    4.7           --    4  32    --  120:0 Q   -- 
     -- 
@@ -281,9 +279,23 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 207017.mgmt03   himkv    mediumsb 4.6           --    4  32    --  96:00 Q   -- 
     -- 
-207018.mgmt03   himkv    smallsb  4.5          3187   2  16    --  120:0 R 02:47
+207018.mgmt03   himkv    smallsb  4.5          3187   2  16    --  120:0 R 09:45
    cn418/0*8+cn445/0*8
 207019.mgmt03   himkv    smallsb  4.5           --    2  16    --  120:0 Q   -- 
     -- 
 207020.mgmt03   kashishm mediumsb 4             --    4  32    --  96:00 Q   -- 
+    -- 
+207021.mgmt03   banshid  small    5.7         11063   4  32    --  120:0 R 05:47
+   cn311/0*8+cn309/0*8+cn330/0*8+cn319/0*8
+207024.mgmt03   rmalik   small    4.8         24627   4  32    --  120:0 R 05:24
+   cn326/0*8+cn297/0*8+cn287/0*8+cn318/0*8
+207025.mgmt03   rmalik   small    4.8           --    4  32    --  120:0 Q   -- 
+    -- 
+207026.mgmt03   rmalik   medium   4.9         21433   4  32    --  96:00 R 02:02
+   cn212/0*8+cn261/0*8+cn249/0*8+cn257/0*8
+207027.mgmt03   rmalik   medium   4.9           --    4  32    --  96:00 Q   -- 
+    -- 
+207028.mgmt03   rmalik   mediumsb 5.0           --    4  32    --  96:00 Q   -- 
+    -- 
+207029.mgmt03   rmalik   mediumsb 5.0           --    4  32    --  96:00 Q   -- 
     -- 
