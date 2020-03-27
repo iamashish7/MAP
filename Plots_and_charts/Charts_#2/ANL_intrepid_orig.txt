@@ -1,0 +1,5 @@
+No. of clusters formed in ANL_intrepid_orig =  4
+No. of jobs in #Cluster0 =  3371
+No. of jobs in #Cluster1 =  3408
+No. of jobs in #Cluster2 =  1650
+No. of jobs in #Cluster3 =  1571
