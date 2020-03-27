@@ -1,0 +1,3016 @@
+Notice: Command /usr/bin/scontrol not found (for sorting hostlists)
+Verify the Infiniband interface:
+mlx4_0
+Infiniband interface OK
+
+Generate the Slurm topology.conf file for Infiniband switches.
+
+Beware: The Switches= lines need to be reviewed and edited for correctness.
+Read also https://slurm.schedmd.com/topology.html
+
+#
+# IB switch no. 1: ibsw1 GUID: 0xe41d2d03000566a0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030020ad10  with 3 links
+# Switch neighbor  CA  with 13 links
+# Switch neighbor  0xf45214030020a710  with 6 links
+# Total number of links in this switch =  22
+SwitchName=ibsw1 Nodes=hpc858,hpc888,hpc887,hpc886,hpc885,hpc884,hpc883,hpc882,hpc881,hpc880,hpc879,hpc878,hpc877
+#
+# IB switch no. 2: ibsw2 GUID: 0xf4521403000dd8c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030020a710  with 9 links
+# Switch neighbor  0xf45214030020ad10  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  36
+SwitchName=ibsw2 Nodes=hpc876,hpc875,hpc874,hpc873,hpc872,hpc871,hpc870,hpc869,hpc868,hpc867,hpc866,hpc865,hpc864,hpc863,hpc862,hpc861,hpc860,hpc859
+#
+# IB switch no. 3: ibsw3 GUID: 0xf4521403002b4f00 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030020a7d0  with 8 links
+# Switch neighbor  CA  with 17 links
+# Switch neighbor  0xf45214030020a770  with 9 links
+# Total number of links in this switch =  34
+SwitchName=ibsw3 Nodes=hpc857,hpc856,hpc855,hpc854,hpc853,hpc852,hpc851,hpc850,hpc849,hpc848,hpc847,hpc846,hpc845,hpc844,hpc843,hpc842,hpc841
+#
+# IB switch no. 4: ibsw4 GUID: 0xf45214030021ec70 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030020a770  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf45214030020a7d0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw4 Nodes=hpc840,hpc839,hpc838,hpc837,hpc836,hpc835,hpc834,hpc833,hpc832,hpc831,hpc830,hpc829,hpc828,hpc827,hpc826,hpc825,hpc824,hpc823
+#
+# IB switch no. 5: ibsw5 GUID: 0x0002c903005f2b50 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf452140300207890  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf45214030020acb0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw5 Nodes=hpc822,hpc821,hpc820,hpc819,hpc818,hpc817,hpc816,hpc815,hpc814,hpc813,hpc812,hpc811,hpc810,hpc809,hpc808,hpc807,hpc806,hpc805
+#
+# IB switch no. 6: ibsw6 GUID: 0xf452140300291360 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030020acb0  with 8 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf452140300207890  with 9 links
+# Total number of links in this switch =  35
+SwitchName=ibsw6 Nodes=hpc804,hpc803,hpc802,hpc801,hpc800,hpc799,hpc798,hpc797,hpc796,hpc795,hpc794,hpc793,hpc792,hpc791,hpc790,hpc789,hpc788,hpc787
+#
+# IB switch no. 7: ibsw7 GUID: 0xf4521403002b5100 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300865280  with 9 links
+# Switch neighbor  0xf4521403000a7900  with 9 links
+# Switch neighbor  CA  with 17 links
+# Total number of links in this switch =  35
+SwitchName=ibsw7 Nodes=un01,hn1,oss1,oss2,oss4,mds2,mds1,hpc768,hpc767,hpc766,hpc765,hpc764,hpc763,hpc762,hpc761,hpc760,hpc759
+#
+# IB switch no. 8: ibsw8 GUID: 0xf4521403000dd240 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300865280  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf4521403000a7900  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw8 Nodes=hpc758,hpc757,hpc756,hpc755,hpc754,hpc753,hpc752,hpc751,hpc750,hpc749,hpc748,hpc747,hpc746,hpc745,hpc744,hpc743,hpc742,hpc741
+#
+# IB switch no. 9: ibsw9 GUID: 0xf4521403000dd540 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c90300865160  with 9 links
+# Switch neighbor  0xf45214030009b4a0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw9 Nodes=hpc740,hpc739,hpc738,hpc737,hpc736,hpc735,hpc734,hpc733,hpc732,hpc731,hpc730,hpc729,hpc728,hpc727,hpc726,hpc725,hpc724,hpc723
+#
+# IB switch no. 10: ibsw10 GUID: 0xf4521403000dca40 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c90300865160  with 9 links
+# Switch neighbor  0xf45214030009b4a0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw10 Nodes=hpc722,hpc721,hpc720,hpc719,hpc718,hpc717,hpc716,hpc715,hpc714,hpc713,hpc712,hpc711,hpc710,hpc709,hpc708,hpc707,hpc706,hpc705
+#
+# IB switch no. 11: ibsw11 GUID: 0xf4521403000dccc0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 17 links
+# Switch neighbor  0xf45214030009b0e0  with 7 links
+# Switch neighbor  0xf4521403000a7ae0  with 7 links
+# Total number of links in this switch =  31
+SwitchName=ibsw11 Nodes=hpc636,hpc704,hpc703,hpc702,hpc701,hpc700,hpc699,hpc698,hpc697,hpc696,hpc695,hpc694,hpc693,hpc692,hpc691,hpc690,hpc689
+#
+# IB switch no. 12: ibsw12 GUID: 0x0002c90300e36260 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7ae0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf45214030009b0e0  with 8 links
+# Total number of links in this switch =  35
+SwitchName=ibsw12 Nodes=hpc688,hpc687,hpc686,hpc685,hpc684,hpc683,hpc682,hpc681,hpc680,hpc679,hpc678,hpc677,hpc676,hpc675,hpc674,hpc673,hpc672,hpc671
+#
+# IB switch no. 13: ibsw13 GUID: 0xf4521403000dd5c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030009b500  with 8 links
+# Switch neighbor  0xf45214030009b3e0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  35
+SwitchName=ibsw13 Nodes=hpc670,hpc669,hpc668,hpc667,hpc666,hpc665,hpc664,hpc663,hpc662,hpc661,hpc660,hpc659,hpc658,hpc657,hpc656,hpc655,hpc654,hpc653
+#
+# IB switch no. 14: ibsw14 GUID: 0xf4521403000dd1c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 17 links
+# Switch neighbor  0xf45214030009b500  with 9 links
+# Switch neighbor  0xf45214030009b3e0  with 8 links
+# Total number of links in this switch =  34
+SwitchName=ibsw14 Nodes=hpc652,hpc651,hpc650,hpc649,hpc648,hpc647,hpc646,hpc645,hpc644,hpc643,hpc642,hpc641,hpc640,hpc639,hpc638,hpc637,hpc635
+#
+# IB switch no. 15: ibsw15 GUID: 0xf4521403000dd940 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf45214030009b020  with 9 links
+# Switch neighbor  0xf45214030009b080  with 8 links
+# Total number of links in this switch =  35
+SwitchName=ibsw15 Nodes=hpc634,hpc633,hpc632,hpc631,hpc630,hpc629,hpc628,hpc627,hpc626,hpc625,hpc624,hpc623,hpc622,hpc621,hpc620,hpc619,hpc618,hpc617
+#
+# IB switch no. 16: ibsw16 GUID: 0xf4521403000dcdc0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 16 links
+# Switch neighbor  0xf45214030009b020  with 8 links
+# Switch neighbor  0xf45214030009b080  with 8 links
+# Total number of links in this switch =  32
+SwitchName=ibsw16 Nodes=hpc602,hpc616,hpc615,hpc614,hpc613,hpc612,hpc611,hpc610,hpc609,hpc608,hpc607,hpc606,hpc605,hpc604,hpc603,hpc601
+#
+# IB switch no. 17: ibsw17 GUID: 0x0002c90300e36160 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7840  with 9 links
+# Switch neighbor  0xf4521403000a79c0  with 8 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  35
+SwitchName=ibsw17 Nodes=hpc600,hpc599,hpc598,hpc597,hpc596,hpc595,hpc594,hpc593,hpc592,hpc591,hpc590,hpc589,hpc588,hpc587,hpc586,hpc585,hpc584,hpc583
+#
+# IB switch no. 18: ibsw18 GUID: 0xf4521403000dd140 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf4521403000a7840  with 9 links
+# Switch neighbor  0xf4521403000a79c0  with 8 links
+# Total number of links in this switch =  35
+SwitchName=ibsw18 Nodes=hpc582,hpc581,hpc580,hpc579,hpc578,hpc577,hpc576,hpc575,hpc574,hpc573,hpc572,hpc571,hpc570,hpc569,hpc568,hpc567,hpc566,hpc565
+#
+# IB switch no. 19: ibsw19 GUID: 0xf4521403000dcfc0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf45214030009b440  with 8 links
+# Switch neighbor  0xf45214030009b380  with 9 links
+# Total number of links in this switch =  35
+SwitchName=ibsw19 Nodes=hpc563,hpc564,hpc562,hpc561,hpc560,hpc559,hpc558,hpc557,hpc556,hpc555,hpc554,hpc553,hpc552,hpc551,hpc550,hpc549,hpc548,hpc547
+#
+# IB switch no. 20: ibsw20 GUID: 0xf4521403000dc9c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030009b380  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf45214030009b440  with 8 links
+# Total number of links in this switch =  35
+SwitchName=ibsw20 Nodes=hpc546,hpc545,hpc544,hpc543,hpc542,hpc541,hpc540,hpc539,hpc538,hpc537,hpc536,hpc535,hpc534,hpc533,hpc532,hpc531,hpc530,hpc529
+#
+# IB switch no. 21: ibsw21 GUID: 0x0002c9030090ec80 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 16 links
+# Switch neighbor  0xf4521403000a7a80  with 8 links
+# Switch neighbor  0xf4521403000a7720  with 8 links
+# Total number of links in this switch =  32
+SwitchName=ibsw21 Nodes=hpc528,hpc527,hpc526,hpc525,hpc524,hpc523,hpc522,hpc521,hpc520,hpc519,hpc518,hpc517,hpc515,hpc514,hpc516,hpc513
+#
+# IB switch no. 22: ibsw22 GUID: 0x0002c9030090f100 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7a80  with 9 links
+# Switch neighbor  0xf4521403000a7720  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  36
+SwitchName=ibsw22 Nodes=hpc512,hpc511,hpc510,hpc509,hpc508,hpc507,hpc506,hpc505,hpc504,hpc503,hpc502,hpc501,hpc500,hpc499,hpc498,hpc497,hpc496,hpc495
+#
+# IB switch no. 23: ibsw23 GUID: 0xf4521403000dcf40 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7d80  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf4521403000a7a20  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw23 Nodes=hpc494,hpc493,hpc492,hpc491,hpc490,hpc489,hpc488,hpc487,hpc486,hpc485,hpc484,hpc483,hpc482,hpc481,hpc480,hpc479,hpc478,hpc477
+#
+# IB switch no. 24: ibsw24 GUID: 0xf4521403000dd7c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7a20  with 9 links
+# Switch neighbor  0xf4521403000a7d80  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  36
+SwitchName=ibsw24 Nodes=hpc476,hpc475,hpc474,hpc473,hpc472,hpc471,hpc470,hpc469,hpc468,hpc467,hpc466,hpc465,hpc464,hpc463,hpc462,hpc461,hpc460,hpc459
+#
+# IB switch no. 25: ibsw25 GUID: 0xf4521403000dcc40 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a78a0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf4521403000a7de0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw25 Nodes=hpc458,hpc457,hpc456,hpc455,hpc454,hpc453,hpc452,hpc451,hpc450,hpc449,hpc448,hpc447,hpc446,hpc445,hpc444,hpc443,hpc442,hpc441
+#
+# IB switch no. 26: ibsw26 GUID: 0xf4521403000dd0c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7de0  with 8 links
+# Switch neighbor  CA  with 16 links
+# Switch neighbor  0xf4521403000a78a0  with 8 links
+# Total number of links in this switch =  32
+SwitchName=ibsw26 Nodes=hpc440,hpc439,hpc438,hpc437,hpc436,hpc435,hpc434,hpc433,hpc432,hpc431,hpc430,hpc429,hpc428,hpc427,hpc426,hpc425
+#
+# IB switch no. 27: ibsw27 GUID: 0x0002c90300e35960 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300864c20  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c903008658e0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw27 Nodes=hpc424,hpc423,hpc422,hpc421,hpc420,hpc419,hpc418,hpc417,hpc416,hpc415,hpc414,hpc413,hpc412,hpc411,hpc410,hpc409,hpc408,hpc407
+#
+# IB switch no. 28: ibsw28 GUID: 0x0002c90300e36060 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c903008658e0  with 9 links
+# Switch neighbor  0x0002c90300864c20  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  36
+SwitchName=ibsw28 Nodes=hpc406,hpc405,hpc404,hpc403,hpc402,hpc401,hpc399,hpc400,hpc398,hpc397,hpc396,hpc395,hpc394,hpc393,hpc392,hpc391,hpc390,hpc389
+#
+# IB switch no. 29: ibsw29 GUID: 0x0002c903005d4340 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300864bc0  with 10 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c90300865820  with 7 links
+# Total number of links in this switch =  35
+SwitchName=ibsw29 Nodes=hpc388,hpc387,hpc386,hpc385,hpc384,hpc383,hpc382,hpc381,hpc380,hpc379,hpc378,hpc377,hpc376,hpc375,hpc374,hpc373,hpc372,hpc371
+#
+# IB switch no. 30: ibsw30 GUID: 0xf4521403000dd840 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300864bc0  with 8 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c90300865820  with 9 links
+# Total number of links in this switch =  35
+SwitchName=ibsw30 Nodes=hpc370,hpc369,hpc368,hpc367,hpc366,hpc365,hpc364,hpc363,hpc362,hpc361,hpc360,hpc359,hpc358,hpc357,hpc356,hpc355,hpc354,hpc353
+#
+# IB switch no. 31: ibsw31 GUID: 0x0002c90300e358e0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 16 links
+# Switch neighbor  0x0002c90300865b80  with 7 links
+# Switch neighbor  0x0002c90300864d40  with 8 links
+# Total number of links in this switch =  31
+SwitchName=ibsw31 Nodes=hpc352,hpc351,hpc350,hpc349,hpc348,hpc347,hpc346,hpc345,hpc344,hpc343,hpc342,hpc341,hpc340,hpc339,hpc338,hpc337
+#
+# IB switch no. 32: ibsw32 GUID: 0x0002c90300e363e0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300865b80  with 9 links
+# Switch neighbor  0x0002c90300864d40  with 8 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  35
+SwitchName=ibsw32 Nodes=hpc336,hpc335,hpc334,hpc333,hpc332,hpc331,hpc330,hpc329,hpc328,hpc327,hpc326,hpc325,hpc324,hpc323,hpc322,hpc321,hpc320,hpc319
+#
+# IB switch no. 33: ibsw33 GUID: 0xf4521403000dd440 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 8 links
+# Switch neighbor  0xf45214030009ae40  with 8 links
+# Total number of links in this switch =  35
+SwitchName=ibsw33 Nodes=hpc318,hpc317,hpc316,hpc315,hpc314,hpc313,hpc312,hpc311,hpc310,hpc309,hpc308,hpc307,hpc306,hpc305,hpc304,hpc303,hpc302,hpc301
+#
+# IB switch no. 34: ibsw34 GUID: 0x0002c90300e36460 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c9030084d2d0  with 8 links
+# Switch neighbor  0xf45214030009ae40  with 9 links
+# Total number of links in this switch =  35
+SwitchName=ibsw34 Nodes=hpc300,hpc299,hpc298,hpc297,hpc296,hpc295,hpc294,hpc293,hpc292,hpc291,hpc290,hpc289,hpc288,hpc287,hpc286,hpc285,hpc284,hpc283
+#
+# IB switch no. 35: ibsw35 GUID: 0x0002c90300e362e0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300865940  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c90300864ce0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw35 Nodes=hpc282,hpc281,hpc280,hpc279,hpc278,hpc277,hpc276,hpc275,hpc274,hpc273,hpc272,hpc271,hpc270,hpc269,hpc268,hpc267,hpc266,hpc265
+#
+# IB switch no. 36: ibsw36 GUID: 0xf4521403000dcec0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300864ce0  with 8 links
+# Switch neighbor  CA  with 16 links
+# Switch neighbor  0x0002c90300865940  with 8 links
+# Total number of links in this switch =  32
+SwitchName=ibsw36 Nodes=hpc264,hpc263,hpc262,hpc261,hpc260,hpc259,hpc258,hpc257,hpc256,hpc255,hpc254,hpc253,hpc252,hpc251,hpc250,hpc249
+#
+# IB switch no. 37: ibsw37 GUID: 0x0002c90300e364e0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030009b200  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf4521403000a7ba0  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw37 Nodes=hpc248,hpc247,hpc246,hpc245,hpc244,hpc243,hpc242,hpc241,hpc240,hpc239,hpc238,hpc237,hpc236,hpc235,hpc234,hpc233,hpc232,hpc231
+#
+# IB switch no. 38: ibsw38 GUID: 0x0002c90300e35a60 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7ba0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf45214030009b200  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw38 Nodes=hpc230,hpc229,hpc228,hpc227,hpc226,hpc225,hpc224,hpc223,hpc222,hpc221,hpc220,hpc219,hpc218,hpc217,hpc216,hpc215,hpc214,hpc213
+#
+# IB switch no. 39: ibsw39 GUID: 0xf4521403000dc940 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c90300865be0  with 8 links
+# Switch neighbor  0xf45214030009b1a0  with 9 links
+# Total number of links in this switch =  35
+SwitchName=ibsw39 Nodes=hpc212,hpc211,hpc210,hpc209,hpc208,hpc207,hpc206,hpc205,hpc204,hpc203,hpc202,hpc201,hpc200,hpc199,hpc198,hpc197,hpc196,hpc195
+#
+# IB switch no. 40: ibsw40 GUID: 0xf4521403000dd040 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300865be0  with 9 links
+# Switch neighbor  0xf45214030009b1a0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  36
+SwitchName=ibsw40 Nodes=hpc194,hpc193,hpc192,hpc191,hpc190,hpc189,hpc188,hpc187,hpc186,hpc185,hpc184,hpc183,hpc182,hpc181,hpc180,hpc179,hpc178,hpc177
+#
+# IB switch no. 41: ibsw41 GUID: 0xf4521403000dd2c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a76c0  with 8 links
+# Switch neighbor  CA  with 16 links
+# Switch neighbor  0xf45214030009b560  with 8 links
+# Total number of links in this switch =  32
+SwitchName=ibsw41 Nodes=hpc176,hpc175,hpc174,hpc173,hpc172,hpc171,hpc170,hpc169,hpc168,hpc167,hpc166,hpc165,hpc164,hpc163,hpc162,hpc161
+#
+# IB switch no. 42: ibsw42 GUID: 0xf4521403000dcb40 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf45214030009b560  with 9 links
+# Switch neighbor  0xf4521403000a76c0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  36
+SwitchName=ibsw42 Nodes=hpc160,hpc159,hpc158,hpc157,hpc156,hpc155,hpc154,hpc153,hpc152,hpc151,hpc150,hpc149,hpc148,hpc147,hpc146,hpc145,hpc144,hpc143
+#
+# IB switch no. 43: ibsw43 GUID: 0xf4521403000dce40 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf4521403000a7780  with 8 links
+# Switch neighbor  0xf4521403000a7ea0  with 9 links
+# Total number of links in this switch =  35
+SwitchName=ibsw43 Nodes=hpc142,hpc141,hpc140,hpc139,hpc138,hpc137,hpc136,hpc135,hpc134,hpc133,hpc132,hpc131,hpc130,hpc129,hpc128,hpc127,hpc126,hpc125
+#
+# IB switch no. 44: ibsw44 GUID: 0xf4521403000dd3c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7780  with 8 links
+# Switch neighbor  0xf4521403000a7ea0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  35
+SwitchName=ibsw44 Nodes=hpc124,hpc123,hpc122,hpc121,hpc120,hpc119,hpc118,hpc117,hpc116,hpc115,hpc114,hpc113,hpc112,hpc111,hpc110,hpc109,hpc108,hpc107
+#
+# IB switch no. 45: ibsw45 GUID: 0x0002c9030061db70 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7660  with 9 links
+# Switch neighbor  0xf4521403000a7cc0  with 8 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  35
+SwitchName=ibsw45 Nodes=hpc106,hpc105,hpc104,hpc103,hpc102,hpc101,hpc100,hpc099,hpc098,hpc097,hpc096,hpc095,hpc094,hpc093,hpc092,hpc091,hpc090,hpc089
+#
+# IB switch no. 46: ibsw46 GUID: 0xf4521403000dd740 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7cc0  with 7 links
+# Switch neighbor  0xf4521403000a7660  with 8 links
+# Switch neighbor  CA  with 16 links
+# Total number of links in this switch =  31
+SwitchName=ibsw46 Nodes=hpc088,hpc087,hpc086,hpc085,hpc084,hpc083,hpc082,hpc081,hpc080,hpc079,hpc078,hpc077,hpc076,hpc075,hpc074,hpc073
+#
+# IB switch no. 47: ibsw47 GUID: 0xf4521403000dd6c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a77e0  with 9 links
+# Switch neighbor  0xf4521403000a7d20  with 8 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  35
+SwitchName=ibsw47 Nodes=hpc072,hpc071,hpc070,hpc069,hpc068,hpc067,hpc066,hpc065,hpc064,hpc063,hpc062,hpc061,hpc060,hpc058,hpc059,hpc057,hpc056,hpc055
+#
+# IB switch no. 48: ibsw48 GUID: 0xf4521403000dcac0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7d20  with 8 links
+# Switch neighbor  0xf4521403000a77e0  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  35
+SwitchName=ibsw48 Nodes=hpc054,hpc053,hpc052,hpc051,hpc050,hpc049,hpc048,hpc047,hpc046,hpc045,hpc044,hpc043,hpc042,hpc041,hpc040,hpc039,hpc038,hpc037
+#
+# IB switch no. 49: ibsw49 GUID: 0xf4521403000dcbc0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7600  with 9 links
+# Switch neighbor  0xf4521403000a7b40  with 9 links
+# Switch neighbor  CA  with 18 links
+# Total number of links in this switch =  36
+SwitchName=ibsw49 Nodes=hpc036,hpc035,hpc034,hpc033,hpc032,hpc031,hpc030,hpc029,hpc028,hpc027,hpc026,hpc025,hpc024,hpc023,hpc022,hpc021,hpc020,hpc019
+#
+# IB switch no. 50: ibsw50 GUID: 0x0002c9030090ec00 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0xf4521403000a7b40  with 9 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0xf4521403000a7600  with 9 links
+# Total number of links in this switch =  36
+SwitchName=ibsw50 Nodes=hpc018,hpc017,hpc016,hpc015,hpc014,hpc013,hpc012,hpc011,hpc010,hpc009,hpc006,hpc007,hpc008,hpc005,hpc004,hpc003,hpc002,hpc001
+#
+# IB switch no. 51: ibsw51 GUID: 0xf45214030020a830 Description: MF0;IBB2-SW:SX6536/L27/U1
+#
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Total number of links in this switch =  18
+# NOTICE: This switch ibsw51 has no attached nodes (empty hostlist)
+SwitchName=ibsw51 Switches=ibsw107,ibsw109,ibsw120,ibsw115,ibsw108,ibsw105,ibsw114,ibsw116,ibsw106,ibsw103,ibsw118,ibsw117,ibsw104,ibsw112,ibsw113,ibsw110,ibsw119,ibsw111
+#
+# IB switch no. 52: ibsw52 GUID: 0xf45214030020ad10 Description: MF0;IBB2-SW:SX6536/L26/U1
+#
+# Switch neighbor  0xe41d2d03000566a0  with 3 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf4521403000dd8c0  with 9 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Total number of links in this switch =  30
+# NOTICE: This switch ibsw52 has no attached nodes (empty hostlist)
+SwitchName=ibsw52 Switches=ibsw1,ibsw112,ibsw110,ibsw119,ibsw111,ibsw109,ibsw107,ibsw2,ibsw108,ibsw120,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw116,ibsw117,ibsw118,ibsw104,ibsw113
+#
+# IB switch no. 53: ibsw53 GUID: 0xf45214030020a7d0 Description: MF0;IBB2-SW:SX6536/L25/U1
+#
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0xf45214030021ec70  with 9 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0xf4521403002b4f00  with 8 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw53 has no attached nodes (empty hostlist)
+SwitchName=ibsw53 Switches=ibsw114,ibsw117,ibsw118,ibsw104,ibsw113,ibsw112,ibsw110,ibsw119,ibsw111,ibsw4,ibsw109,ibsw107,ibsw120,ibsw3,ibsw108,ibsw115,ibsw105,ibsw116,ibsw106,ibsw103
+#
+# IB switch no. 54: ibsw54 GUID: 0xf452140300207890 Description: MF0;IBB2-SW:SX6536/L24/U1
+#
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903005f2b50  with 9 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf452140300291360  with 9 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw54 has no attached nodes (empty hostlist)
+SwitchName=ibsw54 Switches=ibsw120,ibsw115,ibsw108,ibsw105,ibsw5,ibsw114,ibsw116,ibsw106,ibsw6,ibsw103,ibsw118,ibsw117,ibsw104,ibsw112,ibsw113,ibsw110,ibsw119,ibsw111,ibsw107,ibsw109
+#
+# IB switch no. 55: ibsw55 GUID: 0x0002c90300865280 Description: MF0;IBB2-SW:SX6536/L22/U1
+#
+# Switch neighbor  0xf4521403000dd240  with 9 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0xf4521403002b5100  with 9 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw55 has no attached nodes (empty hostlist)
+SwitchName=ibsw55 Switches=ibsw8,ibsw119,ibsw109,ibsw111,ibsw107,ibsw108,ibsw120,ibsw115,ibsw105,ibsw7,ibsw106,ibsw103,ibsw114,ibsw116,ibsw118,ibsw104,ibsw117,ibsw112,ibsw113,ibsw110
+#
+# IB switch no. 56: ibsw56 GUID: 0x0002c90300865160 Description: MF0;IBB2-SW:SX6536/L21/U1
+#
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0xf4521403000dd540  with 9 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0xf4521403000dca40  with 9 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw56 has no attached nodes (empty hostlist)
+SwitchName=ibsw56 Switches=ibsw113,ibsw9,ibsw112,ibsw110,ibsw119,ibsw111,ibsw109,ibsw107,ibsw120,ibsw108,ibsw115,ibsw105,ibsw10,ibsw106,ibsw103,ibsw114,ibsw116,ibsw117,ibsw118,ibsw104
+#
+# IB switch no. 57: ibsw57 GUID: 0xf45214030009b0e0 Description: MF0;IBB2-SW:SX6536/L20/U1
+#
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c90300e36260  with 8 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0xf4521403000dccc0  with 7 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Total number of links in this switch =  33
+# NOTICE: This switch ibsw57 has no attached nodes (empty hostlist)
+SwitchName=ibsw57 Switches=ibsw105,ibsw114,ibsw116,ibsw106,ibsw103,ibsw118,ibsw117,ibsw104,ibsw112,ibsw113,ibsw110,ibsw119,ibsw111,ibsw107,ibsw12,ibsw109,ibsw120,ibsw11,ibsw108,ibsw115
+#
+# IB switch no. 58: ibsw58 GUID: 0xf45214030009b3e0 Description: MF0;IBB2-SW:SX6536/L19/U1
+#
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf4521403000dd1c0  with 8 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000dd5c0  with 9 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw58 has no attached nodes (empty hostlist)
+SwitchName=ibsw58 Switches=ibsw119,ibsw111,ibsw107,ibsw14,ibsw109,ibsw120,ibsw115,ibsw108,ibsw105,ibsw114,ibsw116,ibsw106,ibsw13,ibsw103,ibsw118,ibsw117,ibsw104,ibsw112,ibsw113,ibsw110
+#
+# IB switch no. 59: ibsw59 GUID: 0xf45214030009b020 Description: MF0;IBB2-SW:SX6536/L18/U1
+#
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0xf4521403000dcdc0  with 8 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf4521403000dd940  with 9 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw59 has no attached nodes (empty hostlist)
+SwitchName=ibsw59 Switches=ibsw112,ibsw16,ibsw110,ibsw111,ibsw119,ibsw109,ibsw15,ibsw107,ibsw108,ibsw120,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw116,ibsw118,ibsw104,ibsw117,ibsw113
+#
+# IB switch no. 60: ibsw60 GUID: 0xf4521403000a7840 Description: MF0;IBB2-SW:SX6536/L17/U1
+#
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0xf4521403000dd140  with 9 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c90300e36160  with 9 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw60 has no attached nodes (empty hostlist)
+SwitchName=ibsw60 Switches=ibsw109,ibsw107,ibsw108,ibsw120,ibsw115,ibsw105,ibsw106,ibsw103,ibsw18,ibsw114,ibsw116,ibsw118,ibsw17,ibsw104,ibsw117,ibsw113,ibsw112,ibsw110,ibsw119,ibsw111
+#
+# IB switch no. 61: ibsw61 GUID: 0xf45214030009b380 Description: MF0;IBB2-SW:SX6536/L16/U1
+#
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0xf4521403000dc9c0  with 9 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0xf4521403000dcfc0  with 9 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw61 has no attached nodes (empty hostlist)
+SwitchName=ibsw61 Switches=ibsw113,ibsw20,ibsw112,ibsw110,ibsw119,ibsw19,ibsw111,ibsw109,ibsw107,ibsw120,ibsw108,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw116,ibsw117,ibsw118,ibsw104
+#
+# IB switch no. 62: ibsw62 GUID: 0xf4521403000a7720 Description: MF0;IBB2-SW:SX6536/L15/U1
+#
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0x0002c9030090f100  with 9 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c9030090ec80  with 8 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw62 has no attached nodes (empty hostlist)
+SwitchName=ibsw62 Switches=ibsw114,ibsw116,ibsw106,ibsw22,ibsw103,ibsw118,ibsw21,ibsw117,ibsw104,ibsw112,ibsw113,ibsw110,ibsw119,ibsw111,ibsw107,ibsw109,ibsw120,ibsw108,ibsw115,ibsw105
+#
+# IB switch no. 63: ibsw63 GUID: 0xf4521403000a7a20 Description: MF0;IBB2-SW:SX6536/L14/U1
+#
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf4521403000dcf40  with 9 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0xf4521403000dd7c0  with 9 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw63 has no attached nodes (empty hostlist)
+SwitchName=ibsw63 Switches=ibsw107,ibsw23,ibsw108,ibsw120,ibsw115,ibsw105,ibsw106,ibsw114,ibsw116,ibsw103,ibsw118,ibsw104,ibsw117,ibsw24,ibsw112,ibsw113,ibsw110,ibsw119,ibsw109,ibsw111
+#
+# IB switch no. 64: ibsw64 GUID: 0xf4521403000a78a0 Description: MF0;IBB2-SW:SX6536/L13/U1
+#
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0xf4521403000dcc40  with 9 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0xf4521403000dd0c0  with 8 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw64 has no attached nodes (empty hostlist)
+SwitchName=ibsw64 Switches=ibsw112,ibsw110,ibsw119,ibsw111,ibsw109,ibsw107,ibsw120,ibsw108,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw116,ibsw25,ibsw117,ibsw118,ibsw104,ibsw26,ibsw113
+#
+# IB switch no. 65: ibsw65 GUID: 0x0002c90300864c20 Description: MF0;IBB2-SW:SX6536/L12/U1
+#
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c90300e36060  with 9 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c90300e35960  with 9 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw65 has no attached nodes (empty hostlist)
+SwitchName=ibsw65 Switches=ibsw114,ibsw117,ibsw118,ibsw104,ibsw113,ibsw112,ibsw28,ibsw110,ibsw119,ibsw111,ibsw109,ibsw27,ibsw107,ibsw120,ibsw108,ibsw115,ibsw105,ibsw116,ibsw106,ibsw103
+#
+# IB switch no. 66: ibsw66 GUID: 0x0002c90300864bc0 Description: MF0;IBB2-SW:SX6536/L11/U1
+#
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000dd840  with 8 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903005d4340  with 10 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw66 has no attached nodes (empty hostlist)
+SwitchName=ibsw66 Switches=ibsw120,ibsw115,ibsw108,ibsw105,ibsw114,ibsw116,ibsw106,ibsw30,ibsw103,ibsw118,ibsw117,ibsw104,ibsw29,ibsw112,ibsw113,ibsw110,ibsw119,ibsw111,ibsw107,ibsw109
+#
+# IB switch no. 67: ibsw67 GUID: 0x0002c90300864d40 Description: MF0;IBB2-SW:SX6536/L10/U1
+#
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf4521403000dd440  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c90300e358e0  with 8 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300e363e0  with 8 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw67 has no attached nodes (empty hostlist)
+SwitchName=ibsw67 Switches=ibsw111,ibsw119,ibsw109,ibsw107,ibsw33,ibsw108,ibsw120,ibsw115,ibsw105,ibsw31,ibsw106,ibsw103,ibsw32,ibsw114,ibsw116,ibsw118,ibsw104,ibsw117,ibsw113,ibsw112,ibsw110
+#
+# IB switch no. 68: ibsw68 GUID: 0xf45214030009ae40 Description: MF0;IBB2-SW:SX6536/L09/U1
+#
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0xf4521403000dd440  with 8 links
+# Switch neighbor  0x0002c90300e36460  with 9 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw68 has no attached nodes (empty hostlist)
+SwitchName=ibsw68 Switches=ibsw113,ibsw112,ibsw110,ibsw119,ibsw111,ibsw109,ibsw107,ibsw120,ibsw33,ibsw34,ibsw108,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw116,ibsw117,ibsw118,ibsw104
+#
+# IB switch no. 69: ibsw69 GUID: 0x0002c90300864ce0 Description: MF0;IBB2-SW:SX6536/L08/U1
+#
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000dcec0  with 8 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300e362e0  with 9 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw69 has no attached nodes (empty hostlist)
+SwitchName=ibsw69 Switches=ibsw105,ibsw114,ibsw116,ibsw106,ibsw36,ibsw103,ibsw118,ibsw117,ibsw104,ibsw112,ibsw113,ibsw35,ibsw110,ibsw119,ibsw111,ibsw107,ibsw109,ibsw120,ibsw108,ibsw115
+#
+# IB switch no. 70: ibsw70 GUID: 0xf45214030009b200 Description: MF0;IBB2-SW:SX6536/L07/U1
+#
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c90300e364e0  with 9 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c90300e35a60  with 9 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw70 has no attached nodes (empty hostlist)
+SwitchName=ibsw70 Switches=ibsw117,ibsw104,ibsw112,ibsw113,ibsw110,ibsw37,ibsw119,ibsw111,ibsw107,ibsw109,ibsw120,ibsw108,ibsw115,ibsw105,ibsw38,ibsw114,ibsw116,ibsw106,ibsw103,ibsw118
+#
+# IB switch no. 71: ibsw71 GUID: 0xf45214030009b1a0 Description: MF0;IBB2-SW:SX6536/L06/U1
+#
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0xf4521403000dd040  with 9 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0xf4521403000dc940  with 9 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw71 has no attached nodes (empty hostlist)
+SwitchName=ibsw71 Switches=ibsw108,ibsw105,ibsw114,ibsw116,ibsw106,ibsw103,ibsw118,ibsw117,ibsw104,ibsw112,ibsw113,ibsw40,ibsw110,ibsw119,ibsw39,ibsw111,ibsw107,ibsw109,ibsw120,ibsw115
+#
+# IB switch no. 72: ibsw72 GUID: 0xf45214030009b560 Description: MF0;IBB2-SW:SX6536/L05/U1
+#
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0xf4521403000dd2c0  with 8 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0xf4521403000dcb40  with 9 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw72 has no attached nodes (empty hostlist)
+SwitchName=ibsw72 Switches=ibsw109,ibsw107,ibsw108,ibsw120,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw116,ibsw117,ibsw118,ibsw104,ibsw113,ibsw41,ibsw112,ibsw110,ibsw42,ibsw119,ibsw111
+#
+# IB switch no. 73: ibsw73 GUID: 0xf4521403000a7780 Description: MF0;IBB2-SW:SX6536/L04/U1
+#
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0xf4521403000dd3c0  with 8 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0xf4521403000dce40  with 8 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw73 has no attached nodes (empty hostlist)
+SwitchName=ibsw73 Switches=ibsw113,ibsw112,ibsw110,ibsw119,ibsw111,ibsw109,ibsw107,ibsw120,ibsw108,ibsw115,ibsw105,ibsw44,ibsw106,ibsw103,ibsw114,ibsw116,ibsw117,ibsw118,ibsw104,ibsw43
+#
+# IB switch no. 74: ibsw74 GUID: 0xf4521403000a7660 Description: MF0;IBB2-SW:SX6536/L03/U1
+#
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0xf4521403000dd740  with 8 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c9030061db70  with 9 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw74 has no attached nodes (empty hostlist)
+SwitchName=ibsw74 Switches=ibsw114,ibsw116,ibsw106,ibsw103,ibsw118,ibsw117,ibsw104,ibsw112,ibsw113,ibsw46,ibsw110,ibsw119,ibsw111,ibsw45,ibsw107,ibsw109,ibsw120,ibsw115,ibsw108,ibsw105
+#
+# IB switch no. 75: ibsw75 GUID: 0xf4521403000a77e0 Description: MF0;IBB2-SW:SX6536/L02/U1
+#
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0xf4521403000dcac0  with 9 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0xf4521403000dd6c0  with 9 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw75 has no attached nodes (empty hostlist)
+SwitchName=ibsw75 Switches=ibsw107,ibsw108,ibsw120,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw116,ibsw118,ibsw104,ibsw117,ibsw112,ibsw113,ibsw110,ibsw119,ibsw48,ibsw109,ibsw47,ibsw111
+#
+# IB switch no. 76: ibsw76 GUID: 0xf4521403000a7600 Description: MF0;IBB2-SW:SX6536/L01/U1
+#
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Switch neighbor  0x0002c9030090ec00  with 9 links
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0xf4521403000dcbc0  with 9 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw76 has no attached nodes (empty hostlist)
+SwitchName=ibsw76 Switches=ibsw112,ibsw110,ibsw119,ibsw111,ibsw109,ibsw107,ibsw120,ibsw108,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114,ibsw50,ibsw116,ibsw117,ibsw118,ibsw104,ibsw49,ibsw113
+#
+# IB switch no. 77: ibsw77 GUID: 0xf45214030020ad70 Description: MF0;IBB1-SW:SX6536/L27/U1
+#
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Total number of links in this switch =  18
+# NOTICE: This switch ibsw77 has no attached nodes (empty hostlist)
+SwitchName=ibsw77 Switches=ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133
+#
+# IB switch no. 78: ibsw78 GUID: 0xf45214030020a710 Description: MF0;IBB1-SW:SX6536/L26/U1
+#
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xe41d2d03000566a0  with 6 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000dd8c0  with 9 links
+# Total number of links in this switch =  33
+# NOTICE: This switch ibsw78 has no attached nodes (empty hostlist)
+SwitchName=ibsw78 Switches=ibsw125,ibsw133,ibsw128,ibsw124,ibsw138,ibsw126,ibsw123,ibsw129,ibsw1,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw134,ibsw131,ibsw2
+#
+# IB switch no. 79: ibsw79 GUID: 0xf45214030020a770 Description: MF0;IBB1-SW:SX6536/L25/U1
+#
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030021ec70  with 9 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0xf4521403002b4f00  with 9 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw79 has no attached nodes (empty hostlist)
+SwitchName=ibsw79 Switches=ibsw132,ibsw130,ibsw136,ibsw4,ibsw125,ibsw137,ibsw134,ibsw3,ibsw131,ibsw133,ibsw128,ibsw138,ibsw124,ibsw129,ibsw126,ibsw135,ibsw122,ibsw123,ibsw127,ibsw121
+#
+# IB switch no. 80: ibsw80 GUID: 0xf45214030020acb0 Description: MF0;IBB1-SW:SX6536/L24/U1
+#
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903005f2b50  with 9 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf452140300291360  with 8 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw80 has no attached nodes (empty hostlist)
+SwitchName=ibsw80 Switches=ibsw131,ibsw133,ibsw5,ibsw128,ibsw138,ibsw6,ibsw124,ibsw129,ibsw126,ibsw135,ibsw122,ibsw123,ibsw127,ibsw121,ibsw132,ibsw130,ibsw136,ibsw125,ibsw137,ibsw134
+#
+# IB switch no. 81: ibsw81 GUID: 0xf4521403000a7900 Description: MF0;IBB1-SW:SX6536/L22/U1
+#
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf4521403000dd240  with 9 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403002b5100  with 9 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw81 has no attached nodes (empty hostlist)
+SwitchName=ibsw81 Switches=ibsw132,ibsw130,ibsw136,ibsw8,ibsw137,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133,ibsw7,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw135,ibsw122,ibsw121,ibsw127
+#
+# IB switch no. 82: ibsw82 GUID: 0xf45214030009b4a0 Description: MF0;IBB1-SW:SX6536/L21/U1
+#
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf4521403000dd540  with 9 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000dca40  with 9 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw82 has no attached nodes (empty hostlist)
+SwitchName=ibsw82 Switches=ibsw126,ibsw124,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw9,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw125,ibsw134,ibsw131,ibsw133,ibsw10,ibsw128,ibsw138
+#
+# IB switch no. 83: ibsw83 GUID: 0xf4521403000a7ae0 Description: MF0;IBB1-SW:SX6536/L20/U1
+#
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0x0002c90300e36260  with 9 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000dccc0  with 7 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw83 has no attached nodes (empty hostlist)
+SwitchName=ibsw83 Switches=ibsw133,ibsw128,ibsw124,ibsw138,ibsw126,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw136,ibsw130,ibsw12,ibsw137,ibsw134,ibsw131,ibsw11,ibsw125
+#
+# IB switch no. 84: ibsw84 GUID: 0xf45214030009b500 Description: MF0;IBB1-SW:SX6536/L19/U1
+#
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0xf4521403000dd1c0  with 9 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf4521403000dd5c0  with 8 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw84 has no attached nodes (empty hostlist)
+SwitchName=ibsw84 Switches=ibsw136,ibsw125,ibsw137,ibsw134,ibsw14,ibsw131,ibsw128,ibsw133,ibsw138,ibsw13,ibsw124,ibsw129,ibsw126,ibsw135,ibsw122,ibsw123,ibsw127,ibsw121,ibsw132,ibsw130
+#
+# IB switch no. 85: ibsw85 GUID: 0xf45214030009b080 Description: MF0;IBB1-SW:SX6536/L18/U1
+#
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf4521403000dcdc0  with 8 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0xf4521403000dd940  with 8 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw85 has no attached nodes (empty hostlist)
+SwitchName=ibsw85 Switches=ibsw135,ibsw122,ibsw121,ibsw127,ibsw16,ibsw132,ibsw130,ibsw136,ibsw137,ibsw15,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129
+#
+# IB switch no. 86: ibsw86 GUID: 0xf4521403000a79c0 Description: MF0;IBB1-SW:SX6536/L17/U1
+#
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c90300e36160  with 8 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000dd140  with 8 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw86 has no attached nodes (empty hostlist)
+SwitchName=ibsw86 Switches=ibsw128,ibsw17,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw134,ibsw125,ibsw131,ibsw133,ibsw18
+#
+# IB switch no. 87: ibsw87 GUID: 0xf45214030009b440 Description: MF0;IBB1-SW:SX6536/L16/U1
+#
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000dc9c0  with 8 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0xf4521403000dcfc0  with 8 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw87 has no attached nodes (empty hostlist)
+SwitchName=ibsw87 Switches=ibsw125,ibsw137,ibsw134,ibsw131,ibsw133,ibsw128,ibsw124,ibsw138,ibsw129,ibsw126,ibsw135,ibsw122,ibsw123,ibsw20,ibsw127,ibsw121,ibsw132,ibsw19,ibsw130,ibsw136
+#
+# IB switch no. 88: ibsw88 GUID: 0xf4521403000a7a80 Description: MF0;IBB1-SW:SX6536/L15/U1
+#
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c9030090f100  with 9 links
+# Switch neighbor  0x0002c9030090ec80  with 8 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw88 has no attached nodes (empty hostlist)
+SwitchName=ibsw88 Switches=ibsw121,ibsw127,ibsw132,ibsw130,ibsw136,ibsw137,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133,ibsw22,ibsw21,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw135,ibsw122
+#
+# IB switch no. 89: ibsw89 GUID: 0xf4521403000a7d80 Description: MF0;IBB1-SW:SX6536/L14/U1
+#
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf4521403000dd7c0  with 9 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000dcf40  with 9 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw89 has no attached nodes (empty hostlist)
+SwitchName=ibsw89 Switches=ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw24,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw125,ibsw134,ibsw131,ibsw23,ibsw128,ibsw133
+#
+# IB switch no. 90: ibsw90 GUID: 0xf4521403000a7de0 Description: MF0;IBB1-SW:SX6536/L13/U1
+#
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf4521403000dcc40  with 9 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf4521403000dd0c0  with 8 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw90 has no attached nodes (empty hostlist)
+SwitchName=ibsw90 Switches=ibsw122,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133,ibsw138,ibsw25,ibsw126,ibsw124,ibsw26,ibsw123,ibsw129,ibsw127,ibsw135
+#
+# IB switch no. 91: ibsw91 GUID: 0x0002c903008658e0 Description: MF0;IBB1-SW:SX6536/L12/U1
+#
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c90300e36060  with 9 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c90300e35960  with 9 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw91 has no attached nodes (empty hostlist)
+SwitchName=ibsw91 Switches=ibsw124,ibsw138,ibsw126,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw28,ibsw130,ibsw136,ibsw137,ibsw134,ibsw27,ibsw131,ibsw125,ibsw133,ibsw128
+#
+# IB switch no. 92: ibsw92 GUID: 0x0002c90300865820 Description: MF0;IBB1-SW:SX6536/L11/U1
+#
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf4521403000dd840  with 9 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0x0002c903005d4340  with 7 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw92 has no attached nodes (empty hostlist)
+SwitchName=ibsw92 Switches=ibsw131,ibsw133,ibsw128,ibsw138,ibsw30,ibsw124,ibsw29,ibsw129,ibsw126,ibsw135,ibsw122,ibsw123,ibsw127,ibsw121,ibsw132,ibsw130,ibsw136,ibsw125,ibsw137,ibsw134
+#
+# IB switch no. 93: ibsw93 GUID: 0x0002c90300865b80 Description: MF0;IBB1-SW:SX6536/L10/U1
+#
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c90300e358e0  with 7 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c90300e363e0  with 9 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw93 has no attached nodes (empty hostlist)
+SwitchName=ibsw93 Switches=ibsw132,ibsw130,ibsw136,ibsw137,ibsw125,ibsw134,ibsw131,ibsw31,ibsw128,ibsw133,ibsw32,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw135,ibsw122,ibsw121,ibsw127
+#
+# IB switch no. 94: ibsw94 GUID: 0x0002c9030084d2d0 Description: MF0;IBB1-SW:SX6536/L09/U1
+#
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0xf4521403000dd440  with 8 links
+# Switch neighbor  0x0002c90300e36460  with 8 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw94 has no attached nodes (empty hostlist)
+SwitchName=ibsw94 Switches=ibsw126,ibsw124,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw125,ibsw134,ibsw33,ibsw34,ibsw131,ibsw133,ibsw128,ibsw138
+#
+# IB switch no. 95: ibsw95 GUID: 0x0002c90300865940 Description: MF0;IBB1-SW:SX6536/L08/U1
+#
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000dcec0  with 8 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0x0002c90300e362e0  with 9 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw95 has no attached nodes (empty hostlist)
+SwitchName=ibsw95 Switches=ibsw133,ibsw36,ibsw128,ibsw124,ibsw138,ibsw126,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw35,ibsw121,ibsw132,ibsw136,ibsw130,ibsw137,ibsw134,ibsw131,ibsw125
+#
+# IB switch no. 96: ibsw96 GUID: 0xf4521403000a7ba0 Description: MF0;IBB1-SW:SX6536/L07/U1
+#
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0x0002c90300e364e0  with 9 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c90300e35a60  with 9 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw96 has no attached nodes (empty hostlist)
+SwitchName=ibsw96 Switches=ibsw136,ibsw37,ibsw125,ibsw137,ibsw134,ibsw131,ibsw128,ibsw133,ibsw38,ibsw138,ibsw124,ibsw129,ibsw126,ibsw135,ibsw122,ibsw123,ibsw127,ibsw121,ibsw132,ibsw130
+#
+# IB switch no. 97: ibsw97 GUID: 0x0002c90300865be0 Description: MF0;IBB1-SW:SX6536/L06/U1
+#
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf4521403000dd040  with 9 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0xf4521403000dc940  with 8 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw97 has no attached nodes (empty hostlist)
+SwitchName=ibsw97 Switches=ibsw135,ibsw122,ibsw121,ibsw127,ibsw40,ibsw132,ibsw130,ibsw136,ibsw137,ibsw39,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129
+#
+# IB switch no. 98: ibsw98 GUID: 0xf4521403000a76c0 Description: MF0;IBB1-SW:SX6536/L05/U1
+#
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000dd2c0  with 8 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0xf4521403000dcb40  with 9 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Total number of links in this switch =  35
+# NOTICE: This switch ibsw98 has no attached nodes (empty hostlist)
+SwitchName=ibsw98 Switches=ibsw128,ibsw138,ibsw126,ibsw124,ibsw123,ibsw41,ibsw129,ibsw127,ibsw135,ibsw122,ibsw121,ibsw42,ibsw132,ibsw130,ibsw136,ibsw137,ibsw134,ibsw125,ibsw131,ibsw133
+#
+# IB switch no. 99: ibsw99 GUID: 0xf4521403000a7ea0 Description: MF0;IBB1-SW:SX6536/L04/U1
+#
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000dd3c0  with 9 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf4521403000dce40  with 9 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw99 has no attached nodes (empty hostlist)
+SwitchName=ibsw99 Switches=ibsw125,ibsw137,ibsw134,ibsw131,ibsw44,ibsw133,ibsw128,ibsw124,ibsw138,ibsw43,ibsw129,ibsw126,ibsw135,ibsw122,ibsw123,ibsw127,ibsw121,ibsw132,ibsw130,ibsw136
+#
+# IB switch no. 100: ibsw100 GUID: 0xf4521403000a7cc0 Description: MF0;IBB1-SW:SX6536/L03/U1
+#
+# Switch neighbor  0x0002c9030061db70  with 8 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf4521403000dd740  with 7 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Total number of links in this switch =  33
+# NOTICE: This switch ibsw100 has no attached nodes (empty hostlist)
+SwitchName=ibsw100 Switches=ibsw45,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw135,ibsw122,ibsw121,ibsw127,ibsw46,ibsw132,ibsw130,ibsw136,ibsw137
+#
+# IB switch no. 101: ibsw101 GUID: 0xf4521403000a7d20 Description: MF0;IBB1-SW:SX6536/L02/U1
+#
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0xf4521403000dcac0  with 8 links
+# Switch neighbor  0xf4521403000dd6c0  with 8 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw101 has no attached nodes (empty hostlist)
+SwitchName=ibsw101 Switches=ibsw121,ibsw127,ibsw132,ibsw130,ibsw136,ibsw137,ibsw48,ibsw47,ibsw125,ibsw134,ibsw131,ibsw128,ibsw133,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw135,ibsw122
+#
+# IB switch no. 102: ibsw102 GUID: 0xf4521403000a7b40 Description: MF0;IBB1-SW:SX6536/L01/U1
+#
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0x0002c9030090ec00  with 9 links
+# Switch neighbor  0xf4521403000dcbc0  with 9 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw102 has no attached nodes (empty hostlist)
+SwitchName=ibsw102 Switches=ibsw138,ibsw50,ibsw49,ibsw126,ibsw124,ibsw123,ibsw129,ibsw127,ibsw135,ibsw122,ibsw121,ibsw132,ibsw130,ibsw136,ibsw137,ibsw134,ibsw125,ibsw131,ibsw133,ibsw128
+#
+# IB switch no. 103: ibsw103 GUID: 0xf4521403000ea040 Description: MF0;IBB2-SW:SX6536/S18/U1
+#
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw103 has no attached nodes (empty hostlist)
+SwitchName=ibsw103 Switches=ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76
+#
+# IB switch no. 104: ibsw104 GUID: 0x0002c903008a6790 Description: MF0;IBB2-SW:SX6536/S17/U1
+#
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw104 has no attached nodes (empty hostlist)
+SwitchName=ibsw104 Switches=ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140
+#
+# IB switch no. 105: ibsw105 GUID: 0x0002c903008a6430 Description: MF0;IBB2-SW:SX6536/S16/U1
+#
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw105 has no attached nodes (empty hostlist)
+SwitchName=ibsw105 Switches=ibsw63,ibsw55,ibsw74,ibsw65,ibsw73,ibsw61,ibsw140,ibsw67,ibsw68,ibsw71,ibsw75,ibsw58,ibsw53,ibsw76,ibsw70,ibsw62,ibsw57,ibsw60,ibsw66,ibsw51,ibsw72,ibsw69,ibsw52,ibsw54,ibsw59,ibsw56,ibsw64
+#
+# IB switch no. 106: ibsw106 GUID: 0x0002c903008a68b0 Description: MF0;IBB2-SW:SX6536/S15/U1
+#
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw106 has no attached nodes (empty hostlist)
+SwitchName=ibsw106 Switches=ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66
+#
+# IB switch no. 107: ibsw107 GUID: 0x0002c903008346d0 Description: MF0;IBB2-SW:SX6536/S14/U1
+#
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw107 has no attached nodes (empty hostlist)
+SwitchName=ibsw107 Switches=ibsw53,ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75
+#
+# IB switch no. 108: ibsw108 GUID: 0x0002c903008a6310 Description: MF0;IBB2-SW:SX6536/S13/U1
+#
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw108 has no attached nodes (empty hostlist)
+SwitchName=ibsw108 Switches=ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65
+#
+# IB switch no. 109: ibsw109 GUID: 0x0002c903008a6730 Description: MF0;IBB2-SW:SX6536/S12/U1
+#
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw109 has no attached nodes (empty hostlist)
+SwitchName=ibsw109 Switches=ibsw72,ibsw64,ibsw52,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw58,ibsw53,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw69,ibsw51
+#
+# IB switch no. 110: ibsw110 GUID: 0x0002c903006d93b0 Description: MF0;IBB2-SW:SX6536/S11/U1
+#
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw110 has no attached nodes (empty hostlist)
+SwitchName=ibsw110 Switches=ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw58,ibsw53,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw69,ibsw51,ibsw72,ibsw64,ibsw52,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55
+#
+# IB switch no. 111: ibsw111 GUID: 0x0002c903008a5a10 Description: MF0;IBB2-SW:SX6536/S10/U1
+#
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw111 has no attached nodes (empty hostlist)
+SwitchName=ibsw111 Switches=ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51
+#
+# IB switch no. 112: ibsw112 GUID: 0x0002c90300834550 Description: MF0;IBB2-SW:SX6536/S09/U1
+#
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw112 has no attached nodes (empty hostlist)
+SwitchName=ibsw112 Switches=ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53
+#
+# IB switch no. 113: ibsw113 GUID: 0x0002c903008a5ad0 Description: MF0;IBB2-SW:SX6536/S08/U1
+#
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw113 has no attached nodes (empty hostlist)
+SwitchName=ibsw113 Switches=ibsw71,ibsw140,ibsw68,ibsw75,ibsw58,ibsw53,ibsw76,ibsw70,ibsw62,ibsw57,ibsw60,ibsw66,ibsw51,ibsw72,ibsw69,ibsw52,ibsw54,ibsw59,ibsw64,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw61,ibsw67
+#
+# IB switch no. 114: ibsw114 GUID: 0x0002c903008344f0 Description: MF0;IBB2-SW:SX6536/S07/U1
+#
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw114 has no attached nodes (empty hostlist)
+SwitchName=ibsw114 Switches=ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw58,ibsw53,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw69,ibsw52,ibsw51,ibsw72
+#
+# IB switch no. 115: ibsw115 GUID: 0x0002c90300824a70 Description: MF0;IBB2-SW:SX6536/S06/U1
+#
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw115 has no attached nodes (empty hostlist)
+SwitchName=ibsw115 Switches=ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76
+#
+# IB switch no. 116: ibsw116 GUID: 0x0002c9030085c3b0 Description: MF0;IBB2-SW:SX6536/S05/U1
+#
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw116 has no attached nodes (empty hostlist)
+SwitchName=ibsw116 Switches=ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140
+#
+# IB switch no. 117: ibsw117 GUID: 0x0002c903007d1360 Description: MF0;IBB2-SW:SX6536/S04/U1
+#
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw117 has no attached nodes (empty hostlist)
+SwitchName=ibsw117 Switches=ibsw63,ibsw55,ibsw74,ibsw65,ibsw73,ibsw61,ibsw140,ibsw67,ibsw68,ibsw71,ibsw75,ibsw58,ibsw53,ibsw76,ibsw70,ibsw62,ibsw57,ibsw60,ibsw66,ibsw51,ibsw72,ibsw69,ibsw52,ibsw54,ibsw59,ibsw56,ibsw64
+#
+# IB switch no. 118: ibsw118 GUID: 0x0002c90300834850 Description: MF0;IBB2-SW:SX6536/S03/U1
+#
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw118 has no attached nodes (empty hostlist)
+SwitchName=ibsw118 Switches=ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57
+#
+# IB switch no. 119: ibsw119 GUID: 0x0002c903008a59b0 Description: MF0;IBB2-SW:SX6536/S02/U1
+#
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw119 has no attached nodes (empty hostlist)
+SwitchName=ibsw119 Switches=ibsw58,ibsw76,ibsw62,ibsw70,ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53
+#
+# IB switch no. 120: ibsw120 GUID: 0xf45214030001d120 Description: MF0;IBB2-SW:SX6536/S01/U1
+#
+# Switch neighbor  0xf4521403000a7840  with 1 links
+# Switch neighbor  0x0002c90300864bc0  with 1 links
+# Switch neighbor  0xf45214030009b0e0  with 1 links
+# Switch neighbor  0xf45214030020a830  with 1 links
+# Switch neighbor  0x0002c90300864ce0  with 1 links
+# Switch neighbor  0xf45214030020ad10  with 1 links
+# Switch neighbor  0xf45214030009b560  with 1 links
+# Switch neighbor  0xf4521403000a78a0  with 1 links
+# Switch neighbor  0xf452140300207890  with 1 links
+# Switch neighbor  0xf45214030009b020  with 1 links
+# Switch neighbor  0x0002c90300865160  with 1 links
+# Switch neighbor  0xf4521403000a7660  with 1 links
+# Switch neighbor  0xf4521403000a7a20  with 1 links
+# Switch neighbor  0x0002c90300864c20  with 1 links
+# Switch neighbor  0x0002c90300865280  with 1 links
+# Switch neighbor  0xf4521403000a7780  with 1 links
+# Switch neighbor  0x0002c90300864d40  with 1 links
+# Switch neighbor  0xf45214030009b380  with 1 links
+# Switch neighbor  0x0002c903008651c0  with 1 links
+# Switch neighbor  0xf45214030009ae40  with 1 links
+# Switch neighbor  0xf45214030009b1a0  with 1 links
+# Switch neighbor  0xf4521403000a77e0  with 1 links
+# Switch neighbor  0xf45214030020a7d0  with 1 links
+# Switch neighbor  0xf45214030009b3e0  with 1 links
+# Switch neighbor  0xf4521403000a7600  with 1 links
+# Switch neighbor  0xf4521403000a7720  with 1 links
+# Switch neighbor  0xf45214030009b200  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw120 has no attached nodes (empty hostlist)
+SwitchName=ibsw120 Switches=ibsw60,ibsw66,ibsw57,ibsw51,ibsw69,ibsw52,ibsw72,ibsw64,ibsw54,ibsw59,ibsw56,ibsw74,ibsw63,ibsw65,ibsw55,ibsw73,ibsw67,ibsw61,ibsw140,ibsw68,ibsw71,ibsw75,ibsw53,ibsw58,ibsw76,ibsw62,ibsw70
+#
+# IB switch no. 121: ibsw121 GUID: 0xf45214030001d0c0 Description: MF0;IBB1-SW:SX6536/S18/U1
+#
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw121 has no attached nodes (empty hostlist)
+SwitchName=ibsw121 Switches=ibsw77,ibsw96,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw87,ibsw83,ibsw101,ibsw91,ibsw82,ibsw93,ibsw86,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw84,ibsw89
+#
+# IB switch no. 122: ibsw122 GUID: 0x0002c903008a6370 Description: MF0;IBB1-SW:SX6536/S17/U1
+#
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw122 has no attached nodes (empty hostlist)
+SwitchName=ibsw122 Switches=ibsw99,ibsw102,ibsw95,ibsw94,ibsw97,ibsw79,ibsw98,ibsw81,ibsw89,ibsw96,ibsw84,ibsw77,ibsw100,ibsw85,ibsw90,ibsw88,ibsw141,ibsw80,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92
+#
+# IB switch no. 123: ibsw123 GUID: 0xf45214030001d180 Description: MF0;IBB1-SW:SX6536/S16/U1
+#
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw123 has no attached nodes (empty hostlist)
+SwitchName=ibsw123 Switches=ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83
+#
+# IB switch no. 124: ibsw124 GUID: 0x0002c90300824410 Description: MF0;IBB1-SW:SX6536/S15/U1
+#
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw124 has no attached nodes (empty hostlist)
+SwitchName=ibsw124 Switches=ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100
+#
+# IB switch no. 125: ibsw125 GUID: 0x0002c903008a6850 Description: MF0;IBB1-SW:SX6536/S14/U1
+#
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw125 has no attached nodes (empty hostlist)
+SwitchName=ibsw125 Switches=ibsw79,ibsw98,ibsw81,ibsw84,ibsw89,ibsw77,ibsw96,ibsw85,ibsw100,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw91,ibsw87,ibsw83,ibsw101,ibsw93,ibsw82,ibsw92,ibsw86,ibsw95,ibsw94,ibsw99,ibsw97,ibsw102
+#
+# IB switch no. 126: ibsw126 GUID: 0xf45214030001d060 Description: MF0;IBB1-SW:SX6536/S13/U1
+#
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw126 has no attached nodes (empty hostlist)
+SwitchName=ibsw126 Switches=ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw97,ibsw79,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87
+#
+# IB switch no. 127: ibsw127 GUID: 0x0002c903008348b0 Description: MF0;IBB1-SW:SX6536/S12/U1
+#
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw127 has no attached nodes (empty hostlist)
+SwitchName=ibsw127 Switches=ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141
+#
+# IB switch no. 128: ibsw128 GUID: 0xf4521403000e9d40 Description: MF0;IBB1-SW:SX6536/S11/U1
+#
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw128 has no attached nodes (empty hostlist)
+SwitchName=ibsw128 Switches=ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97
+#
+# IB switch no. 129: ibsw129 GUID: 0xf4521403000ea0a0 Description: MF0;IBB1-SW:SX6536/S10/U1
+#
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw129 has no attached nodes (empty hostlist)
+SwitchName=ibsw129 Switches=ibsw92,ibsw99,ibsw86,ibsw102,ibsw95,ibsw94,ibsw97,ibsw79,ibsw89,ibsw96,ibsw98,ibsw81,ibsw84,ibsw77,ibsw100,ibsw85,ibsw90,ibsw88,ibsw141,ibsw80,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw82
+#
+# IB switch no. 130: ibsw130 GUID: 0x0002c903008a63d0 Description: MF0;IBB1-SW:SX6536/S09/U1
+#
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw130 has no attached nodes (empty hostlist)
+SwitchName=ibsw130 Switches=ibsw96,ibsw84,ibsw77,ibsw100,ibsw85,ibsw90,ibsw88,ibsw141,ibsw80,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw97,ibsw79,ibsw98,ibsw81,ibsw89
+#
+# IB switch no. 131: ibsw131 GUID: 0x0002c903006d9410 Description: MF0;IBB1-SW:SX6536/S08/U1
+#
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw131 has no attached nodes (empty hostlist)
+SwitchName=ibsw131 Switches=ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87
+#
+# IB switch no. 132: ibsw132 GUID: 0x0002c903006d94d0 Description: MF0;IBB1-SW:SX6536/S07/U1
+#
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw132 has no attached nodes (empty hostlist)
+SwitchName=ibsw132 Switches=ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78
+#
+# IB switch no. 133: ibsw133 GUID: 0x0002c903006ae3f0 Description: MF0;IBB1-SW:SX6536/S06/U1
+#
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw133 has no attached nodes (empty hostlist)
+SwitchName=ibsw133 Switches=ibsw96,ibsw85,ibsw100,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw87,ibsw83,ibsw101,ibsw91,ibsw93,ibsw82,ibsw86,ibsw92,ibsw99,ibsw97,ibsw102,ibsw95,ibsw94,ibsw79,ibsw98,ibsw81,ibsw84,ibsw89,ibsw77
+#
+# IB switch no. 134: ibsw134 GUID: 0x0002c90300824cb0 Description: MF0;IBB1-SW:SX6536/S05/U1
+#
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw134 has no attached nodes (empty hostlist)
+SwitchName=ibsw134 Switches=ibsw102,ibsw95,ibsw94,ibsw97,ibsw79,ibsw98,ibsw81,ibsw89,ibsw96,ibsw84,ibsw77,ibsw100,ibsw85,ibsw90,ibsw88,ibsw141,ibsw80,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99
+#
+# IB switch no. 135: ibsw135 GUID: 0x0002c903008a66d0 Description: MF0;IBB1-SW:SX6536/S04/U1
+#
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw135 has no attached nodes (empty hostlist)
+SwitchName=ibsw135 Switches=ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83
+#
+# IB switch no. 136: ibsw136 GUID: 0xe41d2d0300beedd0 Description: MF0;IBB1-SW:SX6536/S03/U1
+#
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw136 has no attached nodes (empty hostlist)
+SwitchName=ibsw136 Switches=ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87,ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw79,ibsw97,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100
+#
+# IB switch no. 137: ibsw137 GUID: 0xf45214030001d000 Description: MF0;IBB1-SW:SX6536/S02/U1
+#
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw137 has no attached nodes (empty hostlist)
+SwitchName=ibsw137 Switches=ibsw79,ibsw89,ibsw96,ibsw98,ibsw81,ibsw84,ibsw77,ibsw100,ibsw85,ibsw90,ibsw141,ibsw80,ibsw88,ibsw78,ibsw101,ibsw91,ibsw87,ibsw83,ibsw93,ibsw82,ibsw92,ibsw99,ibsw86,ibsw102,ibsw95,ibsw94,ibsw97
+#
+# IB switch no. 138: ibsw138 GUID: 0x0002c903008a5a70 Description: MF0;IBB1-SW:SX6536/S01/U1
+#
+# Switch neighbor  0x0002c90300865b80  with 1 links
+# Switch neighbor  0xf4521403000a79c0  with 1 links
+# Switch neighbor  0xf45214030009b4a0  with 1 links
+# Switch neighbor  0x0002c90300865820  with 1 links
+# Switch neighbor  0xf4521403000a7ea0  with 1 links
+# Switch neighbor  0xf4521403000a7b40  with 1 links
+# Switch neighbor  0x0002c90300865940  with 1 links
+# Switch neighbor  0x0002c9030084d2d0  with 1 links
+# Switch neighbor  0x0002c90300865be0  with 1 links
+# Switch neighbor  0xf45214030020a770  with 1 links
+# Switch neighbor  0xf4521403000a76c0  with 1 links
+# Switch neighbor  0xf4521403000a7900  with 1 links
+# Switch neighbor  0xf4521403000a7d80  with 1 links
+# Switch neighbor  0xf45214030020ad70  with 1 links
+# Switch neighbor  0xf4521403000a7ba0  with 1 links
+# Switch neighbor  0xf45214030009b500  with 1 links
+# Switch neighbor  0xf4521403000a7cc0  with 1 links
+# Switch neighbor  0xf45214030009b080  with 1 links
+# Switch neighbor  0xf45214030020acb0  with 1 links
+# Switch neighbor  0xf4521403000a7de0  with 1 links
+# Switch neighbor  0xf4521403000a7a80  with 1 links
+# Switch neighbor  0x0002c90300865220  with 1 links
+# Switch neighbor  0xf45214030020a710  with 1 links
+# Switch neighbor  0xf4521403000a7ae0  with 1 links
+# Switch neighbor  0xf4521403000a7d20  with 1 links
+# Switch neighbor  0x0002c903008658e0  with 1 links
+# Switch neighbor  0xf45214030009b440  with 1 links
+# Total number of links in this switch =  27
+# NOTICE: This switch ibsw138 has no attached nodes (empty hostlist)
+SwitchName=ibsw138 Switches=ibsw93,ibsw86,ibsw82,ibsw92,ibsw99,ibsw102,ibsw95,ibsw94,ibsw97,ibsw79,ibsw98,ibsw81,ibsw89,ibsw77,ibsw96,ibsw84,ibsw100,ibsw85,ibsw80,ibsw90,ibsw88,ibsw141,ibsw78,ibsw83,ibsw101,ibsw91,ibsw87
+#
+# IB switch no. 139: ibsw139 GUID: 0xf4521403002b4f80 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c903008651c0  with 9 links
+# Switch neighbor  0x0002c90300865220  with 8 links
+# Total number of links in this switch =  35
+SwitchName=ibsw139 Nodes=hpc786,hpc785,hpc784,hpc783,hpc782,hpc781,hpc780,hpc779,hpc778,hpc777,hpc776,hpc775,hpc774,hpc773,hpc772,hpc771,hpc770,hpc769
+#
+# IB switch no. 140: ibsw140 GUID: 0x0002c903008651c0 Description: MF0;IBB2-SW:SX6536/L23/U1
+#
+# Switch neighbor  0x0002c9030085c3b0  with 1 links
+# Switch neighbor  0x0002c90300834850  with 1 links
+# Switch neighbor  0x0002c903008a6790  with 1 links
+# Switch neighbor  0x0002c903007d1360  with 1 links
+# Switch neighbor  0x0002c903008a5ad0  with 1 links
+# Switch neighbor  0x0002c90300834550  with 1 links
+# Switch neighbor  0xf4521403000dd9c0  with 9 links
+# Switch neighbor  0x0002c903006d93b0  with 1 links
+# Switch neighbor  0x0002c903008a59b0  with 1 links
+# Switch neighbor  0x0002c903008a5a10  with 1 links
+# Switch neighbor  0x0002c903008a6730  with 1 links
+# Switch neighbor  0x0002c903008346d0  with 1 links
+# Switch neighbor  0xf4521403002b4f80  with 9 links
+# Switch neighbor  0x0002c903008a6310  with 1 links
+# Switch neighbor  0xf45214030001d120  with 1 links
+# Switch neighbor  0x0002c90300824a70  with 1 links
+# Switch neighbor  0x0002c903008a6430  with 1 links
+# Switch neighbor  0x0002c903008a68b0  with 1 links
+# Switch neighbor  0xf4521403000ea040  with 1 links
+# Switch neighbor  0x0002c903008344f0  with 1 links
+# Total number of links in this switch =  36
+# NOTICE: This switch ibsw140 has no attached nodes (empty hostlist)
+SwitchName=ibsw140 Switches=ibsw116,ibsw118,ibsw104,ibsw117,ibsw113,ibsw112,ibsw142,ibsw110,ibsw119,ibsw111,ibsw109,ibsw107,ibsw139,ibsw108,ibsw120,ibsw115,ibsw105,ibsw106,ibsw103,ibsw114
+#
+# IB switch no. 141: ibsw141 GUID: 0x0002c90300865220 Description: MF0;IBB1-SW:SX6536/L23/U1
+#
+# Switch neighbor  0x0002c90300824cb0  with 1 links
+# Switch neighbor  0xf4521403002b4f80  with 8 links
+# Switch neighbor  0x0002c903006d9410  with 1 links
+# Switch neighbor  0xf4521403000e9d40  with 1 links
+# Switch neighbor  0x0002c903006ae3f0  with 1 links
+# Switch neighbor  0x0002c903008a5a70  with 1 links
+# Switch neighbor  0xf45214030001d060  with 1 links
+# Switch neighbor  0x0002c90300824410  with 1 links
+# Switch neighbor  0xf45214030001d180  with 1 links
+# Switch neighbor  0xf4521403000ea0a0  with 1 links
+# Switch neighbor  0x0002c903008a66d0  with 1 links
+# Switch neighbor  0x0002c903008a6370  with 1 links
+# Switch neighbor  0xf45214030001d0c0  with 1 links
+# Switch neighbor  0x0002c903008348b0  with 1 links
+# Switch neighbor  0xf4521403000dd9c0  with 8 links
+# Switch neighbor  0x0002c903006d94d0  with 1 links
+# Switch neighbor  0x0002c903008a63d0  with 1 links
+# Switch neighbor  0xe41d2d0300beedd0  with 1 links
+# Switch neighbor  0xf45214030001d000  with 1 links
+# Switch neighbor  0x0002c903008a6850  with 1 links
+# Total number of links in this switch =  34
+# NOTICE: This switch ibsw141 has no attached nodes (empty hostlist)
+SwitchName=ibsw141 Switches=ibsw134,ibsw139,ibsw131,ibsw128,ibsw133,ibsw138,ibsw126,ibsw124,ibsw123,ibsw129,ibsw135,ibsw122,ibsw121,ibsw127,ibsw142,ibsw132,ibsw130,ibsw136,ibsw137,ibsw125
+#
+# IB switch no. 142: ibsw142 GUID: 0xf4521403000dd9c0 Description: SwitchX -  Mellanox Technologies
+#
+# Switch neighbor  0x0002c90300865220  with 8 links
+# Switch neighbor  CA  with 18 links
+# Switch neighbor  0x0002c903008651c0  with 9 links
+# Total number of links in this switch =  35
+SwitchName=ibsw142 Nodes=un01,hm005,hm004,hm003,hm002,hm001,un06,un05,un04,un03,un02,oss1,oss2,oss3,oss4,mds2,mds1,hn2
