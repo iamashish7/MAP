@@ -133,17 +133,17 @@
 ,"206425.mgmt03": { "Username" :"ssvivek", "Queue" :"large", "Jobname" :"2order", "Nodes" :"16", "Task" :"128", "RequiredTime" :"72:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206727.mgmt03": { "Username" :"bhavanap", "Queue" :"medium", "Jobname" :"6.1", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"62:36", "Exec_host" :["cn218","cn207","cn278","cn253"]}
+, "Elapsed_Time" :"64:25", "Exec_host" :["cn218","cn207","cn278","cn253"]}
 ,"206728.mgmt03": { "Username" :"bhavanap", "Queue" :"large", "Jobname" :"6.0", "Nodes" :"16", "Task" :"128", "RequiredTime" :"72:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206729.mgmt03": { "Username" :"bhavanap", "Queue" :"large", "Jobname" :"5.9", "Nodes" :"16", "Task" :"128", "RequiredTime" :"72:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206734.mgmt03": { "Username" :"pkpandey", "Queue" :"mediumsb", "Jobname" :"5.8", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"82:45", "Exec_host" :["cn404","cn410","cn411","cn375"]}
+, "Elapsed_Time" :"84:33", "Exec_host" :["cn404","cn410","cn411","cn375"]}
 ,"206735.mgmt03": { "Username" :"pkpandey", "Queue" :"mediumsb", "Jobname" :"5.8", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206940.mgmt03": { "Username" :"kashishm", "Queue" :"smallsb", "Jobname" :"6.7", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"57:07", "Exec_host" :["cn424","cn449"]}
+, "Elapsed_Time" :"58:54", "Exec_host" :["cn424","cn449"]}
 ,"206959[].mgmt03": { "Username" :"prasanna", "Queue" :"large", "Jobname" :"3D_LNSE_W2", "Nodes" :"32", "Task" :"256", "RequiredTime" :"72:00", "State" :"B"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206966[].mgmt03": { "Username" :"prasanna", "Queue" :"smallsb", "Jobname" :"S32", "Nodes" :"2", "Task" :"32", "RequiredTime" :"120:0", "State" :"B"
@@ -173,89 +173,95 @@
 ,"206988[].mgmt03": { "Username" :"mbraj", "Queue" :"smallsb", "Jobname" :"S32", "Nodes" :"2", "Task" :"32", "RequiredTime" :"120:0", "State" :"B"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206991.mgmt03": { "Username" :"pkpandey", "Queue" :"medium", "Jobname" :"5.4", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"82:05", "Exec_host" :["cn243","cn251","cn233","cn283"]}
+, "Elapsed_Time" :"83:52", "Exec_host" :["cn243","cn251","cn233","cn283"]}
 ,"206992.mgmt03": { "Username" :"pkpandey", "Queue" :"medium", "Jobname" :"5.4", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206993.mgmt03": { "Username" :"pkpandey", "Queue" :"small", "Jobname" :"5.3", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"81:57", "Exec_host" :["cn296","cn339","cn317","cn331"]}
+, "Elapsed_Time" :"83:44", "Exec_host" :["cn296","cn339","cn317","cn331"]}
 ,"206994.mgmt03": { "Username" :"pkpandey", "Queue" :"small", "Jobname" :"5.3", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206996.mgmt03": { "Username" :"pkpandey", "Queue" :"smallsb", "Jobname" :"5.2", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"81:49", "Exec_host" :["cn433","cn457"]}
+, "Elapsed_Time" :"83:37", "Exec_host" :["cn433","cn457"]}
 ,"206997.mgmt03": { "Username" :"pkpandey", "Queue" :"smallsb", "Jobname" :"5.2", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"206999.mgmt03": { "Username" :"himkv", "Queue" :"medium", "Jobname" :"6.3", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"81:43", "Exec_host" :["cn222","cn231","cn215","cn236"]}
+, "Elapsed_Time" :"83:32", "Exec_host" :["cn222","cn231","cn215","cn236"]}
 ,"207014.mgmt03": { "Username" :"himkv", "Queue" :"small", "Jobname" :"4.7", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"81:21", "Exec_host" :["cn304","cn293","cn295","cn332"]}
+, "Elapsed_Time" :"83:09", "Exec_host" :["cn304","cn293","cn295","cn332"]}
 ,"207015.mgmt03": { "Username" :"himkv", "Queue" :"small", "Jobname" :"4.7", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207016.mgmt03": { "Username" :"himkv", "Queue" :"mediumsb", "Jobname" :"4.6", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"68:17", "Exec_host" :["cn409","cn372","cn388","cn398"]}
+, "Elapsed_Time" :"70:04", "Exec_host" :["cn409","cn372","cn388","cn398"]}
 ,"207017.mgmt03": { "Username" :"himkv", "Queue" :"mediumsb", "Jobname" :"4.6", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207018.mgmt03": { "Username" :"himkv", "Queue" :"smallsb", "Jobname" :"4.5", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"81:11", "Exec_host" :["cn418","cn445"]}
+, "Elapsed_Time" :"82:57", "Exec_host" :["cn418","cn445"]}
 ,"207019.mgmt03": { "Username" :"himkv", "Queue" :"smallsb", "Jobname" :"4.5", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207020.mgmt03": { "Username" :"kashishm", "Queue" :"mediumsb", "Jobname" :"4", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"09:27", "Exec_host" :["cn386","cn401","cn407","cn371"]}
+, "Elapsed_Time" :"11:15", "Exec_host" :["cn386","cn401","cn407","cn371"]}
 ,"207021.mgmt03": { "Username" :"banshid", "Queue" :"small", "Jobname" :"5.7", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"77:13", "Exec_host" :["cn311","cn309","cn330","cn319"]}
+, "Elapsed_Time" :"79:01", "Exec_host" :["cn311","cn309","cn330","cn319"]}
 ,"207024.mgmt03": { "Username" :"rmalik", "Queue" :"small", "Jobname" :"4.8", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"76:48", "Exec_host" :["cn326","cn297","cn287","cn318"]}
+, "Elapsed_Time" :"78:37", "Exec_host" :["cn326","cn297","cn287","cn318"]}
 ,"207025.mgmt03": { "Username" :"rmalik", "Queue" :"small", "Jobname" :"4.8", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207026.mgmt03": { "Username" :"rmalik", "Queue" :"medium", "Jobname" :"4.9", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"73:29", "Exec_host" :["cn212","cn261","cn249","cn257"]}
+, "Elapsed_Time" :"75:16", "Exec_host" :["cn212","cn261","cn249","cn257"]}
 ,"207027.mgmt03": { "Username" :"rmalik", "Queue" :"medium", "Jobname" :"4.9", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207028.mgmt03": { "Username" :"rmalik", "Queue" :"mediumsb", "Jobname" :"5.0", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"68:17", "Exec_host" :["cn409","cn372","cn388","cn398"]}
+, "Elapsed_Time" :"70:04", "Exec_host" :["cn409","cn372","cn388","cn398"]}
 ,"207029.mgmt03": { "Username" :"rmalik", "Queue" :"mediumsb", "Jobname" :"5.0", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207035.mgmt03": { "Username" :"rshreya", "Queue" :"medium", "Jobname" :"5.9", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"58:50", "Exec_host" :["cn219","cn252","cn185","cn224"]}
+, "Elapsed_Time" :"60:38", "Exec_host" :["cn219","cn252","cn185","cn224"]}
 ,"207044.mgmt03": { "Username" :"dgautam", "Queue" :"small", "Jobname" :"5.3", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"58:05", "Exec_host" :["cn291","cn340","cn286","cn316"]}
+, "Elapsed_Time" :"59:53", "Exec_host" :["cn291","cn340","cn286","cn316"]}
 ,"207045.mgmt03": { "Username" :"dgautam", "Queue" :"small", "Jobname" :"5.3", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207046.mgmt03": { "Username" :"dgautam", "Queue" :"medium", "Jobname" :"5.2", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"58:01", "Exec_host" :["cn264","cn191","cn194","cn275"]}
+, "Elapsed_Time" :"59:50", "Exec_host" :["cn264","cn191","cn194","cn275"]}
 ,"207047.mgmt03": { "Username" :"dgautam", "Queue" :"medium", "Jobname" :"5.2", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207050.mgmt03": { "Username" :"dgautam", "Queue" :"smallsb", "Jobname" :"5.1", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"57:55", "Exec_host" :["cn416","cn430"]}
+, "Elapsed_Time" :"59:42", "Exec_host" :["cn416","cn430"]}
 ,"207051.mgmt03": { "Username" :"dgautam", "Queue" :"smallsb", "Jobname" :"5.1", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207060.mgmt03": { "Username" :"kanya", "Queue" :"smallsb", "Jobname" :"4.4", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"57:05", "Exec_host" :["cn424","cn449"]}
+, "Elapsed_Time" :"58:52", "Exec_host" :["cn424","cn449"]}
 ,"207061.mgmt03": { "Username" :"kanya", "Queue" :"smallsb", "Jobname" :"4.4", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207066.mgmt03": { "Username" :"agaur", "Queue" :"mediumsb", "Jobname" :"CNT-trans", "Nodes" :"4", "Task" :"64", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"47:41", "Exec_host" :["cn382","cn396","cn399","cn381"]}
+, "Elapsed_Time" :"49:28", "Exec_host" :["cn382","cn396","cn399","cn381"]}
 ,"207067.mgmt03": { "Username" :"kmashok", "Queue" :"smallsb", "Jobname" :"PS-71", "Nodes" :"2", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"47:36", "Exec_host" :["cn453","cn440"]}
+, "Elapsed_Time" :"49:25", "Exec_host" :["cn453","cn440"]}
 ,"207068.mgmt03": { "Username" :"kmashok", "Queue" :"mediumsb", "Jobname" :"PS-2", "Nodes" :"6", "Task" :"96", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"47:35", "Exec_host" :["cn384","cn403","cn406","cn383","cn412","cn413"]}
+, "Elapsed_Time" :"49:23", "Exec_host" :["cn384","cn403","cn406","cn383","cn412","cn413"]}
 ,"207069.mgmt03": { "Username" :"kmashok", "Queue" :"mediumsb", "Jobname" :"PS-83", "Nodes" :"6", "Task" :"96", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207070.mgmt03": { "Username" :"kmashok", "Queue" :"small", "Jobname" :"PS-101", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"44:11", "Exec_host" :["cn335","cn305","cn306","cn308"]}
+, "Elapsed_Time" :"46:00", "Exec_host" :["cn335","cn305","cn306","cn308"]}
 ,"207071.mgmt03": { "Username" :"kmashok", "Queue" :"medium", "Jobname" :"PS-11", "Nodes" :"12", "Task" :"96", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207073.mgmt03": { "Username" :"kmashok", "Queue" :"medium", "Jobname" :"PS-4", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"47:19", "Exec_host" :["cn268","cn192","cn214","cn202"]}
+, "Elapsed_Time" :"49:07", "Exec_host" :["cn268","cn192","cn214","cn202"]}
 ,"207074.mgmt03": { "Username" :"kmashok", "Queue" :"large", "Jobname" :"PS-14", "Nodes" :"32", "Task" :"256", "RequiredTime" :"72:00", "State" :"R"
-, "Elapsed_Time" :"20:10", "Exec_host" :["cn176","cn083","cn108","cn150","cn002","cn043","cn112","cn122","cn139","cn161","cn018","cn030","cn064","cn082","cn087","cn099","cn162","cn034","cn041","cn100","cn121","cn165","cn037","cn048","cn125","cn149","cn005","cn021","cn028","cn042","cn060","cn061"]}
+, "Elapsed_Time" :"21:59", "Exec_host" :["cn176","cn083","cn108","cn150","cn002","cn043","cn112","cn122","cn139","cn161","cn018","cn030","cn064","cn082","cn087","cn099","cn162","cn034","cn041","cn100","cn121","cn165","cn037","cn048","cn125","cn149","cn005","cn021","cn028","cn042","cn060","cn061"]}
 ,"207076.mgmt03": { "Username" :"kmashok", "Queue" :"smallsb", "Jobname" :"PS-181", "Nodes" :"2", "Task" :"32", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207080.mgmt03": { "Username" :"kmashok", "Queue" :"small", "Jobname" :"PS-102", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"207083.mgmt03": { "Username" :"harshi", "Queue" :"mediumsb", "Jobname" :"d-3.0_T", "Nodes" :"4", "Task" :"64", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"35:26", "Exec_host" :["cn387","cn390","cn395","cn408"]}
+, "Elapsed_Time" :"37:15", "Exec_host" :["cn387","cn390","cn395","cn408"]}
 ,"207084.mgmt03": { "Username" :"abhisidd", "Queue" :"smallsb", "Jobname" :"M11", "Nodes" :"2", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"35:11", "Exec_host" :["cn422","cn438"]}
+, "Elapsed_Time" :"37:00", "Exec_host" :["cn422","cn438"]}
 ,"207094.mgmt03": { "Username" :"beno", "Queue" :"small", "Jobname" :"Au_20atoms", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"04:19", "Exec_host" :["cn285","cn337","cn288","cn328"]}
+, "Elapsed_Time" :"06:07", "Exec_host" :["cn285","cn337","cn288","cn328"]}
+,"207095.mgmt03": { "Username" :"bhawan", "Queue" :"small", "Jobname" :"case_10k.d", "Nodes" :"4", "Task" :"32", "RequiredTime" :"120:0", "State" :"R"
+, "Elapsed_Time" :"00:16", "Exec_host" :["cn290","cn329","cn312","cn292"]}
+,"207096.mgmt03": { "Username" :"bhawan", "Queue" :"medium", "Jobname" :"case_20k.d", "Nodes" :"4", "Task" :"32", "RequiredTime" :"96:00", "State" :"R"
+, "Elapsed_Time" :"00:16", "Exec_host" :["cn267","cn196","cn227","cn238"]}
+,"207097.mgmt03": { "Username" :"bhawan", "Queue" :"small", "Jobname" :"case_30k.d", "Nodes" :"2", "Task" :"16", "RequiredTime" :"120:0", "State" :"Q"
+, "Elapsed_Time" :"--", "Exec_host" :[]}
 }
