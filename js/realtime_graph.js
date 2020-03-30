@@ -1,10 +1,10 @@
 function drawDonutChart(data, id, text) {
-    var thickness = screen.width / 80;
+    var thickness = screen.width / 65;
     
-    var width = screen.width / 4 - 30;
-    var widthPie = screen.width / 8 - 30;
-    var height = screen.height / 4 - 30;
-    var radius = Math.min(widthPie, height) / 2.3;
+    var width = screen.width / 4 - 20;
+    var widthPie = screen.width / 8 - 10;
+    var height = screen.height / 4;
+    var radius = Math.min(widthPie, height) / 2.2;
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
     var svg = d3.select("#" + id)
@@ -19,7 +19,7 @@ function drawDonutChart(data, id, text) {
         .attr("x", (width / 2))             
         .attr("y", 20)
         .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
+        .style("font-size", "20px") 
         .text("Jobs Running Status");
     var arc = d3.arc()
         .innerRadius(radius - thickness)
@@ -54,7 +54,7 @@ function drawDonutChart(data, id, text) {
                 .attr("class", "name-text")
                 .text(d.data.jobid)
                 .attr('text-anchor', 'left')
-                .attr('dx', '0em')
+                .attr('dx', '0.5em')
                 .style('font-size', screen.width / 120)
                 .attr('dy', '-1.2em');
 
@@ -71,7 +71,7 @@ function drawDonutChart(data, id, text) {
                 .attr("class", "value-text")
                 .text(d.data.nodes)
                 .attr('text-anchor', 'left')
-                .attr('dx', '0.5em')
+                .attr('dx', '1em')
                 .style('font-size', screen.width / 120)
                 .attr('dy', '.6em');
 
@@ -88,7 +88,7 @@ function drawDonutChart(data, id, text) {
                 .attr("class", "name-text")
                 .text(d.data.queue)
                 .attr('text-anchor', 'left')
-                .attr('dx', '0.5em')
+                .attr('dx', '1.2em')
                 .style('font-size', screen.width / 120)
                 .attr('dy', '2.4em');
 
@@ -105,7 +105,7 @@ function drawDonutChart(data, id, text) {
                 .attr("class", "name-text")
                 .text(d.data.rtime)
                 .attr('text-anchor', 'left')
-                .attr('dx', '4em')
+                .attr('dx', '5.2em')
                 .style('font-size', screen.width / 120)
                 .attr('dy', '4.2em');
 
@@ -123,7 +123,7 @@ function drawDonutChart(data, id, text) {
                 .text(d.data.wtime)
                 .attr('text-anchor', 'left')
                 .style('font-size', screen.width / 120)
-                .attr('dx', '1.7em')
+                .attr('dx', '3em')
                 .attr('dy', '6em');
 
         })
@@ -235,3 +235,68 @@ function drawBar(data, ID, title) {
 
 }
 
+function drawBar2(data, ID, title) {
+    
+    var svgWidth = (3*screen.width)/8.1, svgHeight = (3*screen.height)/11;
+    var margin = { top: 20, right: 1, bottom: 20, left: 100 };
+    var width = svgWidth - margin.left - margin.right;
+    var height = svgHeight - margin.top - margin.bottom;
+
+    // set the ranges
+    var y = d3.scaleBand().range([height, 0]).padding(0.5);
+    var x = d3.scaleLinear().range([0, width]);
+    var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+            
+    // append the svg object to the body of the page
+    // append a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("#" + ID).append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", 
+            "translate(" + margin.left + "," + margin.top + ")");
+    
+    // set title
+    svg.append("text")
+        .attr("x", (svgWidth / 2))             
+        .attr("y", (margin.top / 4))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "20px") 
+        .text(title);
+
+    // Scale the range of the data in the domains
+    x.domain([0, 1.1*d3.max(data, function(d){ return d.nodes; })])
+    y.domain(data.map(function(d) { return d.user; }));
+
+    // append the rectangles for the bar chart
+    svg.selectAll(".bar")
+        .data(data)
+        .enter().append("rect")
+        .attr("class", "bar")
+        //.attr("x", function(d) { return x(d.sales); })
+        .attr("width", function(d) {return x(d.nodes); } )
+        .attr("y", function(d) { return y(d.user); })
+        .attr("height", y.bandwidth())
+        .attr("fill", function (d){ return colorScale(d.user); });
+
+    svg.selectAll('.label')
+        .data(data)
+        .enter()
+        .append('text')
+        .attr('class', 'label')
+        .attr('alignment-baseline', 'middle')
+        .attr('x', function(d) { return x(d.nodes) + 5;})
+        .attr('y', function(d) { return y(d.user) + y.bandwidth()/1.5; })
+        .style('font-size', '14px')
+        .style('font-weight', 'bold')
+        .text(function(d) { return d.nodes;});
+    // add the x Axis
+    // svg.append("g")
+    //     .attr("transform", "translate(0," + height + ")")
+    //     .call(d3.axisBottom(x));
+
+    // add the y Axis
+    svg.append("g")
+        .call(d3.axisLeft(y));
+}

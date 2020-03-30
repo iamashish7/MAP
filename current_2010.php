@@ -34,7 +34,7 @@
             border-style: solid;
             border-color:#D3D3D3;
 
-            width: 75%;
+            width: 37.5%;
         }
 	    #chart_3{
             border-style: solid;
@@ -53,6 +53,12 @@
             border-color:#D3D3D3;
 
             width: 100%;
+        }
+        #chart_6{
+            border-style: solid;
+            border-color:#D3D3D3;
+
+            width: 37.5%;
         }
         tr {
             //border-style: solid;
@@ -107,15 +113,16 @@
     <div class="container-fluid">
         <table>
             <tr>
-                <td id="chart_1" colspan='1'></td>
+                <td id="chart_1" colspan='2'></td>
                 <td id="chart_2" colspan='3'></td>
+                <td id="chart_6" colspan='3'></td>
             </tr>
             <tr>
-                <td id="chart_3" colspan='2'></td>
-                <td id="chart_4" colspan='2'></td>
+                <td id="chart_3" colspan='4'></td>
+                <td id="chart_4" colspan='4'></td>
             </tr>
             <tr>
-                <td id="chart_5" colspan='4'></td>
+                <td id="chart_5" colspan='8'></td>
             </tr>
         </table>
     </div>
