@@ -9,10 +9,13 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script src="js/d3.v4.min.js"></script>
     <script src="js/d3.tip.v0.6.3.js"></script>
+    <script src="js/UserProfile.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <style>
-                
+       .text-bold{
+           font-weight:bold;
+       }         
 </style>
 <body>
 
@@ -53,21 +56,34 @@
         </form>
         <br>
         <div id='chart_area' class="col-6"></div>
-        <table id='userData' class="col-6">
+        <table id='userData' class="table table-striped col-6">
+            <tr>
+                <td class='text-bold'> Most used queue </td>
+                <td id='muq'></td>
+            </tr>
+            <tr>
+            <tr>
+                <td class='text-bold'> Average wait-time faced </td>
+                <td id='avgwtime'></td>
+            </tr>
+            </tr>
         </table>
     </div>
 </body>
 <script type="text/javascript">
     $(document).ready(function () {
+        console.log("here-1");
     	$("#submit-btn").click(function(event){
+            console.log("here-2");
             var userId = $("#user").val();
+            console.log(userId);
             //$("#chart1").empty();
             $.ajax({
                 url:"GetUserProp.php",
                 method:"POST",
                 data:{user:userId},
                 success:function(returnData) {
-                    fillUserTable(returnData);
+                    fillUserTable(returnData.data);
                 },
                 error:function(err) {
                     console.log(err);
