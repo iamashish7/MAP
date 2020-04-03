@@ -63,8 +63,8 @@ function plotSpiderChart(data,data2,ID,uid){
     var mycfg = {
         w: w,
         h: h,
-        maxValue: 1,
-        levels: 10,
+        maxValue: 0.2,
+        levels: 5,
         ExtraWidthX: 300
     }
 
