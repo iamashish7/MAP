@@ -6,10 +6,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!--<link href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css" rel="stylesheet"
         media="screen">-->
-    <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
+    <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     
     <script src="js/tabsfunc.js"></script>
     <script src="js/plotEdges.js"></script>
@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
     <link rel="stylesheet" href="myStyleSheet.css">
-    <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
-    <script src="//cdn.datatables.net/plug-ins/1.10.20/features/pageResize/dataTables.pageResize.min.js" ></script>
+    <!-- <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="//cdn.datatables.net/plug-ins/1.10.20/features/pageResize/dataTables.pageResize.min.js" ></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -175,22 +175,22 @@
     }
 
     .th {
-        padding: 1px;
-        font-size: small;
+        padding: 0px;
+        font-size: 0.8vw;
 
     }
 
-    td.highlight {
+    /* td.highlight {
         font-weight: bold;
         color: blue;
-    }
+    } */
 
-    .header img {
+    /* .header img {
         float: left;
         width: 100px;
         height: 100px;
         background: #555;
-    }
+    } */
 
     #tooltip {
         background-color: white;
@@ -223,7 +223,7 @@
     }
 
     .td {
-        padding: 8px;
+        padding: 0.45vw; /* control the size of grid boxes */
         margin: 0;
         border: 1px solid;
     }
@@ -309,10 +309,12 @@
     .GRID{
         display: none;
     }
+    td.child{
+        text-align: left;
+    }
 </style>
 
 <body>
-
     <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">HPC 2010</a>
@@ -388,26 +390,6 @@
                         <a class="nav-link nav-link-font-color" href="#" onclick="opentable(event, 'hold')">Hold Jobs</a>
                     </li>
                 </ul>
-                <!-- <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
-            
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar2">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="opentable(event,'running')">Running Jobs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="opentable(event, 'queue')">Queued Jobs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" onclick="opentable(event, 'hold')">Hold Jobs</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav> -->
                 <div id="tables">
                     <div id="Running" class="tabcontent">
                         <table id="running" class="datatable td-limit table table-striped table-hover dt-responsive display nowrap"
@@ -478,6 +460,7 @@
                     table.rows().iterator( 'row', function ( context, index ) {
                         if($( this.row( index ).node() ).hasClass( 'selected' )){
                             var d2 = table.row(index).data()[7].split(', ');
+                            table.row(index).child.hide();
                             remove_edges(sig,d2);
                         }
                     } );
