@@ -264,8 +264,8 @@ function drawChart2(data, ID, minn, maxx) {
     g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x).ticks(months).tickFormat(d3.timeFormat("%b'%y")));
     //g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x).ticks(7).tickFormat(d3.timeFormat("%b'%y")));
     g.append("g").attr("class", "text2").call(d3.axisLeft(y).tickValues([100,250,500,750,1000,2500,5000]).tickFormat(function (d) { return formatTick(d); }));
-    g.append("path").datum(data).attr("fill", "none").attr("stroke", "red").attr("stroke-linejoin", "round").attr("stroke-linecap", "round").attr("stroke-width", 1.5).attr("d", line);
-    g.append("path").data([data]).attr("fill", "none").attr("stroke", "green").attr("stroke-linejoin", "round").attr("stroke-linecap", "round").attr("stroke-width", 1.5).attr("d", line2);
+    g.append("path").datum(data).attr("fill", "none").attr("stroke", "green").attr("stroke-linejoin", "round").attr("stroke-linecap", "round").attr("stroke-width", 1.5).attr("d", line);
+    g.append("path").data([data]).attr("fill", "none").attr("stroke", "red").attr("stroke-linejoin", "round").attr("stroke-linecap", "round").attr("stroke-width", 1.5).attr("d", line2);
 
     //text label for x axis
     g.append("text").attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight - margin.top - 20) + ")").attr("dy", "0.5em").style("text-anchor", "middle").text("Timestamp");

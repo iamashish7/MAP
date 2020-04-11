@@ -370,11 +370,12 @@
                 var fromDate = $("#from").val().split("/").reverse().join("-");
                 $("#chart1").empty();
                 $.ajax({
-                    url:"actionswf.php",
+                    url:"analyzer_get_data.php",
                     method:"POST",
                     data:{to:toDate,from:fromDate,chart:chartId,db:dbName},
                     success:function(returnData){
                         console.log("Data fetched")
+                        console.log(returnData)
                         myDrawChart(returnData);
                     },
                     error:function(err){
