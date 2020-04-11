@@ -12,8 +12,6 @@ function myDrawChart(d) {
     var set_wtime = new Set();
 
     for (var i in data) {
-        //var d=new Date(i);
-        //document.getElementById("test").innerHTML = i;
         if (ID === 2) {
             minn = Math.min(minn, parseInt(+data[i][0]), parseInt(+data[i][1]));
             maxx = Math.max(maxx, parseInt(+data[i][0]), parseInt(+data[i][1]));
@@ -61,11 +59,10 @@ function myDrawChart(d) {
             });
         }
     }
-    console.log(arr);
+    //console.log(arr);
     //console.log(set_date);
     //console.log(set_wtime);
     if (ID === 1) {
-        //console.log(arr);
         drawChart(arr, "chart1");
     } else if (ID === 2) {
         drawChart2(arr, "chart1", minn, maxx);

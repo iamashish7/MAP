@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/DrawTable.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -18,7 +17,8 @@
     <script type="text/javascript" src="js/jsdelivr/jquery.min.js"></script>
     <script type="text/javascript" src="js/jsdelivr/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script type="text/javascript" src="js/DrawTable.js"></script>
+    <script type="text/javascript" src="js/prepare_data.js"></script>
+    <script type="text/javascript" src="js/Graphs.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <style>
