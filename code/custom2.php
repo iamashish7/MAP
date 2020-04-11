@@ -222,7 +222,7 @@
         </div>
         <br>
         <div class="row justify-content-center">
-            <form class="form-inline hide-form">
+            <form class="form-inline hide-form" id="analysis-form">
                 <label for="from">From:</label>&nbsp;
                 <input type="text" class="form-control" id="from" placeholder="Enter start date" name="from">&nbsp;&nbsp;
                 <label for="to">To:</label>&nbsp;
@@ -248,6 +248,33 @@
     </div>
 </body>
 <script>
+
+    var dbName = '';
+    var filename = '';
+    if (performance.navigation.type == 1) {
+        if(filename!='')
+        {
+            $.ajax({
+                url:"reset.php",
+                method:"POST",
+                data:{db:dbName,file:filename},
+                success:function(returnData){
+                    console.log(returnData);
+                },
+                error:function(err){
+                    console.log(err);
+                }
+            });   
+        }
+        else
+        {
+            console.log("db and file empty");
+        }
+        console.info( "This page is reloaded" );
+    } else {
+        console.info( "This page is not reloaded");
+    }
+
     var db = ''
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -268,6 +295,7 @@
             if(document.getElementById("fileToUpload").value!='')
             {
                 val = document.getElementById("fileToUpload").value.split('\\');
+                this.filename = val[2];
                 document.getElementById("parser").disabled = false;
                 document.getElementById("dropbtn").innerHTML = val[2];
             }
@@ -289,7 +317,7 @@
         var endY = "";
         $("form#fileuploadform").submit(function(e) {
             e.preventDefault();
-            document.getElementsByClassName("hide-form")[0].classList.add('hide-form');
+            document.getElementById("analysis-form").classList.add('hide-form');
             $("#chart1").empty();
             if(db.length>0)
             {
@@ -318,6 +346,7 @@
                         console.log(response);
                         res = response.split('#');
                         dbName = res[0];
+                        this.dbName = dbName;
                         startY = Number(res[1]);
                         endY = Number(res[2]);
                         n_Q = Number(res[3]);
@@ -325,7 +354,7 @@
                         document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
                         // dbName = response;
                         console.log(dbName,startY,endY,n_Q);
-                        document.getElementsByClassName("hide-form")[0].classList.remove('hide-form');
+                        document.getElementById("analysis-form").classList.remove('hide-form');
                     },
                     error: function (response) {
                         document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';

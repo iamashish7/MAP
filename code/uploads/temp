@@ -1,0 +1,59 @@
+## TABLE for HPC logs
+
+create table if not exists Master (id int(50) NOT NULL AUTO_INCREMENT,jobid varchar(50),stime int(50) DEFAULT -1,start int(50) DEFAULT -1,end int(50) DEFAULT -1,wtime int(50) DEFAULT -1,rtime int(50) DEFAULT -1,proc_alloc int(50) DEFAULT -1,avg_cpu_time double(50,5) DEFAULT -1,mem_used int(50) DEFAULT -1,req_proc int(50) DEFAULT -1,req_rtime int(50) DEFAULT -1,req_mem int(50) DEFAULT -1,status int(50),uid varchar(50) DEFAULT 'NoUser',gid varchar(50) DEFAULT 'NoGroup',exe_app_num int(50) DEFAULT -1,queue varchar(50),part int(50) DEFAULT -1,prec_job_num int(50) DEFAULT -1,think_time int(50) DEFAULT -1,	PRIMARY KEY (id));
+
+create table if not exists Master 
+(
+	id int(50) NOT NULL AUTO_INCREMENT,
+	jobid varchar(50),
+	stime int(50) DEFAULT -1,
+	start int(50) DEFAULT -1,
+	end int(50) DEFAULT -1,
+	wtime int(50) DEFAULT -1,
+	rtime int(50) DEFAULT -1,
+	proc_alloc int(50) DEFAULT -1,
+	avg_cpu_time double(50,5) DEFAULT -1,
+	mem_used int(50) DEFAULT -1,
+	req_proc int(50) DEFAULT -1,
+	req_rtime int(50) DEFAULT -1,
+	req_mem int(50) DEFAULT -1,
+	status int(50),
+	uid varchar(50) DEFAULT 'NoUser',
+	gid varchar(50) DEFAULT 'NoGroup',
+	exe_app_num int(50) DEFAULT -1,
+	queue varchar(50),
+	part int(50) DEFAULT -1,
+	prec_job_num int(50) DEFAULT -1,
+	think_time int(50) DEFAULT -1,
+	PRIMARY KEY (id)
+);
+
+
+##TABLE CREATION for MIRA and THETA
+
+create table if not exists Master (jobid varchar(65),stime int(50) DEFAULT -1,start int(50) DEFAULT -1,end int(50) DEFAULT -1,wtime int(50) DEFAULT -1,rtime int(50) DEFAULT -1,proc_alloc int(50) DEFAULT -1,avg_cpu_time double(50,5) DEFAULT -1,mem_used int(50) DEFAULT -1,req_proc int(50) DEFAULT -1,req_rtime int(50) DEFAULT -1,req_mem int(50) DEFAULT -1,status int(50),uid varchar(64) DEFAULT 'NoUser',gid varchar(50) DEFAULT 'NoGroup',exe_app_num int(50) DEFAULT -1,queue varchar(50),part int(50) DEFAULT -1,prec_job_num int(50) DEFAULT -1,think_time int(50) DEFAULT -1,PRIMARY KEY (jobid));
+
+create table if not exists Master 
+(
+	jobid varchar(65),
+	stime int(50) DEFAULT -1,
+	start int(50) DEFAULT -1,
+	end int(50) DEFAULT -1,
+	wtime int(50) DEFAULT -1,
+	rtime int(50) DEFAULT -1,
+	proc_alloc int(50) DEFAULT -1,
+	avg_cpu_time double(50,5) DEFAULT -1,
+	mem_used int(50) DEFAULT -1,
+	req_proc int(50) DEFAULT -1,
+	req_rtime int(50) DEFAULT -1,
+	req_mem int(50) DEFAULT -1,
+	status int(50),
+	uid varchar(64) DEFAULT 'NoUser',
+	gid varchar(50) DEFAULT 'NoGroup',
+	exe_app_num int(50) DEFAULT -1,
+	queue varchar(50),
+	part int(50) DEFAULT -1,
+	prec_job_num int(50) DEFAULT -1,
+	think_time int(50) DEFAULT -1,
+	PRIMARY KEY (jobid)
+);

@@ -12,7 +12,18 @@ error_reporting(E_ALL);
 			throw new Exception('Error during file upload ' . $_FILES['fileToUpload']['error']);
 		} else {
 			if (file_exists('uploads/' . $_FILES['fileToUpload']['name'])) {
-				throw new Exception('File already exists at uploads/' . $_FILES['fileToUpload']['name']);
+                $filename = '/var/www/html/new/code/uploads/' . $_FILES['fileToUpload']['name'];
+                if (unlink($filename)) {
+                    if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], 'uploads/' . $_FILES['fileToUpload']['name']))
+                    {
+                        $success = 1;
+                    }
+                } 
+                else {
+                    // echo 'Cannot remove that file';
+                }
+                // echo ("File already exists");
+				// throw new Exception('File already exists at uploads/' . $_FILES['fileToUpload']['name']);
 			} else {
                 if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], 'uploads/' . $_FILES['fileToUpload']['name']))
                 {
@@ -21,7 +32,6 @@ error_reporting(E_ALL);
 			}
 		}
 	} else {
-        echo "file not set";
 		throw new Exception('Please choose a file');
     }
     if($success)
