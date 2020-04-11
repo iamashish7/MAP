@@ -83,33 +83,11 @@ switch ($chart) {
             if ($start < $from2){
                 $start = $from2;
             }
-            $json_array[$start] = $json_array[$start] + 1;
-            $json_array[$end] = $json_array[$end] - 1;
-        }
-
-        $fromPrev = $from;
-        $from = date ("Y-m-d", strtotime("+1 days", strtotime($from)));
-        while (strtotime($from) <= strtotime($to)) {
-            $json_array[$from] += $json_array[$fromPrev];
-            $fromPrev = $from;
-            $from = date ("Y-m-d", strtotime("+1 days", strtotime($from)));
-        }
-        /*
-        while ($row = $result->fetch_assoc()) {
-            $start = date('Y-m-d', strtotime($row['start']));
-            $end = date('Y-m-d', strtotime($row['end']));
-            if ($end > $to){
-                $end = $to;
-            }
-            if ($start < $from2){
-                $start = $from2;
-            }
             while (strtotime($start) <= strtotime($end)) {
                 $json_array[$start] = $json_array[$start] + 1;
                 $start = date ("Y-m-d", strtotime("+1 days", strtotime($start)));
             }
         }
-        */
         $timeend = round(microtime(true) * 1000);
         //echo 'Population = '.($timeend-$timebegin).' ms';
         

@@ -24,18 +24,17 @@ error_reporting(E_ALL);
         echo "file not set";
 		throw new Exception('Please choose a file');
     }
-
     if($success)
     {
         if($_POST['parser']=='2')
         {
-            $command = escapeshellcmd('python3 /var/www/html/new/parser/parser_pbs.py '.$_FILES['fileToUpload']['name']);
+            $command = escapeshellcmd('python3 /var/www/html/new/code/parser/parser_pbs.py '.$_FILES['fileToUpload']['name']);
             $output = shell_exec($command);
             echo $output;
         }
         else
         {
-            $command = escapeshellcmd('python3 /var/www/html/new/parser/parser_swf.py '.$_FILES['fileToUpload']['name']);
+            $command = escapeshellcmd('python3 /var/www/html/new/code/parser/parser_swf.py '.$_FILES['fileToUpload']['name']);
             $output = shell_exec($command);
             echo $output;
         }
