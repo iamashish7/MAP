@@ -7,7 +7,7 @@ function myDrawChart(d) {
     var data = d.data;
     var ID = Number.parseInt(d.ID);
     var arr = [];
-    var minn = 10000000, maxx = 0, count2 = 0;
+    var minn = 100000000, maxx = 0, count2 = 0;
     var set_date = new Set();
     var set_wtime = new Set();
 
@@ -16,14 +16,16 @@ function myDrawChart(d) {
             minn = Math.min(minn, parseInt(+data[i][0]), parseInt(+data[i][1]));
             maxx = Math.max(maxx, parseInt(+data[i][0]), parseInt(+data[i][1]));
             arr.push({
-                date: new Date(i), //date
+                name: new Date(i), //date
                 value: [+data[i][0], +data[i][1]] //convert string to number  
             });
         } 
         else if (ID === 1) {
             count2++;
+            minn = Math.min(minn, parseInt(+data[i]));
+            maxx = Math.max(maxx, parseInt(+data[i]));
             arr.push({
-                date: new Date(i), //date
+                name: new Date(i), //date
                 value: +data[i] //convert string to number         
             });
         } else if (ID === 3) {
@@ -39,7 +41,7 @@ function myDrawChart(d) {
         } else if (ID === 5) {
             arr.push({
                 id: +i,
-                hours: +data[i] //convert string to number  
+                value: +data[i] //convert string to number  
             });
         } else if (ID === 6) {
             minn = Math.min(minn, parseInt(data[i]));
@@ -55,14 +57,43 @@ function myDrawChart(d) {
         } else if (ID === 7) {
             arr.push({
                 id: +i,
-                wtime: +data[i] //convert string to number  
+                value: +data[i] //convert string to number  
             });
         }
     }
     if (ID === 1) {
-        drawChart(arr, "chart1");
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.68,
+            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            title:"Number of Jobs executing per day",
+            labelx:"Timestamp",
+            labely:"Jobs",
+            months: months,
+            noLines: 1,
+            LineColors: ['steelblue'],
+            TooltipColors: ['black'],
+            minn: minn,
+            max: maxx,
+        };
+        LineChart(arr,"chart1",cfg);
     } else if (ID === 2) {
-        drawChart2(arr, "chart1", minn, maxx);
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.68,
+            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            title:"Completed and failed jobs per month",
+            labelx:"Timestamp",
+            labely:"Jobs",
+            months: months,
+            noLines: 2,
+            legend_keys:["Jobs Submitted", "Jobs Completed"],
+            LineColors: ['green','red'],
+            TooltipColors: ['green','red'],
+            minn: minn,
+            maxx: maxx,
+        };
+        LineChart(arr,"chart1",cfg);
     } else if (ID === 3) {
         var cfg = {
             width:screen.availWidth*0.75,
@@ -84,13 +115,42 @@ function myDrawChart(d) {
         };
         BarGraph(arr, "chart1",cfg);
     } else if (ID === 5) {
-        drawChart5(arr, "chart1");
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.68,
+            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            title:"Execution time vs #Jobs",
+            labelx:"Execution-Time (hours)",
+            labely:"#Jobs",
+        };
+        histogramGraph(arr, "chart1",cfg);
     } else if (ID === 6) {
-        drawChart6(arr, "chart1", minn, maxx, set_date.size, set_wtime.size);
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.68,
+            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            title:"Variation of wait-times by day",
+            labelx:"Timestamp",
+            labely:"Wait Time (hours)",
+            minn: minn,
+            maxx: maxx,
+            n_date : set_date.size,
+            n_wtime: set_wtime.size,
+            months: months,
+        };
+        heatmap(arr, "chart1",cfg);
     } else if (ID === 7) {
-        drawChart7(arr, "chart1");
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.68,
+            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            title:"Wait-Time time vs #Jobs",
+            labelx:"Wait-Time (hours)",
+            labely:"#Jobs",
+        };
+        histogramGraph(arr, "chart1",cfg);
     } else if (ID === 8) {
-        drawChart8(arr, "chart1");
+        
     }
 }
 

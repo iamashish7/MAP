@@ -28,7 +28,7 @@
             margin-left: 10%;
             //border-style: solid;
         }
-        .hide-form{
+        .hide{
             display: None;
         }
         
@@ -103,6 +103,23 @@
                 height: 0%;
             }
         }
+        .overlay {
+            fill: none;
+            pointer-events: all;
+        }
+
+        .focus text {
+            font-size: 14px;
+        }
+
+        .tooltip {
+            fill: white;
+            stroke: #000000;
+        }
+
+        .tooltip-date, .tooltip-likes {
+            font-weight: bold;
+        }
         .dropbtn {
             background-color: 	#A9A9A9;
             color: white;
@@ -114,19 +131,19 @@
             }
 
             /* Dropdown button on hover & focus */
-            .dropbtn:hover, .dropbtn:focus {
+        .dropbtn:hover, .dropbtn:focus {
             background-color: #696969;
             color: white;
             }
 
             /* The container <div> - needed to position the dropdown content */
-            .dropdown {
+        .dropdown {
             position: relative;
             display: inline-block;
             }
 
             /* Dropdown Content (Hidden by Default) */
-            .dropdown-content {
+        .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f1f1f1;
@@ -195,13 +212,14 @@
                 <button onclick="myFunction()" class="dropbtn btn" id='dropbtn'>Select Data</button>
                 <div id="myDropdown" class="dropdown-content">
                     <label class="file">
-                        <input  style='padding:10px' form = 'fileuploadform' type="file" id="fileToUpload" aria-label="File browser example">
+                        <input  onChange="setFile()" style='padding:10px' form = 'fileuploadform' type="file" id="fileToUpload" aria-label="File browser example">
                         <span class="file-custom"></span>
                     </label>
                     <hr>
-                    <a onclick="setDB('CTC_SP2_orig')" href="#">CTC_SP2_orig</a>
-                    <a onclick="setDB('ANL_intrepid')" href="#">ANL_intrepid</a>
+                    <a onclick="setDB('CTC_SP2')" href="#">CTC_SP2</a>
+                    <!-- <a onclick="setDB('ANL_intrepid')" href="#">ANL_intrepid</a> -->
                     <a onclick="setDB('SDSC_SP2')" href="#">SDSC_SP2</a>
+                    <a onclick="setDB('SDSC_BLUE')" href="#">SDSC_BLUE</a>
                 </div>
             </div> 
             &nbsp;&nbsp;
@@ -217,12 +235,15 @@
             <br>
         </div>
         <br>
+        <div id="error-box" class="alert alert-danger hide" style="text-align:center">
+            <b>ERROR!!</b> Upload a log file or select from existing.
+        </div>
         <div class="loader-wrapper" id="loaderr">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
         <br>
         <div class="row justify-content-center">
-            <form class="form-inline hide-form" id="analysis-form">
+            <form class="form-inline hide" id="analysis-form">
                 <label for="from">From:</label>&nbsp;
                 <input type="text" class="form-control" id="from" placeholder="Enter start date" name="from">&nbsp;&nbsp;
                 <label for="to">To:</label>&nbsp;
@@ -250,32 +271,11 @@
 <script>
 
     var dbName = '';
+    var tableName = '';
     var filename = '';
-    if (performance.navigation.type == 1) {
-        if(filename!='')
-        {
-            $.ajax({
-                url:"reset.php",
-                method:"POST",
-                data:{db:dbName,file:filename},
-                success:function(returnData){
-                    console.log(returnData);
-                },
-                error:function(err){
-                    console.log(err);
-                }
-            });   
-        }
-        else
-        {
-            console.log("db and file empty");
-        }
-        console.info( "This page is reloaded" );
-    } else {
-        console.info( "This page is not reloaded");
-    }
 
-    var db = ''
+    var db = '';
+
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
@@ -296,6 +296,7 @@
             {
                 val = document.getElementById("fileToUpload").value.split('\\');
                 this.filename = val[2];
+                console.log("filename = ",this.filename,"db = ",this.db);
                 document.getElementById("parser").disabled = false;
                 document.getElementById("dropbtn").innerHTML = val[2];
             }
@@ -304,67 +305,99 @@
     function setDB(db){
         document.getElementById("fileToUpload").value = ''
         this.db = db;
-        console.log(this.db);
+        this.filename = '';
+        console.log("filename = ",this.filename,"db = ",this.db);
         document.getElementById("parser").disabled = true;
         document.getElementById("dropbtn").innerHTML = db;
     }
 
+    function setFile(){
+        this.db = '';
+        val = document.getElementById("fileToUpload").value.split('\\');
+        this.filename = val[2];
+        console.log("got new file");  
+    }
     $(document).ready(function () {
         // init_calender();
         var dbName = "";
+        var tableName = '';
         var n_Q = 0;
         var startY = "";
         var endY = "";
+        var meta = {
+            "CTC_SP2":[1996,1997,1],
+            // "ANL_intrepid":[2009,2009,1],
+            "SDSC_SP2":[1998,2000,1],
+            "SDSC_BLUE":[2000,2003,1],
+        };
         $("form#fileuploadform").submit(function(e) {
             e.preventDefault();
-            document.getElementById("analysis-form").classList.add('hide-form');
-            $("#chart1").empty();
-            if(db.length>0)
+            if(db.length>0 || filename.length>0)
             {
-                console.log("stored db");
-                db = '';
+                console.log("here1");
+                document.getElementById("analysis-form").classList.add('hide');
+                document.getElementById("error-box").classList.add('hide');
+                $("#chart1").empty();
+                $("#from").val('');
+                $("#to").val('');
+                document.getElementsByClassName("loader-wrapper")[0].style.display = 'flex';
+                if(db.length>0)
+                {
+                    console.log("stored db");
+                    tableName = db;
+                    dbName = "SavedLogs"
+                    $("#parser").val(meta[db][2]);
+                    console.log(meta[db][0],meta[db][1]);
+                    init_calender(meta[db][0],meta[db][1]);
+                    document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
+                    document.getElementById("analysis-form").classList.remove('hide');
+                }
+                else
+                if(filename.length>0)
+                {
+                    console.log("upload db");
+                    var file = document.getElementById("fileToUpload");
+                    console.log(file.files[0]);
+                    var formData = new FormData(this);
+                    formData.append('fileToUpload', file.files[0]);
+                    $.ajax({
+                        url: 'upload.php',
+                        type: 'POST',
+                        data: formData,
+                        dataType: 'text', // what to expect back from the PHP script
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (response) {
+                            console.log(response);
+                            res = response.split('#');
+                            tableName = res[0];
+                            dbName = "tempLogs"
+                            // this.dbName = dbName;
+                            startY = Number(res[1]);
+                            endY = Number(res[2]);
+                            n_Q = Number(res[3]);
+                            init_calender(startY,endY);
+                            document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
+                            console.log(dbName,startY,endY,n_Q);
+                            document.getElementById("analysis-form").classList.remove('hide');
+                        },
+                        error: function (response) {
+                            document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
+                            console.log(response); // display error response from the PHP script
+                        }
+                    });
+                }
             }
             else
             {
-                console.log("upload db");
-                var file = document.getElementById("fileToUpload");
-                console.log(file.files[0]);
-                document.getElementsByClassName("loader-wrapper")[0].style.display = 'flex';
-                //e.preventDefault();
-                //console.log(jQuery('form')[0]);    
-                var formData = new FormData(this);
-                formData.append('fileToUpload', file.files[0]);
-                $.ajax({
-                    url: 'upload.php',
-                    type: 'POST',
-                    data: formData,
-                    dataType: 'text', // what to expect back from the PHP script
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    success: function (response) {
-                        console.log(response);
-                        res = response.split('#');
-                        dbName = res[0];
-                        this.dbName = dbName;
-                        startY = Number(res[1]);
-                        endY = Number(res[2]);
-                        n_Q = Number(res[3]);
-                        init_calender(startY,endY);
-                        document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
-                        // dbName = response;
-                        console.log(dbName,startY,endY,n_Q);
-                        document.getElementById("analysis-form").classList.remove('hide-form');
-                    },
-                    error: function (response) {
-                        document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
-                        console.log(response); // display error response from the PHP script
-                    }
-                });
+                console.log("here2");
+                document.getElementById("error-box").classList.remove('hide');
             }
         });
     	$("#date-submit-btn").click(function(event){
             if($("#parser").val()=='1'){
+                console.log("In swf");
                 var chartId = $("#chart").val();
                 var toDate = $("#to").val().split("/").reverse().join("-");
                 var fromDate = $("#from").val().split("/").reverse().join("-");
@@ -372,7 +405,7 @@
                 $.ajax({
                     url:"analyzer_get_data.php",
                     method:"POST",
-                    data:{to:toDate,from:fromDate,chart:chartId,db:dbName},
+                    data:{to:toDate,from:fromDate,chart:chartId,db:dbName,table:tableName},
                     success:function(returnData){
                         console.log("Data fetched")
                         console.log(returnData)
@@ -391,7 +424,7 @@
                 $.ajax({
                     url:"action.php",
                     method:"POST",
-                    data:{to:toDate,from:fromDate,chart:chartId,db:dbName},
+                    data:{to:toDate,from:fromDate,chart:chartId,db:"tempLogs",},
                     success:function(returnData){
                         console.log("Data fetched")
                         myDrawChart(returnData);

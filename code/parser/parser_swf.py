@@ -11,8 +11,9 @@ end_date = "^; EndTime:"
 queue_entry = "^; Queue:"
 n_queues = "; MaxQueues:"
 rand_int = random.randrange(10000, 100000, 1)
-database = "temp"+str(rand_int)
-print_str = database
+tableName = "temp"+str(rand_int)
+database = "tempLogs"
+print_str = tableName
 connection = pymysql.connect(host='localhost', user='ashish', passwd='ashish007', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 cursor = connection.cursor()
 
@@ -22,19 +23,19 @@ def closeConnection():
 	connection.close()
 
 def createDB():
-	cursor.execute("DROP DATABASE IF EXISTS "+database)
-	cursor.execute("CREATE DATABASE IF NOT EXISTS "+database)
+	#cursor.execute("DROP DATABASE IF EXISTS "+database)
+	#cursor.execute("CREATE DATABASE IF NOT EXISTS "+database)
 	connection.select_db(database)
 
 def setup():
 	createDB()
-	table = "create table if not exists Master (jobid int(50),date varchar(100),stime varchar(100),start varchar(100),end varchar(100),wtime int(50),rtime int(50),proc_alloc int(50),avg_cpu_time int(50),mem_used int(50),req_proc int(50),req_rtime int(50),req_mem int(50),status varchar(50),uid int(50),gid int(50),exe_app_num int(50),queue varchar(100),part int(50),prec_job_num int(50),think_time int(50),PRIMARY KEY (jobid));"
+	table = "create table if not exists "+tableName+" (jobid int(50),date varchar(100),stime varchar(100),start varchar(100),end varchar(100),wtime int(50),rtime int(50),proc_alloc int(50),avg_cpu_time int(50),mem_used int(50),req_proc int(50),req_rtime int(50),req_mem int(50),status varchar(50),uid int(50),gid int(50),exe_app_num int(50),queue varchar(100),part int(50),prec_job_num int(50),think_time int(50),PRIMARY KEY (jobid));"
 	cursor.execute(table)
 	
 def insertData(table):
     columns = table.keys()
     values = table.values()
-    sql = "INSERT INTO Master({0}) VALUES ({1})".format(','.join(columns),','.join(values))
+    sql = "INSERT INTO "+tableName+"({0}) VALUES ({1})".format(','.join(columns),','.join(values))
     cursor.execute(sql)
 
 def getStatus(s):

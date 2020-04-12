@@ -22,6 +22,8 @@ function myDrawChart(d) {
         } 
         else if (ID === 1) {
             count2++;
+            minn = Math.min(minn, parseInt(+data[i]));
+            maxx = Math.max(maxx, parseInt(+data[i]));
             arr.push({
                 date: new Date(i), //date
                 value: +data[i] //convert string to number         
@@ -118,17 +120,22 @@ function drawChart(data, ID) {
     var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     var x = d3.scaleTime().rangeRound([0, width]);
     var y = d3.scaleLinear().rangeRound([height, 0]);
-    var line = d3.line().x(function (d) {
-        return x(d.date)
-    }).y(function (d) {
-        return y(d.value)
-    });
     x.domain(d3.extent(data, function (d) {
         return d.date;
     })).nice();
     y.domain(d3.extent(data, function (d) {
         return d.value
     }));
+    console.log(d3.extent(data, function (d) {
+        return d.value
+    }));
+    console.log([minn*0.8, 1.1 * maxx]);
+    
+    var line = d3.line().x(function (d) {
+        return x(d.date)
+    }).y(function (d) {
+        return y(d.value)
+    });
     if (months <= 3) {
         g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x).ticks(dates).tickFormat(d3.timeFormat("%d-%b-%y"))).selectAll("text").style("text-anchor", "end").attr("dx", "-.8em").attr("dy", ".15em").attr("transform", "rotate(-65)");
     }
@@ -290,14 +297,16 @@ function drawChart2(data, ID, minn, maxx) {
     var focus2 = g.append("g").attr("class", "focus").style("display", "none");
 
     //Adds circle to focus point on line
-    focus1.append("circle").attr("r", 4).attr("fill", "red");
-    focus2.append("circle").attr("r", 4).attr("fill", "green");
+    focus1.append("circle").attr("r", 4).attr("fill", "green");
+    focus2.append("circle").attr("r", 4).attr("fill", "red");
+
+    focus.append("rect").attr("class", "tooltip").attr("width", 100).attr("height", 50).attr("x", 10).attr("y", -22).attr("rx", 4).attr("ry", 4);
 
     //Adds text to focus point on line    
-    focus1.append("text").attr('id', 'date').attr("x", -65).attr("dy", "-0.5em").attr("fill", "red");
-    focus1.append("text").attr('id', 'jobs').attr("x", -65).attr("dy", "-1.5em").attr("fill", "red");
-    focus2.append("text").attr('id', 'date2').attr("x", -65).attr("dy", "1.35em").attr("fill", "green");
-    focus2.append("text").attr('id', 'jobs2').attr("x", -65).attr("dy", "2.35em").attr("fill", "green");
+    focus1.append("text").attr('id', 'date').attr("class", "tooltip-date").attr("x", -65).attr("dy", "-0.5em").attr("fill", "green");
+    focus1.append("text").attr('id', 'jobs').attr("class", "tooltip-likes").attr("x", -65).attr("dy", "-1.5em").attr("fill", "green");
+    focus2.append("text").attr('id', 'date2').attr("class", "tooltip-date").attr("x", -65).attr("dy", "1.35em").attr("fill", "red");
+    focus2.append("text").attr('id', 'jobs2').attr("class", "tooltip-likes").attr("x", -65).attr("dy", "2.35em").attr("fill", "red");
 
     //Creates larger area for tooltip   
     var overlay = g.append("rect")
