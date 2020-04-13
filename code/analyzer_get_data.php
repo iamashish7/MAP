@@ -121,7 +121,7 @@ switch ($chart) {
         $jarray = json_encode($json_array);
         break;
     case "4":
-        $sql = "select queue, avg(CAST((wtime)/(60*60) as UNSIGNED)) as avg_waitingtime from ".$table." where stime>='".$from."' and stime<='".$to."' and queue not like 'R%' group by queue";
+        $sql = "select queue, avg(CAST((wtime)/(60*60) as UNSIGNED)) as avg_waitingtime from ".$table." where wtime >= 0 and stime>='".$from."' and stime<='".$to."' and queue not like 'R%' group by queue";
         $result = $conn->query($sql);
         while ($row = $result->fetch_assoc()) {
             $json_array[$row['queue']] = $row['avg_waitingtime'];
@@ -130,7 +130,7 @@ switch ($chart) {
         break;
     case "5":
         $json_array = [];
-        $sql = "select jobid, rtime/(3600) as rtime from ".$table." where date >= '" . $from . "' and date <= '" . $to . "'  and status='completed'" ;
+        $sql = "select jobid, rtime/(60*60) as rtime from ".$table." where date >= '" . $from . "' and date <= '" . $to . "'  and rtime>0" ;
         
         $result = $conn->query($sql);
         while ($row = $result->fetch_assoc()) {
@@ -139,8 +139,7 @@ switch ($chart) {
         break;
     case "6":
         $json_array = [];
-        $sql = "select CAST((wtime)/(60*60) as UNSIGNED) as wtime
-        ,date,count(*) as jobs from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and wtime >= 0 group by wtime,date order by date,wtime;";   
+        $sql = "select CAST((wtime)/(60*60) as UNSIGNED) as wtime ,date,count(*) as jobs from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and wtime >= 0 group by wtime,date order by date,wtime;";   
         
         $result = $conn->query($sql);
         while ($row = $result->fetch_assoc()) {

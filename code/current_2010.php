@@ -12,6 +12,7 @@
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script type="text/javascript" src="js/plot_realtime.js"></script>
     <script type="text/javascript" src="js/realtime_graph.js"></script>
+    <script type="text/javascript" src="js/Graphs.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
@@ -129,7 +130,7 @@
 </body>
 <script type="text/javascript">
     $(document).ready(function () {
-        plot_graph();
+        ready_data_plot();
     });
 </script>
 </html>

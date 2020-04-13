@@ -12,6 +12,7 @@
     <script src="js/d3.tip.v0.6.3.js"></script>
     <script type="text/javascript" src="js/plot_realtime_2013.js"></script>
     <script type="text/javascript" src="js/realtime_graph_2013.js"></script>
+    <script type="text/javascript" src="js/Graphs.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
@@ -34,7 +35,7 @@
             border-style: solid;
             border-color:#D3D3D3;
 
-            width: 75%;
+            width: 37.5%;
         }
 	    #chart_3{
             border-style: solid;
@@ -48,11 +49,17 @@
 
             width: 50%;
         }
-	    #chart_5{
+	    #chart_5 {
             //border-style: solid;
             border-color:#D3D3D3;
 
             width: 100%;
+        }
+        #chart_6{
+            border-style: solid;
+            border-color:#D3D3D3;
+
+            width: 37.5%;
         }
         tr{
             //border-style: solid;
@@ -69,6 +76,10 @@
             table-layout: fixed;
             border-collapse: collapse;
             padding:0;
+        }
+        text {
+            font-family: sans-serif;
+            font-size: 15px;
         }
     </style>
 <body>
@@ -105,22 +116,23 @@
     <div class="container-fluid">
         <table>
             <tr>
-                <td id="chart_1" colspan='1'></td>
+                <td id="chart_1" colspan='2'></td>
                 <td id="chart_2" colspan='3'></td>
+                <td id="chart_6" colspan='3'></td>
             </tr>
             <tr>
-                <td id="chart_3" colspan='2'></td>
-                <td id="chart_4" colspan='2'></td>
+                <td id="chart_3" colspan='4'></td>
+                <td id="chart_4" colspan='4'></td>
             </tr>
             <tr>
-                <td id="chart_5" colspan='4'></td>
+                <td id="chart_5" colspan='8'></td>
             </tr>
         </table>
     </div>
 </body>
 <script type="text/javascript">
     $(document).ready(function () {
-        plot_graph();
+        ready_data_plot();
     });
 </script>
 </html>

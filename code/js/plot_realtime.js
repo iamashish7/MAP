@@ -1,7 +1,3 @@
-function plot_graph() {
-    ready_data_plot();
-}
-
 var data1 = [];
 var data2 = [];
 var data3 = [];
@@ -38,7 +34,6 @@ function ready_data_plot(){
                 }
             }
         });
-        console.log(data4);
         var items = Object.keys(data4).map(function(key) {
             return [key, data4[key]];
         });

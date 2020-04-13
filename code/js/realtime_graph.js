@@ -168,135 +168,27 @@ function preprocess(data, ID, title) {
     var arr = [];
     for (var i in data) {
         arr.push({
-            queue: i,
+            name: i,
             value: data[i] //convert string to number  
         });
     }
-    drawBar(arr,ID,title);
-}
-function drawBar(data, ID, title) {
-    var svgWidth = screen.width/2.3, svgHeight = screen.height/2.3;
-    var margin = { top: 20, right: 20, bottom: 50, left: 70 };
-    var width = svgWidth - margin.left - margin.right;
-    var height = svgHeight - margin.top - margin.bottom;
-
-    var x = d3.scaleBand().range([0, width]).padding(0.5);
-    var y = d3.scaleLinear().range([height, 0]);
-
-    var svg = d3.select("#" + ID).append('svg').attr("width", svgWidth).attr("height", svgHeight);
-    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    g.append("text")
-        .attr("x", (svgWidth / 2))             
-        .attr("y", (margin.top / 3))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
-        .text(title);
-    
-    // Scale the range of the data in the domains
-    x.domain(data.map(function (d) {
-        return d.queue;
-    }));
-    y.domain([0, 1.1*d3.max(data, function (d) {
-        return d.value;
-    })]);
-
-    // append the rectangles for the bar chart
-    g.selectAll(".bar")
-        .data(data)
-        .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", function (d) {
-            return x(d.queue);
-        })
-        .attr("width", x.bandwidth())
-        .attr("y", function (d) {
-            return y(d.value);
-        })
-        .attr("height", function (d) {
-            return height - y(d.value);
-        })
-        .attr("fill", "steelblue");
-
-    // add the x Axis
-    g.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x));
-
-    // add the y Axis
-    g.append("g")
-        .call(d3.axisLeft(y));
-
-    //text label for x axis
-    g.append("text").attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight - margin.top - 20) + ")").attr("dy", "0.7em").style("text-anchor", "middle").text("Queue");
-
-    //text label for y axis
-    g.append("text").attr("transform", "rotate(-90)").attr("y", 0 - margin.left).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text("#Jobs");
-
+    var cfg = {
+        width:screen.availWidth/2.3,
+        height:screen.availHeight/2.3,
+        margin: { top: 35, right: 20, bottom: 60, left: 70 },
+        title:title,
+        labelx:"Queue",
+        labely:"#Jobs",
+    };
+    BarGraph(arr,ID,cfg);
 }
 
-function drawBar2(data, ID, title) {
-    
-    var svgWidth = (3*screen.width)/8.1, svgHeight = (3*screen.height)/11;
-    var margin = { top: 20, right: 1, bottom: 20, left: 100 };
-    var width = svgWidth - margin.left - margin.right;
-    var height = svgHeight - margin.top - margin.bottom;
-
-    // set the ranges
-    var y = d3.scaleBand().range([height, 0]).padding(0.5);
-    var x = d3.scaleLinear().range([0, width]);
-    var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
-            
-    // append the svg object to the body of the page
-    // append a 'group' element to 'svg'
-    // moves the 'group' element to the top left margin
-    var svg = d3.select("#" + ID).append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-        .attr("transform", 
-            "translate(" + margin.left + "," + margin.top + ")");
-    
-    // set title
-    svg.append("text")
-        .attr("x", (svgWidth / 2))             
-        .attr("y", (margin.top / 4))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
-        .text(title);
-
-    // Scale the range of the data in the domains
-    x.domain([0, 1.1*d3.max(data, function(d){ return d.nodes; })])
-    y.domain(data.map(function(d) { return d.user; }));
-
-    // append the rectangles for the bar chart
-    svg.selectAll(".bar")
-        .data(data)
-        .enter().append("rect")
-        .attr("class", "bar")
-        //.attr("x", function(d) { return x(d.sales); })
-        .attr("width", function(d) {return x(d.nodes); } )
-        .attr("y", function(d) { return y(d.user); })
-        .attr("height", y.bandwidth())
-        .attr("fill", function (d){ return colorScale(d.user); });
-
-    svg.selectAll('.label')
-        .data(data)
-        .enter()
-        .append('text')
-        .attr('class', 'label')
-        .attr('alignment-baseline', 'middle')
-        .attr('x', function(d) { return x(d.nodes) + 5;})
-        .attr('y', function(d) { return y(d.user) + y.bandwidth()/1.5; })
-        .style('font-size', '14px')
-        .style('font-weight', 'bold')
-        .text(function(d) { return d.nodes;});
-    // add the x Axis
-    // svg.append("g")
-    //     .attr("transform", "translate(0," + height + ")")
-    //     .call(d3.axisBottom(x));
-
-    // add the y Axis
-    svg.append("g")
-        .call(d3.axisLeft(y));
+function drawBar2(data, ID, title){
+    var cfg = {
+        width:(3*screen.availWidth)/8.1,
+        height:(3*screen.availHeight)/11,
+        margin: { top: 20, right: 1, bottom: 20, left: 100 },
+        title:title,
+    };
+    HorizontalBarGraph(data,ID,cfg);
 }

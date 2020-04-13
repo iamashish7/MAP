@@ -1,5 +1,6 @@
 var months, years, dates;
 function myDrawChart(d) {
+    console.log("In prepare data");
     months = Math.min(d.months, 18);
     years = d.years;
     dates = Math.min(d.dates, 18);
@@ -62,6 +63,7 @@ function myDrawChart(d) {
         }
     }
     if (ID === 1) {
+        console.log("setting up CFG");
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.68,
@@ -87,7 +89,7 @@ function myDrawChart(d) {
             labely:"Jobs",
             months: months,
             noLines: 2,
-            legend_keys:["Jobs Submitted", "Jobs Completed"],
+            legend_keys:["Jobs Completed", "Jobs Failed"],
             LineColors: ['green','red'],
             TooltipColors: ['green','red'],
             minn: minn,

@@ -15,6 +15,7 @@ function getFormedDate(date) {
 
 function BarGraph(data,ID,cfg)
 {
+    console.log(data);
     var svgWidth = cfg.width , svgHeight = cfg.height;
     var margin = cfg.margin;
     var width = svgWidth - margin.left - margin.right;
@@ -28,7 +29,7 @@ function BarGraph(data,ID,cfg)
     // append a 'group' element to 'svg'
     // moves the 'group' element to the top left margin
 
-    var svg = d3.select("#" + ID).attr("width", svgWidth).attr("height", svgHeight);
+    var svg = d3.select("#" + ID).append('svg').attr("width", svgWidth).attr("height", svgHeight);
     svg.append("text")
         .attr("x", (svgWidth / 2))
         .attr("y", margin.top-10)
@@ -42,7 +43,7 @@ function BarGraph(data,ID,cfg)
     x.domain(data.map(function (d) {
         return d.name;
     }));
-    y.domain([0, d3.max(data, function (d) {
+    y.domain([0, 1.1*d3.max(data, function (d) {
         return d.value;
     })]);
 
@@ -78,6 +79,7 @@ function BarGraph(data,ID,cfg)
 
 function LineChart(data,ID,cfg)
 {
+    console.log(dates,months,years);
     var svgWidth = cfg.width, svgHeight = cfg.height;
     var margin = cfg.margin;
     if (cfg.months <= 3) {
@@ -221,7 +223,6 @@ function LineChart(data,ID,cfg)
             .attr("fill", cfg.TooltipColors[i]);
         focus_arr.push(focus);
     }
-    console.log(focus_arr);
     g.append("rect")
         .attr("class", "overlay")
         .attr("width", width)
@@ -250,7 +251,6 @@ function LineChart(data,ID,cfg)
         }
         else {
             for (i = 0; i < cfg.noLines; i++) {
-                console.log("line ",i);
                 focus_arr[i].attr("transform", "translate(" + x(d.name) + "," + y(d.value[i]) + ")");
                 focus_arr[i].select(".tooltip-date").text(getFormedDate(d.name));
                 focus_arr[i].select(".tooltip-likes").text(d.value[i]);
@@ -432,4 +432,66 @@ function heatmap(data,ID,cfg){
         .attr("transform", "translate(" + (-legendWidth / 2) + "," + (10 + legendHeight) + ")")
         .call(xAxis);
 
+}
+
+function HorizontalBarGraph(data, ID, cfg) {
+    
+    var svgWidth = cfg.width, svgHeight = cfg.height;
+    var margin = cfg.margin;
+    var width = svgWidth - margin.left - margin.right;
+    var height = svgHeight - margin.top - margin.bottom;
+
+    // set the ranges
+    var y = d3.scaleBand().range([height, 0]).padding(0.5);
+    var x = d3.scaleLinear().range([0, width]);
+    var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+            
+    // append the svg object to the body of the page
+    // append a 'group' element to 'svg'
+    // moves the 'group' element to the top left margin
+    var svg = d3.select("#" + ID).append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform", 
+            "translate(" + margin.left + "," + margin.top + ")");
+    
+    // set title
+    svg.append("text")
+        .attr("x", (svgWidth / 2))             
+        .attr("y", (margin.top / 4))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "20px") 
+        .text(cfg.title);
+
+    // Scale the range of the data in the domains
+    x.domain([0, 1.1*d3.max(data, function(d){ return d.nodes; })])
+    y.domain(data.map(function(d) { return d.user; }));
+
+    // append the rectangles for the bar chart
+    svg.selectAll(".bar")
+        .data(data)
+        .enter().append("rect")
+        .attr("class", "bar")
+        //.attr("x", function(d) { return x(d.sales); })
+        .attr("width", function(d) {return x(d.nodes); } )
+        .attr("y", function(d) { return y(d.user); })
+        .attr("height", y.bandwidth())
+        .attr("fill", function (d){ return colorScale(d.user); });
+
+    svg.selectAll('.label')
+        .data(data)
+        .enter()
+        .append('text')
+        .attr('class', 'label')
+        .attr('alignment-baseline', 'middle')
+        .attr('x', function(d) { return x(d.nodes) + 5;})
+        .attr('y', function(d) { return y(d.user) + y.bandwidth()/1.5; })
+        .style('font-size', '14px')
+        .style('font-weight', 'bold')
+        .text(function(d) { return d.nodes;});
+    
+    // add the y Axis
+    svg.append("g")
+        .call(d3.axisLeft(y));
 }

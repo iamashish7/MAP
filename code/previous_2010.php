@@ -9,7 +9,9 @@
     <script type="text/javascript" src="js/jsdelivr/jquery.min.js"></script>
     <script type="text/javascript" src="js/jsdelivr/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script type="text/javascript" src="js/DrawTable.js"></script>
+    <!-- <script type="text/javascript" src="js/DrawTable.js"></script> -->
+    <script type="text/javascript" src="js/prepare_data.js"></script>
+    <script type="text/javascript" src="js/Graphs.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <style>
@@ -31,6 +33,25 @@
             border-radius: 8px;			
             pointer-events: none;			
         }
+        
+        .overlay {
+            fill: none;
+            pointer-events: all;
+        }
+
+        .focus text {
+            font-size: 14px;
+        }
+
+        .tooltip {
+            fill: white;
+            stroke: #000000;
+        }
+
+        .tooltip-date, .tooltip-likes {
+            font-weight: bold;
+        }
+
 	    .bar {
             text-align : center;
 	    }
@@ -128,10 +149,11 @@
             var toDate = $("#to").val().split("/").reverse().join("-");
             var fromDate = $("#from").val().split("/").reverse().join("-");
             $("#chart1").empty();
+            console.log(toDate,fromDate,chartId);
             $.ajax({
-                url:"action.php",
+                url:"analyzer_get_data.php",
                 method:"POST",
-                data:{to:toDate,from:fromDate,chart:chartId},
+                data:{to:toDate,from:fromDate,chart:chartId,db:"SavedLogs",table:"HPC2010"},
                 success:function(returnData){
                     myDrawChart(returnData);
                 },
