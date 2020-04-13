@@ -396,7 +396,7 @@
             }
         });
     	$("#date-submit-btn").click(function(event){
-            if($("#parser").val()=='1'){
+            // if($("#parser").val()=='1' || 1){
                 console.log("In swf");
                 var chartId = $("#chart").val();
                 var toDate = $("#to").val().split("/").reverse().join("-");
@@ -415,25 +415,25 @@
                         console.log(err);
                     }
                 });
-            }
-            else{
-                var chartId = $("#chart").val();
-                var toDate = $("#to").val().split("/").reverse().join("-");
-                var fromDate = $("#from").val().split("/").reverse().join("-");
-                $("#chart1").empty();
-                $.ajax({
-                    url:"action.php",
-                    method:"POST",
-                    data:{to:toDate,from:fromDate,chart:chartId,db:"tempLogs",},
-                    success:function(returnData){
-                        console.log("Data fetched")
-                        myDrawChart(returnData);
-                    },
-                    error:function(err){
-                        console.log(err);
-                    }
-                });    
-            }
+            // }
+            // else{
+            //     var chartId = $("#chart").val();
+            //     var toDate = $("#to").val().split("/").reverse().join("-");
+            //     var fromDate = $("#from").val().split("/").reverse().join("-");
+            //     $("#chart1").empty();
+            //     $.ajax({
+            //         url:"action.php",
+            //         method:"POST",
+            //         data:{to:toDate,from:fromDate,chart:chartId,db:"tempLogs",},
+            //         success:function(returnData){
+            //             console.log("Data fetched")
+            //             myDrawChart(returnData);
+            //         },
+            //         error:function(err){
+            //             console.log(err);
+            //         }
+            //     });    
+            // }
         });
     }); 
 </script>
