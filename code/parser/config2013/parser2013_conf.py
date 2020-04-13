@@ -39,7 +39,7 @@ edge_count = {}
 n_edges = 0
 max_node = ""
 leaf_nodes = []
-f = open("hpc2010_topology_2.conf","r")
+f = open("hpc2013topo.conf.new","r")
 lines = f.read().splitlines()
 for line in lines:
     res = re.findall(ibswitch,line)
@@ -50,7 +50,6 @@ for line in lines:
         prev = values[7]
         if(values[7] not in bool_nodes):
             data["nodes"].append({"id":values[7],"label":values[5],"x":random.randint(1,100),"y":random.randint(1,100),"size":10,"color":"#0c5d78"})
-            #data["nodes"].append({"id":values[7],"label":values[5],"x":10 * math.cos(math.pi * 2 * len(data['nodes']) / 533 ),"y":10 * math.sin(math.pi * 2 * len(data['nodes']) / 533 ),"size":10,"color":"#0c5d78"})
             bool_nodes.append(values[7])
     else:
         res = re.findall(switch_neighbor,line)
@@ -91,21 +90,38 @@ for line in lines:
                             data["edges"].append({"id":'e'+str(n_edges),"label":"Edge"+str(n_edges),"source":prev,"target":node,"size":5,"color":"#2e4180","type":"line","count":edge_count[prev+node]})
                             n_edges += 1
 
-
+            
 leaf_nodes = list(set(leaf_nodes))
-map_nodes = {'baap':534}
-map_nodes_inv = {534:'baap'}
+map_nodes = {'baap':1049}
+map_nodes_inv = {1049:'baap'}
 level = {}
+
 cnt = 0
 for node in data['nodes']:
     map_nodes[node['id']] = cnt
     map_nodes_inv[cnt] = node['id']
     cnt += 1
+
+'''
+print ("var map_nodes = { ",end='')
+for key in map_nodes:
+    print ('"'+key+'"'+':',end='')
+    print (map_nodes[key],end=',')
+print('}',end='')
+'''
+'''
+print ("var map_nodes_inv = { ",end='')
+for key in map_nodes_inv:
+    print (key,end='')
+    print (':"'+map_nodes_inv[key]+'"',end=',')
+print('}',end='')
+'''   
 n = 0
 adj = [ [ 0 for i in range(cnt+1) ] for j in range(cnt+1) ]
 for e in leaf_nodes:
     adj[map_nodes[e]][map_nodes['baap']] += 1
     adj[map_nodes['baap']][map_nodes[e]] += 1
+
 
 for edge in data['edges']:
     adj[map_nodes[edge['source']]][map_nodes[edge['target']]] += 1
@@ -120,24 +136,24 @@ for edge in data['edges']:
 level['baap'] = 0
 Q = ['baap']
 temp =  {0:0,1:0,2:0}
+maxLevel = 0
 while(len(Q)>0):
     u = Q[0]
     Q = Q[1:]
     for v in map_nodes.keys():
         if(adj[map_nodes[u]][map_nodes[v]] and v not in level.keys()):
             level[v] = level[u]+1
+            maxLevel = max(level[v],maxLevel)
             Q.append(v)
 del level['baap']
 
-print (min(level.values()),max(level.values()))
+print ("var level = { ",end='')
+for key in level.keys():
+    print ('"'+key+'":',end='')
+    print (level[key],end=', ')
+print ("};",end='')
 
-
-#print ("var level = { ",end='')
-#for key in level.keys():
-#    print ('"'+key+'":',end='')
-#    print (level[key],end=', ')
-#print ("};",end='')
-adj_list = [{},{},{}]
+adj_list = [{},{},{},{},{}]
  
 for i in range(len(adj)-1):
     adj_list[level[map_nodes_inv[i]]-1][map_nodes_inv[i]] = []
@@ -167,51 +183,96 @@ for key in adj_list[2].keys():
     for j in range(len(adj_list[2][key])):
         print ('"'+adj_list[2][key][j]+'"',end=', ')
     print ("a],",end='')
+print ("}, ",end='')
+print ("{ ",end='')
+for key in adj_list[3].keys():
+    print ('"'+key+'": [',end='')
+    for j in range(len(adj_list[3][key])):
+        print ('"'+adj_list[3][key][j]+'"',end=', ')
+    print ("a],",end='')
+print ("}, ",end='')
+print ("{ ",end='')
+for key in adj_list[4].keys():
+    print ('"'+key+'": [',end='')
+    for j in range(len(adj_list[4][key])):
+        print ('"'+adj_list[4][key][j]+'"',end=', ')
+    print ("a],",end='')
 print ("} ",end='')
 print ("];")
 '''
-  
-t_nodes = {'1':0,'2':0,'3':0}
-step = {'1':0,'2':0,'3':0}
-degree = {'1':0,'2':0,'3':0}
+'''  
+t_nodes = {'1':0,'2':0,'3':0,'4':0,'5':0}
+step = {'1':0,'2':0,'3':0,'4':0,'5':0}
+degree = {'1':0,'2':0,'3':0,'4':0,'5':0}
 for node in level:
     t_nodes[str(level[node])] += 1
 
 for key in step:
     step[key] = 360/t_nodes[key]
 
-for node in adj_list[1].keys():
-    #print ("key = ",node)
-    for n in adj_list[1][node]:
-        if(level[n]==1):
-            #print ("    child = ",n)
+
+print (len(adj_list[0].keys()),len(adj_list[1].keys()),len(adj_list[2].keys()),len(adj_list[3].keys()),len(adj_list[4].keys()))
+print (level[switch_id_guid['ibsw23']],level[switch_id_guid['ibsw63']])
+
+c4=c3=c2=c1=0
+#for every node in 4th level
+done = []
+for n4 in adj_list[3].keys():
+    #for every adjancent 3rd level node adjancent to node3
+    for n3 in adj_list[3][n4]:
+        #for evry adjancent 2nd level node adjancent to n3
+        if(level[n3]==3):
+            for n2 in adj_list[2][n3]:
+                #for every node in 1st level adjancent to n2
+                if(level[n2]==2):
+                    for n1 in adj_list[1][n2]:
+                        if(level[n1]==1):
+                            for nodee in data['nodes']:
+                                if(nodee['id'] not in done and nodee['id']==n1):
+                                    l = 1
+                                    done.append(nodee['id'])
+                                    nodee['x'] = 30 * math.cos(degree[str(l)]*(math.pi/180)) 
+                                    nodee['y'] = 33 * math.sin(degree[str(l)]*(math.pi/180))
+                                    degree[str(l)] += step[str(l)]
+                    for nodee in data['nodes']:
+                        if(nodee['id'] not in done and nodee['id']==n2):
+                            l = 2
+                            done.append(nodee['id'])
+                            nodee['x'] = 23 * math.cos(degree[str(l)]*(math.pi/180)) 
+                            nodee['y'] = 26 * math.sin(degree[str(l)]*(math.pi/180))
+                            degree[str(l)] += step[str(l)]
             for nodee in data['nodes']:
-                if(nodee['id']==n):
-                    #print ("        modifying node = ",nodee['id'],level[n])
-                    l = 1
-                    nodee['x'] = 25 * math.cos(degree[str(l)]*(math.pi/180)) 
-                    nodee['y'] = 30 * math.sin(degree[str(l)]*(math.pi/180))
+                if(nodee['id'] not in done and nodee['id']==n3):
+                    l = 3
+                    done.append(nodee['id'])
+                    nodee['x'] = 16 * math.cos(degree[str(l)]*(math.pi/180)) 
+                    nodee['y'] = 19 * math.sin(degree[str(l)]*(math.pi/180))
                     degree[str(l)] += step[str(l)]
     for nodee in data['nodes']:
-        if(nodee['id']==node):
-            #print ("modifying node = ",nodee['id'],level[node])
-            l = 2
-            nodee['x'] = 16.6 * math.cos(degree[str(l)]*(math.pi/180)) 
-            nodee['y'] = 20 * math.sin(degree[str(l)]*(math.pi/180))
+        if(nodee['id'] not in done and nodee['id']==n4):
+            l = 4
+            done.append(nodee['id'])
+            nodee['x'] = 9 * math.cos(degree[str(l)]*(math.pi/180)) 
+            nodee['y'] = 12 * math.sin(degree[str(l)]*(math.pi/180))
             degree[str(l)] += step[str(l)]
-
-#print (degree)
 
 for node in data['nodes']:
     l = level[node['id']]
-    if(l==3):
+    if(l==5):
         #print (l)
-        node['x'] = 8.3 * math.cos(degree[str(l)]*(math.pi/180)) 
-        node['y'] = 10 * math.sin(degree[str(l)]*(math.pi/180))
+        node['x'] = 2 * math.cos(degree[str(l)]*(math.pi/180)) 
+        node['y'] = 5 * math.sin(degree[str(l)]*(math.pi/180))
         degree[str(l)] += step[str(l)]
 
-edges = []
-#print (len(data['edges']))
+
+print ("Total nodes : ",len(data['nodes']))
+print ("Total edges : ",len(data['edges']))
+
+ground_edges = 0
+for e1 in data['edges']:
+    if(level[e1['source']]==2 and level[e1['target']]==1):
+        ground_edges += 1
+print ("Leaf edges : ",ground_edges)
 
 for e1 in data['edges']:
     for e2 in data['edges']:
@@ -219,15 +280,19 @@ for e1 in data['edges']:
             data['edges'].remove(e1)
             break
 
-for e1 in data['edges']:
-    if(level[e1['source']]!=1 and level[e1['target']]!=1):
-        data['edges'].remove(e1)
+for i in range(11):
+    for e1 in data['edges']:
+        if(level[e1['source']]!=1 and level[e1['target']]!=1):
+            data['edges'].remove(e1)
+    print (len(data['edges']))
 ce = 0
 for e1 in data['edges']:
     if(level[e1['source']]!=1 and level[e1['target']]!=1):
         ce += 1
-#print (ce,len(data['edges']))
-
+print (ce)
+print ("Edges remain :",len(data['edges']))
+'''
+'''
 #with open('data.json', 'w') as fp:
 #    json.dump(data, fp, indent=4)
 #print (level['0x00066a00e3002acc'])
@@ -240,6 +305,7 @@ set2 = set(adj_list[1].keys())
 #print (len(set2))
 s = set2 - set_nodes
 #print (s)
+'''
 '''
 with open('data.json', 'w') as fp:
     json.dump(data, fp, indent=4)

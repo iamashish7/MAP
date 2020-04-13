@@ -17,7 +17,6 @@ function CreateTable(_page) {
                     hold_data.push(job_data_H);
             });
             $('#running').DataTable({
-                // pageLength: 20,
                 "scrollY": "75vh",
                 "scrollX": true,
                 "scrollCollapse": true,
@@ -25,7 +24,6 @@ function CreateTable(_page) {
                 destroy: true,
                 responsive: true,
                 data: running_data,
-                // stateSave: true,
                 columns: [
                     // { title: '<input name="select_all" value="1" id="select-all" type="checkbox" />' },
                     { title: "Job ID" },
@@ -38,22 +36,7 @@ function CreateTable(_page) {
                     { title: "Exec_host" }
                 ],
                 deferRender: true,
-                // select: {
-                //     style: 'multi',
-                //     selector: 'td:first-child'
-                // },
                 columnDefs: [
-                    // {
-                    //     orderable: false,
-                    //     className: 'select-checkbox',
-                    //     targets: 0
-                    // },
-                    // {
-                    //     'targets': 0,
-                    //     'checkboxes': {
-                    //         'selectRow': true
-                    //     }
-                    // },
                     {
                         render: function (data, type, full, meta) {
                             return "<div class='text-wrap'>" + data + "</div>";
@@ -107,21 +90,25 @@ function CreateTable(_page) {
             $.each(data, function (key, value) {
                 job_data = [key, value["Jobname"], value["Username"], value["Queue"], value["Elapsed_Time"], value["Nodes"], value["RequiredTime"], value["Exec_host"].join(', ')];
                 job_data_Q = [key, value["Jobname"], value["Username"], value["Queue"], value["Nodes"], value["RequiredTime"]];
-
+                job_data_H = [key, value["Jobname"], value["Username"], value["Queue"], value["Elapsed_Time"], value["Nodes"], value["RequiredTime"], value["Exec_host"].join(', ')];
                 if (value["State"] == "R") {
                     running_data.push(job_data);
                 }
                 else if (value["State"] == "Q")
                     queue_data.push(job_data_Q);
                 else
-                    hold_data.push(job_data);
+                    hold_data.push(job_data_H);
             });
             $('#running').DataTable({
+                "scrollY": "75vh",
+                "scrollX": true,
+                "scrollCollapse": true,
+                "paging": false,
                 destroy: true,
-                responsive: false,
+                responsive: true,
                 data: running_data,
-                stateSave: true,
                 columns: [
+                    // { title: '<input name="select_all" value="1" id="select-all" type="checkbox" />' },
                     { title: "Job ID" },
                     { title: "Job Name" },
                     { title: "User" },
@@ -142,15 +129,17 @@ function CreateTable(_page) {
                     {
                         visible: false, targets: [1]
                     }
-                ],
-
+                ]
             });
 
 
             $('#queue').DataTable({
+                "scrollY": "75vh",
+                "scrollCollapse": true,
+                "paging": false,
                 destroy: true,
                 data: queue_data,
-                stateSave: true,
+                // stateSave: true,
                 responsive: true,
                 columns: [
                     { title: "Job ID" },
@@ -159,22 +148,23 @@ function CreateTable(_page) {
                     { title: "Queue" },
                     { title: "Requested_Nodes" },
                     { title: "Required_Time" },
-
                 ]
 
             });
             $('#hold').DataTable({
+                "scrollY": "75vh",
+                "scrollCollapse": true,
+                "paging": false,
                 destroy: true,
                 data: hold_data,
-                stateSave: true,
+                // stateSave: true,
                 responsive: true,
                 columns: [
                     { title: "Job ID" },
                     { title: "Job Name" },
                     { title: "User" },
-                    { title: "Queue" },
+                    { title: "Queue" }
                 ]
-
             });
             openRunning();
         });
