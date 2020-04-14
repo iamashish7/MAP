@@ -6,18 +6,76 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!--<link href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css" rel="stylesheet"
         media="screen">-->
-    <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
+    <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    
     <script src="js/tabsfunc.js"></script>
+    <script src="js/plotEdges2013.js"></script>
     <script src="js/createtable.js"></script>
-    <script src="js/creategrid_2013.js"></script>
+    <script src="js/creategrid_2013_2.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css">
     <link rel="stylesheet" href="myStyleSheet.css">
-    <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" />
-
+    <!-- <link href="//datatables.net/download/build/nightly/jquery.dataTables.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="//cdn.datatables.net/plug-ins/1.10.20/features/pageResize/dataTables.pageResize.min.js" ></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- START SIGMA IMPORTS -->
+    <script src="./lib/sigma.js-1.2.1/src/sigma.core.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/conrad.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/utils/sigma.utils.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/utils/sigma.polyfills.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/sigma.settings.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/classes/sigma.classes.dispatcher.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/classes/sigma.classes.configurable.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/classes/sigma.classes.graph.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/classes/sigma.classes.camera.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/classes/sigma.classes.quad.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/classes/sigma.classes.edgequad.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/captors/sigma.captors.mouse.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/captors/sigma.captors.touch.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/sigma.renderers.canvas.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/sigma.renderers.webgl.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/sigma.renderers.svg.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/sigma.renderers.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.labels.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.hovers.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/svg/sigma.svg.utils.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/svg/sigma.svg.nodes.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/svg/sigma.svg.edges.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/svg/sigma.svg.edges.curve.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/svg/sigma.svg.labels.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/renderers/svg/sigma.svg.hovers.def.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/middlewares/sigma.middlewares.rescale.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/middlewares/sigma.middlewares.copy.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/misc/sigma.misc.animation.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/misc/sigma.misc.bindEvents.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/misc/sigma.misc.bindDOMEvents.js"></script>
+    <script src="./lib/sigma.js-1.2.1/src/misc/sigma.misc.drawHovers.js"></script>
+    <!-- Plugins-->
+    <script src="./lib/sigma.js-1.2.1/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
+    <script src="./lib/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/worker.js"></script>
+    <script src="./lib/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
+    <!-- END SIGMA IMPORTS -->
 </head>
 <style>
     th,
@@ -30,7 +88,7 @@
     table,
     th,
     td {
-        border: solid 1px#f345;
+        /* border: solid 1px#f345; */
         border-collapse: collapse;
         padding: 2px 3px;
         text-align: center;
@@ -38,6 +96,9 @@
 
     th {
         font-weight: bold;
+    }
+    .dataTables_scroll {
+        overflow: auto;
     }
 
     .tab {
@@ -113,23 +174,17 @@
         border-right-width: 5px;
     }
 
-    .th {
-        padding: 1px;
-        font-size: x-small;
-
-    }
-
-    td.highlight {
+    /* td.highlight {
         font-weight: bold;
         color: blue;
-    }
+    } */
 
-    .header img {
+    /* .header img {
         float: left;
         width: 100px;
         height: 100px;
         background: #555;
-    }
+    } */
 
     #tooltip {
         background-color: white;
@@ -162,7 +217,7 @@
     }
 
     .td {
-        padding: 8px;
+        padding: 0.40vw; /* control the size of grid boxes */
         margin: 0;
         border: 1px solid;
     }
@@ -174,10 +229,6 @@
         border-collapse: collapse;
         padding: 0;
         border-spacing: 0;
-    }
-
-    th {
-        font-weight: bold;
     }
 
     .td-limit {
@@ -202,29 +253,70 @@
         border-collapse: collapse;
         padding: 2px 3px;
         text-align: center;
-
     }
 
+    .th2{
+        border: solid 4px;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 5px;
+        font-size: 0.65vw;
+    }
     th,
     td,
     p,
     input {
         font: 14px Verdana;
     }
-    .td2{
-        padding: 7px;
-        margin: 0;
-        border: 1px solid;
+
+    .ml-auto {
+        left: auto !important;
+        right: 0px;
     }
-    .navbar .navbar-brand .nav-item .table .table2 .th .td .datatable{
+
+    .navbar .navbar-brand .nav-item .table .table2 .th .td .datatable .tabcontent {
         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #graph-container {
+        /* border: solid 1px#f345; */
+        /* left: 150px;
+        right: 150px; */
+        height: 89vh;
+        position: block;
+        display: block;
+        background: #fff;
+    }
+    .leftside{
+        height: 100vh;
+        width: 100%;
+    } .rightside{
+        height: 100vh;
+        /* width: 951px; */
+    }
+    .nav-link-font-color{
+        color:gray;
+    }
+    a:active {
+        color: black;
+    }
+    a:hover{
+        color: black;
+    }
+    .br { 
+        display: block; 
+        margin-bottom: 0.25em; 
+    }
+    .GRID{
+        display: none;
+    }
+    td.child{
+        text-align: left;
     }
 </style>
 
 <body>
-
-
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">HPC 2013</a>
 
@@ -245,71 +337,96 @@
                     </a>
                     <div class="dropdown-menu ">
                         <a class="dropdown-item" href="current_2013.php">Current Analysis</a>
-                        <a class="dropdown-item" href="previous_2013.php">Past Data Analysis</a>
+                        <a class="dropdown-item" href="#">Past Data Analysis</a>
                     </div>
                 </li>
             </ul>
         </div>
-        <p style="color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif">
-            Indian Institute of Technology, Kanpur</p>
+        <p style="color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif">Indian Institute of
+            Technology, Kanpur</p>
     </nav>
-    <br>
-    <div class="container-fluid" style="text-align: center">
-        <div class="d-flex justify-content-center" id="grid"></div>
+    <span class="br"></span>  
+    <div class="row no-gutters">
+        <div class="col-6 no-gutters">
+            <div class="leftside">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-font-color active" href="#" onclick="openDiag(event,'graph-container')">Topology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-font-color" href="#" onclick="openDiag(event,'GRID')">Enclosure</a>
+                    </li>
+                </ul>
+                <br>
+                <div id="graph-container"></div>
+                <div class="row GRID">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div id="grid" style="padding-left:2%;"></div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div id="grid2" style="padding-left:2%;"></div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div id="grid3" style="padding-left:2%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 no-gutters">
+            <div class="rightside">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-font-color" href="#" onclick="opentable(event,'running')">Running Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-font-color" href="#" onclick="opentable(event, 'queue')">Queued Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-font-color" href="#" onclick="opentable(event, 'hold')">Hold Jobs</a>
+                    </li>
+                </ul>
+                <div id="tables">
+                    <div id="Running" class="tabcontent">
+                        <table id="running" class="datatable td-limit table table-striped table-hover dt-responsive display nowrap"
+                            style="width:100%">
+                        </table>
+                    </div>
+                    <div id="Queue" class="tabcontent">
+                        <table id="queue" class="table table-striped table-hover dt-responsive display nowrap" style="width:100%">
+                        </table>
+                    </div>
+                    <div id="Hold" class="tabcontent">
+                        <table id="hold" class="table table-striped table-hover dt-responsive display nowrap" style="width:100%">
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br>
-    <div class="container-fluid" style="text-align: center">
-        <div class="d-flex justify-content-center" id="grid2"></div>
-    </div>
-    <br>
 
-    <nav class="navbar navbar-expand-md bg-secondary navbar-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#"></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar2">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="opentable(event,'running')">Running Jobs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="opentable(event, 'queue')">Queued Jobs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="opentable(event, 'hold')">Hold Jobs</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div id="tables">
-        <div id="Running" class="tabcontent">
-            <table id="running" class="datatable td-limit table table-striped table-hover dt-responsive display nowrap"
-                style="width:100%">
-            </table>
-        </div>
-        <div id="Queue" class="tabcontent">
-            <table id="queue" class="table table-striped table-hover dt-responsive display nowrap" style="width:100%">
-            </table>
-        </div>
-        <div id="Hold" class="tabcontent">
-            <table id="hold" class="table table-striped table-hover dt-responsive display nowrap" style="width:100%">
-            </table>
-        </div>
-    </div>
-    </div>
 </body>
+
 <script>
+    var sig;
     $('#running').on('mouseover', 'tbody tr', function () {
         var row = this._DT_RowIndex;
         var table = $('#running').DataTable();
         var d = (table.cell(row, 7).data()).split(', ');
         if (d.length != 0) {
-            for (let i = 0; i < d.length; i++) {
-                document.getElementById(d[i]).style.backgroundColor = "black";
+            if(document.getElementById("graph-container").style.display=="none"){
+                for (let i = 0; i < d.length; i++) {
+                    document.getElementById(d[i]).style.backgroundColor = "black";
+                }
+            }
+            else{
+                // plot_edges(sig,d);
             }
         }
     });
@@ -317,76 +434,113 @@
         var row = this._DT_RowIndex;
         var table = $('#running').DataTable();
         var d = (table.cell(row, 7).data()).split(', ');
-        for (let i = 0; i < d.length; i++) {
-            document.getElementById(d[i]).style.backgroundColor = "white";
+        if (d.length != 0) {
+            if(document.getElementById("graph-container").style.display=="none"){
+                for (let i = 0; i < d.length; i++) {
+                    document.getElementById(d[i]).style.backgroundColor = "white";
+                }
+            }
+            else{
+                // remove_edges(sig,d);
+            }
         }
     });
+    $('#running').on('click', 'tbody tr', function () {
+        if(document.getElementById("graph-container").style.display!="none")
+        {
+            var table = $('#running').DataTable();
+            var data = table.row(this).data();
+            var d = data[7].split(', ');
+            if ( $(this).hasClass('selected') ) {
+                $(this).removeClass('selected');
+                remove_edges(sig,d);
+            }
+            else {
+                var t0 = performance.now();
+                if ( table.rows( '.selected' ).any() ){
+                    table.rows().iterator( 'row', function ( context, index ) {
+                        if($( this.row( index ).node() ).hasClass( 'selected' )){
+                            var d2 = table.row(index).data()[7].split(', ');
+                            table.row(index).child.hide();
+                            remove_edges(sig,d2);
+                        }
+                    } );
+                }
+                var t1 = performance.now();
+                table.$('tr.selected').removeClass('selected');
+                var t2 = performance.now();
+                $(this).addClass('selected');
+                plot_edges(sig,d);
+                var t3 = performance.now();
+                console.log("First part " + (t1 - t0) + " milliseconds.");
+                console.log("Second part " + (t2 - t1) + " milliseconds.");
+                console.log("plot_edges() " + (t3 - t2) + " milliseconds.");
+                console.log("Total " + (t3 - t0) + " milliseconds.");
+            }
+        }
+    } );
     $(document).ready(function () {
         addGRID();
-        // CreateTable('2010');
         setInterval(CreateTable('2013'), 5000);
-    });
+        // jQuery('.dataTable').wrap('<div class ="dataTables_scroll" />');
+        // sigma.parsers.json('./config_json/data2010.json', {
+        //     renderer: {
+        //         container: document.getElementById("graph-container"),
+        //         type: 'canvas'
+        //     },
+        //     settings: {
+        //         // minEdgeSize: 1,
+        //         // maxEdgeSize: 100,
+        //         // minNodeSize: 2,
+        //         // maxNodeSize: 50,
+        //         // edgeColor: 'default',
+        //         // defaultLabelColor: '#ecf0f1',
+        //         // defaultEdgeColor: '#FFFFFF',
+        //         // defaultEdgeType: 'arrow',
+        //         // defaultNodeColor: '#e74c3c',
+        //         // autoRescale: ['nodePosition', 'nodeSize', 'edgeSize'],
+        //         // animationsTime: 1000,
+        //         borderSize: 2,
+        //         outerBorderSize: 3,
+        //         enableEdgeHovering: true,
+        //         edgeHoverColor: '#2ecc71',
+        //         defaultEdgeHoverColor: '#2ecc71',
+        //         edgeHoverSizeRatio: 2,
+        //         edgeHoverExtremities: true,
+        //         // drawEdges: false
+        //         // scalingMode: 'outside'
+        //     }
+        // },function(s){
+        //     console.log(s.graph.nodes());
+        //     // s.graph.addEdge({
+        //     //     id:'e1',
+        //     //     label:"Edge1",
+        //     //     source:"0x0002c90300aacae0",
+        //     //     target:"mic003",
+        //     //     size:5,
+        //     //     color:"#2e4180",
+        //     //     type:"line"
+        //     // });
+        //     // s.refresh();
+        // });
 
-    var data3 = [];
-    $.getJSON("realtime/2013/jsonoutput.json", function (info) {
-        var tot_nodes_2 = 0;
-        $.each(info, function (key, value) {
-            if (value["State"] == 'R') {
-                tot_nodes_2 = tot_nodes_2 + parseInt(value["Nodes"]);
-                data3.push({
-                    jobid: key,
-                    nodes: +value["Nodes"],
-                    queue: value["Queue"],
-                    rtime: value["Elapsed_Time"],
-                    wtime: value["RequiredTime"]
-                });
-
+        sigma.parsers.json('./config_json/data2013.json', {
+            renderer: {
+                container: document.getElementById("graph-container"),
+                type: 'canvas'
+            },
+            settings: {
+                borderSize: 2,
+                outerBorderSize: 3,
+                enableEdgeHovering: true,
+                edgeHoverColor: '#2ecc71',
+                defaultEdgeHoverColor: '#2ecc71',
+                edgeHoverSizeRatio: 2,
+                edgeHoverExtremities: true,
             }
+        },function(s){
+            this.sig = s;
         });
-        var empty = 893 - tot_nodes_2;
-        console.log(tot_nodes_2);
-        console.log(empty);
-        data3.push({
-            jobid: '000000',
-            nodes: empty,
-            queue: "N/A",
-            rtime: "00:00",
-            wtime: "00:00"
-        });
-        console.log("HPC 2013");
-        drawDonutChart(data3, "chart_2", "HPC 2013");
-
-    });
-    var data2 = [];
-    $.getJSON("realtime/2010/jsonoutput.json", function (info) {
-        var tot_nodes = 0;
-        $.each(info, function (key, value) {
-            if (value["State"] == 'R') {
-                tot_nodes = tot_nodes + parseInt(value["Nodes"]);
-                data2.push({
-                    jobid: key,
-                    nodes: +value["Nodes"],
-                    queue: value["Queue"],
-                    rtime: value["Elapsed_Time"],
-                    wtime: value["RequiredTime"]
-                });
-
-            }
-        });
-        var empty = 464 - tot_nodes;
-        console.log(tot_nodes);
-        console.log(empty);
-
-        data2.push({
-            jobid: '000000',
-            nodes: empty,
-            queue: "N/A",
-            rtime: "00:00",
-            wtime: "00:00"
-        });
-        console.log("HPC 2010");
-        drawDonutChart(data2, "chart_1", "HPC 2010");
-
     });
 </script>
 
