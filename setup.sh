@@ -1,6 +1,8 @@
 cp -a ./code/. /var/www/html/
-/var/www/html/realtime/2010/HPC2010_daemon.sh &
-/var/www/html/realtime/2013/HPC2013_daemon.sh &
+echo "Please enter CC username"
+read username
+/var/www/html/realtime/2010/HPC2010_daemon.sh $username &
+/var/www/html/realtime/2013/HPC2013_daemon.sh $username &
 echo "Please enter root user MySQL password!"
 echo "Note: password will be hidden when typing"
 read -s rootpasswd
