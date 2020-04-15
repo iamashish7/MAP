@@ -20,7 +20,6 @@ $ sudo apt update
 $ sudo apt install apache2
 ```
 2. MySQL (skip if already installed)
-In this step you have to setup root password for user 'root'.
 ```
 $ sudo apt install mysql-server
 ```
@@ -36,10 +35,12 @@ $ pip install pymysql
 
 ### Installing
 
+Before proceding further please make sure you have passwordless ssh for HPC2010 and HPC2013
+
 1. Go to project directory using cd command
 2. Run setup.sh
 ```
-$ ./setup.sh
+$ sudo ./setup.sh
 ```
  
 ## Running MONALYS

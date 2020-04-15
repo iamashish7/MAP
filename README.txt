@@ -41,10 +41,12 @@ $ pip install pymysql
 ----------------
 Installing
 ----------------
+Before proceding further please make sure you have passwordless ssh for HPC2010 and HPC2013
+
 1. Go to project directory using cd command
 2. Run setup.sh
 
-$ ./setup.sh
+$ sudo ./setup.sh
 
 ################# 
 Running MONALYS
