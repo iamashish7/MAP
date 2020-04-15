@@ -48,10 +48,16 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link" href="monitor_2010.html">HPC2010</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="monitor_2013.html">HPC2013</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="custom.php">Custom Analysis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Wait-time Analysis</a>
+                    <a class="nav-link active" href="#">Wait-time Prediction</a>
                 </li>
             </ul>
         </div>

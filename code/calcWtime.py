@@ -5,14 +5,14 @@ import json
 
 
 # Load the model from the file 
-kmeans = joblib.load('/var/www/html/new/predict_models/Kmeans.pkl')  
+kmeans = joblib.load('/var/www/html/predict_models/Kmeans.pkl')  
 
 reg_models = []
 for i in range(6):
-    reg_models.append(joblib.load('/var/www/html/new/predict_models/Log_reg'+str(i)+'.pkl'))
+    reg_models.append(joblib.load('/var/www/html/predict_models/Log_reg'+str(i)+'.pkl'))
  
 QState = {}
-with open('/var/www/html/new/realtime/2010/QState.json','r') as fp:
+with open('/var/www/html/realtime/2010/QState.json','r') as fp:
     QState = json.load(fp)
 
 #print (sys.argv[1],sys.argv[2],sys.argv[3])

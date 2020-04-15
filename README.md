@@ -31,7 +31,11 @@ $ sudo apt install php libapache2-mod-php php-mysql
 4. Now we will install some python libraries
 ```
 $ pip install pymysql
+$ pip install joblib
+$ pip install datetime
 ```
+5. Modify few php parameters :-
+    open php.ini file it should be in /etc/php/<your php version>/apache2/php.ini and change variable upload_max_filesize, post_max_size and max_execution_time to 20M, 25M and 300 respectively. 
 
 ### Installing
 

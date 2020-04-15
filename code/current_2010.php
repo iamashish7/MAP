@@ -106,6 +106,12 @@
                         <a class="dropdown-item" href="previous_2010.php">Past Data Analysis</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="custom.php">Custom Analysis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wait_time_pred.php">Wait-time Prediction</a>
+                </li>
             </ul>
         </div>
         <p style="color: white; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif">Indian Institute of Technology, Kanpur</p>

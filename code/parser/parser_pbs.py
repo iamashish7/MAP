@@ -12,7 +12,7 @@ from datetime import datetime
 import sys
 import random
 
-log_file_name = '/var/www/html/new/code/uploads/'+sys.argv[1]
+log_file_name = '/var/www/html/uploads/'+sys.argv[1]
 rand_int = random.randrange(10000, 100000, 1)
 database = "tempLogs"
 rand_int = random.randrange(10000, 100000, 1)
