@@ -15,22 +15,22 @@ These instructions will get you a copy of the project up and running on your loc
 There are a couple of prerequisites that need to be installed before we start using this tool.
 
 1. Apache2 (skip if already installed)
-```bash
+```
 $ sudo apt update
 $ sudo apt install apache2
 ```
 2. MySQL (skip if already installed)
 In this step you have to setup root password for user 'root'.
-```bash
+```
 $ sudo apt install mysql-server
 ```
 
 3. PHP (skip if already installed)
-```bash
+```
 $ sudo apt install php libapache2-mod-php php-mysql
 ```
 4. Now we will install some python libraries
-```bash
+```
 $ pip install pymysql
 ```
 
@@ -38,7 +38,7 @@ $ pip install pymysql
 
 1. Go to project directory using cd command
 2. Run setup.sh
-```bash
+```
 $ ./setup.sh
 ```
  
