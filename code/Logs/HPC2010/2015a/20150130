@@ -1,0 +1,19 @@
+01/30/2015 00:30:00;L;license;floating license hour:0 day:484 month:2027 max:3356
+01/30/2015 01:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 02:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 03:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 04:12:16;E;141532.mgmt03;user=7614447 group=9301542 project=l_m_s_project jobname=with_jac_01 queue=medium ctime=1422225637 qtime=1422225637 etime=1422225637 start=1422225637 exec_host=cn246/0*8+cn283/0*8+cn281/0*8+cn284/0*8+cn197/0*8+cn214/0*8+cn225/0*8+cn232/0*8+cn253/0*8+cn267/0*8+cn266/0*8+cn270/0*8 exec_vnode=(cn246:ncpus=8)+(cn283:ncpus=8)+(cn281:ncpus=8)+(cn284:ncpus=8)+(cn197:ncpus=8)+(cn214:ncpus=8)+(cn225:ncpus=8)+(cn232:ncpus=8)+(cn253:ncpus=8)+(cn267:ncpus=8)+(cn266:ncpus=8)+(cn270:ncpus=8) Resource_List.LMS_limit=1 Resource_List.mpiprocs=96 Resource_List.ncpus=96 Resource_List.nodect=12 Resource_List.nodes=12:ppn=8 Resource_List.place=scatter Resource_List.select=12:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=16825 end=1422571336 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:38 resources_used.mem=15288kb resources_used.ncpus=96 resources_used.vmem=412420kb resources_used.walltime=96:01:35 run_count=1
+01/30/2015 04:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 05:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 06:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 07:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 08:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 09:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 10:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 11:31:22;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 12:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 20:02:42;B;R140556.mgmt03;owner=arijitmp@mgmt03 name=NULL queue=R140556 ctime=1421729475 start=1421729520 end=1423025520 duration=1296000 nodes=(cn350:ncpus=8) Authorized_Users=arijitmp@mgmt03 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.place=pack Resource_List.select=1:ncpus=8:seqnode_binding=yes Resource_List.seqnode_binding=yes Resource_List.walltime=360:00:00 
+01/30/2015 20:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 21:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 22:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/30/2015 23:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356

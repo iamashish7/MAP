@@ -1,0 +1,55 @@
+05/16/2018 00:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 01:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 02:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 03:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 04:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 05:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 06:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 07:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 08:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 09:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 10:15:24;Q;46580.mgmt03;queue=workq
+05/16/2018 10:16:30;Q;46581.mgmt03;queue=workq
+05/16/2018 10:26:04;Q;46582.mgmt03;queue=workq
+05/16/2018 10:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 11:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 11:38:07;Q;46583.mgmt03;queue=workq
+05/16/2018 11:39:54;D;46583.mgmt03;requestor=rajumar@2k10un03
+05/16/2018 12:17:41;Q;46584.mgmt03;queue=workq
+05/16/2018 12:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 12:36:38;D;46584.mgmt03;requestor=agaur@2k10un01
+05/16/2018 13:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 13:50:05;Q;46585.mgmt03;queue=workq
+05/16/2018 13:50:31;D;46585.mgmt03;requestor=jawahar@2k10un03
+05/16/2018 14:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 14:40:13;Q;46586.mgmt03;queue=workq
+05/16/2018 14:40:37;D;46586.mgmt03;requestor=praveens@2k10un04
+05/16/2018 15:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 16:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 17:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 17:31:38;Q;46587.mgmt03;queue=workq
+05/16/2018 17:34:50;Q;46588.mgmt03;queue=workq
+05/16/2018 17:40:47;Q;46589.mgmt03;queue=medium
+05/16/2018 17:43:13;Q;46590.mgmt03;queue=medium
+05/16/2018 18:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 19:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 20:00:07;D;45512.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:16;D;45514.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:21;D;46022.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:26;D;46023.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:30;D;46133.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:36;D;46389.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:39;D;46391.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:44;D;46393.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:00:46;D;46396.mgmt03;requestor=sbatra@2k10un04
+05/16/2018 20:01:03;D;45621.mgmt03;requestor=nehav@2k10un02
+05/16/2018 20:01:09;D;45957.mgmt03;requestor=nehav@2k10un02
+05/16/2018 20:01:13;D;46243.mgmt03;requestor=nehav@2k10un02
+05/16/2018 20:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 21:29:29;D;46477.mgmt03;requestor=arunavas@2k10un02
+05/16/2018 21:29:41;D;46582.mgmt03;requestor=arunavas@2k10un02
+05/16/2018 21:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 21:30:50;Q;46591.mgmt03;queue=workq
+05/16/2018 21:32:17;Q;46592.mgmt03;queue=workq
+05/16/2018 22:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767
+05/16/2018 23:30:00;L;license;floating license hour:0 day:0 month:2630 max:2767

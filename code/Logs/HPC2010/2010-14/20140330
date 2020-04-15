@@ -1,0 +1,86 @@
+03/30/2014 00:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 01:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 02:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 03:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 04:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 05:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 06:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 07:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 08:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 09:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 10:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 10:51:53;Q;104082.mgmt03;queue=smallsb
+03/30/2014 10:53:09;D;104082.mgmt03;requestor=chauda@mgmt03
+03/30/2014 10:53:21;Q;104083.mgmt03;queue=small
+03/30/2014 11:18:02;Q;104084.mgmt03;queue=seq
+03/30/2014 11:18:07;Q;104085.mgmt03;queue=seq
+03/30/2014 11:18:12;Q;104086.mgmt03;queue=seq
+03/30/2014 11:18:17;Q;104087.mgmt03;queue=seq
+03/30/2014 11:18:22;Q;104088.mgmt03;queue=seq
+03/30/2014 11:18:41;Q;104089.mgmt03;queue=seq
+03/30/2014 11:18:46;Q;104090.mgmt03;queue=seq
+03/30/2014 11:18:51;Q;104091.mgmt03;queue=seq
+03/30/2014 11:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 11:47:43;Q;104092.mgmt03;queue=large
+03/30/2014 11:47:49;Q;104093.mgmt03;queue=medium
+03/30/2014 11:47:56;Q;104094.mgmt03;queue=small
+03/30/2014 11:48:18;Q;104095.mgmt03;queue=large
+03/30/2014 11:48:27;Q;104096.mgmt03;queue=medium
+03/30/2014 11:48:33;Q;104097.mgmt03;queue=small
+03/30/2014 11:51:59;Q;104098.mgmt03;queue=large
+03/30/2014 11:52:05;Q;104099.mgmt03;queue=medium
+03/30/2014 11:52:14;Q;104100.mgmt03;queue=small
+03/30/2014 11:52:31;Q;104101.mgmt03;queue=large
+03/30/2014 11:52:37;Q;104102.mgmt03;queue=medium
+03/30/2014 11:52:43;Q;104103.mgmt03;queue=small
+03/30/2014 11:55:51;Q;104104.mgmt03;queue=large
+03/30/2014 11:56:00;Q;104105.mgmt03;queue=medium
+03/30/2014 11:56:06;Q;104106.mgmt03;queue=small
+03/30/2014 11:56:28;Q;104107.mgmt03;queue=large
+03/30/2014 11:56:35;Q;104108.mgmt03;queue=medium
+03/30/2014 11:56:41;Q;104109.mgmt03;queue=small
+03/30/2014 12:02:01;Q;104110.mgmt03;queue=large
+03/30/2014 12:02:07;Q;104111.mgmt03;queue=medium
+03/30/2014 12:02:15;Q;104112.mgmt03;queue=small
+03/30/2014 12:02:53;Q;104113.mgmt03;queue=large
+03/30/2014 12:03:00;Q;104114.mgmt03;queue=medium
+03/30/2014 12:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 12:57:01;Q;104115.mgmt03;queue=small
+03/30/2014 13:01:31;Q;104117.mgmt03;queue=small
+03/30/2014 13:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 14:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 14:32:40;Q;104118.mgmt03;queue=medium
+03/30/2014 14:32:41;Q;104119.mgmt03;queue=medium
+03/30/2014 14:34:41;Q;104120.mgmt03;queue=medium
+03/30/2014 14:34:42;Q;104121.mgmt03;queue=medium
+03/30/2014 14:34:53;Q;104122.mgmt03;queue=mediumsb
+03/30/2014 15:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 15:37:47;Q;104125.mgmt03;queue=workq
+03/30/2014 16:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 16:56:00;D;96035.mgmt03;requestor=asahu@mgmt03
+03/30/2014 16:56:06;Q;104126.mgmt03;queue=medium
+03/30/2014 16:56:28;D;102432.mgmt03;requestor=asahu@mgmt03
+03/30/2014 16:56:56;D;96036.mgmt03;requestor=asahu@mgmt03
+03/30/2014 16:58:02;Q;104127.mgmt03;queue=small
+03/30/2014 17:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 18:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 19:09:21;Q;104128.mgmt03;queue=workq
+03/30/2014 19:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 19:56:22;Q;104129.mgmt03;queue=medium
+03/30/2014 19:56:22;Q;104130.mgmt03;queue=medium
+03/30/2014 19:56:55;Q;104131.mgmt03;queue=small
+03/30/2014 19:56:55;Q;104132.mgmt03;queue=small
+03/30/2014 20:29:44;Q;104133.mgmt03;queue=small
+03/30/2014 20:29:48;Q;104134.mgmt03;queue=smallsb
+03/30/2014 20:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 20:30:00;Q;104135.mgmt03;queue=smallsb
+03/30/2014 20:30:03;Q;104136.mgmt03;queue=small
+03/30/2014 21:14:30;Q;104137.mgmt03;queue=mediumsb
+03/30/2014 21:14:37;Q;104138.mgmt03;queue=medium
+03/30/2014 21:15:48;D;104137.mgmt03;requestor=ashwinvm@mgmt03
+03/30/2014 21:16:18;Q;104139.mgmt03;queue=mediumsb
+03/30/2014 21:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 22:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/30/2014 22:34:42;Q;104140.mgmt03;queue=medium
+03/30/2014 22:40:26;Q;104141.mgmt03;queue=medium
+03/30/2014 23:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804

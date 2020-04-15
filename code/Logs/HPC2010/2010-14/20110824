@@ -1,0 +1,30 @@
+08/24/2011 00:30:00;L;license;floating license hour:0 day:1964 month:2537 max:2560
+08/24/2011 01:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 02:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 03:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 04:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 05:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 06:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 07:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 08:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 09:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 10:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 11:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 12:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 12:36:33;D;16633.mgmt03;requestor=shrabani@mgmt03
+08/24/2011 12:37:44;E;16633.mgmt03;user=user199 group=group6 jobname=A1_NC queue=small ctime=1313991136 qtime=1313991136 etime=1313991136 start=1314048460 exec_host=cn304/0*8 exec_vnode=(cn304:ncpus=8:mpiprocs=8:checkfs=3) Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=26837 end=1314169664 Exit_status=271 resources_used.cpupercent=695 resources_used.cput=235:16:49 resources_used.mem=9248kb resources_used.ncpus=8 resources_used.vmem=477280kb resources_used.walltime=33:40:05 run_count=2
+08/24/2011 13:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 14:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 15:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 16:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 16:46:35;D;16676.mgmt03;requestor=bhrsingh@mgmt03
+08/24/2011 17:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 17:44:39;E;16555.mgmt03;user=user13 group=group6 jobname=GW0.03H60 queue=medium ctime=1313823541 qtime=1313823541 etime=1313823541 start=1314048457 exec_host=cn232/0*8+cn233/0*8+cn234/0*8+cn235/0*8+cn236/0*8+cn237/0*8+cn238/0*8+cn239/0*8+cn240/0*8+cn241/0*8+cn242/0*8+cn243/0*8 exec_vnode=(cn232:ncpus=8:mpiprocs=8:checkfs=3)+(cn233:ncpus=8:mpiprocs=8:checkfs=3)+(cn234:ncpus=8:mpiprocs=8:checkfs=3)+(cn235:ncpus=8:mpiprocs=8:checkfs=3)+(cn236:ncpus=8:mpiprocs=8:checkfs=3)+(cn237:ncpus=8:mpiprocs=8:checkfs=3)+(cn238:ncpus=8:mpiprocs=8:checkfs=3)+(cn239:ncpus=8:mpiprocs=8:checkfs=3)+(cn240:ncpus=8:mpiprocs=8:checkfs=3)+(cn241:ncpus=8:mpiprocs=8:checkfs=3)+(cn242:ncpus=8:mpiprocs=8:checkfs=3)+(cn243:ncpus=8:mpiprocs=8:checkfs=3) Resource_List.ncpus=96 Resource_List.nodect=12 Resource_List.nodes=12:ppn=8 Resource_List.place=scatter Resource_List.select=12:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=13566 end=1314188079 Exit_status=255 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14008kb resources_used.ncpus=96 resources_used.vmem=408824kb resources_used.walltime=38:46:46 run_count=2
+08/24/2011 18:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 18:40:41;E;16451.mgmt03;user=user27 group=group6 jobname=viv_750 queue=medium ctime=1313728617 qtime=1313728617 etime=1313728617 start=1314048456 exec_host=cn191/0*8+cn192/0*8+cn193/0*8+cn194/0*8+cn195/0*8+cn196/0*8+cn197/0*8+cn198/0*8+cn199/0*8+cn200/0*8+cn201/0*8+cn202/0*8 exec_vnode=(cn191:ncpus=8:mpiprocs=8:checkfs=3)+(cn192:ncpus=8:mpiprocs=8:checkfs=3)+(cn193:ncpus=8:mpiprocs=8:checkfs=3)+(cn194:ncpus=8:mpiprocs=8:checkfs=3)+(cn195:ncpus=8:mpiprocs=8:checkfs=3)+(cn196:ncpus=8:mpiprocs=8:checkfs=3)+(cn197:ncpus=8:mpiprocs=8:checkfs=3)+(cn198:ncpus=8:mpiprocs=8:checkfs=3)+(cn199:ncpus=8:mpiprocs=8:checkfs=3)+(cn200:ncpus=8:mpiprocs=8:checkfs=3)+(cn201:ncpus=8:mpiprocs=8:checkfs=3)+(cn202:ncpus=8:mpiprocs=8:checkfs=3) Resource_List.ncpus=96 Resource_List.nodect=12 Resource_List.nodes=12:ppn=8 Resource_List.place=scatter Resource_List.select=12:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=15540 end=1314191441 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=15080kb resources_used.ncpus=96 resources_used.vmem=412140kb resources_used.walltime=39:43:04 run_count=2
+08/24/2011 19:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 20:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 21:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 21:32:05;E;16673.mgmt03;user=user7 group=group6 jobname=viv_2000 queue=medium ctime=1314081594 qtime=1314081594 etime=1314081594 start=1314081603 exec_host=cn185/0*8+cn186/0*8+cn187/0*8+cn188/0*8+cn189/0*8+cn190/0*8+cn203/0*8+cn204/0*8+cn205/0*8+cn206/0*8+cn266/0*8+cn267/0*8 exec_vnode=(cn185:ncpus=8:mpiprocs=8:checkfs=3)+(cn186:ncpus=8:mpiprocs=8:checkfs=3)+(cn187:ncpus=8:mpiprocs=8:checkfs=3)+(cn188:ncpus=8:mpiprocs=8:checkfs=3)+(cn189:ncpus=8:mpiprocs=8:checkfs=3)+(cn190:ncpus=8:mpiprocs=8:checkfs=3)+(cn203:ncpus=8:mpiprocs=8:checkfs=3)+(cn204:ncpus=8:mpiprocs=8:checkfs=3)+(cn205:ncpus=8:mpiprocs=8:checkfs=3)+(cn206:ncpus=8:mpiprocs=8:checkfs=3)+(cn266:ncpus=8:mpiprocs=8:checkfs=3)+(cn267:ncpus=8:mpiprocs=8:checkfs=3) Resource_List.ncpus=96 Resource_List.nodect=12 Resource_List.nodes=12:ppn=8 Resource_List.place=scatter Resource_List.select=12:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=2326 end=1314201725 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=15284kb resources_used.ncpus=96 resources_used.vmem=412420kb resources_used.walltime=31:19:32 run_count=1
+08/24/2011 22:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/24/2011 23:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560

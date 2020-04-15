@@ -1,0 +1,411 @@
+04/30/2013 00:02:41;Q;59643.mgmt03;queue=small
+04/30/2013 00:03:02;S;59525.mgmt03;user=user32 group=group6 project=l_m_s_project jobname=cnt-oct-ion queue=medium ctime=1367164199 qtime=1367164199 etime=1367164199 start=1367260382 exec_host=cn243/0*8+cn270/0*8+cn274/0*8+cn275/0*8 exec_vnode=(cn243:ncpus=8:checkfs=4)+(cn270:ncpus=8:checkfs=4)+(cn274:ncpus=8:checkfs=4)+(cn275:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 00:15:49;Q;59644.mgmt03;queue=small
+04/30/2013 00:16:32;E;58711.mgmt03;user=user179 group=group6 project=l_m_s_project jobname=arm9-pbs-4100-e queue=medium ctime=1366573268 qtime=1366573268 etime=1366573268 start=1366915567 exec_host=cn263/0*8+cn264/0*8+cn265/0*8+cn277/0*8 exec_vnode=(cn263:ncpus=8:checkfs=4)+(cn264:ncpus=8:checkfs=4)+(cn265:ncpus=8:checkfs=4)+(cn277:ncpus=8:checkfs=4) Resource_List.fluent=1 Resource_List.fluent_lic=48 Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=3743 end=1367261192 Exit_status=271 resources_used.cpupercent=795 resources_used.cput=762:08:28 resources_used.mem=12042244kb resources_used.ncpus=32 resources_used.vmem=14941900kb resources_used.walltime=96:00:24 run_count=1
+04/30/2013 00:22:58;Q;59645.mgmt03;queue=workq
+04/30/2013 00:23:17;S;59645.mgmt03;user=user179 group=group6 project=_pbs_project_default jobname=STDIN queue=workq ctime=1367261578 qtime=1367261578 etime=1367261578 start=1367261597 exec_host=cn360/1 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=1 resource_assigned.interactive_tasks=1 
+04/30/2013 00:23:17;S;59242.mgmt03;user=user179 group=group6 project=l_m_s_project jobname=arm9-pbs-4100-c queue=medium ctime=1366922993 qtime=1366922993 etime=1366922993 start=1367261597 exec_host=cn263/0*8+cn264/0*8+cn265/0*8+cn277/0*8 exec_vnode=(cn263:ncpus=8:checkfs=4)+(cn264:ncpus=8:checkfs=4)+(cn265:ncpus=8:checkfs=4)+(cn277:ncpus=8:checkfs=4) Resource_List.fluent=1 Resource_List.fluent_lic=48 Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 00:30:00;L;license;floating license hour:2703 day:2724 month:2764 max:2804
+04/30/2013 00:42:42;E;59645.mgmt03;user=user179 group=group6 project=_pbs_project_default jobname=STDIN queue=workq ctime=1367261578 qtime=1367261578 etime=1367261578 start=1367261597 exec_host=cn360/1 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=6345 end=1367262762 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=16728kb resources_used.ncpus=1 resources_used.vmem=181184kb resources_used.walltime=00:19:25 run_count=1
+04/30/2013 00:48:58;E;59640.mgmt03;user=user90 group=group6 project=_pbs_project_default jobname=sep6 queue=workq ctime=1367255908 qtime=1367255908 etime=1367255908 start=1367255930 exec_host=cn360/0+cn361/0+cn362/0+cn363/0+cn364/0+cn365/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=15319 end=1367263138 Exit_status=137 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14480kb resources_used.ncpus=6 resources_used.vmem=355192kb resources_used.walltime=02:00:08 run_count=1
+04/30/2013 00:53:52;Q;59646.mgmt03;queue=small
+04/30/2013 00:54:38;Q;59647.mgmt03;queue=medium
+04/30/2013 01:01:51;Q;59649.mgmt03;queue=small
+04/30/2013 01:01:52;Q;59650.mgmt03;queue=small
+04/30/2013 01:03:14;E;58996.mgmt03;user=user93 group=group6 project=l_m_s_project jobname=cc_b3_nCP queue=medium ctime=1366781614 qtime=1366781614 etime=1366781614 start=1366918298 exec_host=cn208/0*8+cn235/0*8+cn271/0*8+cn272/0*8 exec_vnode=(cn208:ncpus=8:checkfs=4)+(cn235:ncpus=8:checkfs=4)+(cn271:ncpus=8:checkfs=4)+(cn272:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=17734 end=1367263994 Exit_status=271 resources_used.cpupercent=772 resources_used.cput=674:58:24 resources_used.mem=45976120kb resources_used.ncpus=32 resources_used.vmem=48234936kb resources_used.walltime=96:01:35 run_count=1
+04/30/2013 01:06:32;E;59638.mgmt03;user=user90 group=group6 project=l_m_s_project jobname=gberney queue=small ctime=1367244490 qtime=1367244490 etime=1367244490 start=1367247489 exec_host=cn314/0*8 exec_vnode=(cn314:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=32088 end=1367264192 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=13980kb resources_used.ncpus=8 resources_used.vmem=344908kb resources_used.walltime=04:38:24 run_count=1
+04/30/2013 01:06:55;S;58998.mgmt03;user=user93 group=group6 project=l_m_s_project jobname=cc_b9_nCP queue=medium ctime=1366781706 qtime=1366781706 etime=1366781706 start=1367264215 exec_host=cn208/0*8+cn235/0*8+cn271/0*8+cn272/0*8 exec_vnode=(cn208:ncpus=8:checkfs=4)+(cn235:ncpus=8:checkfs=4)+(cn271:ncpus=8:checkfs=4)+(cn272:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 01:12:00;Q;59651.mgmt03;queue=small
+04/30/2013 01:12:24;S;59644.mgmt03;user=user44 group=group6 project=l_m_s_project jobname=CU_melt queue=small ctime=1367261149 qtime=1367261149 etime=1367261149 start=1367264544 exec_host=cn314/0*8 exec_vnode=(cn314:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=8 
+04/30/2013 01:13:06;Q;59652.mgmt03;queue=workq
+04/30/2013 01:13:27;S;59652.mgmt03;user=user28 group=group6 project=_pbs_project_default jobname=fine10-w queue=workq ctime=1367264586 qtime=1367264586 etime=1367264586 start=1367264607 exec_host=cn360/0+cn361/0+cn362/0+cn363/0+cn364/0+cn365/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=6 resource_assigned.interactive_tasks=6 
+04/30/2013 01:17:35;D;59652.mgmt03;requestor=saiphani@mgmt03
+04/30/2013 01:17:40;D;59651.mgmt03;requestor=saiphani@mgmt03
+04/30/2013 01:17:54;E;59652.mgmt03;user=user28 group=group6 project=_pbs_project_default jobname=fine10-w queue=workq ctime=1367264586 qtime=1367264586 etime=1367264586 start=1367264607 exec_host=cn360/0+cn361/0+cn362/0+cn363/0+cn364/0+cn365/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=19619 end=1367264874 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=16140kb resources_used.ncpus=6 resources_used.vmem=412364kb resources_used.walltime=00:04:25 run_count=1
+04/30/2013 01:17:58;Q;59653.mgmt03;queue=small
+04/30/2013 01:18:05;Q;59654.mgmt03;queue=workq
+04/30/2013 01:18:21;S;59654.mgmt03;user=user28 group=group6 project=_pbs_project_default jobname=fine10-w queue=workq ctime=1367264885 qtime=1367264885 etime=1367264885 start=1367264901 exec_host=cn360/0+cn361/0+cn362/0+cn363/0+cn364/0+cn365/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=6 resource_assigned.interactive_tasks=6 
+04/30/2013 01:28:28;Q;59655.mgmt03;queue=workq
+04/30/2013 01:28:35;E;58919.mgmt03;user=user85 group=group6 project=l_m_s_project jobname=0.8 queue=medium ctime=1366713333 qtime=1366713333 etime=1366713333 start=1366919859 exec_host=cn188/0*8+cn189/0*8+cn190/0*8+cn278/0*8 exec_vnode=(cn188:ncpus=8:checkfs=4)+(cn189:ncpus=8:checkfs=4)+(cn190:ncpus=8:checkfs=4)+(cn278:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=1377 end=1367265515 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:03 resources_used.mem=14796kb resources_used.ncpus=32 resources_used.vmem=353440kb resources_used.walltime=96:00:55 run_count=1
+04/30/2013 01:28:52;S;59655.mgmt03;user=user41 group=group6 project=_pbs_project_default jobname=cst_6 queue=workq ctime=1367265508 qtime=1367265508 etime=1367265508 start=1367265532 exec_host=cn360/1+cn361/1+cn362/1+cn363/1+cn364/1+cn365/1 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=6 resource_assigned.interactive_tasks=6 
+04/30/2013 01:30:00;L;license;floating license hour:2702 day:2702 month:2764 max:2804
+04/30/2013 01:31:18;Q;59656.mgmt03;queue=medium
+04/30/2013 01:31:44;S;59292.mgmt03;user=user85 group=group6 project=l_m_s_project jobname=0.6 queue=medium ctime=1366957869 qtime=1366957869 etime=1366957869 start=1367265704 exec_host=cn188/0*8+cn189/0*8+cn190/0*8+cn278/0*8 exec_vnode=(cn188:ncpus=8:checkfs=4)+(cn189:ncpus=8:checkfs=4)+(cn190:ncpus=8:checkfs=4)+(cn278:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 01:32:38;Q;59657.mgmt03;queue=medium
+04/30/2013 01:52:22;E;58537.mgmt03;user=user85 group=group6 project=l_m_s_project jobname=0.6 queue=small ctime=1366387863 qtime=1366387863 etime=1366387863 start=1366834836 exec_host=cn313/0*8+cn326/0*8+cn330/0*8+cn332/0*8 exec_vnode=(cn313:ncpus=8:checkfs=4)+(cn326:ncpus=8:checkfs=4)+(cn330:ncpus=8:checkfs=4)+(cn332:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=25055 end=1367266942 Exit_status=271 resources_used.cpupercent=1 resources_used.cput=00:00:03 resources_used.mem=14784kb resources_used.ncpus=32 resources_used.vmem=353440kb resources_used.walltime=120:01:44 run_count=1
+04/30/2013 02:04:24;S;58990.mgmt03;user=user83 group=group6 project=l_m_s_project jobname=low_cl queue=small ctime=1366774740 qtime=1366774740 etime=1366774740 start=1367267664 exec_host=cn313/0*8+cn326/0*8+cn330/0*8+cn332/0*8 exec_vnode=(cn313:ncpus=8:checkfs=4)+(cn326:ncpus=8:checkfs=4)+(cn330:ncpus=8:checkfs=4)+(cn332:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=32 
+04/30/2013 02:30:00;L;license;floating license hour:2708 day:2708 month:2764 max:2804
+04/30/2013 02:32:30;E;59273.mgmt03;user=user34 group=group6 project=l_m_s_project jobname=emtf2333vt queue=medium ctime=1366953505 qtime=1366953505 etime=1366953505 start=1366970479 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=8182 end=1367269350 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:01 resources_used.mem=14488kb resources_used.ncpus=32 resources_used.vmem=353120kb resources_used.walltime=83:01:10 run_count=1
+04/30/2013 02:44:31;S;59526.mgmt03;user=user59 group=group6 project=l_m_s_project jobname=test queue=medium ctime=1367167779 qtime=1367167779 etime=1367167779 start=1367270071 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 02:44:39;E;59526.mgmt03;user=user59 group=group6 project=l_m_s_project jobname=test queue=medium ctime=1367167779 qtime=1367167779 etime=1367167779 start=1367270071 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=9906 end=1367270079 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:17 resources_used.mem=480kb resources_used.ncpus=32 resources_used.vmem=10284kb resources_used.walltime=00:00:07 run_count=1
+04/30/2013 02:45:01;S;59533.mgmt03;user=user88 group=group6 project=l_m_s_project jobname=crosswaveguid83 queue=medium ctime=1367174381 qtime=1367174381 etime=1367174381 start=1367270101 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 02:45:04;E;59533.mgmt03;user=user88 group=group6 project=l_m_s_project jobname=crosswaveguid83 queue=medium ctime=1367174381 qtime=1367174381 etime=1367174381 start=1367270101 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=10231 end=1367270104 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=480kb resources_used.ncpus=32 resources_used.vmem=10284kb resources_used.walltime=00:00:02 run_count=1
+04/30/2013 02:45:26;S;59534.mgmt03;user=user88 group=group6 project=l_m_s_project jobname=crosswaveguid72 queue=medium ctime=1367174416 qtime=1367174416 etime=1367174416 start=1367270126 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 02:45:27;E;59534.mgmt03;user=user88 group=group6 project=l_m_s_project jobname=crosswaveguid72 queue=medium ctime=1367174416 qtime=1367174416 etime=1367174416 start=1367270126 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=10412 end=1367270127 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=480kb resources_used.ncpus=32 resources_used.vmem=10284kb resources_used.walltime=00:00:01 run_count=1
+04/30/2013 02:45:46;S;59585.mgmt03;user=user99 group=group6 project=l_m_s_project jobname=prod_tpr10 queue=medium ctime=1367219437 qtime=1367219437 etime=1367219437 start=1367270146 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 03:07:51;E;58580.mgmt03;user=user3 group=group6 project=l_m_s_project jobname=Rh4H2Omt15 queue=large ctime=1366445307 qtime=1366445307 etime=1366445307 start=1367012160 exec_host=cn051/0*8+cn053/0*8+cn131/0*8+cn132/0*8+cn133/0*8+cn134/0*8+cn135/0*8+cn136/0*8+cn137/0*8+cn138/0*8+cn139/0*8+cn141/0*8+cn171/0*8+cn176/0*8+cn178/0*8+cn179/0*8 exec_vnode=(cn051:ncpus=8:checkfs=4)+(cn053:ncpus=8:checkfs=4)+(cn131:ncpus=8:checkfs=4)+(cn132:ncpus=8:checkfs=4)+(cn133:ncpus=8:checkfs=4)+(cn134:ncpus=8:checkfs=4)+(cn135:ncpus=8:checkfs=4)+(cn136:ncpus=8:checkfs=4)+(cn137:ncpus=8:checkfs=4)+(cn138:ncpus=8:checkfs=4)+(cn139:ncpus=8:checkfs=4)+(cn141:ncpus=8:checkfs=4)+(cn171:ncpus=8:checkfs=4)+(cn176:ncpus=8:checkfs=4)+(cn178:ncpus=8:checkfs=4)+(cn179:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=128 Resource_List.ncpus=128 Resource_List.nodect=16 Resource_List.nodes=16:ppn=8 Resource_List.place=scatter Resource_List.select=16:ncpus=8:mpiprocs=8 Resource_List.walltime=72:00:00 session=12394 end=1367271471 Exit_status=271 resources_used.cpupercent=1 resources_used.cput=00:00:15 resources_used.mem=14600kb resources_used.ncpus=128 resources_used.vmem=353404kb resources_used.walltime=72:01:50 run_count=1
+04/30/2013 03:18:27;E;59654.mgmt03;user=user28 group=group6 project=_pbs_project_default jobname=fine10-w queue=workq ctime=1367264885 qtime=1367264885 etime=1367264885 start=1367264901 exec_host=cn360/0+cn361/0+cn362/0+cn363/0+cn364/0+cn365/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=20991 end=1367272107 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=15236kb resources_used.ncpus=6 resources_used.vmem=412364kb resources_used.walltime=02:00:05 run_count=1
+04/30/2013 03:18:49;S;59004.mgmt03;user=user34 group=group6 project=l_m_s_project jobname=m0.4pt333 queue=large ctime=1366784604 qtime=1366784604 etime=1366784604 start=1367272129 exec_host=cn051/0*8+cn053/0*8+cn131/0*8+cn132/0*8+cn133/0*8+cn134/0*8+cn135/0*8+cn136/0*8+cn137/0*8+cn138/0*8+cn139/0*8+cn141/0*8+cn169/0*8+cn170/0*8+cn171/0*8+cn177/0*8 exec_vnode=(cn051:ncpus=8:checkfs=4)+(cn053:ncpus=8:checkfs=4)+(cn131:ncpus=8:checkfs=4)+(cn132:ncpus=8:checkfs=4)+(cn133:ncpus=8:checkfs=4)+(cn134:ncpus=8:checkfs=4)+(cn135:ncpus=8:checkfs=4)+(cn136:ncpus=8:checkfs=4)+(cn137:ncpus=8:checkfs=4)+(cn138:ncpus=8:checkfs=4)+(cn139:ncpus=8:checkfs=4)+(cn141:ncpus=8:checkfs=4)+(cn169:ncpus=8:checkfs=4)+(cn170:ncpus=8:checkfs=4)+(cn171:ncpus=8:checkfs=4)+(cn177:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=128 Resource_List.ncpus=128 Resource_List.nodect=16 Resource_List.nodes=16:ppn=8 Resource_List.place=scatter Resource_List.select=16:ncpus=8:mpiprocs=8 Resource_List.walltime=72:00:00 resource_assigned.ncpus=128 
+04/30/2013 03:25:14;E;59655.mgmt03;user=user41 group=group6 project=_pbs_project_default jobname=cst_6 queue=workq ctime=1367265508 qtime=1367265508 etime=1367265508 start=1367265532 exec_host=cn360/1+cn361/1+cn362/1+cn363/1+cn364/1+cn365/1 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=23701 end=1367272514 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14508kb resources_used.ncpus=6 resources_used.vmem=353156kb resources_used.walltime=01:56:21 run_count=1
+04/30/2013 03:30:00;L;license;floating license hour:2708 day:2708 month:2764 max:2804
+04/30/2013 04:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 05:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 06:18:29;E;59451.mgmt03;user=user43 group=group6 project=l_m_s_project jobname=NBZ-LI queue=small ctime=1367085553 qtime=1367085553 etime=1367085553 start=1367141005 exec_host=cn287/0*8+cn300/0*8 exec_vnode=(cn287:ncpus=8:checkfs=4)+(cn300:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=27493 end=1367282909 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:03 resources_used.mem=14472kb resources_used.ncpus=16 resources_used.vmem=353152kb resources_used.walltime=39:25:00 run_count=1
+04/30/2013 06:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 06:30:29;S;59471.mgmt03;user=user43 group=group6 project=l_m_s_project jobname=TOL-LI queue=small ctime=1367120804 qtime=1367120804 etime=1367120804 start=1367283629 exec_host=cn287/0*8+cn300/0*8 exec_vnode=(cn287:ncpus=8:checkfs=4)+(cn300:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=16 
+04/30/2013 07:27:09;E;59585.mgmt03;user=user99 group=group6 project=l_m_s_project jobname=prod_tpr10 queue=medium ctime=1367219437 qtime=1367219437 etime=1367219437 start=1367270146 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=10588 end=1367287029 Exit_status=0 resources_used.cpupercent=785 resources_used.cput=37:02:29 resources_used.mem=363416kb resources_used.ncpus=32 resources_used.vmem=2110188kb resources_used.walltime=04:41:19 run_count=1
+04/30/2013 07:30:00;L;license;floating license hour:2696 day:2708 month:2764 max:2804
+04/30/2013 07:39:11;S;59632.mgmt03;user=user50 group=group6 project=l_m_s_project jobname=con_2pt queue=medium ctime=1367239491 qtime=1367239491 etime=1367239491 start=1367287751 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 08:20:43;D;59578.mgmt03;requestor=debdip@mgmt03
+04/30/2013 08:20:47;D;59578.mgmt03;requestor=debdip@mgmt03
+04/30/2013 08:20:47;E;59578.mgmt03;user=user50 group=group6 project=l_m_s_project jobname=con_2pt queue=small ctime=1367216446 qtime=1367216446 etime=1367216446 start=1367217167 exec_host=cn308/0*8 exec_vnode=(cn308:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=17797 end=1367290247 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14616kb resources_used.ncpus=8 resources_used.vmem=342872kb resources_used.walltime=20:18:00 run_count=1
+04/30/2013 08:28:51;E;59014.mgmt03;user=user166 group=group6 project=l_m_s_project jobname=PLA_5e-6 queue=medium ctime=1366786379 qtime=1366786379 etime=1366786379 start=1366945020 exec_host=cn205/0*8+cn207/0*8+cn209/0*8+cn210/0*8 exec_vnode=(cn205:ncpus=8:checkfs=4)+(cn207:ncpus=8:checkfs=4)+(cn209:ncpus=8:checkfs=4)+(cn210:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=1532 end=1367290731 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:06 resources_used.mem=16320kb resources_used.ncpus=32 resources_used.vmem=382424kb resources_used.walltime=96:01:44 run_count=1
+04/30/2013 08:29:12;S;59484.mgmt03;user=user85 group=group6 project=l_m_s_project jobname=mixture queue=small ctime=1367142722 qtime=1367142722 etime=1367142722 start=1367290752 exec_host=cn308/0*8 exec_vnode=(cn308:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=8 
+04/30/2013 08:30:00;L;license;floating license hour:2696 day:2708 month:2764 max:2804
+04/30/2013 08:40:58;S;59351.mgmt03;user=user166 group=group6 project=l_m_s_project jobname=PLA_5e-6 queue=medium ctime=1366983048 qtime=1366983048 etime=1366983048 start=1367291458 exec_host=cn205/0*8+cn207/0*8+cn209/0*8+cn210/0*8 exec_vnode=(cn205:ncpus=8:checkfs=4)+(cn207:ncpus=8:checkfs=4)+(cn209:ncpus=8:checkfs=4)+(cn210:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 08:54:19;Q;59658.mgmt03;queue=large
+04/30/2013 09:30:00;L;license;floating license hour:2696 day:2708 month:2764 max:2804
+04/30/2013 10:03:32;Q;59659.mgmt03;queue=small
+04/30/2013 10:22:02;E;59265.mgmt03;user=user171 group=group6 project=l_m_s_project jobname=md5350 queue=medium ctime=1366951885 qtime=1366951885 etime=1366951885 start=1366951905 exec_host=cn187/0*8+cn194/0*8+cn195/0*8+cn196/0*8+cn283/0*8 exec_vnode=(cn187:ncpus=8:checkfs=4)+(cn194:ncpus=8:checkfs=4)+(cn195:ncpus=8:checkfs=4)+(cn196:ncpus=8:checkfs=4)+(cn283:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=40 Resource_List.ncpus=40 Resource_List.nodect=5 Resource_List.nodes=5:ppn=8 Resource_List.place=scatter Resource_List.select=5:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=10309 end=1367297522 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:06 resources_used.mem=14468kb resources_used.ncpus=40 resources_used.vmem=353152kb resources_used.walltime=96:00:16 run_count=1
+04/30/2013 10:25:51;D;59632.mgmt03;requestor=debdip@mgmt03
+04/30/2013 10:25:55;D;59633.mgmt03;requestor=debdip@mgmt03
+04/30/2013 10:26:07;E;59632.mgmt03;user=user50 group=group6 project=l_m_s_project jobname=con_2pt queue=medium ctime=1367239491 qtime=1367239491 etime=1367239491 start=1367287751 exec_host=cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=27876 end=1367297767 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14480kb resources_used.ncpus=32 resources_used.vmem=353156kb resources_used.walltime=02:46:56 run_count=1
+04/30/2013 10:26:16;S;59635.mgmt03;user=user44 group=group6 project=l_m_s_project jobname=con_8pt queue=medium ctime=1367240052 qtime=1367240052 etime=1367240052 start=1367297776 exec_host=cn187/0*8+cn194/0*8+cn195/0*8+cn196/0*8 exec_vnode=(cn187:ncpus=8:checkfs=4)+(cn194:ncpus=8:checkfs=4)+(cn195:ncpus=8:checkfs=4)+(cn196:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+04/30/2013 10:26:57;Q;59660.mgmt03;queue=workq
+04/30/2013 10:27:23;S;59660.mgmt03;user=user88 group=group6 project=_pbs_project_default jobname=test4 queue=workq ctime=1367297817 qtime=1367297817 etime=1367297817 start=1367297843 exec_host=cn360/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=1 resource_assigned.interactive_tasks=1 
+04/30/2013 10:27:27;E;59660.mgmt03;user=user88 group=group6 project=_pbs_project_default jobname=test4 queue=workq ctime=1367297817 qtime=1367297817 etime=1367297817 start=1367297843 exec_host=cn360/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=4270 end=1367297847 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:01 resources_used.mem=0kb resources_used.ncpus=1 resources_used.vmem=0kb resources_used.walltime=00:00:03 run_count=1
+04/30/2013 10:29:31;Q;59661.mgmt03;queue=workq
+04/30/2013 10:29:55;S;59661.mgmt03;user=user88 group=group6 project=_pbs_project_default jobname=test4 queue=workq ctime=1367297971 qtime=1367297971 etime=1367297971 start=1367297995 exec_host=cn360/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=1 resource_assigned.interactive_tasks=1 
+04/30/2013 10:30:00;L;license;floating license hour:2657 day:2708 month:2764 max:2804
+04/30/2013 10:30:37;E;59661.mgmt03;user=user88 group=group6 project=_pbs_project_default jobname=test4 queue=workq ctime=1367297971 qtime=1367297971 etime=1367297971 start=1367297995 exec_host=cn360/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=5074 end=1367298037 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:03:51 resources_used.mem=186356kb resources_used.ncpus=1 resources_used.vmem=1272024kb resources_used.walltime=00:00:42 run_count=1
+04/30/2013 10:32:46;E;59635.mgmt03;user=user44 group=group6 project=l_m_s_project jobname=con_8pt queue=medium ctime=1367240052 qtime=1367240052 etime=1367240052 start=1367297776 exec_host=cn187/0*8+cn194/0*8+cn195/0*8+cn196/0*8 exec_vnode=(cn187:ncpus=8:checkfs=4)+(cn194:ncpus=8:checkfs=4)+(cn195:ncpus=8:checkfs=4)+(cn196:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=19388 end=1367298166 Exit_status=1 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14488kb resources_used.ncpus=32 resources_used.vmem=353148kb resources_used.walltime=00:06:29 run_count=1
+04/30/2013 10:33:09;S;59104.mgmt03;user=user101 group=group6 project=l_m_s_project jobname=QUAD queue=medium ctime=1366862991 qtime=1366862991 etime=1366862991 start=1367298189 exec_host=cn187/0*8+cn194/0*8+cn195/0*8+cn196/0*8+cn227/0*8+cn279/0*8+cn280/0*8+cn281/0*8 exec_vnode=(cn187:ncpus=8:checkfs=4)+(cn194:ncpus=8:checkfs=4)+(cn195:ncpus=8:checkfs=4)+(cn196:ncpus=8:checkfs=4)+(cn227:ncpus=8:checkfs=4)+(cn279:ncpus=8:checkfs=4)+(cn280:ncpus=8:checkfs=4)+(cn281:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=64 Resource_List.ncpus=64 Resource_List.nodect=8 Resource_List.nodes=8:ppn=8 Resource_List.place=scatter Resource_List.select=8:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=64 
+04/30/2013 10:42:18;Q;59662.mgmt03;queue=workq
+04/30/2013 10:42:23;Q;59663.mgmt03;queue=medium
+04/30/2013 10:42:38;S;59662.mgmt03;user=user90 group=group6 project=_pbs_project_default jobname=sep6 queue=workq ctime=1367298738 qtime=1367298738 etime=1367298738 start=1367298758 exec_host=cn360/0+cn361/0+cn362/0+cn363/0+cn364/0+cn365/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=6 resource_assigned.interactive_tasks=6 
+04/30/2013 10:45:51;Q;59664.mgmt03;queue=workq
+04/30/2013 10:46:12;S;59664.mgmt03;user=user88 group=group6 project=_pbs_project_default jobname=test4 queue=workq ctime=1367298951 qtime=1367298951 etime=1367298951 start=1367298972 exec_host=cn360/1 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=1 resource_assigned.interactive_tasks=1 
+04/30/2013 10:46:51;E;59664.mgmt03;user=user88 group=group6 project=_pbs_project_default jobname=test4 queue=workq ctime=1367298951 qtime=1367298951 etime=1367298951 start=1367298972 exec_host=cn360/1 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=9280 end=1367299011 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:03:35 resources_used.mem=186224kb resources_used.ncpus=1 resources_used.vmem=1272028kb resources_used.walltime=00:00:39 run_count=1
+04/30/2013 10:47:27;Q;59665.mgmt03;queue=small
+04/30/2013 10:49:57;Q;59666.mgmt03;queue=workq
+04/30/2013 10:54:57;Q;59667.mgmt03;queue=workq
+04/30/2013 10:57:43;D;59666.mgmt03;requestor=ranjeetd@mgmt03
+04/30/2013 10:58:03;D;59667.mgmt03;requestor=ranjeetd@mgmt03
+04/30/2013 10:58:12;Q;59668.mgmt03;queue=workq
+04/30/2013 11:16:53;Q;59669.mgmt03;queue=workq
+04/30/2013 11:30:00;L;license;floating license hour:2695 day:2708 month:2764 max:2804
+04/30/2013 11:32:32;Q;59670.mgmt03;queue=workq
+04/30/2013 11:36:28;D;59670.mgmt03;requestor=rbhaya@mgmt03
+04/30/2013 11:37:04;Q;59671.mgmt03;queue=workq
+04/30/2013 11:40:00;Q;59672.mgmt03;queue=medium
+04/30/2013 11:49:07;D;59671.mgmt03;requestor=rbhaya@mgmt03
+04/30/2013 12:14:23;Q;59673.mgmt03;queue=seq
+04/30/2013 12:21:15;U;R59674.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 12:21:15;K;R59674.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 12:28:14;U;R59675.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 12:28:15;K;R59675.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 12:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 12:31:36;Q;59676.mgmt03;queue=small
+04/30/2013 12:33:04;Q;59677.mgmt03;queue=small
+04/30/2013 12:33:59;E;59242.mgmt03;user=user179 group=group6 project=l_m_s_project jobname=arm9-pbs-4100-c queue=medium ctime=1366922993 qtime=1366922993 etime=1366922993 start=1367261597 exec_host=cn263/0*8+cn264/0*8+cn265/0*8+cn277/0*8 exec_vnode=(cn263:ncpus=8:checkfs=4)+(cn264:ncpus=8:checkfs=4)+(cn265:ncpus=8:checkfs=4)+(cn277:ncpus=8:checkfs=4) Resource_List.fluent=1 Resource_List.fluent_lic=48 Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=16889 end=1367305439 Exit_status=0 resources_used.cpupercent=795 resources_used.cput=97:06:03 resources_used.mem=11334948kb resources_used.ncpus=32 resources_used.vmem=12613824kb resources_used.walltime=12:10:40 run_count=1
+04/30/2013 12:35:14;U;R59678.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 12:35:14;K;R59678.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 12:42:14;U;R59679.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 12:42:14;K;R59679.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 12:42:43;E;59662.mgmt03;user=user90 group=group6 project=_pbs_project_default jobname=sep6 queue=workq ctime=1367298738 qtime=1367298738 etime=1367298738 start=1367298758 exec_host=cn360/0+cn361/0+cn362/0+cn363/0+cn364/0+cn365/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4)+(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=8253 end=1367305963 Exit_status=137 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14480kb resources_used.ncpus=6 resources_used.vmem=355192kb resources_used.walltime=02:00:04 run_count=1
+04/30/2013 12:49:14;U;R59680.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 12:49:15;K;R59680.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 12:56:14;U;R59681.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 12:56:14;K;R59681.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 12:57:49;Q;59682.mgmt03;queue=workq
+04/30/2013 13:00:14;U;R59683.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:00:14;K;R59683.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:07:15;U;R59684.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:07:15;K;R59684.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:14:14;U;R59685.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:14:14;K;R59685.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:21:14;U;R59686.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:21:15;K;R59686.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:28:14;U;R59687.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:28:14;K;R59687.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 13:34:01;Q;59688.mgmt03;queue=small
+04/30/2013 13:35:15;U;R59689.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:35:15;K;R59689.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:36:19;Q;59690.mgmt03;queue=small
+04/30/2013 13:42:15;U;R59691.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:42:15;K;R59691.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:49:14;U;R59692.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:49:14;K;R59692.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 13:50:55;Q;59693.mgmt03;queue=workq
+04/30/2013 13:56:15;U;R59694.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 13:56:15;K;R59694.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:00:14;U;R59695.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:00:14;K;R59695.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:07:15;U;R59696.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:07:16;K;R59696.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:11:06;Q;59697.mgmt03;queue=medium
+04/30/2013 14:12:33;D;59682.mgmt03;requestor=pmahata@mgmt03
+04/30/2013 14:12:50;Q;59698.mgmt03;queue=workq
+04/30/2013 14:14:14;U;R59699.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:14:16;K;R59699.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:18:55;Q;59700.mgmt03;queue=small
+04/30/2013 14:21:14;U;R59701.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:21:14;K;R59701.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:28:15;U;R59702.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:28:15;K;R59702.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 14:35:14;U;R59703.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:35:20;K;R59703.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:42:14;U;R59704.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:42:25;K;R59704.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:49:14;U;R59705.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:49:15;K;R59705.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 14:56:14;U;R59706.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 14:56:14;K;R59706.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:00:15;U;R59707.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:00:21;K;R59707.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:00:52;E;59644.mgmt03;user=user44 group=group6 project=l_m_s_project jobname=CU_melt queue=small ctime=1367261149 qtime=1367261149 etime=1367261149 start=1367264544 exec_host=cn314/0*8 exec_vnode=(cn314:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=5447 end=1367314252 Exit_status=0 resources_used.cpupercent=1 resources_used.cput=00:00:09 resources_used.mem=13988kb resources_used.ncpus=8 resources_used.vmem=342864kb resources_used.walltime=13:48:28 run_count=1
+04/30/2013 15:07:14;U;R59708.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:07:21;K;R59708.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:14:14;U;R59709.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:14:14;K;R59709.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:19:23;Q;59710.mgmt03;queue=seq
+04/30/2013 15:21:15;Q;59710.mgmt03;queue=R59590
+04/30/2013 15:21:15;U;R59711.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:21:15;K;R59711.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:21:25;Q;59712.mgmt03;queue=seq
+04/30/2013 15:22:30;Q;59713.mgmt03;queue=seq
+04/30/2013 15:28:15;Q;59712.mgmt03;queue=R59590
+04/30/2013 15:28:15;Q;59713.mgmt03;queue=R59590
+04/30/2013 15:28:15;U;R59714.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:28:15;K;R59714.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 15:34:05;E;58748.mgmt03;user=user171 group=group6 project=l_m_s_project jobname=mdb2350350350 queue=large ctime=1366613445 qtime=1366613445 etime=1366613445 start=1367057033 exec_host=cn047/0*8+cn048/0*8+cn079/0*8+cn091/0*8+cn095/0*8+cn096/0*8+cn097/0*8+cn099/0*8+cn100/0*8+cn101/0*8+cn102/0*8+cn103/0*8+cn104/0*8+cn105/0*8+cn106/0*8+cn107/0*8 exec_vnode=(cn047:ncpus=8:checkfs=4)+(cn048:ncpus=8:checkfs=4)+(cn079:ncpus=8:checkfs=4)+(cn091:ncpus=8:checkfs=4)+(cn095:ncpus=8:checkfs=4)+(cn096:ncpus=8:checkfs=4)+(cn097:ncpus=8:checkfs=4)+(cn099:ncpus=8:checkfs=4)+(cn100:ncpus=8:checkfs=4)+(cn101:ncpus=8:checkfs=4)+(cn102:ncpus=8:checkfs=4)+(cn103:ncpus=8:checkfs=4)+(cn104:ncpus=8:checkfs=4)+(cn105:ncpus=8:checkfs=4)+(cn106:ncpus=8:checkfs=4)+(cn107:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=128 Resource_List.ncpus=128 Resource_List.nodect=16 Resource_List.nodes=16:ppn=8 Resource_List.place=scatter Resource_List.select=16:ncpus=8:mpiprocs=8 Resource_List.walltime=72:00:00 session=20879 end=1367316245 Exit_status=271 resources_used.cpupercent=1 resources_used.cput=00:00:13 resources_used.mem=14544kb resources_used.ncpus=128 resources_used.vmem=353280kb resources_used.walltime=72:00:12 run_count=1
+04/30/2013 15:35:15;U;R59715.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:35:15;K;R59715.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:40:32;D;59693.mgmt03;requestor=ranjeetd@mgmt03
+04/30/2013 15:40:44;D;59668.mgmt03;requestor=ranjeetd@mgmt03
+04/30/2013 15:40:52;Q;59716.mgmt03;queue=workq
+04/30/2013 15:42:15;U;R59717.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:42:15;K;R59717.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:48:09;Q;59718.mgmt03;queue=large
+04/30/2013 15:48:28;Q;59719.mgmt03;queue=large
+04/30/2013 15:49:14;U;R59720.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:49:14;K;R59720.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 15:56:14;U;R59721.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 15:56:15;K;R59721.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:00:14;U;R59722.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:00:14;K;R59722.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:07:15;U;R59723.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:07:15;K;R59723.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:14:14;U;R59724.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:14:15;K;R59724.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:21:15;U;R59725.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:21:15;K;R59725.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:28:14;U;R59726.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:28:15;K;R59726.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 16:35:14;U;R59727.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:35:14;K;R59727.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:42:14;U;R59728.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:42:14;K;R59728.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:48:08;Q;59729.mgmt03;queue=medium
+04/30/2013 16:49:14;U;R59730.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:49:15;K;R59730.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 16:50:16;Q;59731.mgmt03;queue=medium
+04/30/2013 16:53:33;Q;59732.mgmt03;queue=medium
+04/30/2013 16:56:15;U;R59733.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 16:56:15;K;R59733.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:00:14;U;R59734.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:00:15;K;R59734.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:02:23;Q;59735.mgmt03;queue=medium
+04/30/2013 17:07:14;U;R59736.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:07:14;K;R59736.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:08:07;Q;59737.mgmt03;queue=small
+04/30/2013 17:09:47;Q;59738.mgmt03;queue=large
+04/30/2013 17:11:05;Q;59739.mgmt03;queue=large
+04/30/2013 17:13:58;Q;59740.mgmt03;queue=small
+04/30/2013 17:14:14;D;59740.mgmt03;requestor=srahul@mgmt03
+04/30/2013 17:14:15;U;R59741.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:14:15;K;R59741.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:14:49;Q;59742.mgmt03;queue=small
+04/30/2013 17:21:14;U;R59743.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:21:14;K;R59743.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:28:15;U;R59744.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:28:15;K;R59744.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:29:01;Q;59745.mgmt03;queue=small
+04/30/2013 17:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 17:31:25;Q;59746.mgmt03;queue=workq
+04/30/2013 17:32:41;D;59742.mgmt03;requestor=srahul@mgmt03
+04/30/2013 17:32:49;Q;59747.mgmt03;queue=small
+04/30/2013 17:35:14;U;R59748.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:35:15;K;R59748.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:41:04;Q;59749.mgmt03;queue=medium
+04/30/2013 17:42:14;U;R59750.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:42:14;K;R59750.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:42:40;Q;59751.mgmt03;queue=small
+04/30/2013 17:43:36;Q;59752.mgmt03;queue=workq
+04/30/2013 17:49:14;U;R59753.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:49:14;K;R59753.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 17:56:14;U;R59754.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 17:56:15;K;R59754.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:00:15;U;R59755.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:00:15;K;R59755.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:07:14;U;R59756.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:07:15;K;R59756.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:10:28;E;58998.mgmt03;user=user93 group=group6 project=l_m_s_project jobname=cc_b9_nCP queue=medium ctime=1366781706 qtime=1366781706 etime=1366781706 start=1367264215 exec_host=cn208/0*8+cn235/0*8+cn271/0*8+cn272/0*8 exec_vnode=(cn208:ncpus=8:checkfs=4)+(cn235:ncpus=8:checkfs=4)+(cn271:ncpus=8:checkfs=4)+(cn272:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=2220 end=1367325628 Exit_status=1 resources_used.cpupercent=776 resources_used.cput=120:51:18 resources_used.mem=46061312kb resources_used.ncpus=32 resources_used.vmem=48238928kb resources_used.walltime=17:03:32 run_count=1
+04/30/2013 18:14:14;U;R59757.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:14:14;K;R59757.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:21:15;U;R59758.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:21:15;K;R59758.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:28:15;U;R59759.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:28:15;K;R59759.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 18:31:55;E;59454.mgmt03;user=user43 group=group6 project=l_m_s_project jobname=oct-li queue=medium ctime=1367086329 qtime=1367086329 etime=1367086329 start=1367134462 exec_host=cn206/0*8+cn217/0*8+cn267/0*8+cn268/0*8 exec_vnode=(cn206:ncpus=8:checkfs=4)+(cn217:ncpus=8:checkfs=4)+(cn267:ncpus=8:checkfs=4)+(cn268:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=20833 end=1367326915 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:03 resources_used.mem=14492kb resources_used.ncpus=32 resources_used.vmem=353152kb resources_used.walltime=53:27:33 run_count=1
+04/30/2013 18:35:14;U;R59760.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:35:14;K;R59760.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:42:14;U;R59761.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:42:14;K;R59761.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:49:15;U;R59762.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:49:15;K;R59762.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 18:55:02;Q;59764.mgmt03;queue=medium
+04/30/2013 18:56:14;U;R59765.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 18:56:15;K;R59765.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:00:15;U;R59766.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:00:15;K;R59766.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:07:14;U;R59767.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:07:15;K;R59767.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:14:14;U;R59768.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:14:14;K;R59768.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:15:51;E;59291.mgmt03;user=user98 group=group6 project=l_m_s_project jobname=q015_400p queue=medium ctime=1366957637 qtime=1366957637 etime=1366957637 start=1366983835 exec_host=cn249/0*8+cn250/0*8+cn251/0*8+cn252/0*8 exec_vnode=(cn249:ncpus=8:checkfs=4)+(cn250:ncpus=8:checkfs=4)+(cn251:ncpus=8:checkfs=4)+(cn252:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=32618 end=1367329551 Exit_status=271 resources_used.cpupercent=1 resources_used.cput=00:00:07 resources_used.mem=14688kb resources_used.ncpus=32 resources_used.vmem=351424kb resources_used.walltime=96:01:52 run_count=1
+04/30/2013 19:21:14;U;R59769.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:21:14;K;R59769.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:28:15;U;R59770.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:28:15;K;R59770.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 19:35:14;U;R59771.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:35:15;K;R59771.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:42:14;U;R59772.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:42:14;K;R59772.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:49:15;U;R59773.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:49:15;K;R59773.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 19:53:19;E;59413.mgmt03;user=user91 group=group6 project=l_m_s_project jobname=real2_CHEM queue=small ctime=1367050014 qtime=1367050014 etime=1367050014 start=1367096384 exec_host=cn335/0*8 exec_vnode=(cn335:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=23850 end=1367331799 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14852kb resources_used.ncpus=8 resources_used.vmem=400056kb resources_used.walltime=65:23:35 run_count=1
+04/30/2013 19:56:14;U;R59774.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 19:56:14;K;R59774.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:00:14;U;R59775.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:00:15;K;R59775.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:07:14;U;R59776.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:07:14;K;R59776.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:14:14;U;R59777.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:14:14;K;R59777.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:21:15;U;R59778.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:21:15;K;R59778.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:28:14;U;R59779.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:28:15;K;R59779.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 20:35:14;U;R59780.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:35:14;K;R59780.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:42:14;U;R59781.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:42:14;K;R59781.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:49:15;U;R59782.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:49:15;K;R59782.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 20:56:14;U;R59783.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 20:56:14;K;R59783.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:00:14;U;R59784.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:00:15;K;R59784.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:07:14;U;R59785.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:07:14;K;R59785.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:14:15;U;R59786.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:14:15;K;R59786.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:21:14;U;R59787.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:21:14;K;R59787.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:28:14;U;R59788.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:28:14;K;R59788.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 21:35:14;U;R59789.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:35:15;K;R59789.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:42:14;U;R59790.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:42:15;K;R59790.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:49:14;U;R59791.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:49:14;K;R59791.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 21:54:03;Q;59792.mgmt03;queue=large
+04/30/2013 21:56:14;U;R59793.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 21:56:14;K;R59793.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:00:14;U;R59794.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:00:15;K;R59794.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:07:14;U;R59795.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:07:14;K;R59795.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:14:00;E;58800.mgmt03;user=user123 group=group6 project=l_m_s_project jobname=o22q300 queue=medium ctime=1366635860 qtime=1366635860 etime=1366635860 start=1366994528 exec_host=cn225/0*8+cn226/0*8+cn231/0*8+cn232/0*8+cn233/0*8+cn237/0*8+cn238/0*8+cn239/0*8 exec_vnode=(cn225:ncpus=8:checkfs=4)+(cn226:ncpus=8:checkfs=4)+(cn231:ncpus=8:checkfs=4)+(cn232:ncpus=8:checkfs=4)+(cn233:ncpus=8:checkfs=4)+(cn237:ncpus=8:checkfs=4)+(cn238:ncpus=8:checkfs=4)+(cn239:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=64 Resource_List.ncpus=64 Resource_List.nodect=8 Resource_List.nodes=8:ppn=8 Resource_List.place=scatter Resource_List.select=8:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=15359 end=1367340240 Exit_status=271 resources_used.cpupercent=1 resources_used.cput=00:00:20 resources_used.mem=14784kb resources_used.ncpus=64 resources_used.vmem=381268kb resources_used.walltime=96:01:49 run_count=1
+04/30/2013 22:14:15;U;R59796.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:14:15;K;R59796.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:21:14;U;R59797.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:21:15;K;R59797.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:23:43;D;59088.mgmt03;requestor=aacharya@mgmt03
+04/30/2013 22:23:45;E;59088.mgmt03;user=user99 group=group6 project=l_m_s_project jobname=ts-mimic queue=small ctime=1366828114 qtime=1366828114 etime=1366828114 start=1367219868 exec_host=cn318/0*8+cn320/0*8 exec_vnode=(cn318:ncpus=8:checkfs=4)+(cn320:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=19743 end=1367340825 Exit_status=271 resources_used.cpupercent=793 resources_used.cput=264:12:52 resources_used.mem=588716kb resources_used.ncpus=16 resources_used.vmem=10463840kb resources_used.walltime=33:35:56 run_count=1
+04/30/2013 22:28:14;U;R59798.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:28:15;K;R59798.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:29:01;Q;59799.mgmt03;queue=seq
+04/30/2013 22:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 22:30:12;Q;59800.mgmt03;queue=seq
+04/30/2013 22:35:14;U;R59801.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:35:14;U;R59802.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 22:35:14;K;R59801.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:35:14;K;R59802.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:38:30;Q;59803.mgmt03;queue=workq
+04/30/2013 22:42:14;U;R59804.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:42:14;U;R59805.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 22:42:14;K;R59804.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:42:14;K;R59805.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:42:55;D;59803.mgmt03;requestor=rbhaya@mgmt03
+04/30/2013 22:49:08;D;59716.mgmt03;requestor=ranjeetd@mgmt03
+04/30/2013 22:49:14;D;59746.mgmt03;requestor=ranjeetd@mgmt03
+04/30/2013 22:49:15;U;R59807.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:49:15;U;R59808.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 22:49:15;K;R59807.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:49:15;K;R59808.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:49:20;Q;59809.mgmt03;queue=workq
+04/30/2013 22:49:23;E;58806.mgmt03;user=user41 group=group6 project=l_m_s_project jobname=b-stg queue=small ctime=1366637417 qtime=1366637417 etime=1366637417 start=1367174300 exec_host=cn289/0*8+cn290/0*8+cn292/0*8+cn291/0*8 exec_vnode=(cn289:ncpus=8:checkfs=4)+(cn290:ncpus=8:checkfs=4)+(cn292:ncpus=8:checkfs=4)+(cn291:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=18017 end=1367342363 Exit_status=0 resources_used.cpupercent=2 resources_used.cput=00:00:06 resources_used.mem=14488kb resources_used.ncpus=32 resources_used.vmem=353152kb resources_used.walltime=46:41:01 run_count=1
+04/30/2013 22:56:14;U;R59810.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 22:56:15;U;R59811.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 22:56:15;K;R59810.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 22:56:15;K;R59811.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:00:14;U;R59812.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:00:14;U;R59813.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:00:14;K;R59812.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:00:14;K;R59813.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:07:15;U;R59814.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:07:15;U;R59815.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:07:15;K;R59814.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:07:15;K;R59815.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:14:15;U;R59816.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:14:15;U;R59817.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:14:15;K;R59816.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:14:15;K;R59817.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:21:15;U;R59818.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:21:15;U;R59819.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:21:15;K;R59818.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:21:15;K;R59819.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:28:15;U;R59820.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:28:15;U;R59821.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:28:15;K;R59820.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:28:15;K;R59821.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:30:00;L;license;floating license hour:0 day:2708 month:2764 max:2804
+04/30/2013 23:35:15;U;R59822.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:35:15;U;R59823.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:35:15;K;R59822.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:35:15;K;R59823.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:42:15;U;R59824.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:42:15;U;R59825.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:42:16;K;R59824.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:42:16;K;R59825.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:45:56;Q;59826.mgmt03;queue=small
+04/30/2013 23:49:14;U;R59827.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:49:14;U;R59828.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:49:15;K;R59827.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:49:15;K;R59828.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:56:15;U;R59829.mgmt03;requestor=ksaurbh@mgmt03
+04/30/2013 23:56:15;U;R59830.mgmt03;requestor=hemantp@mgmt03
+04/30/2013 23:56:15;K;R59829.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:56:15;K;R59830.mgmt03;requestor=Server@mgmt03@mgmt03
+04/30/2013 23:57:56;E;59543.mgmt03;user=user256 group=group6 project=l_m_s_project jobname=o-a+p queue=small ctime=1367181468 qtime=1367181468 etime=1367181468 start=1367258823 exec_host=cn315/0*8+cn325/0*8 exec_vnode=(cn315:ncpus=8:checkfs=4)+(cn325:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=11377 end=1367346476 Exit_status=-14 resources_used.cpupercent=1 resources_used.cput=00:00:23 resources_used.mem=15232kb resources_used.ncpus=16 resources_used.vmem=412304kb resources_used.walltime=24:20:27 run_count=1

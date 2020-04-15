@@ -1,0 +1,28 @@
+01/04/2015 00:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 00:42:09;E;139217.mgmt03;user=8362943 group=9301542 project=l_m_s_project jobname=hpnptssc4 queue=medium ctime=1419966465 qtime=1419966465 etime=1419966465 start=1419966465 exec_host=cn238/0*8+cn245/0*8+cn277/0*8+cn218/0*8 exec_vnode=(cn238:ncpus=8)+(cn245:ncpus=8)+(cn277:ncpus=8)+(cn218:ncpus=8) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=22775 end=1420312329 Exit_status=271 resources_used.cpupercent=740 resources_used.cput=98:08:05 resources_used.mem=3538012kb resources_used.ncpus=32 resources_used.vmem=11498424kb resources_used.walltime=96:01:16 run_count=1
+01/04/2015 01:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 01:33:15;E;139305.mgmt03;user=5621523 group=9301542 project=l_m_s_project jobname=Rh3Y queue=small ctime=1420087643 qtime=1420087643 etime=1420087643 start=1420087644 exec_host=cn323/0*8+cn297/0*8+cn314/0*8+cn301/0*8 exec_vnode=(cn323:ncpus=8)+(cn297:ncpus=8)+(cn314:ncpus=8)+(cn301:ncpus=8) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=15623 end=1420315395 Exit_status=0 resources_used.cpupercent=3192 resources_used.cput=2018:24:35 resources_used.mem=18894180kb resources_used.ncpus=32 resources_used.vmem=8685392kb resources_used.walltime=63:14:16 run_count=1
+01/04/2015 02:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 03:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 04:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 05:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 06:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 07:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 08:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 08:49:00;E;139168.mgmt03;user=500804 group=9301542 project=l_m_s_project jobname=bz-ac9-10.sh queue=small ctime=1419941716 qtime=1419941716 etime=1419941716 start=1419941716 exec_host=cn316/0*8+cn286/0*8+cn308/0*8+cn315/0*8 exec_vnode=(cn316:ncpus=8)+(cn286:ncpus=8)+(cn308:ncpus=8)+(cn315:ncpus=8) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=111:00:00 session=20168 end=1420341540 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:06 resources_used.mem=37724kb resources_used.ncpus=32 resources_used.vmem=576068kb resources_used.walltime=111:00:36 run_count=1
+01/04/2015 09:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 10:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 11:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 12:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 13:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 14:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 15:23:56;E;139282.mgmt03;user=5621523 group=9301542 project=l_m_s_project jobname=Rh3Y queue=large ctime=1420034516 qtime=1420034516 etime=1420034516 start=1420148701 exec_host=cn138/0*8+cn137/0*8+cn140/0*8+cn014/0*8+cn029/0*8+cn025/0*8+cn033/0*8+cn035/0*8+cn036/0*8+cn032/0*8+cn044/0*8+cn051/0*8+cn054/0*8+cn055/0*8+cn057/0*8+cn068/0*8 exec_vnode=(cn138:ncpus=8)+(cn137:ncpus=8)+(cn140:ncpus=8)+(cn014:ncpus=8)+(cn029:ncpus=8)+(cn025:ncpus=8)+(cn033:ncpus=8)+(cn035:ncpus=8)+(cn036:ncpus=8)+(cn032:ncpus=8)+(cn044:ncpus=8)+(cn051:ncpus=8)+(cn054:ncpus=8)+(cn055:ncpus=8)+(cn057:ncpus=8)+(cn068:ncpus=8) Resource_List.LMS_limit=1 Resource_List.mpiprocs=128 Resource_List.ncpus=128 Resource_List.nodect=16 Resource_List.nodes=16:ppn=8 Resource_List.place=scatter Resource_List.select=16:ncpus=8:mpiprocs=8 Resource_List.walltime=72:00:00 session=14449 end=1420365236 Exit_status=0 resources_used.cpupercent=12768 resources_used.cput=7494:32:35 resources_used.mem=32731640kb resources_used.ncpus=128 resources_used.vmem=5922804kb resources_used.walltime=60:07:18 run_count=1
+01/04/2015 15:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 16:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 17:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 18:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 19:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 20:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 21:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 22:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356
+01/04/2015 23:30:00;L;license;floating license hour:0 day:0 month:2027 max:3356

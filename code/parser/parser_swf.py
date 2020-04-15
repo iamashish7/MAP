@@ -4,7 +4,6 @@ import sys
 import random
 import re
 import datetime
-from email.utils import parsedate_tz
 
 start_date = "^; StartTime:"
 end_date = "^; EndTime:"
@@ -14,7 +13,7 @@ rand_int = random.randrange(10000, 100000, 1)
 tableName = "temp"+str(rand_int)
 database = "tempLogs"
 print_str = tableName
-connection = pymysql.connect(host='localhost', user='ashish', passwd='ashish007', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+connection = pymysql.connect(host='localhost', user='monalys', passwd='monalys', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 cursor = connection.cursor()
 
 def closeConnection():

@@ -1,0 +1,28 @@
+08/30/2011 00:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 01:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 02:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 03:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 04:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 05:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 06:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 07:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 08:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 09:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 10:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 11:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 12:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 13:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 14:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 15:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 16:30:00;L;license;floating license hour:0 day:0 month:2537 max:2560
+08/30/2011 16:33:28;Q;16810.mgmt03;queue=medium
+08/30/2011 16:33:29;S;16491.mgmt03;user=user196 group=group6 jobname=124 queue=medium ctime=1313758805 qtime=1313758805 etime=1313758805 start=1314702209 exec_host=cn185/0*8+cn186/0*8+cn187/0*8+cn188/0*8 exec_vnode=(cn185:ncpus=8:mpiprocs=8:checkfs=3)+(cn186:ncpus=8:mpiprocs=8:checkfs=3)+(cn187:ncpus=8:mpiprocs=8:checkfs=3)+(cn188:ncpus=8:mpiprocs=8:checkfs=3) Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+08/30/2011 16:33:29;S;16810.mgmt03;user=user17 group=group6 jobname=R90-R2 queue=medium ctime=1314702208 qtime=1314702208 etime=1314702208 start=1314702209 exec_host=cn189/0*8+cn190/0*8+cn191/0*8+cn192/0*8 exec_vnode=(cn189:ncpus=8:mpiprocs=8:checkfs=3)+(cn190:ncpus=8:mpiprocs=8:checkfs=3)+(cn191:ncpus=8:mpiprocs=8:checkfs=3)+(cn192:ncpus=8:mpiprocs=8:checkfs=3) Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+08/30/2011 16:59:23;Q;16813.mgmt03;queue=medium
+08/30/2011 17:30:00;L;license;floating license hour:64 day:64 month:2537 max:2560
+08/30/2011 18:30:00;L;license;floating license hour:0 day:64 month:2537 max:2560
+08/30/2011 19:30:00;L;license;floating license hour:0 day:64 month:2537 max:2560
+08/30/2011 20:30:00;L;license;floating license hour:0 day:64 month:2537 max:2560
+08/30/2011 21:30:00;L;license;floating license hour:0 day:64 month:2537 max:2560
+08/30/2011 22:30:00;L;license;floating license hour:0 day:64 month:2537 max:2560
+08/30/2011 23:30:00;L;license;floating license hour:0 day:64 month:2537 max:2560

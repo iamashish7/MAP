@@ -1,0 +1,88 @@
+03/23/2014 00:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 01:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 02:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 03:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 04:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 05:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 06:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 07:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 08:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 09:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 10:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 12:29:42;B;R95645.mgmt03;owner=amuly@mgmt03 name=NULL queue=R95645 ctime=1394449935 start=1394449980 end=1395745980 duration=1296000 nodes=(cn355:checkfs=32:ncpus=8) Authorized_Users=amuly@mgmt03 Resource_List.checkfs=32 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.place=pack Resource_List.select=1:checkfs=32:ncpus=8:seqnode_binding=yes Resource_List.seqnode_binding=yes Resource_List.walltime=360:00:00 
+03/23/2014 12:30:33;B;R95645.mgmt03;owner=amuly@mgmt03 name=NULL queue=R95645 ctime=1394449935 start=1394449980 end=1395745980 duration=1296000 nodes=(cn355:checkfs=32:ncpus=8) Authorized_Users=amuly@mgmt03 Resource_List.checkfs=32 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.place=pack Resource_List.select=1:checkfs=32:ncpus=8:seqnode_binding=yes Resource_List.seqnode_binding=yes Resource_List.walltime=360:00:00 
+03/23/2014 12:30:33;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 12:36:40;B;R95645.mgmt03;owner=amuly@mgmt03 name=NULL queue=R95645 ctime=1394449935 start=1394449980 end=1395745980 duration=1296000 nodes=(cn355:checkfs=32:ncpus=8) Authorized_Users=amuly@mgmt03 Resource_List.checkfs=32 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.place=pack Resource_List.select=1:checkfs=32:ncpus=8:seqnode_binding=yes Resource_List.seqnode_binding=yes Resource_List.walltime=360:00:00 
+03/23/2014 12:40:34;B;R95645.mgmt03;owner=amuly@mgmt03 name=NULL queue=R95645 ctime=1394449935 start=1394449980 end=1395745980 duration=1296000 nodes=(cn355:checkfs=32:ncpus=8) Authorized_Users=amuly@mgmt03 Resource_List.checkfs=32 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.place=pack Resource_List.select=1:checkfs=32:ncpus=8:seqnode_binding=yes Resource_List.seqnode_binding=yes Resource_List.walltime=360:00:00 
+03/23/2014 12:40:35;U;R103986.mgmt03;requestor=parlok@mgmt01.hpc.iitk.ac.in
+03/23/2014 12:40:36;Q;96092.mgmt03;queue=R103986
+03/23/2014 12:40:37;Q;96093.mgmt03;queue=R103986
+03/23/2014 12:40:37;K;R103986.mgmt03;requestor=Server@mgmt01@mgmt01.hpc.iitk.ac.in
+03/23/2014 12:49:13;B;R95645.mgmt03;owner=amuly@mgmt03 name=NULL queue=R95645 ctime=1394449935 start=1394449980 end=1395745980 duration=1296000 nodes=(cn355:checkfs=32:ncpus=8) Authorized_Users=amuly@mgmt03 Resource_List.checkfs=32 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.place=pack Resource_List.select=1:checkfs=32:ncpus=8:seqnode_binding=yes Resource_List.seqnode_binding=yes Resource_List.walltime=360:00:00 
+03/23/2014 12:49:14;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 13:00:53;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 13:12:33;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 13:24:13;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 13:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 13:35:53;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 13:47:33;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 13:57:15;Q;103987.mgmt03;queue=workq
+03/23/2014 13:57:16;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 14:03:41;D;103987.mgmt03;requestor=ashishbh@mgmt03
+03/23/2014 14:03:41;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 14:15:21;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 14:27:01;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 14:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 14:38:41;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 14:50:22;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 15:02:01;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 15:13:41;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 15:25:21;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 15:30:00;L;license;floating license hour:0 day:0 month:2772 max:2804
+03/23/2014 15:37:01;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 15:48:24;Q;103989.mgmt03;queue=test
+03/23/2014 15:48:24;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 15:48:25;S;103989.mgmt03;user=user116 group=group6 project=_pbs_project_default jobname=Hello_World queue=test ctime=1395569904 qtime=1395569904 etime=1395569904 start=1395569905 exec_host=cn031/0*8+cn032/0*8 exec_vnode=(cn031:ncpus=8:checkfs=0)+(cn032:ncpus=8:checkfs=0) Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 resource_assigned.ncpus=16 
+03/23/2014 15:54:48;D;103989.mgmt03;requestor=root@mgmt03
+03/23/2014 15:58:10;D;103989.mgmt03;requestor=praveenk@mgmt03
+03/23/2014 15:58:10;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 16:09:51;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 16:21:30;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 16:30:00;L;license;floating license hour:16 day:16 month:2772 max:2804
+03/23/2014 16:33:10;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 16:44:50;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 16:56:30;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 17:08:10;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 17:20:14;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 17:30:00;L;license;floating license hour:0 day:16 month:2772 max:2804
+03/23/2014 17:31:42;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 17:43:30;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 17:54:50;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 18:06:30;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 18:18:10;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 18:29:50;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 18:30:00;L;license;floating license hour:0 day:16 month:2772 max:2804
+03/23/2014 18:41:30;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 18:46:35;Q;103990.mgmt03;queue=mediumsb
+03/23/2014 18:46:36;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 18:58:16;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 19:09:56;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 19:21:35;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 19:30:00;L;license;floating license hour:0 day:16 month:2772 max:2804
+03/23/2014 19:33:15;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 19:44:55;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 19:56:35;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 20:08:16;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 20:19:55;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 20:30:00;L;license;floating license hour:0 day:16 month:2772 max:2804
+03/23/2014 20:31:35;K;R103986.mgmt03;requestor=Server@mgmt03@mgmt03
+03/23/2014 20:41:00;K;R103986.mgmt03;requestor=root@mgmt03
+03/23/2014 20:41:00;D;96092.mgmt03;requestor=root@mgmt03
+03/23/2014 20:41:00;D;96093.mgmt03;requestor=root@mgmt03
+03/23/2014 21:30:00;L;license;floating license hour:0 day:16 month:2772 max:2804
+03/23/2014 22:05:38;Q;103991.mgmt03;queue=medium
+03/23/2014 22:05:38;Q;103992.mgmt03;queue=medium
+03/23/2014 22:08:10;Q;103993.mgmt03;queue=large
+03/23/2014 22:08:11;Q;103994.mgmt03;queue=large
+03/23/2014 22:30:00;L;license;floating license hour:0 day:16 month:2772 max:2804
+03/23/2014 23:30:00;L;license;floating license hour:0 day:16 month:2772 max:2804

@@ -20,8 +20,8 @@ ini_set('max_execution_time',300);
 error_reporting(E_ALL);
 
 $servername = "localhost";
-$username = "ashish";
-$password = "ashish007";
+$username = "monalys";
+$password = "monalys";
 $dbname = "HPC_new2";
 
 // Create connection

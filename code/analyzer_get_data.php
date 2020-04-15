@@ -28,8 +28,8 @@ $monthDiff = (($year2 - $year1) * 12) + ($month2 - $month1) + 1;
 $dateDiff = (($year2 - $year1) * 12) + (($month2 - $month1)*30) + (($month2 - $month1)/2) + ($date2 - $date1) + 1;
 
 $servername = "localhost";
-$username = "ashish";
-$password = "ashish007";
+$username = "monalys";
+$password = "monalys";
 $dbname = $_POST['db'];
 $table = $_POST['table'];
 

@@ -30,7 +30,7 @@ id_C = 0
 startY = "99999"
 endY = "0"
 ## Connect to Database
-connection = pymysql.connect(host='localhost', user='ashish', passwd='ashish007', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
+connection = pymysql.connect(host='localhost', user='monalys', passwd='monalys', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 cursor = connection.cursor()
 
 DATA = {'Q':{},'S':{}}

@@ -1,0 +1,121 @@
+07/22/2013 00:30:00;L;license;floating license hour:2633 day:2651 month:2718 max:2804
+07/22/2013 00:48:08;E;69113.mgmt03;user=user41 group=group6 project=_pbs_project_default jobname=RADi_4 queue=workq ctime=1374430059 qtime=1374430059 etime=1374430059 start=1374430133 exec_host=cn361/0+cn362/0+cn363/0+cn364/0+cn365/0+cn360/1 exec_vnode=(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4)+(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=19295 end=1374434288 Exit_status=0 resources_used.cpupercent=3 resources_used.cput=00:00:01 resources_used.mem=14488kb resources_used.ncpus=6 resources_used.vmem=353148kb resources_used.walltime=01:09:13 run_count=1
+07/22/2013 01:00:31;Q;69114.mgmt03;queue=workq
+07/22/2013 01:01:42;S;69114.mgmt03;user=user41 group=group6 project=_pbs_project_default jobname=RADi_4 queue=workq ctime=1374435031 qtime=1374435031 etime=1374435031 start=1374435102 exec_host=cn361/0+cn362/0+cn363/0+cn364/0+cn365/0+cn360/1 exec_vnode=(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4)+(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 resource_assigned.ncpus=6 resource_assigned.interactive_tasks=6 
+07/22/2013 01:04:07;E;69082.mgmt03;user=user243 group=group6 project=l_m_s_project jobname=opt_sub2 queue=medium ctime=1374329392 qtime=1374329392 etime=1374329392 start=1374416873 exec_host=cn210/0*8+cn234/0*8+cn243/0*8+cn242/0*8 exec_vnode=(cn210:ncpus=8:checkfs=4)+(cn234:ncpus=8:checkfs=4)+(cn243:ncpus=8:checkfs=4)+(cn242:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 session=6116 end=1374435247 Exit_status=0 resources_used.cpupercent=787 resources_used.cput=37:02:59 resources_used.mem=2155316kb resources_used.ncpus=32 resources_used.vmem=4194896kb resources_used.walltime=05:06:14 run_count=1
+07/22/2013 01:30:00;L;license;floating license hour:2633 day:2633 month:2718 max:2804
+07/22/2013 02:14:14;E;69114.mgmt03;user=user41 group=group6 project=_pbs_project_default jobname=RADi_4 queue=workq ctime=1374435031 qtime=1374435031 etime=1374435031 start=1374435102 exec_host=cn361/0+cn362/0+cn363/0+cn364/0+cn365/0+cn360/1 exec_vnode=(cn361:ncpus=1:interactive_tasks=1:checkfs=4)+(cn362:ncpus=1:interactive_tasks=1:checkfs=4)+(cn363:ncpus=1:interactive_tasks=1:checkfs=4)+(cn364:ncpus=1:interactive_tasks=1:checkfs=4)+(cn365:ncpus=1:interactive_tasks=1:checkfs=4)+(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=6 Resource_List.mpiprocs=6 Resource_List.ncpus=6 Resource_List.nodect=6 Resource_List.place=scatter Resource_List.select=6:ncpus=1:mpiprocs=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=7451 end=1374439454 Exit_status=0 resources_used.cpupercent=0 resources_used.cput=00:00:01 resources_used.mem=14496kb resources_used.ncpus=6 resources_used.vmem=353148kb resources_used.walltime=01:12:30 run_count=1
+07/22/2013 02:27:26;E;69096.mgmt03;user=user114 group=group6 project=l_m_s_project jobname=cheq18.8 queue=small ctime=1374393544 qtime=1374393545 etime=1374393545 start=1374404182 exec_host=cn288/0*8+cn290/0*8+cn296/0*8+cn324/0*8 exec_vnode=(cn288:ncpus=8:checkfs=4)+(cn290:ncpus=8:checkfs=4)+(cn296:ncpus=8:checkfs=4)+(cn324:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=10:00:00 session=12505 end=1374440246 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=16320kb resources_used.ncpus=32 resources_used.vmem=381664kb resources_used.walltime=10:01:01 run_count=1
+07/22/2013 02:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 02:40:45;S;69108.mgmt03;user=user137 group=group6 project=l_m_s_project jobname=P1e2R5e6 queue=small ctime=1374422420 qtime=1374422420 etime=1374422420 start=1374441045 exec_host=cn288/0*8+cn290/0*8+cn296/0*8+cn324/0*8 exec_vnode=(cn288:ncpus=8:checkfs=4)+(cn290:ncpus=8:checkfs=4)+(cn296:ncpus=8:checkfs=4)+(cn324:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=32 
+07/22/2013 03:30:00;L;license;floating license hour:2595 day:2633 month:2718 max:2804
+07/22/2013 03:36:21;E;69112.mgmt03;user=user41 group=group6 project=_pbs_project_default jobname=STDIN queue=workq ctime=1374429432 qtime=1374429432 etime=1374429432 start=1374429503 exec_host=cn360/0 exec_vnode=(cn360:ncpus=1:interactive_tasks=1:checkfs=4) Resource_List.cput=02:00:00 Resource_List.interactive_tasks=1 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1:interactive_tasks=1 Resource_List.walltime=24:00:00 session=24431 end=1374444381 Exit_status=0 resources_used.cpupercent=96 resources_used.cput=00:11:27 resources_used.mem=25336kb resources_used.ncpus=1 resources_used.vmem=282116kb resources_used.walltime=04:07:58 run_count=1
+07/22/2013 04:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 05:26:26;E;68764.mgmt03;user=user41 group=group6 project=l_m_s_project jobname=radi7_R queue=small ctime=1373959041 qtime=1373959041 etime=1373959041 start=1374064519 exec_host=cn316/0*8+cn342/0*8 exec_vnode=(cn316:ncpus=8:checkfs=4)+(cn342:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=21435 end=1374450986 Exit_status=0 resources_used.cpupercent=1 resources_used.cput=00:00:11 resources_used.mem=14488kb resources_used.ncpus=16 resources_used.vmem=353276kb resources_used.walltime=107:21:06 run_count=1
+07/22/2013 05:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 05:39:10;S;68865.mgmt03;user=user41 group=group6 project=l_m_s_project jobname=3-step queue=small ctime=1374124158 qtime=1374124158 etime=1374124158 start=1374451750 exec_host=cn316/0*8+cn342/0*8 exec_vnode=(cn316:ncpus=8:checkfs=4)+(cn342:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=16 
+07/22/2013 06:30:00;L;license;floating license hour:2594 day:2633 month:2718 max:2804
+07/22/2013 06:32:11;E;69087.mgmt03;user=user92 group=group6 project=l_m_s_project jobname=m779_448 queue=small ctime=1374355717 qtime=1374355717 etime=1374355717 start=1374355785 exec_host=cn297/0*8+cn319/0*8 exec_vnode=(cn297:ncpus=8:checkfs=4)+(cn319:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=7934 end=1374454931 Exit_status=137 resources_used.cpupercent=1 resources_used.cput=00:02:29 resources_used.mem=14468kb resources_used.ncpus=16 resources_used.vmem=351232kb resources_used.walltime=27:30:46 run_count=1
+07/22/2013 06:44:59;S;69088.mgmt03;user=user92 group=group6 project=l_m_s_project jobname=m779_448 queue=small ctime=1374355718 qtime=1374355718 etime=1374355718 start=1374455699 exec_host=cn297/0*8+cn319/0*8 exec_vnode=(cn297:ncpus=8:checkfs=4)+(cn319:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=16 
+07/22/2013 06:45:11;E;69088.mgmt03;user=user92 group=group6 project=l_m_s_project jobname=m779_448 queue=small ctime=1374355718 qtime=1374355718 etime=1374355718 start=1374455699 exec_host=cn297/0*8+cn319/0*8 exec_vnode=(cn297:ncpus=8:checkfs=4)+(cn319:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=16 Resource_List.ncpus=16 Resource_List.nodect=2 Resource_List.nodes=2:ppn=8 Resource_List.place=scatter Resource_List.select=2:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=23218 end=1374455711 Exit_status=38 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=484kb resources_used.ncpus=16 resources_used.vmem=10288kb resources_used.walltime=00:00:10 run_count=1
+07/22/2013 07:30:00;L;license;floating license hour:2594 day:2633 month:2718 max:2804
+07/22/2013 07:53:13;E;68690.mgmt03;user=user41 group=group6 project=_pbs_project_default jobname=l-s_r5 queue=R68616 resvname=NULL resvID=R68616.mgmt03 ctime=1373882168 qtime=1373882294 etime=1373882168 start=1373882344 exec_host=cn346/1 exec_vnode=(cn346:ncpus=1:checkfs=4) Resource_List.checkfs=4 Resource_List.ncpus=1 Resource_List.nodect=1 Resource_List.nodes=1:ppn=1 Resource_List.place=scatter Resource_List.select=1:ncpus=1 Resource_List.walltime=360:00:00 session=23678 end=1374459793 Exit_status=0 resources_used.cpupercent=98 resources_used.cput=160:22:37 resources_used.mem=11192kb resources_used.ncpus=1 resources_used.vmem=188256kb resources_used.walltime=160:24:06 run_count=1
+07/22/2013 08:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 09:03:07;E;68801.mgmt03;user=user85 group=group6 project=l_m_s_project jobname=W10KSDSE0.01 queue=large ctime=1373996831 qtime=1373996831 etime=1373996831 start=1374204684 exec_host=cn092/0*8+cn112/0*8+cn114/0*8+cn113/0*8+cn116/0*8+cn117/0*8+cn118/0*8+cn119/0*8+cn142/0*8+cn146/0*8+cn148/0*8+cn147/0*8+cn149/0*8+cn150/0*8+cn151/0*8+cn158/0*8 exec_vnode=(cn092:ncpus=8:checkfs=4)+(cn112:ncpus=8:checkfs=4)+(cn114:ncpus=8:checkfs=4)+(cn113:ncpus=8:checkfs=4)+(cn116:ncpus=8:checkfs=4)+(cn117:ncpus=8:checkfs=4)+(cn118:ncpus=8:checkfs=4)+(cn119:ncpus=8:checkfs=4)+(cn142:ncpus=8:checkfs=4)+(cn146:ncpus=8:checkfs=4)+(cn148:ncpus=8:checkfs=4)+(cn147:ncpus=8:checkfs=4)+(cn149:ncpus=8:checkfs=4)+(cn150:ncpus=8:checkfs=4)+(cn151:ncpus=8:checkfs=4)+(cn158:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=128 Resource_List.ncpus=128 Resource_List.nodect=16 Resource_List.nodes=16:ppn=8 Resource_List.place=scatter Resource_List.select=16:ncpus=8:mpiprocs=8 Resource_List.walltime=72:00:00 session=22573 end=1374463987 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14756kb resources_used.ncpus=128 resources_used.vmem=353536kb resources_used.walltime=72:01:42 run_count=1
+07/22/2013 09:05:47;Q;69115.mgmt03;queue=medium
+07/22/2013 09:06:36;S;68997.mgmt03;user=user114 group=group6 project=l_m_s_project jobname=q28.6 queue=large ctime=1374255378 qtime=1374255378 etime=1374255378 start=1374464196 exec_host=cn092/0*8+cn112/0*8+cn114/0*8+cn113/0*8+cn116/0*8+cn117/0*8+cn118/0*8+cn119/0*8+cn140/0*8+cn142/0*8+cn146/0*8+cn148/0*8+cn147/0*8+cn149/0*8+cn150/0*8+cn151/0*8 exec_vnode=(cn092:ncpus=8:checkfs=4)+(cn112:ncpus=8:checkfs=4)+(cn114:ncpus=8:checkfs=4)+(cn113:ncpus=8:checkfs=4)+(cn116:ncpus=8:checkfs=4)+(cn117:ncpus=8:checkfs=4)+(cn118:ncpus=8:checkfs=4)+(cn119:ncpus=8:checkfs=4)+(cn140:ncpus=8:checkfs=4)+(cn142:ncpus=8:checkfs=4)+(cn146:ncpus=8:checkfs=4)+(cn148:ncpus=8:checkfs=4)+(cn147:ncpus=8:checkfs=4)+(cn149:ncpus=8:checkfs=4)+(cn150:ncpus=8:checkfs=4)+(cn151:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=128 Resource_List.ncpus=128 Resource_List.nodect=16 Resource_List.nodes=16:ppn=8 Resource_List.place=scatter Resource_List.select=16:ncpus=8:mpiprocs=8 Resource_List.walltime=72:00:00 resource_assigned.ncpus=128 
+07/22/2013 09:07:02;Q;69116.mgmt03;queue=large
+07/22/2013 09:14:43;Q;69117.mgmt03;queue=small
+07/22/2013 09:15:02;D;68986.mgmt03;requestor=nsada@mgmt03
+07/22/2013 09:15:19;E;68986.mgmt03;user=user43 group=group6 project=l_m_s_project jobname=4PMMAZnS queue=small ctime=1374237329 qtime=1374237329 etime=1374237329 start=1374242013 exec_host=cn295/0*8 exec_vnode=(cn295:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=9791 end=1374464719 Exit_status=271 resources_used.cpupercent=4 resources_used.cput=00:00:21 resources_used.mem=15660kb resources_used.ncpus=8 resources_used.vmem=343140kb resources_used.walltime=61:51:47 run_count=1
+07/22/2013 09:15:36;S;69117.mgmt03;user=user43 group=group6 project=l_m_s_project jobname=4PMMAZnS queue=small ctime=1374464683 qtime=1374464683 etime=1374464683 start=1374464736 exec_host=cn297/0*8 exec_vnode=(cn297:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=8 
+07/22/2013 09:15:59;D;69117.mgmt03;requestor=nsada@mgmt03
+07/22/2013 09:16:15;E;69117.mgmt03;user=user43 group=group6 project=l_m_s_project jobname=4PMMAZnS queue=small ctime=1374464683 qtime=1374464683 etime=1374464683 start=1374464736 exec_host=cn297/0*8 exec_vnode=(cn297:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 session=27955 end=1374464775 Exit_status=271 resources_used.cpupercent=0 resources_used.cput=00:00:00 resources_used.mem=14768kb resources_used.ncpus=8 resources_used.vmem=343160kb resources_used.walltime=00:00:39 run_count=1
+07/22/2013 09:18:28;Q;69118.mgmt03;queue=small
+07/22/2013 09:20:20;D;69118.mgmt03;requestor=nsada@mgmt03
+07/22/2013 09:21:04;Q;69119.mgmt03;queue=small
+07/22/2013 09:21:07;S;69119.mgmt03;user=user43 group=group6 project=l_m_s_project jobname=4PMMAZnS queue=small ctime=1374465064 qtime=1374465064 etime=1374465064 start=1374465067 exec_host=cn295/0*8 exec_vnode=(cn295:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=8 Resource_List.ncpus=8 Resource_List.nodect=1 Resource_List.nodes=1:ppn=8 Resource_List.place=scatter Resource_List.select=1:ncpus=8:mpiprocs=8 Resource_List.walltime=120:00:00 resource_assigned.ncpus=8 
+07/22/2013 09:22:24;Q;69120.mgmt03;queue=medium
+07/22/2013 09:22:29;Q;69121.mgmt03;queue=medium
+07/22/2013 09:22:57;Q;69122.mgmt03;queue=medium
+07/22/2013 09:23:01;Q;69123.mgmt03;queue=medium
+07/22/2013 09:23:20;S;69120.mgmt03;user=user26 group=group6 project=l_m_s_project jobname=SHM1 queue=medium ctime=1374465144 qtime=1374465144 etime=1374465144 start=1374465200 exec_host=cn210/0*8+cn234/0*8+cn243/0*8+cn242/0*8 exec_vnode=(cn210:ncpus=8:checkfs=4)+(cn234:ncpus=8:checkfs=4)+(cn243:ncpus=8:checkfs=4)+(cn242:ncpus=8:checkfs=4) Resource_List.LMS_limit=1 Resource_List.mpiprocs=32 Resource_List.ncpus=32 Resource_List.nodect=4 Resource_List.nodes=4:ppn=8 Resource_List.place=scatter Resource_List.select=4:ncpus=8:mpiprocs=8 Resource_List.walltime=96:00:00 resource_assigned.ncpus=32 
+07/22/2013 09:26:24;Q;69124.mgmt03;queue=small
+07/22/2013 09:30:00;L;license;floating license hour:2609 day:2633 month:2718 max:2804
+07/22/2013 09:35:56;D;68805.mgmt03;Job deleted, execution node cn001.hpc.iitk.ac.in down
+07/22/2013 09:36:22;D;68969.mgmt03;Job deleted, execution node cn002.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68882.mgmt03;Job deleted, execution node cn005.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68994.mgmt03;Job deleted, execution node cn034.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68760.mgmt03;Job deleted, execution node cn007.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68893.mgmt03;Job deleted, execution node cn063.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68983.mgmt03;Job deleted, execution node cn020.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68809.mgmt03;Job deleted, execution node cn039.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68812.mgmt03;Job deleted, execution node cn055.hpc.iitk.ac.in down
+07/22/2013 09:37:44;D;68997.mgmt03;Job deleted, execution node cn092.hpc.iitk.ac.in down
+07/22/2013 09:38:00;D;68807.mgmt03;Job deleted, execution node cn206.hpc.iitk.ac.in down
+07/22/2013 09:38:00;D;69120.mgmt03;Job deleted, execution node cn210.hpc.iitk.ac.in down
+07/22/2013 09:38:00;D;68836.mgmt03;Job deleted, execution node cn214.hpc.iitk.ac.in down
+07/22/2013 09:38:00;D;68920.mgmt03;Job deleted, execution node cn235.hpc.iitk.ac.in down
+07/22/2013 09:38:00;D;68860.mgmt03;Job deleted, execution node cn241.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;69103.mgmt03;Job deleted, execution node cn185.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68896.mgmt03;Job deleted, execution node cn199.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68978.mgmt03;Job deleted, execution node cn197.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;69008.mgmt03;Job deleted, execution node cn188.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68849.mgmt03;Job deleted, execution node cn186.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68919.mgmt03;Job deleted, execution node cn187.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68644.mgmt03;Job deleted, execution node cn191.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68967.mgmt03;Job deleted, execution node cn192.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68852.mgmt03;Job deleted, execution node cn227.hpc.iitk.ac.in down
+07/22/2013 09:38:01;D;68822.mgmt03;Job deleted, execution node cn250.hpc.iitk.ac.in down
+07/22/2013 09:38:02;D;68593.mgmt03;Job deleted, execution node cn244.hpc.iitk.ac.in down
+07/22/2013 09:38:16;D;69108.mgmt03;Job deleted, execution node cn288.hpc.iitk.ac.in down
+07/22/2013 09:38:16;D;68581.mgmt03;Job deleted, execution node cn335.hpc.iitk.ac.in down
+07/22/2013 09:38:16;D;68853.mgmt03;Job deleted, execution node cn292.hpc.iitk.ac.in down
+07/22/2013 09:38:16;D;68728.mgmt03;Job deleted, execution node cn299.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;69083.mgmt03;Job deleted, execution node cn265.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68865.mgmt03;Job deleted, execution node cn316.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;69062.mgmt03;Job deleted, execution node cn286.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68906.mgmt03;Job deleted, execution node cn285.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68915.mgmt03;Job deleted, execution node cn300.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;69119.mgmt03;Job deleted, execution node cn295.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68834.mgmt03;Job deleted, execution node cn314.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68729.mgmt03;Job deleted, execution node cn289.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;69094.mgmt03;Job deleted, execution node cn331.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;69102.mgmt03;Job deleted, execution node cn304.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;69024.mgmt03;Job deleted, execution node cn346.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68878.mgmt03;Job deleted, execution node cn309.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68416.mgmt03;Job deleted, execution node cn293.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68544.mgmt03;Job deleted, execution node cn326.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68874.mgmt03;Job deleted, execution node cn329.hpc.iitk.ac.in down
+07/22/2013 09:38:17;D;68950.mgmt03;Job deleted, execution node cn311.hpc.iitk.ac.in down
+07/22/2013 09:38:18;D;68847.mgmt03;Job deleted, execution node cn325.hpc.iitk.ac.in down
+07/22/2013 09:38:18;D;69070.mgmt03;Job deleted, execution node cn307.hpc.iitk.ac.in down
+07/22/2013 09:39:34;D;68959.mgmt03;Job deleted, execution node cn003.hpc.iitk.ac.in down
+07/22/2013 09:47:01;Q;69125.mgmt03;queue=small
+07/22/2013 09:48:09;Q;69126.mgmt03;queue=large
+07/22/2013 09:49:26;Q;69127.mgmt03;queue=large
+07/22/2013 09:50:00;Q;69128.mgmt03;queue=small
+07/22/2013 09:53:17;Q;69129.mgmt03;queue=medium
+07/22/2013 09:53:31;Q;69130.mgmt03;queue=large
+07/22/2013 09:54:08;K;R68616.mgmt03;requestor=root@mgmt03
+07/22/2013 09:54:22;Q;69131.mgmt03;queue=small
+07/22/2013 09:54:37;Q;69132.mgmt03;queue=medium
+07/22/2013 09:54:50;Q;69133.mgmt03;queue=medium
+07/22/2013 09:55:18;Q;69134.mgmt03;queue=small
+07/22/2013 09:55:24;Q;69135.mgmt03;queue=small
+07/22/2013 09:56:29;Q;69136.mgmt03;queue=medium
+07/22/2013 10:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 11:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 12:00:40;Q;69137.mgmt03;queue=small
+07/22/2013 12:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 13:43:01;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 14:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 15:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 16:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 17:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 18:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 19:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 20:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 21:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 22:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
+07/22/2013 23:30:00;L;license;floating license hour:0 day:2633 month:2718 max:2804
