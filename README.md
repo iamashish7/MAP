@@ -38,9 +38,9 @@ $ pip install pymysql
 
 1. Go to project directory using cd command
 2. Run setup.sh
-    ```bash
-    $ ./setup.sh
-    ```
+```bash
+$ ./setup.sh
+```
  
 ## Running MONALYS
 
