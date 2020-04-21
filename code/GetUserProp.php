@@ -22,7 +22,7 @@ error_reporting(E_ALL);
 $servername = "localhost";
 $username = "monalys";
 $password = "monalys";
-$dbname = "HPC_new2";
+$dbname = "SavedLogs";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -32,7 +32,7 @@ if ($conn->connect_error) {
 }
 
 $USER = $_POST['user'];
-$sql = "select count(*) as c from user_profile where uid='" . $USER . "'";
+$sql = "select count(*) as c from user_profile_2010 where uid='" . $USER . "'";
 // $USER = 'user9';
 $result = $conn->query($sql);
 $json_array['error'] = 0;
@@ -46,7 +46,7 @@ while ($row = $result->fetch_assoc()) {
     }
 }
 //User data
-$sql = "select MFQ,AJSI,AWT,AMU,MUC,TJS,ANU,FJ,CJ from user_profile where uid='". $USER ."'";
+$sql = "select MFQ,AJSI,AWT,AMU,MUC,TJS,ANU,FJ,CJ from user_profile_2010 where uid='". $USER ."'";
 $result = $conn->query($sql);
 while ($row = $result->fetch_assoc()) {
     $json_array['MFQ'] = $row['MFQ'];
@@ -62,7 +62,7 @@ while ($row = $result->fetch_assoc()) {
 
 $json_array_2 = array();
 //Avg data (normalized)
-$sql = "select avg(AJSI) as AJSI,min(AJSI) as minAJSI,max(AJSI) as maxAJSI, avg(AWT) as AWT,min(AWT) as minAWT,max(AWT) as maxAWT, avg(AMU) as AMU,min(AMU) as minAMU,max(AMU) as maxAMU, avg(TJS) as TJS,min(TJS) as minTJS,max(TJS) as maxTJS, avg(ANU) as ANU,min(ANU) as minANU,max(ANU) as maxANU, avg(FJ) as FJ,min(FJ) as minFJ,max(FJ) as maxFJ, avg(CJ) as CJ,min(CJ) as minCJ,max(CJ) as maxCJ from user_profile";
+$sql = "select avg(AJSI) as AJSI,min(AJSI) as minAJSI,max(AJSI) as maxAJSI, avg(AWT) as AWT,min(AWT) as minAWT,max(AWT) as maxAWT, avg(AMU) as AMU,min(AMU) as minAMU,max(AMU) as maxAMU, avg(TJS) as TJS,min(TJS) as minTJS,max(TJS) as maxTJS, avg(ANU) as ANU,min(ANU) as minANU,max(ANU) as maxANU, avg(FJ) as FJ,min(FJ) as minFJ,max(FJ) as maxFJ, avg(CJ) as CJ,min(CJ) as minCJ,max(CJ) as maxCJ from user_profile_2010";
 $result = $conn->query($sql);
 while ($row = $result->fetch_assoc()) {
     $json_array_2['AJSI'] = round(($row['AJSI']-$row['minAJSI'])/($row['maxAJSI']-$row['minAJSI']),4);

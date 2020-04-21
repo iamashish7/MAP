@@ -216,6 +216,7 @@ def record_E(row):
         table['uid'] = "'"+str(d['user'])+"'"
         table['gid'] = "'"+str(d['group'])+"'"        
         table['queue'] = "'"+str(d['queue'])+"'"
+        table['req_mem'] = str(d['resources_used.mem'][:-2]) if 'resources_used.mem' in d.keys() else '-1'
         insertData(table)
     elif(row[2] in exitD_in_run):
         exitD_in_run.remove(row[2])
@@ -237,6 +238,7 @@ def record_E(row):
         table['uid'] = "'"+str(d['user'])+"'"
         table['gid'] = "'"+str(d['group'])+"'"        
         table['queue'] = "'"+str(d['queue'])+"'"
+        table['req_mem'] = str(d['resources_used.mem'][:-2]) if 'resources_used.mem' in d.keys() else '-1'
         insertData(table)
     elif(row[2] in DATA['S'].keys()):
         del DATA['S'][row[2]]
@@ -258,6 +260,7 @@ def record_E(row):
         table['uid'] = "'"+str(d['user'])+"'"
         table['gid'] = "'"+str(d['group'])+"'"        
         table['queue'] = "'"+str(d['queue'])+"'"
+        table['req_mem'] = str(d['resources_used.mem'][:-2]) if 'resources_used.mem' in d.keys() else '-1'
         insertData(table)
     else:
         pass
