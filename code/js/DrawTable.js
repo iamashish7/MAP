@@ -819,11 +819,16 @@ function drawDonutChart2(data, id) {
 function init_calender(startY,endY) {
     console.log("in init_cal");
     $('input[name="from"]').daterangepicker({
+        locale: {
+            format: 'YYYY-MM-DD'
+        },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minYear: startY,
-        maxYear: endY
+        minDate: startY.toString().concat('-01-01'),
+        maxDate: endY.toString().concat('-12-30')
+        // minYear: startY,
+        // maxYear: endY
     });
     $('input[name="from"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
@@ -833,12 +838,16 @@ function init_calender(startY,endY) {
     });
 
     $('input[name="to"]').daterangepicker({
+        locale: {
+            format: 'YYYY-MM-DD'
+        },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minYear: startY,
-        maxYear: endY
-        // maxYear: parseInt(moment().format('YYYY'), 10)
+        minDate: startY.toString().concat('-01-01'),
+        maxDate: endY.toString().concat('-12-30')
+        // minYear: startY,
+        // maxYear: endY
     });
     $('input[name="to"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
@@ -847,5 +856,3 @@ function init_calender(startY,endY) {
         $(this).val('');
     });
 }
-// minYear: Number(startY),
-//         maxYear: Number(endY)
