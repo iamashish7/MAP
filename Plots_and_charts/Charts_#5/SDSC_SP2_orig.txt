@@ -1,0 +1,8 @@
+No. of clusters formed in SDSC_SP2_orig =  7
+No. of jobs in #Cluster0 =  758
+No. of jobs in #Cluster1 =  158
+No. of jobs in #Cluster2 =  982
+No. of jobs in #Cluster3 =  2948
+No. of jobs in #Cluster4 =  183
+No. of jobs in #Cluster5 =  199
+No. of jobs in #Cluster6 =  4772

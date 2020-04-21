@@ -50,4 +50,4 @@ $ sudo ./setup.sh
 ## Running MONALYS
 
 Your system is now a MONALYS server and your IP can be used by hosts on same network to view MONALYS.
-
+use link : http://localhost/new/code/

@@ -1,0 +1,8 @@
+No. of clusters formed in CTC_SP2_orig =  7
+No. of jobs in #Cluster0 =  2145
+No. of jobs in #Cluster1 =  1352
+No. of jobs in #Cluster2 =  1047
+No. of jobs in #Cluster3 =  3061
+No. of jobs in #Cluster4 =  176
+No. of jobs in #Cluster5 =  1172
+No. of jobs in #Cluster6 =  1047

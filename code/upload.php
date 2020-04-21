@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 			throw new Exception('Error during file upload ' . $_FILES['fileToUpload']['error']);
 		} else {
 			if (file_exists('uploads/' . $_FILES['fileToUpload']['name'])) {
-                $filename = '/var/www/html/uploads/' . $_FILES['fileToUpload']['name'];
+                $filename = '/var/www/html/new/code/uploads/' . $_FILES['fileToUpload']['name'];
                 if (unlink($filename)) {
                     if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], 'uploads/' . $_FILES['fileToUpload']['name']))
                     {
@@ -38,13 +38,13 @@ error_reporting(E_ALL);
     {
         if($_POST['parser']=='2')
         {
-            $command = escapeshellcmd('python /var/www/html/parser/parser_pbs.py '.$_FILES['fileToUpload']['name']);
+            $command = escapeshellcmd('python3 /var/www/html/new/code/parser/parser_pbs.py '.$_FILES['fileToUpload']['name']);
             $output = shell_exec($command);
             echo $output;
         }
         else
         {
-            $command = escapeshellcmd('python /var/www/html/parser/parser_swf.py '.$_FILES['fileToUpload']['name']);
+            $command = escapeshellcmd('python3 /var/www/html/new/code/parser/parser_swf.py '.$_FILES['fileToUpload']['name']);
             $output = shell_exec($command);
             echo $output;
         }

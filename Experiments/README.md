@@ -8,4 +8,4 @@ Experiment - 4 => Traning and testing on 50000 selected jobs with 60-40 split fo
 
 Experiment - 5 => Traning and testing on 50000 selected jobs with 80-20 split for training and testing respectively.
 
-
+Folder 2.0 consists experiments with their min,max,median and time to run values.

@@ -56,7 +56,7 @@ def getStatus(s):
 start_time = datetime.time()
 entry = {}
 setup()
-f = open('/var/www/html/uploads/'+sys.argv[1], "r")
+f = open('/var/www/html/new/code/uploads/'+sys.argv[1], "r")
 lines = f.readlines()
 for line in lines:
     res = re.findall(start_date,line)

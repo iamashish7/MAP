@@ -298,7 +298,7 @@ def readLog(log_filename):
 #setting up Database
 setup()
 # Calling readlog for all the data
-for (root,dirs,files) in os.walk('/var/www/html/Logs/HPC2010/', topdown=True):
+for (root,dirs,files) in os.walk('/var/www/html/new/code/Logs/HPC2010/', topdown=True):
     dirs.sort()
     files.sort()
     for name in files:

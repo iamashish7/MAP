@@ -4,6 +4,23 @@ var map_nodes_inv = { 0:"0xe41d2d03000566a0",1:"hpc858",2:"hpc888",3:"hpc887",4:
 var level = { "hpc858":1, "hpc888":1, "hpc887":1, "hpc886":1, "hpc885":1, "hpc884":1, "hpc883":1, "hpc882":1, "hpc881":1, "hpc880":1, "hpc879":1, "hpc878":1, "hpc877":1, "hpc876":1, "hpc875":1, "hpc874":1, "hpc873":1, "hpc872":1, "hpc871":1, "hpc870":1, "hpc869":1, "hpc868":1, "hpc867":1, "hpc866":1, "hpc865":1, "hpc864":1, "hpc863":1, "hpc862":1, "hpc861":1, "hpc860":1, "hpc859":1, "hpc857":1, "hpc856":1, "hpc855":1, "hpc854":1, "hpc853":1, "hpc852":1, "hpc851":1, "hpc850":1, "hpc849":1, "hpc848":1, "hpc847":1, "hpc846":1, "hpc845":1, "hpc844":1, "hpc843":1, "hpc842":1, "hpc841":1, "hpc840":1, "hpc839":1, "hpc838":1, "hpc837":1, "hpc836":1, "hpc835":1, "hpc834":1, "hpc833":1, "hpc832":1, "hpc831":1, "hpc830":1, "hpc829":1, "hpc828":1, "hpc827":1, "hpc826":1, "hpc825":1, "hpc824":1, "hpc823":1, "hpc822":1, "hpc821":1, "hpc820":1, "hpc819":1, "hpc818":1, "hpc817":1, "hpc816":1, "hpc815":1, "hpc814":1, "hpc813":1, "hpc812":1, "hpc811":1, "hpc810":1, "hpc809":1, "hpc808":1, "hpc807":1, "hpc806":1, "hpc805":1, "hpc804":1, "hpc803":1, "hpc802":1, "hpc801":1, "hpc800":1, "hpc799":1, "hpc798":1, "hpc797":1, "hpc796":1, "hpc795":1, "hpc794":1, "hpc793":1, "hpc792":1, "hpc791":1, "hpc790":1, "hpc789":1, "hpc788":1, "hpc787":1, "un01":1, "hn1":1, "oss1":1, "oss2":1, "oss4":1, "mds2":1, "mds1":1, "hpc768":1, "hpc767":1, "hpc766":1, "hpc765":1, "hpc764":1, "hpc763":1, "hpc762":1, "hpc761":1, "hpc760":1, "hpc759":1, "hpc758":1, "hpc757":1, "hpc756":1, "hpc755":1, "hpc754":1, "hpc753":1, "hpc752":1, "hpc751":1, "hpc750":1, "hpc749":1, "hpc748":1, "hpc747":1, "hpc746":1, "hpc745":1, "hpc744":1, "hpc743":1, "hpc742":1, "hpc741":1, "hpc740":1, "hpc739":1, "hpc738":1, "hpc737":1, "hpc736":1, "hpc735":1, "hpc734":1, "hpc733":1, "hpc732":1, "hpc731":1, "hpc730":1, "hpc729":1, "hpc728":1, "hpc727":1, "hpc726":1, "hpc725":1, "hpc724":1, "hpc723":1, "hpc722":1, "hpc721":1, "hpc720":1, "hpc719":1, "hpc718":1, "hpc717":1, "hpc716":1, "hpc715":1, "hpc714":1, "hpc713":1, "hpc712":1, "hpc711":1, "hpc710":1, "hpc709":1, "hpc708":1, "hpc707":1, "hpc706":1, "hpc705":1, "hpc636":1, "hpc704":1, "hpc703":1, "hpc702":1, "hpc701":1, "hpc700":1, "hpc699":1, "hpc698":1, "hpc697":1, "hpc696":1, "hpc695":1, "hpc694":1, "hpc693":1, "hpc692":1, "hpc691":1, "hpc690":1, "hpc689":1, "hpc688":1, "hpc687":1, "hpc686":1, "hpc685":1, "hpc684":1, "hpc683":1, "hpc682":1, "hpc681":1, "hpc680":1, "hpc679":1, "hpc678":1, "hpc677":1, "hpc676":1, "hpc675":1, "hpc674":1, "hpc673":1, "hpc672":1, "hpc671":1, "hpc670":1, "hpc669":1, "hpc668":1, "hpc667":1, "hpc666":1, "hpc665":1, "hpc664":1, "hpc663":1, "hpc662":1, "hpc661":1, "hpc660":1, "hpc659":1, "hpc658":1, "hpc657":1, "hpc656":1, "hpc655":1, "hpc654":1, "hpc653":1, "hpc652":1, "hpc651":1, "hpc650":1, "hpc649":1, "hpc648":1, "hpc647":1, "hpc646":1, "hpc645":1, "hpc644":1, "hpc643":1, "hpc642":1, "hpc641":1, "hpc640":1, "hpc639":1, "hpc638":1, "hpc637":1, "hpc635":1, "hpc634":1, "hpc633":1, "hpc632":1, "hpc631":1, "hpc630":1, "hpc629":1, "hpc628":1, "hpc627":1, "hpc626":1, "hpc625":1, "hpc624":1, "hpc623":1, "hpc622":1, "hpc621":1, "hpc620":1, "hpc619":1, "hpc618":1, "hpc617":1, "hpc602":1, "hpc616":1, "hpc615":1, "hpc614":1, "hpc613":1, "hpc612":1, "hpc611":1, "hpc610":1, "hpc609":1, "hpc608":1, "hpc607":1, "hpc606":1, "hpc605":1, "hpc604":1, "hpc603":1, "hpc601":1, "hpc600":1, "hpc599":1, "hpc598":1, "hpc597":1, "hpc596":1, "hpc595":1, "hpc594":1, "hpc593":1, "hpc592":1, "hpc591":1, "hpc590":1, "hpc589":1, "hpc588":1, "hpc587":1, "hpc586":1, "hpc585":1, "hpc584":1, "hpc583":1, "hpc582":1, "hpc581":1, "hpc580":1, "hpc579":1, "hpc578":1, "hpc577":1, "hpc576":1, "hpc575":1, "hpc574":1, "hpc573":1, "hpc572":1, "hpc571":1, "hpc570":1, "hpc569":1, "hpc568":1, "hpc567":1, "hpc566":1, "hpc565":1, "hpc563":1, "hpc564":1, "hpc562":1, "hpc561":1, "hpc560":1, "hpc559":1, "hpc558":1, "hpc557":1, "hpc556":1, "hpc555":1, "hpc554":1, "hpc553":1, "hpc552":1, "hpc551":1, "hpc550":1, "hpc549":1, "hpc548":1, "hpc547":1, "hpc546":1, "hpc545":1, "hpc544":1, "hpc543":1, "hpc542":1, "hpc541":1, "hpc540":1, "hpc539":1, "hpc538":1, "hpc537":1, "hpc536":1, "hpc535":1, "hpc534":1, "hpc533":1, "hpc532":1, "hpc531":1, "hpc530":1, "hpc529":1, "hpc528":1, "hpc527":1, "hpc526":1, "hpc525":1, "hpc524":1, "hpc523":1, "hpc522":1, "hpc521":1, "hpc520":1, "hpc519":1, "hpc518":1, "hpc517":1, "hpc515":1, "hpc514":1, "hpc516":1, "hpc513":1, "hpc512":1, "hpc511":1, "hpc510":1, "hpc509":1, "hpc508":1, "hpc507":1, "hpc506":1, "hpc505":1, "hpc504":1, "hpc503":1, "hpc502":1, "hpc501":1, "hpc500":1, "hpc499":1, "hpc498":1, "hpc497":1, "hpc496":1, "hpc495":1, "hpc494":1, "hpc493":1, "hpc492":1, "hpc491":1, "hpc490":1, "hpc489":1, "hpc488":1, "hpc487":1, "hpc486":1, "hpc485":1, "hpc484":1, "hpc483":1, "hpc482":1, "hpc481":1, "hpc480":1, "hpc479":1, "hpc478":1, "hpc477":1, "hpc476":1, "hpc475":1, "hpc474":1, "hpc473":1, "hpc472":1, "hpc471":1, "hpc470":1, "hpc469":1, "hpc468":1, "hpc467":1, "hpc466":1, "hpc465":1, "hpc464":1, "hpc463":1, "hpc462":1, "hpc461":1, "hpc460":1, "hpc459":1, "hpc458":1, "hpc457":1, "hpc456":1, "hpc455":1, "hpc454":1, "hpc453":1, "hpc452":1, "hpc451":1, "hpc450":1, "hpc449":1, "hpc448":1, "hpc447":1, "hpc446":1, "hpc445":1, "hpc444":1, "hpc443":1, "hpc442":1, "hpc441":1, "hpc440":1, "hpc439":1, "hpc438":1, "hpc437":1, "hpc436":1, "hpc435":1, "hpc434":1, "hpc433":1, "hpc432":1, "hpc431":1, "hpc430":1, "hpc429":1, "hpc428":1, "hpc427":1, "hpc426":1, "hpc425":1, "hpc424":1, "hpc423":1, "hpc422":1, "hpc421":1, "hpc420":1, "hpc419":1, "hpc418":1, "hpc417":1, "hpc416":1, "hpc415":1, "hpc414":1, "hpc413":1, "hpc412":1, "hpc411":1, "hpc410":1, "hpc409":1, "hpc408":1, "hpc407":1, "hpc406":1, "hpc405":1, "hpc404":1, "hpc403":1, "hpc402":1, "hpc401":1, "hpc399":1, "hpc400":1, "hpc398":1, "hpc397":1, "hpc396":1, "hpc395":1, "hpc394":1, "hpc393":1, "hpc392":1, "hpc391":1, "hpc390":1, "hpc389":1, "hpc388":1, "hpc387":1, "hpc386":1, "hpc385":1, "hpc384":1, "hpc383":1, "hpc382":1, "hpc381":1, "hpc380":1, "hpc379":1, "hpc378":1, "hpc377":1, "hpc376":1, "hpc375":1, "hpc374":1, "hpc373":1, "hpc372":1, "hpc371":1, "hpc370":1, "hpc369":1, "hpc368":1, "hpc367":1, "hpc366":1, "hpc365":1, "hpc364":1, "hpc363":1, "hpc362":1, "hpc361":1, "hpc360":1, "hpc359":1, "hpc358":1, "hpc357":1, "hpc356":1, "hpc355":1, "hpc354":1, "hpc353":1, "hpc352":1, "hpc351":1, "hpc350":1, "hpc349":1, "hpc348":1, "hpc347":1, "hpc346":1, "hpc345":1, "hpc344":1, "hpc343":1, "hpc342":1, "hpc341":1, "hpc340":1, "hpc339":1, "hpc338":1, "hpc337":1, "hpc336":1, "hpc335":1, "hpc334":1, "hpc333":1, "hpc332":1, "hpc331":1, "hpc330":1, "hpc329":1, "hpc328":1, "hpc327":1, "hpc326":1, "hpc325":1, "hpc324":1, "hpc323":1, "hpc322":1, "hpc321":1, "hpc320":1, "hpc319":1, "hpc318":1, "hpc317":1, "hpc316":1, "hpc315":1, "hpc314":1, "hpc313":1, "hpc312":1, "hpc311":1, "hpc310":1, "hpc309":1, "hpc308":1, "hpc307":1, "hpc306":1, "hpc305":1, "hpc304":1, "hpc303":1, "hpc302":1, "hpc301":1, "hpc300":1, "hpc299":1, "hpc298":1, "hpc297":1, "hpc296":1, "hpc295":1, "hpc294":1, "hpc293":1, "hpc292":1, "hpc291":1, "hpc290":1, "hpc289":1, "hpc288":1, "hpc287":1, "hpc286":1, "hpc285":1, "hpc284":1, "hpc283":1, "hpc282":1, "hpc281":1, "hpc280":1, "hpc279":1, "hpc278":1, "hpc277":1, "hpc276":1, "hpc275":1, "hpc274":1, "hpc273":1, "hpc272":1, "hpc271":1, "hpc270":1, "hpc269":1, "hpc268":1, "hpc267":1, "hpc266":1, "hpc265":1, "hpc264":1, "hpc263":1, "hpc262":1, "hpc261":1, "hpc260":1, "hpc259":1, "hpc258":1, "hpc257":1, "hpc256":1, "hpc255":1, "hpc254":1, "hpc253":1, "hpc252":1, "hpc251":1, "hpc250":1, "hpc249":1, "hpc248":1, "hpc247":1, "hpc246":1, "hpc245":1, "hpc244":1, "hpc243":1, "hpc242":1, "hpc241":1, "hpc240":1, "hpc239":1, "hpc238":1, "hpc237":1, "hpc236":1, "hpc235":1, "hpc234":1, "hpc233":1, "hpc232":1, "hpc231":1, "hpc230":1, "hpc229":1, "hpc228":1, "hpc227":1, "hpc226":1, "hpc225":1, "hpc224":1, "hpc223":1, "hpc222":1, "hpc221":1, "hpc220":1, "hpc219":1, "hpc218":1, "hpc217":1, "hpc216":1, "hpc215":1, "hpc214":1, "hpc213":1, "hpc212":1, "hpc211":1, "hpc210":1, "hpc209":1, "hpc208":1, "hpc207":1, "hpc206":1, "hpc205":1, "hpc204":1, "hpc203":1, "hpc202":1, "hpc201":1, "hpc200":1, "hpc199":1, "hpc198":1, "hpc197":1, "hpc196":1, "hpc195":1, "hpc194":1, "hpc193":1, "hpc192":1, "hpc191":1, "hpc190":1, "hpc189":1, "hpc188":1, "hpc187":1, "hpc186":1, "hpc185":1, "hpc184":1, "hpc183":1, "hpc182":1, "hpc181":1, "hpc180":1, "hpc179":1, "hpc178":1, "hpc177":1, "hpc176":1, "hpc175":1, "hpc174":1, "hpc173":1, "hpc172":1, "hpc171":1, "hpc170":1, "hpc169":1, "hpc168":1, "hpc167":1, "hpc166":1, "hpc165":1, "hpc164":1, "hpc163":1, "hpc162":1, "hpc161":1, "hpc160":1, "hpc159":1, "hpc158":1, "hpc157":1, "hpc156":1, "hpc155":1, "hpc154":1, "hpc153":1, "hpc152":1, "hpc151":1, "hpc150":1, "hpc149":1, "hpc148":1, "hpc147":1, "hpc146":1, "hpc145":1, "hpc144":1, "hpc143":1, "hpc142":1, "hpc141":1, "hpc140":1, "hpc139":1, "hpc138":1, "hpc137":1, "hpc136":1, "hpc135":1, "hpc134":1, "hpc133":1, "hpc132":1, "hpc131":1, "hpc130":1, "hpc129":1, "hpc128":1, "hpc127":1, "hpc126":1, "hpc125":1, "hpc124":1, "hpc123":1, "hpc122":1, "hpc121":1, "hpc120":1, "hpc119":1, "hpc118":1, "hpc117":1, "hpc116":1, "hpc115":1, "hpc114":1, "hpc113":1, "hpc112":1, "hpc111":1, "hpc110":1, "hpc109":1, "hpc108":1, "hpc107":1, "hpc106":1, "hpc105":1, "hpc104":1, "hpc103":1, "hpc102":1, "hpc101":1, "hpc100":1, "hpc099":1, "hpc098":1, "hpc097":1, "hpc096":1, "hpc095":1, "hpc094":1, "hpc093":1, "hpc092":1, "hpc091":1, "hpc090":1, "hpc089":1, "hpc088":1, "hpc087":1, "hpc086":1, "hpc085":1, "hpc084":1, "hpc083":1, "hpc082":1, "hpc081":1, "hpc080":1, "hpc079":1, "hpc078":1, "hpc077":1, "hpc076":1, "hpc075":1, "hpc074":1, "hpc073":1, "hpc072":1, "hpc071":1, "hpc070":1, "hpc069":1, "hpc068":1, "hpc067":1, "hpc066":1, "hpc065":1, "hpc064":1, "hpc063":1, "hpc062":1, "hpc061":1, "hpc060":1, "hpc058":1, "hpc059":1, "hpc057":1, "hpc056":1, "hpc055":1, "hpc054":1, "hpc053":1, "hpc052":1, "hpc051":1, "hpc050":1, "hpc049":1, "hpc048":1, "hpc047":1, "hpc046":1, "hpc045":1, "hpc044":1, "hpc043":1, "hpc042":1, "hpc041":1, "hpc040":1, "hpc039":1, "hpc038":1, "hpc037":1, "hpc036":1, "hpc035":1, "hpc034":1, "hpc033":1, "hpc032":1, "hpc031":1, "hpc030":1, "hpc029":1, "hpc028":1, "hpc027":1, "hpc026":1, "hpc025":1, "hpc024":1, "hpc023":1, "hpc022":1, "hpc021":1, "hpc020":1, "hpc019":1, "hpc018":1, "hpc017":1, "hpc016":1, "hpc015":1, "hpc014":1, "hpc013":1, "hpc012":1, "hpc011":1, "hpc010":1, "hpc009":1, "hpc006":1, "hpc007":1, "hpc008":1, "hpc005":1, "hpc004":1, "hpc003":1, "hpc002":1, "hpc001":1, "hpc786":1, "hpc785":1, "hpc784":1, "hpc783":1, "hpc782":1, "hpc781":1, "hpc780":1, "hpc779":1, "hpc778":1, "hpc777":1, "hpc776":1, "hpc775":1, "hpc774":1, "hpc773":1, "hpc772":1, "hpc771":1, "hpc770":1, "hpc769":1, "hm005":1, "hm004":1, "hm003":1, "hm002":1, "hm001":1, "un06":1, "un05":1, "un04":1, "un03":1, "un02":1, "oss3":1, "hn2":1, "0xe41d2d03000566a0":2, "0xf4521403000dd8c0":2, "0xf4521403002b4f00":2, "0xf45214030021ec70":2, "0x0002c903005f2b50":2, "0xf452140300291360":2, "0xf4521403002b5100":2, "0xf4521403000dd9c0":2, "0xf4521403000dd240":2, "0xf4521403000dd540":2, "0xf4521403000dca40":2, "0xf4521403000dccc0":2, "0x0002c90300e36260":2, "0xf4521403000dd5c0":2, "0xf4521403000dd1c0":2, "0xf4521403000dd940":2, "0xf4521403000dcdc0":2, "0x0002c90300e36160":2, "0xf4521403000dd140":2, "0xf4521403000dcfc0":2, "0xf4521403000dc9c0":2, "0x0002c9030090ec80":2, "0x0002c9030090f100":2, "0xf4521403000dcf40":2, "0xf4521403000dd7c0":2, "0xf4521403000dcc40":2, "0xf4521403000dd0c0":2, "0x0002c90300e35960":2, "0x0002c90300e36060":2, "0x0002c903005d4340":2, "0xf4521403000dd840":2, "0x0002c90300e358e0":2, "0x0002c90300e363e0":2, "0xf4521403000dd440":2, "0x0002c90300e36460":2, "0x0002c90300e362e0":2, "0xf4521403000dcec0":2, "0x0002c90300e364e0":2, "0x0002c90300e35a60":2, "0xf4521403000dc940":2, "0xf4521403000dd040":2, "0xf4521403000dd2c0":2, "0xf4521403000dcb40":2, "0xf4521403000dce40":2, "0xf4521403000dd3c0":2, "0x0002c9030061db70":2, "0xf4521403000dd740":2, "0xf4521403000dd6c0":2, "0xf4521403000dcac0":2, "0xf4521403000dcbc0":2, "0x0002c9030090ec00":2, "0xf4521403002b4f80":2, "0xf45214030020ad10":3, "0xf45214030020a710":3, "0xf45214030020a7d0":3, "0xf45214030020a770":3, "0xf452140300207890":3, "0xf45214030020acb0":3, "0x0002c90300865280":3, "0xf4521403000a7900":3, "0x0002c903008651c0":3, "0x0002c90300865220":3, "0x0002c90300865160":3, "0xf45214030009b4a0":3, "0xf45214030009b0e0":3, "0xf4521403000a7ae0":3, "0xf45214030009b3e0":3, "0xf45214030009b500":3, "0xf45214030009b020":3, "0xf45214030009b080":3, "0xf4521403000a7840":3, "0xf4521403000a79c0":3, "0xf45214030009b380":3, "0xf45214030009b440":3, "0xf4521403000a7720":3, "0xf4521403000a7a80":3, "0xf4521403000a7a20":3, "0xf4521403000a7d80":3, "0xf4521403000a78a0":3, "0xf4521403000a7de0":3, "0x0002c90300864c20":3, "0x0002c903008658e0":3, "0x0002c90300864bc0":3, "0x0002c90300865820":3, "0x0002c90300864d40":3, "0x0002c90300865b80":3, "0xf45214030009ae40":3, "0x0002c9030084d2d0":3, "0x0002c90300864ce0":3, "0x0002c90300865940":3, "0xf45214030009b200":3, "0xf4521403000a7ba0":3, "0xf45214030009b1a0":3, "0x0002c90300865be0":3, "0xf45214030009b560":3, "0xf4521403000a76c0":3, "0xf4521403000a7780":3, "0xf4521403000a7ea0":3, "0xf4521403000a7660":3, "0xf4521403000a7cc0":3, "0xf4521403000a77e0":3, "0xf4521403000a7d20":3, "0xf4521403000a7600":3, "0xf4521403000a7b40":3, "0xf4521403000ea040":4, "0x0002c903008a6790":4, "0x0002c903008a6430":4, "0x0002c903008a68b0":4, "0x0002c903008346d0":4, "0x0002c903008a6310":4, "0x0002c903008a6730":4, "0x0002c903006d93b0":4, "0x0002c903008a5a10":4, "0x0002c90300834550":4, "0x0002c903008a5ad0":4, "0x0002c903008344f0":4, "0x0002c90300824a70":4, "0x0002c9030085c3b0":4, "0x0002c903007d1360":4, "0x0002c90300834850":4, "0x0002c903008a59b0":4, "0xf45214030001d120":4, "0xf45214030001d0c0":4, "0x0002c903008a6370":4, "0xf45214030001d180":4, "0x0002c90300824410":4, "0x0002c903008a6850":4, "0xf45214030001d060":4, "0x0002c903008348b0":4, "0xf4521403000e9d40":4, "0xf4521403000ea0a0":4, "0x0002c903008a63d0":4, "0x0002c903006d9410":4, "0x0002c903006d94d0":4, "0x0002c903006ae3f0":4, "0x0002c90300824cb0":4, "0x0002c903008a66d0":4, "0xe41d2d0300beedd0":4, "0xf45214030001d000":4, "0x0002c903008a5a70":4, "0xf45214030020a830":5, "0xf45214030020ad70":5};
 var edges_placed = {};
 var e_no = 0;
+
+function lookupNodeByKeyValue(sigmaInstance, key, value) {
+    return sigmaInstance.graph.nodes().filter(node => node[key] === value);
+}
+
+function lookupNodeById(sigmaInstance, value) {
+    return lookupNodeByKeyValue(sigmaInstance, 'id', value);
+}
+function eucDistance(a, b) {
+    return a
+        .map((x, i) => Math.abs( x - b[i] ) ** 2) // square the difference
+        .reduce((sum, now) => sum + now) // sum
+        ** (1/2)
+}
+// now use it with any array
+// make sure both arrays have the same number of elements
+// let euc = eucDistance([1,2,5,6,4.6], [4,6,33,45,2.5]);
 function plot_edges(s,d)
 {
 
@@ -31,12 +48,27 @@ function plot_edges(s,d)
                 temp.push(adj_list[0][d[i]][j]);
             }
         }
-        lvl_1 = temp[Math.floor(Math.random() * temp.length)]
+        var minn_val = 1000000000;
+        var lvl_1;
+        var child = lookupNodeById(s,d[i]);
+        var euc;
+        for(k=0;k<temp.length;++k)
+        {
+            n = lookupNodeById(s,temp[k]);
+            euc = eucDistance([child[0].x,child[0].y], [n[0].x,n[0].y]);
+            
+            if(euc<minn_val)
+            {
+                minn_val = euc;
+                lvl_1 = n;
+            }
+        }
+        // lvl_1 = temp[Math.floor(Math.random() * temp.length)]
         s.graph.addEdge({
             id:'E'+e_no,
             label:"Edge"+e_no,
             source:d[i],
-            target:lvl_1,
+            target:lvl_1[0].id,
             size:5,
             color:"#ff0000",
             type:"line"
@@ -46,19 +78,33 @@ function plot_edges(s,d)
             
         //level1 to level2
         temp = []
-        for(let j = 0 ; j<adj_list[1][lvl_1].length; ++j)
+        for(let j = 0 ; j<adj_list[1][lvl_1[0].id].length; ++j)
         {
-            if(level[adj_list[1][lvl_1][j]]==3)
+            if(level[adj_list[1][lvl_1[0].id][j]]==3)
             {
-                temp.push(adj_list[1][lvl_1][j]);
+                temp.push(adj_list[1][lvl_1[0].id][j]);
             }
         }
-        lvl_2 = temp[Math.floor(Math.random() * temp.length)]
+        minn_val = 1000000000;
+        var lvl_2;
+        var euc;
+        for(k=0;k<temp.length;++k)
+        {
+            n = lookupNodeById(s,temp[k]);
+            euc = eucDistance([lvl_1[0].x,lvl_1[0].y], [n[0].x,n[0].y]);
+            
+            if(euc<minn_val)
+            {
+                minn_val = euc;
+                lvl_2 = n;
+            }
+        }
+        // lvl_2 = temp[Math.floor(Math.random() * temp.length)]
         s.graph.addEdge({
             id:'E'+e_no,
             label:"Edge"+e_no,
-            source:lvl_1,
-            target:lvl_2,
+            source:lvl_1[0].id,
+            target:lvl_2[0].id,
             size:5,
             color:"#ff0000",
             type:"line"
@@ -68,19 +114,33 @@ function plot_edges(s,d)
         
         //level2 to level3
         temp = []
-        for(let j = 0 ; j<adj_list[2][lvl_2].length; ++j)
+        for(let j = 0 ; j<adj_list[2][lvl_2[0].id].length; ++j)
         {
-            if(level[adj_list[2][lvl_2][j]]==4)
+            if(level[adj_list[2][lvl_2[0].id][j]]==4)
             {
-                temp.push(adj_list[2][lvl_2][j]);
+                temp.push(adj_list[2][lvl_2[0].id][j]);
             }
         }
-        lvl_3 = temp[Math.floor(Math.random() * temp.length)]
+        minn_val = 1000000000;
+        var lvl_3;
+        var euc;
+        for(k=0;k<temp.length;++k)
+        {
+            n = lookupNodeById(s,temp[k]);
+            euc = eucDistance([lvl_2[0].x,lvl_2[0].y], [n[0].x,n[0].y]);
+            
+            if(euc<minn_val)
+            {
+                minn_val = euc;
+                lvl_3 = n;
+            }
+        }
+        // lvl_3 = temp[Math.floor(Math.random() * temp.length)]
         s.graph.addEdge({
             id:'E'+e_no,
             label:"Edge"+e_no,
-            source:lvl_2,
-            target:lvl_3,
+            source:lvl_2[0].id,
+            target:lvl_3[0].id,
             size:5,
             color:"#ff0000",
             type:"line"
@@ -90,19 +150,33 @@ function plot_edges(s,d)
         
         //level3 to level4
         temp = []
-        for(let j = 0 ; j<adj_list[3][lvl_3].length; ++j)
+        for(let j = 0 ; j<adj_list[3][lvl_3[0].id].length; ++j)
         {
-            if(level[adj_list[3][lvl_3][j]]==5)
+            if(level[adj_list[3][lvl_3[0].id][j]]==5)
             {
-                temp.push(adj_list[3][lvl_3][j]);
+                temp.push(adj_list[3][lvl_3[0].id][j]);
             }
         }
-        lvl_4 = temp[Math.floor(Math.random() * temp.length)]
+        minn_val = 1000000000;
+        var lvl_4;
+        var euc;
+        for(k=0;k<temp.length;++k)
+        {
+            n = lookupNodeById(s,temp[k]);
+            euc = eucDistance([lvl_3[0].x,lvl_3[0].y], [n[0].x,n[0].y]);
+            
+            if(euc<minn_val)
+            {
+                minn_val = euc;
+                lvl_4 = n;
+            }
+        }
+        // lvl_4 = temp[Math.floor(Math.random() * temp.length)]
         s.graph.addEdge({
             id:'E'+e_no,
             label:"Edge"+e_no,
-            source:lvl_3,
-            target:lvl_4,
+            source:lvl_3[0].id,
+            target:lvl_4[0].id,
             size:5,
             color:"#ff0000",
             type:"line"

@@ -1,0 +1,7 @@
+No. of clusters formed in CEA_curie =  6
+No. of jobs in #Cluster0 =  2011
+No. of jobs in #Cluster1 =  2355
+No. of jobs in #Cluster2 =  2322
+No. of jobs in #Cluster3 =  418
+No. of jobs in #Cluster4 =  2548
+No. of jobs in #Cluster5 =  346

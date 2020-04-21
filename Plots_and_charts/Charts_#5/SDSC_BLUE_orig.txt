@@ -1,0 +1,8 @@
+No. of clusters formed in SDSC_BLUE_orig =  7
+No. of jobs in #Cluster0 =  533
+No. of jobs in #Cluster1 =  5725
+No. of jobs in #Cluster2 =  350
+No. of jobs in #Cluster3 =  796
+No. of jobs in #Cluster4 =  159
+No. of jobs in #Cluster5 =  2409
+No. of jobs in #Cluster6 =  28

@@ -1,0 +1,7 @@
+No. of clusters formed in DAS2_orig =  6
+No. of jobs in #Cluster0 =  970
+No. of jobs in #Cluster1 =  2963
+No. of jobs in #Cluster2 =  437
+No. of jobs in #Cluster3 =  319
+No. of jobs in #Cluster4 =  1263
+No. of jobs in #Cluster5 =  4048
