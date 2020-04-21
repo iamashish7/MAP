@@ -79,7 +79,7 @@ function BarGraph(data,ID,cfg)
 
 function LineChart(data,ID,cfg)
 {
-    console.log(dates,months,years);
+    console.log(dates,months,years,ID);
     var svgWidth = cfg.width, svgHeight = cfg.height;
     var margin = cfg.margin;
     if (cfg.months <= 3) {
@@ -96,7 +96,14 @@ function LineChart(data,ID,cfg)
         .text(cfg.title);
     var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     var x = d3.scaleTime().rangeRound([0, width]);
-    var y = d3.scaleLinear().rangeRound([height, 0]);
+    var y;
+    if(cfg.noLines==2)
+    {
+        console.log("LOGScale");
+        y = d3.scaleLog().base(10).range([height, 0]).nice();
+    }
+    else
+        y = d3.scaleLinear().rangeRound([height, 0]);
     x.domain(d3.extent(data, function (d) {
         return d.name;
     })).nice();
@@ -110,9 +117,10 @@ function LineChart(data,ID,cfg)
             value_arr = value_arr.concat(temp);
         } 
     }
-    y.domain(d3.extent(value_arr, function (d) {
+    Datarange = d3.extent(value_arr, function (d) {
         return d
-    }));
+    });
+    y.domain([Datarange[0]*0.9,Datarange[1]*1.1]);
     var lines = []
     if (cfg.noLines == 1) {
         var line = d3.line().x(function (d) {
