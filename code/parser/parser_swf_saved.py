@@ -36,12 +36,14 @@ import datetime
 from email.utils import parsedate_tz
 import sys
 
-start_date = "^; StartTime:"
-end_date = "^; EndTime:"
-queue_entry = "^; Queue:"
-n_queues = "; MaxQueues:"
-rand_int = random.randrange(10000, 100000, 1)
+start_date = "^;[ ]*StartTime:"
+end_date = "^;[ ]*EndTime:"
+queue_entry = "^;[ ]*Queue:"
+n_queues = ";[ ]*MaxQueues:"
+# rand_int = random.randrange(10000, 100000, 1)
 database = "SavedLogs"
+datepattern = re.compile(r'(\w{3} \w{3}) (\d+) (\d+:\d+:\d+) (\w+) (\d{4})')
+max_queues = re.compile(r';[ ]*MaxQueues: (\d+)')
 table = sys.argv[2]
 print_str = database + "#" +table
 connection = pymysql.connect(host='localhost', user='monalys', passwd='monalys', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
@@ -90,66 +92,82 @@ lines = f.readlines()
 for line in lines:
     res = re.findall(start_date,line)
     if(len(res)>0):
-        r = line.split(" ",maxsplit=2)
-        r2 = line.split()
-        print_str += '#'+r[2].strip().split()[5]
-        start_time = datetime.datetime.strptime(r[2], '%a %b %d %H:%M:%S '+r2[6]+' %Y\n')
+        matcher = datepattern.search(line)
+        date = matcher.group(2)
+        if(len(date)==1):
+           date = '0'+date
+        timestamp = str(matcher.group(1))+' '+date+' '+str(matcher.group(3))+' '+str(matcher.group(4))+' '+str(matcher.group(5))
+        timezone = matcher.group(4)
+        year = matcher.group(5)
+        print_str += '#'+year
+        start_time = datetime.datetime.strptime(timestamp, '%a %b %d %H:%M:%S '+timezone+' %Y')
         break
 
 for line in lines:
     res = re.findall(end_date,line)
     if(len(res)>0):
-        r = line.split(" ",maxsplit=2)
-        print_str += '#'+r[2].strip().split()[5]
+        matcher = datepattern.search(line)
+        date = matcher.group(2)
+        if(len(date)==1):
+           date = '0'+date
+        timestamp = str(matcher.group(1))+' '+date+' '+str(matcher.group(3))+' '+str(matcher.group(4))+' '+str(matcher.group(5))
+        timezone = matcher.group(4)
+        year = matcher.group(5)
+        print_str += '#'+year
+        start_time = datetime.datetime.strptime(timestamp, '%a %b %d %H:%M:%S '+timezone+' %Y')
         break
-
+    
 n_Q = 0
 for line in lines:
     res = re.findall(n_queues,line)
     if(len(res)>0):
-        r = line.split(" ",maxsplit=2)
-        print_str += '#'+r[2].strip()
-        n_Q = int(r[2])
+        matcher = max_queues.search(line)
+        n_Q = int(matcher.group(1))
+        print_str += '#'+str(n_Q)
         break
 
 c=0
-map_Q = {}
+map_Q = {-1:'NoQueue'}
 for line in lines:
     res = re.findall(queue_entry,line)
     if(len(res)>0):
         r = line.split()
         #print_str += ';'+r[3].strip()
-        map_Q[int(r[2])] = r[3].strip() 
+        if(len(r)<4 or (len(r[3].strip())==1 and n_Q==1)):
+            map_Q[int(r[2])] = "Master"
+        else:
+            map_Q[int(r[2])] = r[3].strip()
         c+=1
     if(c==n_Q):
         break
 
 for line in lines:
-    entry = {}
-    values = line.split()
-    if (len(values)==18):
-        entry["jobid"] = (values[0])
-        entry["date"] = "'"+((start_time + datetime.timedelta(seconds=int(values[1]))).strftime('%Y-%m-%d'))+"'"
-        entry["stime"] = "'"+((start_time + datetime.timedelta(seconds=int(values[1]))).strftime('%Y-%m-%d %H:%M:%S'))+"'"
-        entry["wtime"] = (values[2])
-        entry["rtime"] = (values[3])
-        entry["proc_alloc"] = (values[4])
-        entry["avg_cpu_time"] = (values[5])
-        entry["mem_used"] = (values[6])
-        entry["req_proc"] = (values[7])
-        entry["req_rtime"] = (values[8])
-        entry["req_mem"] = (values[9])
-        entry["status"] = "'"+getStatus(values[10])+"'"
-        entry["uid"] = (values[11])
-        entry["gid"] = (values[12])
-        entry["exe_app_num"] = (values[13])
-        entry["queue"] = "'"+map_Q[int(values[14])]+"'" if(len(map_Q)>0) else "'"+values[14]+"'"
-        entry["part"] = (values[15])
-        entry["prec_job_num"] = (values[16])
-        entry["think_time"] = (values[17])
-        entry["start"] = "'"+((start_time + datetime.timedelta(seconds=int(int(values[1]) + int(values[2])))).strftime('%Y-%m-%d %H:%M:%S'))+"'"
-        entry["end"] = "'"+((start_time + datetime.timedelta(seconds=(int(values[1])+int(values[2])+int(values[3])))).strftime('%Y-%m-%d %H:%M:%S'))+"'"
-        insertData(entry)
+    if(line[0]!=';'):
+        entry = {}
+        values = line.split()
+        if (len(values)==18):
+            entry["jobid"] = (values[0])
+            entry["date"] = "'"+((start_time + datetime.timedelta(seconds=int(values[1]))).strftime('%Y-%m-%d'))+"'"
+            entry["stime"] = "'"+((start_time + datetime.timedelta(seconds=int(values[1]))).strftime('%Y-%m-%d %H:%M:%S'))+"'"
+            entry["wtime"] = (values[2])
+            entry["rtime"] = (values[3])
+            entry["proc_alloc"] = (values[4])
+            entry["avg_cpu_time"] = (values[5])
+            entry["mem_used"] = (values[6])
+            entry["req_proc"] = (values[7])
+            entry["req_rtime"] = (values[8])
+            entry["req_mem"] = (values[9])
+            entry["status"] = "'"+getStatus(values[10])+"'"
+            entry["uid"] = (values[11])
+            entry["gid"] = (values[12])
+            entry["exe_app_num"] = (values[13])
+            entry["queue"] = "'"+map_Q[int(values[14])]+"'" if(len(map_Q)>0) else "'"+values[14]+"'"
+            entry["part"] = (values[15])
+            entry["prec_job_num"] = (values[16])
+            entry["think_time"] = (values[17])
+            entry["start"] = "'"+((start_time + datetime.timedelta(seconds=int(int(values[1]) + int(values[2])))).strftime('%Y-%m-%d %H:%M:%S'))+"'"
+            entry["end"] = "'"+((start_time + datetime.timedelta(seconds=(int(values[1])+int(values[2])+int(values[3])))).strftime('%Y-%m-%d %H:%M:%S'))+"'"
+            insertData(entry)
 closeConnection()
-print (print_str, end ="")
-print (map_Q)
+#print (print_str, end ="")
+#print (map_Q)

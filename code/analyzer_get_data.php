@@ -90,11 +90,13 @@ switch ($chart) {
         $result = $conn->query($sql);
         $result2 = $conn->query($sql2);
         while ($row = $result->fetch_assoc()) {
-            $json_array[$row['d']] = array();
-            array_push($json_array[$row['d']], $row['jobs']);
+            $json_array[$row['d']] = [0,0];
+            $json_array[$row['d']][0] = $row['jobs'];
+            // array_push($json_array[$row['d']], $row['jobs']);
         }
         while ($row = $result2->fetch_assoc()) {
-            array_push($json_array[$row['d']], $row['jobs']);
+            $json_array[$row['d']][1] = $row['jobs'];
+            // array_push($json_array[$row['d']], $row['jobs']);
         }
         $keys = array_keys($json_array);
         usort($keys, date_sort);

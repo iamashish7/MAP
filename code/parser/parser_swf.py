@@ -17,20 +17,36 @@ connection = pymysql.connect(host='localhost', user='monalys', passwd='monalys',
 cursor = connection.cursor()
 
 def closeConnection():
-	connection.commit()
-	cursor.close()
-	connection.close()
+    connection.commit()
+    cursor.close()
+    connection.close()
 
 def createDB():
-	#cursor.execute("DROP DATABASE IF EXISTS "+database)
-	#cursor.execute("CREATE DATABASE IF NOT EXISTS "+database)
-	connection.select_db(database)
+    #cursor.execute("DROP DATABASE IF EXISTS "+database)
+    #cursor.execute("CREATE DATABASE IF NOT EXISTS "+database)
+    connection.select_db(database)
+
+def checkTableExists(tablename):
+    cursor.execute("""
+        SELECT COUNT(*) as c
+        FROM information_schema.tables
+        WHERE table_name = '{0}'
+        """.format(tablename))
+    mapp = cursor.fetchone()
+    if mapp['c'] == 1:
+        return True
+    return False
+
+def dropTable(tablename):
+    cursor.execute("drop table {0}".format(tablename))
 
 def setup():
-	createDB()
-	table = "create table if not exists "+tableName+" (jobid int(50),date varchar(100),stime varchar(100),start varchar(100),end varchar(100),wtime int(50),rtime int(50),proc_alloc int(50),avg_cpu_time int(50),mem_used int(50),req_proc int(50),req_rtime int(50),req_mem int(50),status varchar(50),uid int(50),gid int(50),exe_app_num int(50),queue varchar(100),part int(50),prec_job_num int(50),think_time int(50),PRIMARY KEY (jobid));"
-	cursor.execute(table)
-	
+    createDB()
+    if(checkTableExists(tableName)):
+        dropTable(tableName)
+    table = "create table if not exists "+tableName+" (jobid int(50),date varchar(100),stime varchar(100),start varchar(100),end varchar(100),wtime int(50),rtime int(50),proc_alloc int(50),avg_cpu_time int(50),mem_used int(50),req_proc int(50),req_rtime int(50),req_mem int(50),status varchar(50),uid int(50),gid int(50),exe_app_num int(50),queue varchar(100),part int(50),prec_job_num int(50),think_time int(50),PRIMARY KEY (jobid));"
+    cursor.execute(table)
+    
 def insertData(table):
     columns = table.keys()
     values = table.values()

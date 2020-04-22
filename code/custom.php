@@ -228,6 +228,9 @@
                     <!-- <a onclick="setDB('ANL_intrepid')" href="#">ANL_intrepid</a> -->
                     <a onclick="setDB('SDSC_SP2')" href="#">SDSC_SP2</a>
                     <a onclick="setDB('SDSC_BLUE')" href="#">SDSC_BLUE</a>
+		    <a onclick="setDB('CEA_curie')" href="#">CEA curie</a>
+                    <a onclick="setDB('DAS2')" href="#">DAS2</a>
+                    <a onclick="setDB('HPC2N')" href="#">HPC2N</a>
                 </div>
             </div> 
             &nbsp;&nbsp;
@@ -337,6 +340,9 @@
             // "ANL_intrepid":[2009,2009,1],
             "SDSC_SP2":[1998,2000,1],
             "SDSC_BLUE":[2000,2003,1],
+	    "CEA_curie":[2012,2014,1],
+            "DAS2":[2004,2004,1],
+            "HPC2N":[2006,2009,1],
         };
         $("form#fileuploadform").submit(function(e) {
             e.preventDefault();
