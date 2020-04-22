@@ -155,7 +155,7 @@
             /* Links inside the dropdown */
         .dropdown-content a {
             color: black;
-            padding: 12px 16px;
+            padding: 6px 8px;
             text-decoration: none;
             display: block;
         }

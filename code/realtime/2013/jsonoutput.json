@@ -253,13 +253,13 @@
 ,"422998.un05": { "Username" :"trishank", "Queue" :"large", "Jobname" :"L11_Panga", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"423190.un05": { "Username" :"sarasij", "Queue" :"small", "Jobname" :"run1_s", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"96:00", "Exec_host" :["pc749","pc753"]}
+, "Elapsed_Time" :"96:16", "Exec_host" :["pc749","pc753"]}
 ,"425228.un05": { "Username" :"sarasij", "Queue" :"small", "Jobname" :"run2_s", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"425229.un05": { "Username" :"sarasij", "Queue" :"small", "Jobname" :"run3_s", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"425785.un05": { "Username" :"dgoswami", "Queue" :"medium", "Jobname" :"run2_m", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"95:32", "Exec_host" :["pc655","pc656","pc564","pc635","pc663","pc540"]}
+, "Elapsed_Time" :"95:46", "Exec_host" :["pc655","pc656","pc564","pc635","pc663","pc540"]}
 ,"425786.un05": { "Username" :"sourima", "Queue" :"medium", "Jobname" :"run2_m", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"425788.un05": { "Username" :"sourima", "Queue" :"medium", "Jobname" :"run1_m", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -342,8 +342,6 @@
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"483292.un05": { "Username" :"jsanjay", "Queue" :"large", "Jobname" :"lrun3", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
-,"483567.un05": { "Username" :"sarasij", "Queue" :"large", "Jobname" :"runL12-2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"95:55", "Exec_host" :["pc383","pc173","pc174","pc175","pc176","pc328"]}
 ,"483568.un05": { "Username" :"sarasij", "Queue" :"large", "Jobname" :"runL20-3", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"484263.un05": { "Username" :"sourima", "Queue" :"large", "Jobname" :"run1_noPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -467,7 +465,7 @@
 ,"497854.un05": { "Username" :"ssvivek", "Queue" :"small", "Jobname" :"RT1.4m", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"499129.un05": { "Username" :"gargp", "Queue" :"large", "Jobname" :"large2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"60:47", "Exec_host" :["pc005","pc006","pc007","pc008","pc009","pc010"]}
+, "Elapsed_Time" :"61:03", "Exec_host" :["pc005","pc006","pc007","pc008","pc009","pc010"]}
 ,"499241.un05": { "Username" :"gargp", "Queue" :"large", "Jobname" :"large2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"499551.un05": { "Username" :"sianki", "Queue" :"small", "Jobname" :"srun1", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
@@ -541,7 +539,7 @@
 ,"504797.un05": { "Username" :"vaidehib", "Queue" :"medium", "Jobname" :"Re50kr13", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"504952.un05": { "Username" :"akhilkm", "Queue" :"medium", "Jobname" :"M23", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"55:24", "Exec_host" :["pc530","pc531","pc533","pc630","pc714","pc715"]}
+, "Elapsed_Time" :"55:38", "Exec_host" :["pc530","pc531","pc533","pc630","pc714","pc715"]}
 ,"505655.un05": { "Username" :"abisingh", "Queue" :"large", "Jobname" :"POOL_FIRE", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"505895.un05": { "Username" :"vvmk", "Queue" :"large", "Jobname" :"L1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -569,11 +567,11 @@
 ,"507058.un05": { "Username" :"sindhup", "Queue" :"medium", "Jobname" :"2order", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"507370.un05": { "Username" :"surajkm", "Queue" :"large", "Jobname" :"run3_noPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"66:52", "Exec_host" :["pc419","pc445","pc279","pc048","pc381","pc384"]}
+, "Elapsed_Time" :"67:08", "Exec_host" :["pc419","pc445","pc279","pc048","pc381","pc384"]}
 ,"507374.un05": { "Username" :"surajkm", "Queue" :"medium", "Jobname" :"run2MnoPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"03:27", "Exec_host" :["pc491","pc627","pc538","pc574","pc577","pc618"]}
-,"507375.un05": { "Username" :"surajkm", "Queue" :"medium", "Jobname" :"run3MnoPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
-, "Elapsed_Time" :"--", "Exec_host" :[]}
+, "Elapsed_Time" :"03:43", "Exec_host" :["pc491","pc627","pc538","pc574","pc577","pc618"]}
+,"507375.un05": { "Username" :"surajkm", "Queue" :"medium", "Jobname" :"run3MnoPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
+, "Elapsed_Time" :"00:05", "Exec_host" :["pc666","pc518","pc519","pc521","pc606","pc612"]}
 ,"507376.un05": { "Username" :"surajkm", "Queue" :"medium", "Jobname" :"run4MnoPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"507378.un05": { "Username" :"surajkm", "Queue" :"small", "Jobname" :"run1_s", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
@@ -625,7 +623,7 @@
 ,"510130.un05": { "Username" :"kashisht", "Queue" :"large", "Jobname" :"Re400kr20", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"510680.un05": { "Username" :"mfurquan", "Queue" :"large", "Jobname" :"run5", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"00:26", "Exec_host" :["pc146","pc189","pc190","pc240","pc099","pc229","pc310","pc311","pc326","pc327"]}
+, "Elapsed_Time" :"00:42", "Exec_host" :["pc146","pc189","pc190","pc240","pc099","pc229","pc310","pc311","pc326","pc327"]}
 ,"510681.un05": { "Username" :"shashku", "Queue" :"large", "Jobname" :"run6_1.4e5", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"511216.un05": { "Username" :"kashisht", "Queue" :"large", "Jobname" :"Re400kr20", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"H"
@@ -663,11 +661,11 @@
 ,"513391.un05": { "Username" :"avisingh", "Queue" :"large", "Jobname" :"PdCO2cal", "Nodes" :"13", "Task" :"260", "RequiredTime" :"72:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"513423.un05": { "Username" :"amitver", "Queue" :"large", "Jobname" :"20deg_med", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"47:41", "Exec_host" :["pc213","pc322","pc329","pc356","pc441","pc447"]}
+, "Elapsed_Time" :"47:55", "Exec_host" :["pc213","pc322","pc329","pc356","pc441","pc447"]}
 ,"513458.un05": { "Username" :"amitver", "Queue" :"medium", "Jobname" :"20deg_cse", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"53:40", "Exec_host" :["pc547","pc548","pc549","pc551","pc571","pc684"]}
+, "Elapsed_Time" :"53:54", "Exec_host" :["pc547","pc548","pc549","pc551","pc571","pc684"]}
 ,"513897.un05": { "Username" :"sanchit", "Queue" :"large", "Jobname" :"run37", "Nodes" :"32", "Task" :"640", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"47:08", "Exec_host" :["pc379","pc407","pc410","pc426","pc427","pc428","pc429","pc430","pc458","pc248","pc390","pc391","pc482","pc119","pc118","pc120","pc121","pc123","pc124","pc294","pc309","pc362","pc363","pc364","pc435","pc436","pc300","pc365","pc413","pc414","pc416","pc459"]}
+, "Elapsed_Time" :"47:24", "Exec_host" :["pc379","pc407","pc410","pc426","pc427","pc428","pc429","pc430","pc458","pc248","pc390","pc391","pc482","pc119","pc118","pc120","pc121","pc123","pc124","pc294","pc309","pc362","pc363","pc364","pc435","pc436","pc300","pc365","pc413","pc414","pc416","pc459"]}
 ,"513898.un05": { "Username" :"sanchit", "Queue" :"large", "Jobname" :"run38", "Nodes" :"32", "Task" :"640", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"513905.un05": { "Username" :"tulsiram", "Queue" :"large", "Jobname" :"run30_us7", "Nodes" :"32", "Task" :"640", "RequiredTime" :"96:00", "State" :"H"
@@ -677,13 +675,13 @@
 ,"471752.un05": { "Username" :"yuvrj", "Queue" :"large", "Jobname" :"run50", "Nodes" :"15", "Task" :"300", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"513929.un05": { "Username" :"mitesht", "Queue" :"large", "Jobname" :"static_y1", "Nodes" :"15", "Task" :"300", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"38:42", "Exec_host" :["pc345","pc361","pc451","pc431","pc021","pc050","pc148","pc299","pc319","pc320","pc321","pc323","pc324","pc332","pc337"]}
+, "Elapsed_Time" :"38:58", "Exec_host" :["pc345","pc361","pc451","pc431","pc021","pc050","pc148","pc299","pc319","pc320","pc321","pc323","pc324","pc332","pc337"]}
 ,"503704.un05": { "Username" :"adityad", "Queue" :"medium", "Jobname" :"restart", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"513161.un05": { "Username" :"shreyaag", "Queue" :"medium", "Jobname" :"viv_m3", "Nodes" :"5", "Task" :"100", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"514534.un05": { "Username" :"gunvirs", "Queue" :"large", "Jobname" :"Test320_Sp", "Nodes" :"16", "Task" :"320", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"38:40", "Exec_host" :["pc338","pc339","pc340","pc344","pc486","pc180","pc181","pc226","pc241","pc271","pc286","pc287","pc289","pc290","pc292","pc312"]}
+, "Elapsed_Time" :"38:54", "Exec_host" :["pc338","pc339","pc340","pc344","pc486","pc180","pc181","pc226","pc241","pc271","pc286","pc287","pc289","pc290","pc292","pc312"]}
 ,"514745.un05": { "Username" :"vaidehib", "Queue" :"large", "Jobname" :"Re400kr19", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"514746.un05": { "Username" :"vaidehib", "Queue" :"large", "Jobname" :"Re400kr19", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"H"
@@ -691,11 +689,11 @@
 ,"514747.un05": { "Username" :"vaidehib", "Queue" :"large", "Jobname" :"Re400kr19", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"514786.un05": { "Username" :"oshubham", "Queue" :"medium", "Jobname" :"mrun", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"23:23", "Exec_host" :["pc667","pc573","pc662","pc669","pc702","pc674"]}
+, "Elapsed_Time" :"23:37", "Exec_host" :["pc667","pc573","pc662","pc669","pc702","pc674"]}
 ,"487291.un05": { "Username" :"koleyb", "Queue" :"large", "Jobname" :"Re10k_bp", "Nodes" :"13", "Task" :"260", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"514893.un05": { "Username" :"alokm", "Queue" :"medium", "Jobname" :"25_les", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"43:56", "Exec_host" :["pc588","pc505","pc506","pc545","pc552","pc619"]}
+, "Elapsed_Time" :"44:12", "Exec_host" :["pc588","pc505","pc506","pc545","pc552","pc619"]}
 ,"514927.un05": { "Username" :"jayantks", "Queue" :"small", "Jobname" :"run4_s", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"514951.un05": { "Username" :"dgoswami", "Queue" :"large", "Jobname" :"runL2No", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -707,7 +705,7 @@
 ,"515293.un05": { "Username" :"jayantks", "Queue" :"small", "Jobname" :"run2_s", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"515295.un05": { "Username" :"dgoswami", "Queue" :"medium", "Jobname" :"run1_m", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"93:29", "Exec_host" :["pc497","pc499","pc520","pc543","pc594","pc711"]}
+, "Elapsed_Time" :"93:45", "Exec_host" :["pc497","pc499","pc520","pc543","pc594","pc711"]}
 ,"515296.un05": { "Username" :"dgoswami", "Queue" :"medium", "Jobname" :"run3_m", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"515298.un05": { "Username" :"dgoswami", "Queue" :"large", "Jobname" :"runL1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -719,7 +717,7 @@
 ,"515398.un05": { "Username" :"pranaya", "Queue" :"large", "Jobname" :"SMA1_2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520881.un05": { "Username" :"debartha", "Queue" :"large", "Jobname" :"Re1k", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"11:00", "Exec_host" :["pc440","pc343","pc019","pc067","pc068","pc024","pc028","pc029","pc103","pc104","pc105","pc106"]}
+, "Elapsed_Time" :"11:16", "Exec_host" :["pc440","pc343","pc019","pc067","pc068","pc024","pc028","pc029","pc103","pc104","pc105","pc106"]}
 ,"515607.un05": { "Username" :"amitver", "Queue" :"medium", "Jobname" :"20deg_cse", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"492122.un05": { "Username" :"arkadipd", "Queue" :"medium", "Jobname" :"hold_2", "Nodes" :"5", "Task" :"100", "RequiredTime" :"96:00", "State" :"H"
@@ -745,9 +743,9 @@
 ,"492121.un05": { "Username" :"arkadipd", "Queue" :"medium", "Jobname" :"hold_2", "Nodes" :"5", "Task" :"100", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"516514.un05": { "Username" :"oshubham", "Queue" :"large", "Jobname" :"20mkklw", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"23:02", "Exec_host" :["pc477","pc478","pc480","pc481","pc483","pc485"]}
+, "Elapsed_Time" :"23:18", "Exec_host" :["pc477","pc478","pc480","pc481","pc483","pc485"]}
 ,"516516.un05": { "Username" :"bhawan", "Queue" :"medium", "Jobname" :"case_30k.d", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"85:49", "Exec_host" :["pc675","pc493","pc686","pc563"]}
+, "Elapsed_Time" :"86:03", "Exec_host" :["pc675","pc493","pc686","pc563"]}
 ,"520073.un05": { "Username" :"arkadipd", "Queue" :"large", "Jobname" :"Re10kBP2", "Nodes" :"25", "Task" :"500", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"516579.un05": { "Username" :"jawahar", "Queue" :"large", "Jobname" :"run2_1.7e5", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
@@ -761,9 +759,9 @@
 ,"516602.un05": { "Username" :"alokm", "Queue" :"medium", "Jobname" :"25_les", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"516610.un05": { "Username" :"bhawan", "Queue" :"medium", "Jobname" :"case_40k.d", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"16:08", "Exec_host" :["pc621","pc632","pc633","pc651"]}
+, "Elapsed_Time" :"16:22", "Exec_host" :["pc621","pc632","pc633","pc651"]}
 ,"516684.un05": { "Username" :"nirmalh", "Queue" :"small", "Jobname" :"case_40k.d", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"98:12", "Exec_host" :["pc763","pc766"]}
+, "Elapsed_Time" :"98:28", "Exec_host" :["pc763","pc766"]}
 ,"468372.un05": { "Username" :"debartha", "Queue" :"medium", "Jobname" :"qhold1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"516777.un05": { "Username" :"avisingh", "Queue" :"large", "Jobname" :"PdCO2cal", "Nodes" :"10", "Task" :"200", "RequiredTime" :"72:00", "State" :"H"
@@ -783,43 +781,41 @@
 ,"474483.un05": { "Username" :"yuvrj", "Queue" :"large", "Jobname" :"run51", "Nodes" :"15", "Task" :"300", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"517150.un05": { "Username" :"basheer", "Queue" :"large", "Jobname" :"I-6", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"65:31", "Exec_host" :["pc089","pc090","pc091","pc092","pc094","pc095","pc097","pc096","pc098","pc100"]}
+, "Elapsed_Time" :"65:45", "Exec_host" :["pc089","pc090","pc091","pc092","pc094","pc095","pc097","pc096","pc098","pc100"]}
 ,"520223.un05": { "Username" :"amanpar", "Queue" :"large", "Jobname" :"Re1k_u_3", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"37:10", "Exec_host" :["pc387","pc400","pc126","pc129","pc132","pc139","pc395","pc398","pc399","pc472"]}
+, "Elapsed_Time" :"37:24", "Exec_host" :["pc387","pc400","pc126","pc129","pc132","pc139","pc395","pc398","pc399","pc472"]}
 ,"468360.un05": { "Username" :"koleyb", "Queue" :"large", "Jobname" :"hold_large", "Nodes" :"13", "Task" :"260", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
-,"517378.un05": { "Username" :"dmonika", "Queue" :"medium", "Jobname" :"R_dis1_sur", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"95:51", "Exec_host" :["pc606","pc518","pc519","pc521","pc612","pc596"]}
 ,"517385.un05": { "Username" :"nidhig", "Queue" :"large", "Jobname" :"R_341_4x4_", "Nodes" :"20", "Task" :"400", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"90:55", "Exec_host" :["pc460","pc461","pc462","pc463","pc058","pc188","pc191","pc205","pc230","pc401","pc456","pc473","pc222","pc243","pc244","pc255","pc256","pc257","pc281","pc282"]}
+, "Elapsed_Time" :"91:11", "Exec_host" :["pc460","pc461","pc462","pc463","pc058","pc188","pc191","pc205","pc230","pc401","pc456","pc473","pc222","pc243","pc244","pc255","pc256","pc257","pc281","pc282"]}
 ,"517431.un05": { "Username" :"kmanohar", "Queue" :"large", "Jobname" :"ep1h1rf", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"84:19", "Exec_host" :["pc307","pc022","pc023","pc025","pc027","pc032","pc036","pc072","pc101","pc117","pc122","pc034","pc035","pc140","pc218","pc219"]}
+, "Elapsed_Time" :"84:35", "Exec_host" :["pc307","pc022","pc023","pc025","pc027","pc032","pc036","pc072","pc101","pc117","pc122","pc034","pc035","pc140","pc218","pc219"]}
 ,"517433.un05": { "Username" :"kmanohar", "Queue" :"large", "Jobname" :"ep1h2rf", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"71:22", "Exec_host" :["pc449","pc442","pc444","pc454","pc075","pc195","pc196","pc197","pc232","pc353","pc366","pc367","pc424","pc450","pc443","pc223"]}
+, "Elapsed_Time" :"71:36", "Exec_host" :["pc449","pc442","pc444","pc454","pc075","pc195","pc196","pc197","pc232","pc353","pc366","pc367","pc424","pc450","pc443","pc223"]}
 ,"517437.un05": { "Username" :"skrathor", "Queue" :"large", "Jobname" :"ep1h0r32", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"69:18", "Exec_host" :["pc234","pc235","pc237","pc469","pc295","pc301","pc305","pc306","pc308","pc313","pc314","pc315","pc316","pc317","pc233","pc238"]}
+, "Elapsed_Time" :"69:34", "Exec_host" :["pc234","pc235","pc237","pc469","pc295","pc301","pc305","pc306","pc308","pc313","pc314","pc315","pc316","pc317","pc233","pc238"]}
 ,"517441.un05": { "Username" :"skrathor", "Queue" :"large", "Jobname" :"ep1h1r32", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"66:49", "Exec_host" :["pc448","pc453","pc018","pc149","pc150","pc157","pc250","pc331","pc464","pc467","pc484","pc153","pc333","pc336","pc358","pc359"]}
+, "Elapsed_Time" :"67:05", "Exec_host" :["pc448","pc453","pc018","pc149","pc150","pc157","pc250","pc331","pc464","pc467","pc484","pc153","pc333","pc336","pc358","pc359"]}
 ,"517444.un05": { "Username" :"skrathor", "Queue" :"large", "Jobname" :"ep1h2r32", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"517447.un05": { "Username" :"anuragsh", "Queue" :"large", "Jobname" :"ep1h0", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"65:28", "Exec_host" :["pc405","pc423","pc432","pc026","pc151","pc152","pc154","pc160","pc251","pc258","pc293","pc433","pc167","pc168","pc169","pc170"]}
+, "Elapsed_Time" :"65:42", "Exec_host" :["pc405","pc423","pc432","pc026","pc151","pc152","pc154","pc160","pc251","pc258","pc293","pc433","pc167","pc168","pc169","pc170"]}
 ,"517448.un05": { "Username" :"anuragsh", "Queue" :"large", "Jobname" :"ep1h1", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"65:16", "Exec_host" :["pc171","pc172","pc204","pc385","pc437","pc455","pc457","pc273","pc055","pc056","pc057","pc059","pc060","pc061","pc066","pc298"]}
+, "Elapsed_Time" :"65:32", "Exec_host" :["pc171","pc172","pc204","pc385","pc437","pc455","pc457","pc273","pc055","pc056","pc057","pc059","pc060","pc061","pc066","pc298"]}
 ,"517449.un05": { "Username" :"anuragsh", "Queue" :"large", "Jobname" :"ep1h2", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"517498.un05": { "Username" :"akhilkm", "Queue" :"medium", "Jobname" :"M22", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"517560.un05": { "Username" :"uashok", "Queue" :"large", "Jobname" :"pulling", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"89:40", "Exec_host" :["pc044","pc402","pc474","pc475","pc476","pc272","pc030","pc031","pc127"]}
+, "Elapsed_Time" :"89:54", "Exec_host" :["pc044","pc402","pc474","pc475","pc476","pc272","pc030","pc031","pc127"]}
 ,"517594.un05": { "Username" :"gvibhor", "Queue" :"large", "Jobname" :"pulling", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"86:08", "Exec_host" :["pc341","pc404","pc214","pc215","pc216","pc217","pc220","pc438","pc439"]}
+, "Elapsed_Time" :"86:22", "Exec_host" :["pc341","pc404","pc214","pc215","pc216","pc217","pc220","pc438","pc439"]}
 ,"517609.un05": { "Username" :"pravink", "Queue" :"large", "Jobname" :"pulling", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"51:30", "Exec_host" :["pc411","pc412","pc417","pc421","pc136","pc020","pc047","pc049","pc144"]}
+, "Elapsed_Time" :"51:44", "Exec_host" :["pc411","pc412","pc417","pc421","pc136","pc020","pc047","pc049","pc144"]}
 ,"517611.un05": { "Username" :"amanup", "Queue" :"large", "Jobname" :"pulling", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"50:03", "Exec_host" :["pc145","pc159","pc231","pc268","pc270","pc037","pc039","pc040","pc041"]}
+, "Elapsed_Time" :"50:19", "Exec_host" :["pc145","pc159","pc231","pc268","pc270","pc037","pc039","pc040","pc041"]}
 ,"517617.un05": { "Username" :"amanup", "Queue" :"large", "Jobname" :"pulling", "Nodes" :"9", "Task" :"180", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"50:05", "Exec_host" :["pc042","pc156","pc158","pc269","pc302","pc303","pc325","pc352","pc377"]}
+, "Elapsed_Time" :"50:19", "Exec_host" :["pc042","pc156","pc158","pc269","pc302","pc303","pc325","pc352","pc377"]}
 ,"497588.un05": { "Username" :"amanpar", "Queue" :"large", "Jobname" :"Re50_run10", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"517711.un05": { "Username" :"ragamaye", "Queue" :"small", "Jobname" :"sma1", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
@@ -827,7 +823,7 @@
 ,"517779.un05": { "Username" :"ragamaye", "Queue" :"hyperthr", "Jobname" :"hyp2", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"517808.un05": { "Username" :"ramsha", "Queue" :"large", "Jobname" :"R1_Wad_F4_", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"50:05", "Exec_host" :["pc425","pc465","pc033","pc038","pc043","pc177","pc178","pc179","pc357","pc378"]}
+, "Elapsed_Time" :"50:19", "Exec_host" :["pc425","pc465","pc033","pc038","pc043","pc177","pc178","pc179","pc357","pc378"]}
 ,"486259.un05": { "Username" :"tulsiram", "Queue" :"medium", "Jobname" :"test2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"483024.un05": { "Username" :"adityad", "Queue" :"medium", "Jobname" :"test", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -857,39 +853,39 @@
 ,"517990.un05": { "Username" :"amitver", "Queue" :"large", "Jobname" :"20deg_med", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518018.un05": { "Username" :"barung", "Queue" :"large", "Jobname" :"PtTe2.2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"67:43", "Exec_host" :["pc452","pc466","pc137","pc138","pc194","pc278"]}
+, "Elapsed_Time" :"67:57", "Exec_host" :["pc452","pc466","pc137","pc138","pc194","pc278"]}
 ,"518041.un05": { "Username" :"avisingh", "Queue" :"medium", "Jobname" :"PdCO2abs5", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518047.un05": { "Username" :"ragamaye", "Queue" :"medium", "Jobname" :"med3", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518055.un05": { "Username" :"santanup", "Queue" :"large", "Jobname" :"nai_7585", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"47:40", "Exec_host" :["pc392","pc393","pc394","pc209","pc211","pc212"]}
+, "Elapsed_Time" :"47:56", "Exec_host" :["pc392","pc393","pc394","pc209","pc211","pc212"]}
 ,"518079.un05": { "Username" :"alokm", "Queue" :"large", "Jobname" :"20_les", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"37:57", "Exec_host" :["pc141","pc142","pc182","pc183","pc184","pc201"]}
+, "Elapsed_Time" :"38:13", "Exec_host" :["pc141","pc142","pc182","pc183","pc184","pc201"]}
 ,"518089.un05": { "Username" :"dgautam", "Queue" :"medium", "Jobname" :"MTD_new", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"72:40", "Exec_host" :["pc629","pc634"]}
+, "Elapsed_Time" :"72:56", "Exec_host" :["pc629","pc634"]}
 ,"518091.un05": { "Username" :"owaism", "Queue" :"large", "Jobname" :"E-8", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"44:20", "Exec_host" :["pc280","pc420","pc446","pc011","pc012","pc014","pc015","pc016","pc017","pc135","pc186","pc202"]}
+, "Elapsed_Time" :"44:36", "Exec_host" :["pc280","pc420","pc446","pc011","pc012","pc014","pc015","pc016","pc017","pc135","pc186","pc202"]}
 ,"518094.un05": { "Username" :"sbehera", "Queue" :"large", "Jobname" :"I-8", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"44:10", "Exec_host" :["pc274","pc406","pc415","pc051","pc052","pc054","pc062","pc063","pc064","pc125"]}
+, "Elapsed_Time" :"44:24", "Exec_host" :["pc274","pc406","pc415","pc051","pc052","pc054","pc062","pc063","pc064","pc125"]}
 ,"518095.un05": { "Username" :"dgautam", "Queue" :"small", "Jobname" :"MTD_TASS", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"42:10", "Exec_host" :["pc743","pc748"]}
+, "Elapsed_Time" :"42:24", "Exec_host" :["pc743","pc748"]}
 ,"518097.un05": { "Username" :"anjibabu", "Queue" :"large", "Jobname" :"2Ga_m1_01_", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"40:01", "Exec_host" :["pc130","pc147","pc207","pc208","pc210","pc221","pc161","pc162","pc163","pc164"]}
+, "Elapsed_Time" :"40:17", "Exec_host" :["pc130","pc147","pc207","pc208","pc210","pc221","pc161","pc162","pc163","pc164"]}
 ,"518099.un05": { "Username" :"dmonika", "Queue" :"large", "Jobname" :"R_Mar_BN_G", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"39:47", "Exec_host" :["pc165","pc166","pc266","pc267","pc371","pc372","pc373","pc374","pc375","pc434"]}
+, "Elapsed_Time" :"40:01", "Exec_host" :["pc165","pc166","pc266","pc267","pc371","pc372","pc373","pc374","pc375","pc434"]}
 ,"518109.un05": { "Username" :"kashishm", "Queue" :"medium", "Jobname" :"4.7", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"71:32", "Exec_host" :["pc507","pc508"]}
+, "Elapsed_Time" :"71:46", "Exec_host" :["pc507","pc508"]}
 ,"518126.un05": { "Username" :"kashishm", "Queue" :"small", "Jobname" :"4.6", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"57:56", "Exec_host" :["pc772","pc811"]}
+, "Elapsed_Time" :"58:10", "Exec_host" :["pc772","pc811"]}
 ,"492115.un05": { "Username" :"arkadipd", "Queue" :"large", "Jobname" :"2DNobkpr", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518139.un05": { "Username" :"gunvirs", "Queue" :"large", "Jobname" :"Test320_Sp", "Nodes" :"16", "Task" :"320", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518179.un05": { "Username" :"anjibabu", "Queue" :"medium", "Jobname" :"R_m1S_681_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"85:37", "Exec_host" :["pc566","pc567","pc644","pc647","pc731","pc732"]}
+, "Elapsed_Time" :"85:51", "Exec_host" :["pc566","pc567","pc644","pc647","pc731","pc732"]}
 ,"518181.un05": { "Username" :"nidhig", "Queue" :"medium", "Jobname" :"R7_GaI_FR_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"77:41", "Exec_host" :["pc631","pc645","pc661","pc670","pc690","pc693"]}
+, "Elapsed_Time" :"77:55", "Exec_host" :["pc631","pc645","pc661","pc670","pc690","pc693"]}
 ,"518190.un05": { "Username" :"avisingh", "Queue" :"small", "Jobname" :"TiO2_slab", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518248.un05": { "Username" :"ragamaye", "Queue" :"medium", "Jobname" :"med4", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
@@ -911,43 +907,43 @@
 ,"518360.un05": { "Username" :"halderp", "Queue" :"large", "Jobname" :"runL12-3", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518361.un05": { "Username" :"abhigpt", "Queue" :"large", "Jobname" :"R4_341_4x4", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"25:13", "Exec_host" :["pc187","pc346","pc347","pc348","pc155","pc045","pc046","pc102","pc143","pc225","pc227","pc247"]}
+, "Elapsed_Time" :"25:27", "Exec_host" :["pc187","pc346","pc347","pc348","pc155","pc045","pc046","pc102","pc143","pc225","pc227","pc247"]}
 ,"518369.un05": { "Username" :"razia", "Queue" :"large", "Jobname" :"R_F4_2UR_I", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"23:41", "Exec_host" :["pc185","pc192","pc193","pc203","pc228","pc236","pc246","pc275","pc276","pc277"]}
+, "Elapsed_Time" :"23:55", "Exec_host" :["pc185","pc192","pc193","pc203","pc228","pc236","pc246","pc275","pc276","pc277"]}
 ,"518371.un05": { "Username" :"sagar", "Queue" :"large", "Jobname" :"R_F4_2UR_I", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"23:41", "Exec_host" :["pc330","pc335","pc368","pc369","pc370","pc380","pc382","pc386","pc403","pc408"]}
+, "Elapsed_Time" :"23:57", "Exec_host" :["pc330","pc335","pc368","pc369","pc370","pc380","pc382","pc386","pc403","pc408"]}
 ,"518375.un05": { "Username" :"vvmk", "Queue" :"large", "Jobname" :"SMA2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"12:31", "Exec_host" :["pc108","pc109","pc111","pc131","pc133","pc134"]}
+, "Elapsed_Time" :"12:48", "Exec_host" :["pc108","pc109","pc111","pc131","pc133","pc134"]}
 ,"518409.un05": { "Username" :"ykedar", "Queue" :"large", "Jobname" :"333-N1-2i", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"23:19", "Exec_host" :["pc418","pc422","pc265","pc297","pc334","pc354","pc355","pc360","pc388","pc409"]}
+, "Elapsed_Time" :"23:33", "Exec_host" :["pc418","pc422","pc265","pc297","pc334","pc354","pc355","pc360","pc388","pc409"]}
 ,"518467.un05": { "Username" :"oshubham", "Queue" :"medium", "Jobname" :"mrun", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518569.un05": { "Username" :"dgautam", "Queue" :"medium", "Jobname" :"3.5", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"58:41", "Exec_host" :["pc673","pc678"]}
+, "Elapsed_Time" :"58:55", "Exec_host" :["pc673","pc678"]}
 ,"518571.un05": { "Username" :"abhigpt", "Queue" :"medium", "Jobname" :"R10_II_FR_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"72:36", "Exec_host" :["pc494","pc510","pc511","pc638","pc640","pc713"]}
+, "Elapsed_Time" :"72:50", "Exec_host" :["pc494","pc510","pc511","pc638","pc640","pc713"]}
 ,"518584.un05": { "Username" :"anjibabu", "Queue" :"medium", "Jobname" :"2Ga_m1_10_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"63:07", "Exec_host" :["pc590","pc591","pc602","pc604","pc615","pc694"]}
+, "Elapsed_Time" :"63:23", "Exec_host" :["pc590","pc591","pc602","pc604","pc615","pc694"]}
 ,"518595.un05": { "Username" :"kmanohar", "Queue" :"large", "Jobname" :"ep4h0", "Nodes" :"16", "Task" :"256", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"518599.un05": { "Username" :"sagar", "Queue" :"large", "Jobname" :"R1_Wad_F4_", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"22:43", "Exec_host" :["pc242","pc245","pc283","pc468","pc071","pc198","pc199","pc200","pc389","pc396","pc397","pc470"]}
+, "Elapsed_Time" :"22:58", "Exec_host" :["pc242","pc245","pc283","pc468","pc071","pc198","pc199","pc200","pc389","pc396","pc397","pc470"]}
 ,"518620.un05": { "Username" :"vrahul", "Queue" :"medium", "Jobname" :"X_3.4m2", "Nodes" :"4", "Task" :"80", "RequiredTime" :"85:00", "State" :"R"
-, "Elapsed_Time" :"71:03", "Exec_host" :["pc622","pc734","pc740","pc672"]}
+, "Elapsed_Time" :"71:17", "Exec_host" :["pc622","pc734","pc740","pc672"]}
 ,"518625.un05": { "Username" :"vrahul", "Queue" :"large", "Jobname" :"X_4.9m2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"85:00", "State" :"R"
-, "Elapsed_Time" :"28:31", "Exec_host" :["pc349","pc350","pc351","pc093","pc128","pc206"]}
+, "Elapsed_Time" :"28:47", "Exec_host" :["pc349","pc350","pc351","pc093","pc128","pc206"]}
 ,"518720.un05": { "Username" :"sougata", "Queue" :"large", "Jobname" :"TCl3.a", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"23:02", "Exec_host" :["pc291","pc296","pc376","pc013","pc224","pc239"]}
+, "Elapsed_Time" :"23:18", "Exec_host" :["pc291","pc296","pc376","pc013","pc224","pc239"]}
 ,"518721.un05": { "Username" :"sougata", "Queue" :"large", "Jobname" :"TCl3.b", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"18:34", "Exec_host" :["pc471","pc065","pc070","pc069","pc285","pc288"]}
+, "Elapsed_Time" :"18:48", "Exec_host" :["pc471","pc065","pc070","pc069","pc285","pc288"]}
 ,"518734.un05": { "Username" :"pyadav", "Queue" :"medium", "Jobname" :"PbiC4", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"73:08", "Exec_host" :["pc613","pc616","pc660","pc664"]}
+, "Elapsed_Time" :"73:22", "Exec_host" :["pc613","pc616","pc660","pc664"]}
 ,"518735.un05": { "Username" :"pyadav", "Queue" :"large", "Jobname" :"phonon1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"09:20", "Exec_host" :["pc107","pc110","pc112","pc113","pc114","pc115"]}
+, "Elapsed_Time" :"09:36", "Exec_host" :["pc107","pc110","pc112","pc113","pc114","pc115"]}
 ,"518736.un05": { "Username" :"pyadav", "Queue" :"large", "Jobname" :"Pb2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"09:21", "Exec_host" :["pc284","pc318","pc342","pc479","pc053","pc116"]}
-,"519038.un05": { "Username" :"barung", "Queue" :"large", "Jobname" :"PtTe2.3", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
-, "Elapsed_Time" :"--", "Exec_host" :[]}
+, "Elapsed_Time" :"09:35", "Exec_host" :["pc284","pc318","pc342","pc479","pc053","pc116"]}
+,"519038.un05": { "Username" :"barung", "Queue" :"large", "Jobname" :"PtTe2.3", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
+, "Elapsed_Time" :"00:10", "Exec_host" :["pc173","pc174","pc175","pc176","pc328","pc383"]}
 ,"519039.un05": { "Username" :"kamaldas", "Queue" :"large", "Jobname" :"phonon.1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519040.un05": { "Username" :"bikashg", "Queue" :"large", "Jobname" :"1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
@@ -955,11 +951,11 @@
 ,"519041.un05": { "Username" :"bikashg", "Queue" :"large", "Jobname" :"MD2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519137.un05": { "Username" :"varman", "Queue" :"small", "Jobname" :"2_065", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"85:49", "Exec_host" :["pc784","pc785"]}
+, "Elapsed_Time" :"86:03", "Exec_host" :["pc784","pc785"]}
 ,"519138.un05": { "Username" :"varman", "Queue" :"small", "Jobname" :"2_065", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"84:52", "Exec_host" :["pc806","pc810"]}
+, "Elapsed_Time" :"85:06", "Exec_host" :["pc806","pc810"]}
 ,"519141.un05": { "Username" :"geetnegi", "Queue" :"medium", "Jobname" :"Luz25-30", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"71:03", "Exec_host" :["pc523","pc527","pc528","pc703"]}
+, "Elapsed_Time" :"71:19", "Exec_host" :["pc523","pc527","pc528","pc703"]}
 ,"519142.un05": { "Username" :"geetnegi", "Queue" :"large", "Jobname" :"Luz25", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519144.un05": { "Username" :"geetnegi", "Queue" :"large", "Jobname" :"Luz25-20", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
@@ -971,7 +967,7 @@
 ,"519154.un05": { "Username" :"manend", "Queue" :"large", "Jobname" :"16HP-20P", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519155.un05": { "Username" :"geetnegi", "Queue" :"hyperthr", "Jobname" :"16HP-40P", "Nodes" :"2", "Task" :"80", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"98:27", "Exec_host" :["pc847","pc841"]}
+, "Elapsed_Time" :"98:43", "Exec_host" :["pc847","pc841"]}
 ,"519158.un05": { "Username" :"manend", "Queue" :"large", "Jobname" :"16HP-60P", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519187.un05": { "Username" :"bhavanap", "Queue" :"large", "Jobname" :"PUT_MTD", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
@@ -979,39 +975,39 @@
 ,"519188.un05": { "Username" :"owaism", "Queue" :"large", "Jobname" :"G-3", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519189.un05": { "Username" :"sbehera", "Queue" :"medium", "Jobname" :"NN-2", "Nodes" :"5", "Task" :"100", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"65:33", "Exec_host" :["pc532","pc546","pc646","pc699","pc742"]}
+, "Elapsed_Time" :"65:47", "Exec_host" :["pc532","pc546","pc646","pc699","pc742"]}
 ,"519190.un05": { "Username" :"dmonika", "Queue" :"large", "Jobname" :"R1_Rmad_NI", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519197.un05": { "Username" :"debasiss", "Queue" :"small", "Jobname" :"MTS2", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"95:44", "Exec_host" :["pc821","pc816"]}
+, "Elapsed_Time" :"95:59", "Exec_host" :["pc821","pc816"]}
 ,"519360.un05": { "Username" :"ddebasis", "Queue" :"large", "Jobname" :"large.2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519361.un05": { "Username" :"ddebasis", "Queue" :"large", "Jobname" :"blackP.1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519362.un05": { "Username" :"ddebasis", "Queue" :"small", "Jobname" :"Ptsmall.1L", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"94:49", "Exec_host" :["pc754","pc756"]}
+, "Elapsed_Time" :"95:03", "Exec_host" :["pc754","pc756"]}
 ,"519363.un05": { "Username" :"ddebasis", "Queue" :"small", "Jobname" :"Ptsmall.2L", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"94:47", "Exec_host" :["pc825","pc832"]}
+, "Elapsed_Time" :"95:03", "Exec_host" :["pc825","pc832"]}
 ,"519364.un05": { "Username" :"ddebasis", "Queue" :"medium", "Jobname" :"blueP.2", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"51:15", "Exec_host" :["pc513","pc514","pc648","pc720"]}
+, "Elapsed_Time" :"51:31", "Exec_host" :["pc513","pc514","pc648","pc720"]}
 ,"519378.un05": { "Username" :"vipinm", "Queue" :"small", "Jobname" :"nai_5465", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"93:25", "Exec_host" :["pc799","pc795"]}
+, "Elapsed_Time" :"93:41", "Exec_host" :["pc799","pc795"]}
 ,"519379.un05": { "Username" :"santanup", "Queue" :"small", "Jobname" :"naf_6575", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"93:21", "Exec_host" :["pc804","pc798"]}
+, "Elapsed_Time" :"93:37", "Exec_host" :["pc804","pc798"]}
 ,"519380.un05": { "Username" :"santanup", "Queue" :"small", "Jobname" :"nacl_6575", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"37:51", "Exec_host" :["pc764","pc834"]}
+, "Elapsed_Time" :"38:05", "Exec_host" :["pc764","pc834"]}
 ,"519381.un05": { "Username" :"santanup", "Queue" :"medium", "Jobname" :"nabr_6575", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"72:36", "Exec_host" :["pc541","pc544"]}
+, "Elapsed_Time" :"72:50", "Exec_host" :["pc541","pc544"]}
 ,"519384.un05": { "Username" :"banshid", "Queue" :"medium", "Jobname" :"6575_50", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"85:14", "Exec_host" :["pc610","pc614"]}
+, "Elapsed_Time" :"85:30", "Exec_host" :["pc610","pc614"]}
 ,"519386.un05": { "Username" :"banshid", "Queue" :"medium", "Jobname" :"7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"85:08", "Exec_host" :["pc555","pc550"]}
+, "Elapsed_Time" :"85:22", "Exec_host" :["pc555","pc550"]}
 ,"519387.un05": { "Username" :"mitesht", "Queue" :"large", "Jobname" :"static_y1", "Nodes" :"15", "Task" :"300", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519388.un05": { "Username" :"banshid", "Queue" :"medium", "Jobname" :"7585_50", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"81:20", "Exec_host" :["pc706","pc709"]}
+, "Elapsed_Time" :"81:37", "Exec_host" :["pc706","pc709"]}
 ,"519389.un05": { "Username" :"banshid", "Queue" :"small", "Jobname" :"7585_19", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"93:07", "Exec_host" :["pc791","pc797"]}
+, "Elapsed_Time" :"93:23", "Exec_host" :["pc791","pc797"]}
 ,"519390.un05": { "Username" :"banshid", "Queue" :"medium", "Jobname" :"7585_41", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519416.un05": { "Username" :"ssvivek", "Queue" :"large", "Jobname" :"RT", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
@@ -1025,139 +1021,137 @@
 ,"519441.un05": { "Username" :"subhamt", "Queue" :"large", "Jobname" :"np300", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519531.un05": { "Username" :"vvmk", "Queue" :"small", "Jobname" :"SMA1", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"85:56", "Exec_host" :["pc778","pc786"]}
+, "Elapsed_Time" :"86:10", "Exec_host" :["pc778","pc786"]}
 ,"519532.un05": { "Username" :"pranaya", "Queue" :"small", "Jobname" :"SMA2", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"85:52", "Exec_host" :["pc769","pc782"]}
+, "Elapsed_Time" :"86:06", "Exec_host" :["pc769","pc782"]}
 ,"519536.un05": { "Username" :"pyadav", "Queue" :"medium", "Jobname" :"Pbm3", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"50:46", "Exec_host" :["pc741","pc516","pc517","pc593"]}
+, "Elapsed_Time" :"51:00", "Exec_host" :["pc741","pc516","pc517","pc593"]}
 ,"519542.un05": { "Username" :"vvmk", "Queue" :"small", "Jobname" :"SM1_infini", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"82:45", "Exec_host" :["pc818","pc820"]}
+, "Elapsed_Time" :"82:59", "Exec_host" :["pc818","pc820"]}
 ,"519543.un05": { "Username" :"pranaya", "Queue" :"small", "Jobname" :"SM2_infini", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"81:18", "Exec_host" :["pc812","pc813"]}
+, "Elapsed_Time" :"81:34", "Exec_host" :["pc812","pc813"]}
 ,"519550.un05": { "Username" :"kritama", "Queue" :"small", "Jobname" :"6.2", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"33:11", "Exec_host" :["pc755","pc758"]}
+, "Elapsed_Time" :"33:28", "Exec_host" :["pc755","pc758"]}
 ,"519551.un05": { "Username" :"vijendra", "Queue" :"small", "Jobname" :"tsmichael", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"68:03", "Exec_host" :["pc838"]}
+, "Elapsed_Time" :"68:17", "Exec_host" :["pc838"]}
 ,"519552.un05": { "Username" :"kritama", "Queue" :"small", "Jobname" :"6.1", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519554.un05": { "Username" :"shitansh", "Queue" :"medium", "Jobname" :"4.3-m1m", "Nodes" :"4", "Task" :"80", "RequiredTime" :"85:00", "State" :"R"
-, "Elapsed_Time" :"50:03", "Exec_host" :["pc725","pc729","pc730","pc733"]}
+, "Elapsed_Time" :"50:17", "Exec_host" :["pc725","pc729","pc730","pc733"]}
 ,"519555.un05": { "Username" :"shitansh", "Queue" :"medium", "Jobname" :"4.3-m2", "Nodes" :"4", "Task" :"80", "RequiredTime" :"85:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519557.un05": { "Username" :"ykedar", "Queue" :"medium", "Jobname" :"PBE-13", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"50:02", "Exec_host" :["pc679","pc736","pc737","pc537"]}
+, "Elapsed_Time" :"50:17", "Exec_host" :["pc679","pc736","pc737","pc537"]}
 ,"519583.un05": { "Username" :"vrahul", "Queue" :"medium", "Jobname" :"X_3.9m", "Nodes" :"4", "Task" :"80", "RequiredTime" :"85:00", "State" :"R"
-, "Elapsed_Time" :"49:56", "Exec_host" :["pc539","pc578","pc579","pc625"]}
+, "Elapsed_Time" :"50:12", "Exec_host" :["pc539","pc578","pc579","pc625"]}
 ,"519584.un05": { "Username" :"vrahul", "Queue" :"large", "Jobname" :"X_3.9m", "Nodes" :"6", "Task" :"120", "RequiredTime" :"85:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519588.un05": { "Username" :"shivaniv", "Queue" :"medium", "Jobname" :"X_5.1m2", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"48:02", "Exec_host" :["pc696","pc526","pc529","pc557"]}
+, "Elapsed_Time" :"48:16", "Exec_host" :["pc696","pc526","pc529","pc557"]}
 ,"519589.un05": { "Username" :"shivaniv", "Queue" :"medium", "Jobname" :"X_5.4m", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"47:29", "Exec_host" :["pc677","pc680","pc681","pc682"]}
+, "Elapsed_Time" :"47:43", "Exec_host" :["pc677","pc680","pc681","pc682"]}
 ,"519590.un05": { "Username" :"shivaniv", "Queue" :"medium", "Jobname" :"X_5.3m2", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"43:55", "Exec_host" :["pc671","pc581","pc611","pc636"]}
+, "Elapsed_Time" :"44:11", "Exec_host" :["pc671","pc581","pc611","pc636"]}
 ,"519592.un05": { "Username" :"shivaniv", "Queue" :"large", "Jobname" :"X_5.5m2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519593.un05": { "Username" :"vthakkur", "Queue" :"medium", "Jobname" :"3.6-mtd3", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"43:53", "Exec_host" :["pc701","pc719","pc723","pc700"]}
+, "Elapsed_Time" :"44:09", "Exec_host" :["pc701","pc719","pc723","pc700"]}
 ,"519595.un05": { "Username" :"vthakkur", "Queue" :"medium", "Jobname" :"3.7-m3", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"43:54", "Exec_host" :["pc704","pc724","pc554","pc515"]}
+, "Elapsed_Time" :"44:08", "Exec_host" :["pc704","pc724","pc554","pc515"]}
 ,"519596.un05": { "Username" :"vthakkur", "Queue" :"medium", "Jobname" :"3.8-m3", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"43:52", "Exec_host" :["pc495","pc496","pc524","pc525"]}
+, "Elapsed_Time" :"44:08", "Exec_host" :["pc495","pc496","pc524","pc525"]}
 ,"519597.un05": { "Username" :"vthakkur", "Queue" :"large", "Jobname" :"3.9-m3", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519645.un05": { "Username" :"abhigpt", "Queue" :"medium", "Jobname" :"R_FR_GaII_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"43:53", "Exec_host" :["pc650","pc583","pc584","pc592","pc595","pc688"]}
+, "Elapsed_Time" :"44:07", "Exec_host" :["pc650","pc583","pc584","pc592","pc595","pc688"]}
 ,"519647.un05": { "Username" :"anjibabu", "Queue" :"medium", "Jobname" :"2Ga_m1_11_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"39:48", "Exec_host" :["pc601","pc603","pc605","pc607","pc608","pc609"]}
+, "Elapsed_Time" :"40:03", "Exec_host" :["pc601","pc603","pc605","pc607","pc608","pc609"]}
 ,"519650.un05": { "Username" :"pyadav", "Queue" :"large", "Jobname" :"phonon3", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519654.un05": { "Username" :"anjibabu", "Queue" :"large", "Jobname" :"R6_571_3x3", "Nodes" :"11", "Task" :"220", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519663.un05": { "Username" :"mrishi", "Queue" :"small", "Jobname" :"qSmall_5mm", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"71:23", "Exec_host" :["pc787"]}
+, "Elapsed_Time" :"71:37", "Exec_host" :["pc787"]}
 ,"519665.un05": { "Username" :"mrishi", "Queue" :"small", "Jobname" :"q_3_5mm.sh", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"16:11", "Exec_host" :["pc751"]}
+, "Elapsed_Time" :"16:25", "Exec_host" :["pc751"]}
 ,"519666.un05": { "Username" :"mrishi", "Queue" :"small", "Jobname" :"qSmall_7mm", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"71:20", "Exec_host" :["pc777"]}
+, "Elapsed_Time" :"71:36", "Exec_host" :["pc777"]}
 ,"519702.un05": { "Username" :"dmonika", "Queue" :"large", "Jobname" :"Rmad_Epi_N", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519707.un05": { "Username" :"prabodh", "Queue" :"highmem", "Jobname" :"I_SB1", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"70:44", "Exec_host" :["hm005"]}
+, "Elapsed_Time" :"71:00", "Exec_host" :["hm005"]}
 ,"519709.un05": { "Username" :"prabodh", "Queue" :"small", "Jobname" :"A_TB1", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"70:37", "Exec_host" :["pc807"]}
+, "Elapsed_Time" :"70:53", "Exec_host" :["pc807"]}
 ,"519711.un05": { "Username" :"dmonika", "Queue" :"medium", "Jobname" :"R1_dis_sur", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"30:03", "Exec_host" :["pc487","pc488","pc489","pc490","pc492","pc654"]}
+, "Elapsed_Time" :"30:17", "Exec_host" :["pc487","pc488","pc489","pc490","pc492","pc654"]}
 ,"519713.un05": { "Username" :"dmonika", "Queue" :"medium", "Jobname" :"R3_Mar_ML_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"26:08", "Exec_host" :["pc553","pc556","pc576","pc580","pc653","pc665"]}
+, "Elapsed_Time" :"26:24", "Exec_host" :["pc553","pc556","pc576","pc580","pc653","pc665"]}
 ,"519715.un05": { "Username" :"abhigpt", "Queue" :"medium", "Jobname" :"R3_MarI_68", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"23:39", "Exec_host" :["pc535","pc658","pc668","pc697","pc716","pc717"]}
+, "Elapsed_Time" :"23:53", "Exec_host" :["pc535","pc658","pc668","pc697","pc716","pc717"]}
 ,"519718.un05": { "Username" :"santanup", "Queue" :"medium", "Jobname" :"nai_6575", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"67:02", "Exec_host" :["pc560","pc561"]}
+, "Elapsed_Time" :"67:18", "Exec_host" :["pc560","pc561"]}
 ,"519746.un05": { "Username" :"alokm", "Queue" :"large", "Jobname" :"20_les", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519762.un05": { "Username" :"pyadav", "Queue" :"medium", "Jobname" :"Pb1", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519778.un05": { "Username" :"ompg", "Queue" :"small", "Jobname" :"A_SB2", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"66:59", "Exec_host" :["pc765"]}
+, "Elapsed_Time" :"67:15", "Exec_host" :["pc765"]}
 ,"519789.un05": { "Username" :"prabodh", "Queue" :"highmem", "Jobname" :"I_SB2", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519790.un05": { "Username" :"juhisri", "Queue" :"medium", "Jobname" :"GC-1", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"43:51", "Exec_host" :["pc617","pc685","pc739","pc641"]}
+, "Elapsed_Time" :"44:08", "Exec_host" :["pc617","pc685","pc739","pc641"]}
 ,"519791.un05": { "Username" :"ahilan", "Queue" :"small", "Jobname" :"15D_60D", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"66:45", "Exec_host" :["pc802","pc789"]}
+, "Elapsed_Time" :"67:01", "Exec_host" :["pc802","pc789"]}
 ,"519792.un05": { "Username" :"ahilan", "Queue" :"small", "Jobname" :"15D_45D", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"66:45", "Exec_host" :["pc775","pc783"]}
+, "Elapsed_Time" :"66:59", "Exec_host" :["pc775","pc783"]}
 ,"519796.un05": { "Username" :"vvmk", "Queue" :"small", "Jobname" :"SMA1_infin", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"66:35", "Exec_host" :["pc796","pc803"]}
+, "Elapsed_Time" :"66:51", "Exec_host" :["pc796","pc803"]}
 ,"519799.un05": { "Username" :"pranaya", "Queue" :"small", "Jobname" :"SMA2_infin", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"66:34", "Exec_host" :["pc822","pc770"]}
+, "Elapsed_Time" :"66:50", "Exec_host" :["pc822","pc770"]}
 ,"519803.un05": { "Username" :"pranaya", "Queue" :"medium", "Jobname" :"SMA2_L/E=1", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"66:29", "Exec_host" :["pc705","pc710"]}
+, "Elapsed_Time" :"66:43", "Exec_host" :["pc705","pc710"]}
 ,"519805.un05": { "Username" :"vvmk", "Queue" :"medium", "Jobname" :"SMA1_L/E=1", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"66:27", "Exec_host" :["pc712","pc718"]}
+, "Elapsed_Time" :"66:43", "Exec_host" :["pc712","pc718"]}
 ,"519806.un05": { "Username" :"pranaya", "Queue" :"large", "Jobname" :"SMA1_1", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519808.un05": { "Username" :"sarnali", "Queue" :"medium", "Jobname" :"EtaCN", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"63:01", "Exec_host" :["pc558","pc676"]}
+, "Elapsed_Time" :"63:17", "Exec_host" :["pc558","pc676"]}
 ,"519809.un05": { "Username" :"ahilan", "Queue" :"medium", "Jobname" :"7.5D_60D", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"62:47", "Exec_host" :["pc708","pc728"]}
+, "Elapsed_Time" :"63:01", "Exec_host" :["pc708","pc728"]}
 ,"519810.un05": { "Username" :"ahilan", "Queue" :"medium", "Jobname" :"7.5D_45D", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"54:02", "Exec_host" :["pc637","pc639"]}
+, "Elapsed_Time" :"54:16", "Exec_host" :["pc637","pc639"]}
 ,"519813.un05": { "Username" :"ahilan", "Queue" :"small", "Jobname" :"5D_60D", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"01:02", "Exec_host" :["pc744","pc745"]}
+, "Elapsed_Time" :"01:18", "Exec_host" :["pc744","pc745"]}
 ,"519821.un05": { "Username" :"ompg", "Queue" :"highmem", "Jobname" :"A_SB3", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"03:01", "Exec_host" :["hm002"]}
+, "Elapsed_Time" :"03:15", "Exec_host" :["hm002"]}
 ,"519824.un05": { "Username" :"owaism", "Queue" :"medium", "Jobname" :"NN-1", "Nodes" :"5", "Task" :"100", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"39:42", "Exec_host" :["pc585","pc707","pc721","pc722","pc738"]}
+, "Elapsed_Time" :"39:56", "Exec_host" :["pc585","pc707","pc721","pc722","pc738"]}
 ,"519827.un05": { "Username" :"gsaxena", "Queue" :"large", "Jobname" :"P-1", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519830.un05": { "Username" :"gargp", "Queue" :"small", "Jobname" :"N16S034", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"64:19", "Exec_host" :["pc819","pc800"]}
+, "Elapsed_Time" :"64:33", "Exec_host" :["pc819","pc800"]}
 ,"519833.un05": { "Username" :"gargp", "Queue" :"small", "Jobname" :"N16S068", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"63:23", "Exec_host" :["pc814","pc827"]}
+, "Elapsed_Time" :"63:39", "Exec_host" :["pc814","pc827"]}
 ,"519838.un05": { "Username" :"gargp", "Queue" :"small", "Jobname" :"N16S159", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"61:58", "Exec_host" :["pc823","pc829"]}
+, "Elapsed_Time" :"62:12", "Exec_host" :["pc823","pc829"]}
 ,"519840.un05": { "Username" :"gargp", "Queue" :"medium", "Jobname" :"N21S000", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"51:07", "Exec_host" :["pc642","pc643"]}
+, "Elapsed_Time" :"51:21", "Exec_host" :["pc642","pc643"]}
 ,"519859.un05": { "Username" :"amitver", "Queue" :"large", "Jobname" :"20deg_med", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519867.un05": { "Username" :"barung", "Queue" :"large", "Jobname" :"PtTe2.1", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519869.un05": { "Username" :"sougata", "Queue" :"medium", "Jobname" :"TCl3.1", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"35:44", "Exec_host" :["pc568","pc570","pc657","pc659"]}
+, "Elapsed_Time" :"35:58", "Exec_host" :["pc568","pc570","pc657","pc659"]}
 ,"519973.un05": { "Username" :"prabodh", "Queue" :"small", "Jobname" :"A_TB2", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"55:54", "Exec_host" :["pc757"]}
+, "Elapsed_Time" :"56:08", "Exec_host" :["pc757"]}
 ,"520011.un05": { "Username" :"rshreya", "Queue" :"medium", "Jobname" :"4.2", "Nodes" :"3", "Task" :"60", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"15:10", "Exec_host" :["pc683","pc687","pc691"]}
+, "Elapsed_Time" :"15:26", "Exec_host" :["pc683","pc687","pc691"]}
 ,"520018.un05": { "Username" :"bhavanap", "Queue" :"small", "Jobname" :"job7.501-7", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"50:08", "Exec_host" :["pc805"]}
-,"520019.un05": { "Username" :"bhavanap", "Queue" :"hyperthr", "Jobname" :"job7.301-5", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"59:36", "Exec_host" :["pc850"]}
+, "Elapsed_Time" :"50:22", "Exec_host" :["pc805"]}
 ,"520022.un05": { "Username" :"amitver", "Queue" :"medium", "Jobname" :"20deg_cse", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
-,"520023.un05": { "Username" :"bhavanap", "Queue" :"hyperthr", "Jobname" :"job2.401-6", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
-, "Elapsed_Time" :"--", "Exec_host" :[]}
+,"520023.un05": { "Username" :"bhavanap", "Queue" :"hyperthr", "Jobname" :"job2.401-6", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
+, "Elapsed_Time" :"00:13", "Exec_host" :["pc843"]}
 ,"520028.un05": { "Username" :"akhilkm", "Queue" :"large", "Jobname" :"L21", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520029.un05": { "Username" :"akhilkm", "Queue" :"large", "Jobname" :"L22", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -1177,11 +1171,11 @@
 ,"495303.un05": { "Username" :"arkadipd", "Queue" :"large", "Jobname" :"hold1", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520085.un05": { "Username" :"prabodh", "Queue" :"hyperthr", "Jobname" :"I_TB2", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"49:41", "Exec_host" :["pc852"]}
+, "Elapsed_Time" :"49:57", "Exec_host" :["pc852"]}
 ,"520103.un05": { "Username" :"eshans", "Queue" :"hyperthr", "Jobname" :"Mt2C-xSpac", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"45:24", "Exec_host" :["pc844","pc853"]}
+, "Elapsed_Time" :"45:38", "Exec_host" :["pc844","pc853"]}
 ,"520106.un05": { "Username" :"shitansh", "Queue" :"small", "Jobname" :"REST2", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"46:32", "Exec_host" :["pc788","pc793"]}
+, "Elapsed_Time" :"46:46", "Exec_host" :["pc788","pc793"]}
 ,"520133.un05": { "Username" :"gsaxena", "Queue" :"medium", "Jobname" :"A-44", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520137.un05": { "Username" :"bhavanap", "Queue" :"small", "Jobname" :"job2.401-6", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
@@ -1191,31 +1185,31 @@
 ,"520144.un05": { "Username" :"basheer", "Queue" :"large", "Jobname" :"I-6", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520149.un05": { "Username" :"varman", "Queue" :"small", "Jobname" :"4_075", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"43:20", "Exec_host" :["pc790","pc792"]}
+, "Elapsed_Time" :"43:34", "Exec_host" :["pc790","pc792"]}
 ,"520185.un05": { "Username" :"gunvirs", "Queue" :"large", "Jobname" :"Test320_Sp", "Nodes" :"16", "Task" :"320", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520192.un05": { "Username" :"arun", "Queue" :"small", "Jobname" :"h_6m", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"25:21", "Exec_host" :["pc830","pc836"]}
+, "Elapsed_Time" :"25:37", "Exec_host" :["pc830","pc836"]}
 ,"520198.un05": { "Username" :"sarkar", "Queue" :"large", "Jobname" :"Sb2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520199.un05": { "Username" :"sarkar", "Queue" :"medium", "Jobname" :"Sb1", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"31:07", "Exec_host" :["pc504","pc562","pc569","pc652"]}
+, "Elapsed_Time" :"31:23", "Exec_host" :["pc504","pc562","pc569","pc652"]}
 ,"520200.un05": { "Username" :"sarkar", "Queue" :"medium", "Jobname" :"Bi2", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"27:23", "Exec_host" :["pc689","pc692","pc695","pc698"]}
+, "Elapsed_Time" :"27:37", "Exec_host" :["pc689","pc692","pc695","pc698"]}
 ,"520202.un05": { "Username" :"dmandal", "Queue" :"large", "Jobname" :"Pb2Te3.1", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520204.un05": { "Username" :"dmandal", "Queue" :"large", "Jobname" :"Pb2", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520205.un05": { "Username" :"dmandal", "Queue" :"medium", "Jobname" :"BiC4", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"25:43", "Exec_host" :["pc502","pc503","pc542","pc565"]}
+, "Elapsed_Time" :"25:57", "Exec_host" :["pc502","pc503","pc542","pc565"]}
 ,"520218.un05": { "Username" :"alokm", "Queue" :"medium", "Jobname" :"25_les", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"519428.un05": { "Username" :"amanpar", "Queue" :"large", "Jobname" :"Re1k_u_3", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520316.un05": { "Username" :"sagar", "Queue" :"medium", "Jobname" :"dist_mtd", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"38:15", "Exec_host" :["pc626","pc628"]}
+, "Elapsed_Time" :"38:29", "Exec_host" :["pc626","pc628"]}
 ,"520318.un05": { "Username" :"sagar", "Queue" :"small", "Jobname" :"3mtd-dist", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"22:20", "Exec_host" :["pc808","pc817"]}
+, "Elapsed_Time" :"22:36", "Exec_host" :["pc808","pc817"]}
 ,"520319.un05": { "Username" :"sagar", "Queue" :"small", "Jobname" :"3mtd-dist", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520320.un05": { "Username" :"sagar", "Queue" :"small", "Jobname" :"3mtd-dist", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
@@ -1231,27 +1225,27 @@
 ,"520358.un05": { "Username" :"nidhig", "Queue" :"medium", "Jobname" :"R1_Rmad_Ga", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520362.un05": { "Username" :"ompg", "Queue" :"small", "Jobname" :"A_TB3", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"34:49", "Exec_host" :["pc824"]}
+, "Elapsed_Time" :"35:05", "Exec_host" :["pc824"]}
 ,"520363.un05": { "Username" :"nidhig", "Queue" :"large", "Jobname" :"R5_111_5x5", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520369.un05": { "Username" :"ompg", "Queue" :"small", "Jobname" :"I_TB3", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"34:14", "Exec_host" :["pc760"]}
+, "Elapsed_Time" :"34:28", "Exec_host" :["pc760"]}
 ,"520370.un05": { "Username" :"ompg", "Queue" :"hyperthr", "Jobname" :"I_SB3", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"37:34", "Exec_host" :["pc851"]}
+, "Elapsed_Time" :"37:50", "Exec_host" :["pc851"]}
 ,"520382.un05": { "Username" :"nidhig", "Queue" :"medium", "Jobname" :"R2_Mar_L2_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520390.un05": { "Username" :"kritama", "Queue" :"medium", "Jobname" :"MTD_all_ne", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"24:32", "Exec_host" :["pc587","pc600"]}
+, "Elapsed_Time" :"24:46", "Exec_host" :["pc587","pc600"]}
 ,"520391.un05": { "Username" :"subhamt", "Queue" :"small", "Jobname" :"np120", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"07:12", "Exec_host" :["pc794","pc801"]}
+, "Elapsed_Time" :"07:29", "Exec_host" :["pc794","pc801"]}
 ,"520394.un05": { "Username" :"kritama", "Queue" :"medium", "Jobname" :"MTDall_new", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"25:21", "Exec_host" :["pc509","pc512"]}
+, "Elapsed_Time" :"25:35", "Exec_host" :["pc509","pc512"]}
 ,"520403.un05": { "Username" :"mrishi", "Queue" :"medium", "Jobname" :"qMed_3_5mm", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"14:45", "Exec_host" :["pc522","pc586"]}
+, "Elapsed_Time" :"15:02", "Exec_host" :["pc522","pc586"]}
 ,"520404.un05": { "Username" :"mrishi", "Queue" :"medium", "Jobname" :"qMed_3_5mm", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520409.un05": { "Username" :"mrishi", "Queue" :"medium", "Jobname" :"qM_2_5.sh", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"14:37", "Exec_host" :["pc572","pc575"]}
+, "Elapsed_Time" :"14:51", "Exec_host" :["pc572","pc575"]}
 ,"520412.un05": { "Username" :"nidhig", "Queue" :"medium", "Jobname" :"R3_Mar_L2_", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520414.un05": { "Username" :"ramsha", "Queue" :"large", "Jobname" :"R2_221_Rma", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"Q"
@@ -1263,21 +1257,21 @@
 ,"520430.un05": { "Username" :"kamaldas", "Queue" :"large", "Jobname" :"la3", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520431.un05": { "Username" :"kamaldas", "Queue" :"medium", "Jobname" :"dyn.1", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"06:36", "Exec_host" :["pc582","pc599","pc726","pc727"]}
+, "Elapsed_Time" :"06:52", "Exec_host" :["pc582","pc599","pc726","pc727"]}
 ,"520432.un05": { "Username" :"kamaldas", "Queue" :"medium", "Jobname" :"dyn.2", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520433.un05": { "Username" :"kamaldas", "Queue" :"medium", "Jobname" :"dyn.3", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520447.un05": { "Username" :"santanup", "Queue" :"hyperthr", "Jobname" :"job5601-80", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"34:57", "Exec_host" :["pc842"]}
+, "Elapsed_Time" :"35:13", "Exec_host" :["pc842"]}
 ,"520450.un05": { "Username" :"santanup", "Queue" :"highmem", "Jobname" :"job6401-60", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"34:54", "Exec_host" :["hm001"]}
+, "Elapsed_Time" :"35:09", "Exec_host" :["hm001"]}
 ,"520453.un05": { "Username" :"rekha", "Queue" :"hyperthr", "Jobname" :"mini", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"34:46", "Exec_host" :["pc848"]}
+, "Elapsed_Time" :"35:02", "Exec_host" :["pc848"]}
 ,"520455.un05": { "Username" :"rekha", "Queue" :"hyperthr", "Jobname" :"mini", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520456.un05": { "Username" :"rekha", "Queue" :"medium", "Jobname" :"mini", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"11:18", "Exec_host" :["pc534","pc536"]}
+, "Elapsed_Time" :"11:34", "Exec_host" :["pc534","pc536"]}
 ,"520460.un05": { "Username" :"santanup", "Queue" :"hyperthr", "Jobname" :"job5401-56", "Nodes" :"1", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520461.un05": { "Username" :"santanup", "Queue" :"highmem", "Jobname" :"job2701-29", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"Q"
@@ -1295,7 +1289,7 @@
 ,"520588.un05": { "Username" :"geetnegi", "Queue" :"medium", "Jobname" :"Luz75-221", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520601.un05": { "Username" :"arun", "Queue" :"small", "Jobname" :"5_um", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"18:52", "Exec_host" :["pc761","pc767"]}
+, "Elapsed_Time" :"19:08", "Exec_host" :["pc761","pc767"]}
 ,"520635.un05": { "Username" :"oshubham", "Queue" :"medium", "Jobname" :"mrun", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520636.un05": { "Username" :"gsaxena", "Queue" :"large", "Jobname" :"I-9", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
@@ -1309,49 +1303,49 @@
 ,"520665.un05": { "Username" :"swatisi", "Queue" :"large", "Jobname" :"G-2", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520668.un05": { "Username" :"bhavanap", "Queue" :"highmem", "Jobname" :"job6.201-4", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"07:04", "Exec_host" :["hm003"]}
+, "Elapsed_Time" :"07:19", "Exec_host" :["hm003"]}
 ,"520675.un05": { "Username" :"vipinm", "Queue" :"medium", "Jobname" :"nai_7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"08:47", "Exec_host" :["pc498","pc500"]}
+, "Elapsed_Time" :"09:01", "Exec_host" :["pc498","pc500"]}
 ,"520676.un05": { "Username" :"vipinm", "Queue" :"small", "Jobname" :"nabr_7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"18:51", "Exec_host" :["pc776","pc780"]}
+, "Elapsed_Time" :"19:07", "Exec_host" :["pc776","pc780"]}
 ,"520677.un05": { "Username" :"vipinm", "Queue" :"small", "Jobname" :"nacl_7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"18:00", "Exec_host" :["pc762","pc773"]}
+, "Elapsed_Time" :"18:16", "Exec_host" :["pc762","pc773"]}
 ,"520678.un05": { "Username" :"vipinm", "Queue" :"small", "Jobname" :"naf_7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520682.un05": { "Username" :"vipinm", "Queue" :"medium", "Jobname" :"nai1_7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"05:04", "Exec_host" :["pc623","pc624"]}
+, "Elapsed_Time" :"05:20", "Exec_host" :["pc623","pc624"]}
 ,"520683.un05": { "Username" :"vipinm", "Queue" :"medium", "Jobname" :"nabr1_7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"03:41", "Exec_host" :["pc589","pc597"]}
+, "Elapsed_Time" :"03:57", "Exec_host" :["pc589","pc597"]}
 ,"520684.un05": { "Username" :"vipinm", "Queue" :"hyperthr", "Jobname" :"nacl_7585", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"22:04", "Exec_host" :["pc844","pc853"]}
+, "Elapsed_Time" :"22:18", "Exec_host" :["pc844","pc853"]}
 ,"520685.un05": { "Username" :"vipinm", "Queue" :"large", "Jobname" :"naf1_7585", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520688.un05": { "Username" :"bchat", "Queue" :"small", "Jobname" :"S9M14", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"17:30", "Exec_host" :["pc809","pc815"]}
+, "Elapsed_Time" :"17:46", "Exec_host" :["pc809","pc815"]}
 ,"520690.un05": { "Username" :"bchat", "Queue" :"small", "Jobname" :"S9M14r2", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"16:00", "Exec_host" :["pc746","pc747"]}
+, "Elapsed_Time" :"16:15", "Exec_host" :["pc746","pc747"]}
 ,"520695.un05": { "Username" :"banshid", "Queue" :"small", "Jobname" :"6575", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"15:09", "Exec_host" :["pc768","pc759"]}
+, "Elapsed_Time" :"15:23", "Exec_host" :["pc768","pc759"]}
 ,"520702.un05": { "Username" :"debartha", "Queue" :"workq", "Jobname" :"ldc65", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"21:25", "Exec_host" :["pc839"]}
+, "Elapsed_Time" :"21:41", "Exec_host" :["pc839"]}
 ,"520713.un05": { "Username" :"ssvivek", "Queue" :"large", "Jobname" :"RT", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520714.un05": { "Username" :"ssvivek", "Queue" :"large", "Jobname" :"RT", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520745.un05": { "Username" :"prathvi", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"20:28", "Exec_host" :["pc004"]}
+, "Elapsed_Time" :"20:43", "Exec_host" :["pc004"]}
 ,"520751.un05": { "Username" :"ahilan", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"20:16", "Exec_host" :["pc840"]}
+, "Elapsed_Time" :"20:32", "Exec_host" :["pc840"]}
 ,"520779.un05": { "Username" :"obharti", "Queue" :"small", "Jobname" :"case_10k.d", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"10:58", "Exec_host" :["pc771","pc779"]}
+, "Elapsed_Time" :"11:12", "Exec_host" :["pc771","pc779"]}
 ,"520781.un05": { "Username" :"eshans", "Queue" :"small", "Jobname" :"Mt2C-Npp5", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"05:56", "Exec_host" :["pc831","pc837"]}
+, "Elapsed_Time" :"06:12", "Exec_host" :["pc831","pc837"]}
 ,"520782.un05": { "Username" :"eshans", "Queue" :"small", "Jobname" :"Mt2C-Npp10", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"05:36", "Exec_host" :["pc750","pc752"]}
+, "Elapsed_Time" :"05:52", "Exec_host" :["pc750","pc752"]}
 ,"520790.un05": { "Username" :"sougata", "Queue" :"large", "Jobname" :"TCl3c", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520798.un05": { "Username" :"abhisidd", "Queue" :"small", "Jobname" :"M11", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"01:02", "Exec_host" :["pc833","pc835"]}
+, "Elapsed_Time" :"01:16", "Exec_host" :["pc833","pc835"]}
 ,"520817.un05": { "Username" :"sabyasac", "Queue" :"medium", "Jobname" :"4hsg", "Nodes" :"4", "Task" :"80", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520818.un05": { "Username" :"sabyasac", "Queue" :"medium", "Jobname" :"4hss", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"Q"
@@ -1361,11 +1355,11 @@
 ,"520827.un05": { "Username" :"mrishi", "Queue" :"small", "Jobname" :"q_3_5mm.sh", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520843.un05": { "Username" :"bhavanap", "Queue" :"small", "Jobname" :"job5.401-5", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"07:25", "Exec_host" :["pc781"]}
+, "Elapsed_Time" :"07:39", "Exec_host" :["pc781"]}
 ,"520844.un05": { "Username" :"bhavanap", "Queue" :"workq", "Jobname" :"job5.501-6", "Nodes" :"1", "Task" :"6", "RequiredTime" :"24:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520849.un05": { "Username" :"debabra", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"14:46", "Exec_host" :["pc004"]}
+, "Elapsed_Time" :"15:01", "Exec_host" :["pc004"]}
 ,"520860.un05": { "Username" :"kritama", "Queue" :"small", "Jobname" :"6.0", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520861.un05": { "Username" :"rshreya", "Queue" :"medium", "Jobname" :"4.1", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
@@ -1377,7 +1371,7 @@
 ,"520865.un05": { "Username" :"dgautam", "Queue" :"medium", "Jobname" :"3.3", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520870.un05": { "Username" :"vijendra", "Queue" :"small", "Jobname" :"tsexo6Ochp", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"01:44", "Exec_host" :["pc774"]}
+, "Elapsed_Time" :"01:59", "Exec_host" :["pc774"]}
 ,"520876.un05": { "Username" :"abhigpt", "Queue" :"large", "Jobname" :"R3_Mar_L_G", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"511507.un05": { "Username" :"debartha", "Queue" :"large", "Jobname" :"Re10k", "Nodes" :"12", "Task" :"240", "RequiredTime" :"96:00", "State" :"H"
@@ -1391,7 +1385,7 @@
 ,"520887.un05": { "Username" :"mrishi", "Queue" :"medium", "Jobname" :"qM_2_5.sh", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520894.un05": { "Username" :"debartha", "Queue" :"workq", "Jobname" :"ldc129", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"09:50", "Exec_host" :["pc003"]}
+, "Elapsed_Time" :"10:04", "Exec_host" :["pc003"]}
 ,"520895.un05": { "Username" :"surajkm", "Queue" :"medium", "Jobname" :"run1MnoPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520896.un05": { "Username" :"surajkm", "Queue" :"large", "Jobname" :"run1_noPar", "Nodes" :"6", "Task" :"120", "RequiredTime" :"96:00", "State" :"H"
@@ -1401,31 +1395,31 @@
 ,"520899.un05": { "Username" :"dkartik", "Queue" :"small", "Jobname" :"abc", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520913.un05": { "Username" :"kumaran", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"03:03", "Exec_host" :["pc839"]}
+, "Elapsed_Time" :"03:19", "Exec_host" :["pc839"]}
 ,"520914.un05": { "Username" :"varman", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"03:00", "Exec_host" :["pc840"]}
+, "Elapsed_Time" :"03:16", "Exec_host" :["pc840"]}
 ,"520923.un05": { "Username" :"ahilan", "Queue" :"medium", "Jobname" :"5D_45D", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"01:20", "Exec_host" :["pc501","pc559"]}
+, "Elapsed_Time" :"01:34", "Exec_host" :["pc501","pc559"]}
 ,"520924.un05": { "Username" :"vijendra", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"02:07", "Exec_host" :["pc839"]}
+, "Elapsed_Time" :"02:22", "Exec_host" :["pc839"]}
 ,"520931.un05": { "Username" :"surender", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"01:44", "Exec_host" :["pc003"]}
+, "Elapsed_Time" :"01:58", "Exec_host" :["pc003"]}
 ,"520932.un05": { "Username" :"vthakkur", "Queue" :"mini", "Jobname" :"elec_test", "Nodes" :"2", "Task" :"40", "RequiredTime" :"02:00", "State" :"R"
-, "Elapsed_Time" :"01:42", "Exec_host" :["pc881","pc878"]}
+, "Elapsed_Time" :"01:57", "Exec_host" :["pc881","pc878"]}
 ,"520933.un05": { "Username" :"vthakkur", "Queue" :"mini", "Jobname" :"mech_test", "Nodes" :"2", "Task" :"40", "RequiredTime" :"02:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520935.un05": { "Username" :"cabhi", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"01:36", "Exec_host" :["pc003"]}
+, "Elapsed_Time" :"01:51", "Exec_host" :["pc003"]}
 ,"520938.un05": { "Username" :"pravink", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"01:08", "Exec_host" :["pc840"]}
+, "Elapsed_Time" :"01:24", "Exec_host" :["pc840"]}
 ,"520939.un05": { "Username" :"prabodh", "Queue" :"small", "Jobname" :"A_TB1_1", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"R"
-, "Elapsed_Time" :"00:01", "Exec_host" :["pc828"]}
+, "Elapsed_Time" :"00:16", "Exec_host" :["pc828"]}
 ,"520940.un05": { "Username" :"kanya", "Queue" :"small", "Jobname" :"2gdmcl", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520942.un05": { "Username" :"kanya", "Queue" :"medium", "Jobname" :"4gdmcl", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"00:42", "Exec_host" :["pc598","pc649"]}
+, "Elapsed_Time" :"00:56", "Exec_host" :["pc598","pc649"]}
 ,"520943.un05": { "Username" :"kanya", "Queue" :"medium", "Jobname" :"2tmacl", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"R"
-, "Elapsed_Time" :"00:38", "Exec_host" :["pc735","pc620"]}
+, "Elapsed_Time" :"00:52", "Exec_host" :["pc735","pc620"]}
 ,"520944.un05": { "Username" :"kanya", "Queue" :"medium", "Jobname" :"4tmacl", "Nodes" :"2", "Task" :"40", "RequiredTime" :"96:00", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520945.un05": { "Username" :"santanup", "Queue" :"small", "Jobname" :"naf1_6575", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
@@ -1445,11 +1439,21 @@
 ,"520958.un05": { "Username" :"arnesh", "Queue" :"large", "Jobname" :"run12_2e5", "Nodes" :"10", "Task" :"200", "RequiredTime" :"96:00", "State" :"H"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520960.un05": { "Username" :"amahajan", "Queue" :"mini", "Jobname" :"rx_-.070", "Nodes" :"2", "Task" :"40", "RequiredTime" :"02:00", "State" :"R"
-, "Elapsed_Time" :"00:13", "Exec_host" :["pc857","pc858"]}
+, "Elapsed_Time" :"00:28", "Exec_host" :["pc857","pc858"]}
 ,"520962.un05": { "Username" :"vijendra", "Queue" :"small", "Jobname" :"tsend6Ochp", "Nodes" :"1", "Task" :"20", "RequiredTime" :"120:0", "State" :"Q"
 , "Elapsed_Time" :"--", "Exec_host" :[]}
 ,"520963.un05": { "Username" :"naskar", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
-, "Elapsed_Time" :"00:07", "Exec_host" :["pc004"]}
+, "Elapsed_Time" :"00:22", "Exec_host" :["pc004"]}
 ,"520964.un05": { "Username" :"vijendra", "Queue" :"mini", "Jobname" :"endo6Sechp", "Nodes" :"1", "Task" :"20", "RequiredTime" :"02:00", "State" :"R"
-, "Elapsed_Time" :"00:05", "Exec_host" :["pc879"]}
+, "Elapsed_Time" :"00:20", "Exec_host" :["pc879"]}
+,"520966.un05": { "Username" :"ddebasis", "Queue" :"small", "Jobname" :"3Ptsmall.3", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
+, "Elapsed_Time" :"--", "Exec_host" :[]}
+,"520967.un05": { "Username" :"vijendra", "Queue" :"mini", "Jobname" :"exo6Sechpt", "Nodes" :"1", "Task" :"20", "RequiredTime" :"02:00", "State" :"Q"
+, "Elapsed_Time" :"--", "Exec_host" :[]}
+,"520968.un05": { "Username" :"naskar", "Queue" :"small", "Jobname" :"RBC_test`", "Nodes" :"2", "Task" :"40", "RequiredTime" :"120:0", "State" :"Q"
+, "Elapsed_Time" :"--", "Exec_host" :[]}
+,"520970.un05": { "Username" :"bbhatia", "Queue" :"mini", "Jobname" :"FlT25", "Nodes" :"2", "Task" :"40", "RequiredTime" :"02:00", "State" :"R"
+, "Elapsed_Time" :"00:05", "Exec_host" :["pc880","pc884"]}
+,"520971.un05": { "Username" :"harshi", "Queue" :"workq", "Jobname" :"STDIN", "Nodes" :"1", "Task" :"1", "RequiredTime" :"24:00", "State" :"R"
+, "Elapsed_Time" :"00:03", "Exec_host" :["pc003"]}
 }
