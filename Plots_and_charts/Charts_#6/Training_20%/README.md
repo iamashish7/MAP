@@ -3,3 +3,4 @@ Comparison of actual vs predicted values for all datasets for all 4 predictors. 
 
 Comparison is for first 100 jobs of traning set.
 
+Train and test split is 20-80.
