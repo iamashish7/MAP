@@ -33,6 +33,11 @@
             border-radius: 8px;			
             pointer-events: none;			
         }
+	.tooltip2{
+            position: absolute;			
+            text-align: left;
+            font-size:12px;			  
+        }
         
         .overlay {
             fill: none;
@@ -133,6 +138,7 @@
                 <option value="5">Execution Time vs #Jobs</option>
                 <option value="6">Variation of wait-times by day</option>
                 <option value="7">Wait Time vs #Jobs</option>
+                <option value="8">Variation of wait-times by requirement</option>
             </select>&nbsp;&nbsp;
             <button type='button' id="date-submit-btn" class="btn btn-primary">Submit</button>
         </form>
@@ -140,7 +146,7 @@
         </div>
     </div>
     <br>
-    <div class="justify-content-center">
+    <div id="chart_container" class="justify-content-center">
         <svg id="chart1" class="main_chart"></svg>
     </div>
 </body>

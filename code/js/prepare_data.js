@@ -8,6 +8,7 @@ function myDrawChart(d) {
     var data = d.data;
     var ID = Number.parseInt(d.ID);
     var arr = [];
+    var arr2 = [];
     var minn = 100000000, maxx = 0, count2 = 0;
     var set_date = new Set();
     var set_wtime = new Set();
@@ -59,6 +60,18 @@ function myDrawChart(d) {
             arr.push({
                 id: +i,
                 value: +data[i] //convert string to number  
+            });
+        } else if (ID === 8) {
+            var obj = JSON.parse(i);
+            arr.push({
+                rtime: obj.rtime,
+                proc: obj.proc,
+                val: +data[i][0]
+            });
+            arr2.push({
+                rtime: obj.rtime,
+                proc: obj.proc,
+                val: +data[i][1]
             });
         }
     }
@@ -152,7 +165,27 @@ function myDrawChart(d) {
         };
         histogramGraph(arr, "chart1",cfg);
     } else if (ID === 8) {
-        
+        console.log("Here2");
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.70,
+            margin: { top: 30, right: 20, bottom: screen.availHeight*0.42, left: 70 },
+            title:"Variation of wait-times by requirement",
+            labelx:"Required wall-time(Hours)",
+            labely:"Required cpus",
+            subtitle:"Average wait-time",
+        };
+        heatmap2(arr, "chart1",cfg);
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.70,
+            margin: { top: screen.availHeight*0.4, right: 20, bottom: 50, left: 70 },
+            title:"Variation of wait-times by requirement",
+            labelx:"Required wall-time(Hours)",
+            labely:"Required cpus",
+            subtitle:"Total number of jobs",
+        };
+        heatmap2(arr2, "chart1",cfg);
     }
 }
 

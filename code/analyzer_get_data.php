@@ -161,6 +161,32 @@ switch ($chart) {
         unset($json_array['']);
         $jarray = json_encode($json_array);
         break;
+    case "8":
+        $rtime_buckets = [[0,1],[1,2],[2,4],[4,7],[7,10],[10,13],[13,15],[15,17],[17,20],[20,24],[24,27],[27,30],[30,33],[33,36],[36,40],[40,44],[44,50],[50,57],[57,65],[65,80],[80,90],[90,100],[100,117],[117,121],[121,152],[152,1000]];
+        $proc_buckets = [[0,1],[2,4],[4,8],[8,16],[16,32],[32,64],[64,128],[128,256],[256,512],[512,1024],[1024,2048]];
+        for ($i = 0; $i < count($rtime_buckets); $i++) {
+            for ($j = 0; $j < count($proc_buckets); $j++) {
+                $sql = "select avg(wtime) as wtime from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." and status='completed'";
+                $sql2 = "select count(*) as jobs from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." and status='completed'";
+                $result = $conn->query($sql);
+                $result2 = $conn->query($sql2);
+                $wtime = 0;
+                $jobs = 0;
+                while ($row = $result->fetch_assoc()) {
+                    $wtime = $row['wtime']; 
+                }
+                while ($row = $result2->fetch_assoc()) {
+                    $jobs = $row['jobs']; 
+                }
+                if($jobs){
+                    $index_merge['rtime'] = [$rtime_buckets[$i][0],$rtime_buckets[$i][1]];
+                    $index_merge['proc'] = [$proc_buckets[$j][0],$proc_buckets[$j][1]];
+                    $json_array[json_encode($index_merge)] = [$wtime,$jobs];
+                }
+                
+            }
+        }
+        break;
     default:
         //echo "Your favorite color is neither red, blue, nor green!";
 }

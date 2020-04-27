@@ -503,3 +503,256 @@ function HorizontalBarGraph(data, ID, cfg) {
     svg.append("g")
         .call(d3.axisLeft(y));
 }
+
+
+function heatmap2(data, ID, cfg){
+    console.log(data);
+    var svgWidth = cfg.width, svgHeight = cfg.height;
+    var margin = cfg.margin;
+    var width = svgWidth - margin.left - margin.right;
+    var height = (svgHeight - margin.top - margin.bottom - 50);
+
+    var rtime_groups = d3.map(data, function(d){return d.rtime.join('-');}).keys();
+    var proc_groups = d3.map(data, function(d){return d.proc.join('-');}).keys();
+    
+    var svg = d3.select("#" + ID).attr("width", svgWidth).attr("height", svgHeight);
+    var defs = svg.append("defs");
+
+    //Rainbow Gradient
+    var coloursRainbow = ["#2c7bb6", "#00a6ca", "#00ccbc", "#90eb9d", "#ffff8c", "#f9d057", "#f29e2e", "#e76818", "#d7191c"];
+    var colourRangeRainbow = d3.range(0, 1, 1.0 / (coloursRainbow.length - 1));
+    colourRangeRainbow.push(1);
+
+    //Create color gradient
+    var colorScaleRainbow = d3.scaleLinear()
+        .domain(colourRangeRainbow)
+        .range(coloursRainbow)
+        .interpolate(d3.interpolateHcl);
+
+    var colorInterpolateRainbow = d3.scaleLinear().range([0, 1]);
+    colorInterpolateRainbow.domain(d3.extent(data, function (d) {
+        return d.val
+    }));
+
+    defs.append("linearGradient")
+        .attr("id", "gradient-rainbow-colors")
+        .attr("x1", "0%").attr("y1", "0%")
+        .attr("x2", "100%").attr("y2", "0%")
+        .selectAll("stop")
+        .data(coloursRainbow)
+        .enter().append("stop")
+        .attr("offset", function (d, i) { return i / (coloursRainbow.length - 1); })
+        .attr("stop-color", function (d) { return d; });
+
+    svg.append("text")
+        .attr("x", (svgWidth / 2))
+        .attr("y", 20)
+        .attr("text-anchor", "middle")
+        .style("font-size", "18px")
+        .text(cfg.title);
+    // Add subtitle to graph
+    svg.append("text")
+        .attr("x", margin.left)
+        .attr("y", margin.top-10)
+        .attr("text-anchor", "left")
+        .style("font-size", "16px")
+        .style("fill", "grey")
+        .style("max-width", 400)
+        .text(cfg.subtitle);
+    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    // Build X scales and axis:
+    var x = d3.scaleBand()
+            .range([ 0, width ])
+            .domain(rtime_groups)
+            .padding(0.05);
+
+    // Build Y scales and axis:
+    var y = d3.scaleBand()
+            .range([ height, 0 ])
+            .domain(proc_groups)
+            .padding(0.05);
+    
+    // create a tooltip
+    var tooltip = d3.select("#chart_container")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip2")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "2px")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+    
+        // Three function that change the tooltip when user hover / move / leave a cell
+    var mouseover = function(d) {
+        tooltip
+            .style("opacity", 1)
+        d3.select(this)
+            .style("stroke", "black")
+            .style("opacity", 1)
+    }
+    function str_pad_left(string,pad,length) {
+        return (new Array(length+1).join(pad)+string).slice(-length);
+    }
+    function str_pad_hours(string) {
+        if(string>10)
+            return string;
+        else if(string<10 && string>0)
+            return '0'+string;
+        else
+            return '00';
+    }    
+    function getTime(time){
+        var hours = Math.floor(time / 3600);
+        time = time - hours * 3600;
+        var minutes = Math.floor(time / 60);
+        var seconds = time - minutes * 60;
+
+        return str_pad_hours(hours)+':'+str_pad_left(minutes,'0',2)+':'+str_pad_left(seconds,'0',2);
+    }
+    var mousemove = function(d) {
+        var x = d3.event.pageX - document.getElementById('chart_container').getBoundingClientRect().x + 10;
+        var y = d3.event.pageY - document.getElementById('chart_container').getBoundingClientRect().y + 10;
+        var message = '';
+        console.log(margin.top,margin.bottom);
+        if(margin.top > margin.bottom)
+            message = "<b>Number of Jobs: </b>" + d.val+"<br>"+"<b>Hours Requested: </b>"+d.rtime.join('-')+"<br>"+"<b>CPUs Requested: </b>"+d.proc.join('-');
+        else
+            message = "<b>Avg wtime: </b>" + getTime(d.val)+"<br>"+"<b>Hours Requested: </b>"+d.rtime.join('-')+"<br>"+"<b>CPUs Requested: </b>"+d.proc.join('-');
+        tooltip
+            .html(message)
+            .style("left", (x) + "px")
+            .style("top", (y+70) + "px")
+    }
+    var mouseleave = function(d) {
+        tooltip
+            .style("opacity", 0)
+        d3.select(this)
+            .style("stroke", "none")
+            .style("opacity", 0.8)
+    }
+    
+    // add the squares
+    g.selectAll()
+        .data(data, function(d) {return d.rtime+':'+d.proc;})
+        .enter()
+        .append("rect")
+            .attr("x", function(d) { return x(d.rtime.join('-')) })
+            .attr("y", function(d) { return y(d.proc.join('-')) })
+            .attr("rx", 4)
+            .attr("ry", 4)
+            .attr("width", x.bandwidth() )
+            .attr("height", y.bandwidth() )
+            .style("fill", function(d) { return colorScaleRainbow(colorInterpolateRainbow(d.val));} )
+            .style("stroke-width", 4)
+            .style("stroke", "none")
+            .style("opacity", 0.8)
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave)
+
+    rtime_groups[rtime_groups.length-1] = '>'+rtime_groups[rtime_groups.length-1].split('-')[0];
+    proc_groups[proc_groups.length-1] = '>'+proc_groups[proc_groups.length-1].split('-')[0];
+    //Doing axis again
+    // Build X scales and axis:
+    var x = d3.scaleBand()
+            .range([ 0, width ])
+            .domain(rtime_groups)
+            .padding(0.05);
+    g.append("g")
+        .style("font-size", 10)
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x).tickSize(1))
+        // .select(".domain").remove()
+
+    // Build Y scales and axis:
+    var y = d3.scaleBand()
+            .range([ height, 0 ])
+            .domain(proc_groups)
+            .padding(0.05);
+    g.append("g")
+        .style("font-size", 10)
+        .call(d3.axisLeft(y).tickSize(1))
+        // .select(".domain").remove()
+
+    //text label for x axis
+    g.append("text").attr("transform", "translate(" + (svgWidth / 2) + " ," + (height + 40) + ")").style("text-anchor", "middle").text(cfg.labelx);
+
+    //text label for y axis
+    g.append("text").attr("transform", "rotate(-90)").attr("y", 0 - margin.left).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text(cfg.labely);
+
+
+    //Plotting legends (https://gist.github.com/nbremer/5cd07f2cb4ad202a9facfbd5d2bc842e)
+    var legendWidth = width * 0.6,
+        legendHeight = 10;
+
+    //Color Legend container
+    var legendsvg = g.append("g")
+        .attr("class", "legendWrapper")
+        .attr("transform", "translate(" + (width / 2 - 10) + "," + (height + 50) + ")");
+
+    //Draw the Rectangle
+    legendsvg.append("rect")
+        .attr("class", "legendRect")
+        .attr("x", -legendWidth / 2)
+        .attr("y", 10)
+        //.attr("rx", legendHeight/2)
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
+        .style("fill", "url(#gradient-rainbow-colors)");
+
+    //Set scale for x-axis
+    var xScale = d3.scaleLinear()
+        .range([0, legendWidth])
+        .domain(d3.extent(data, function (d) {
+            if(margin.top > margin.bottom)
+                return d.val;
+            else
+                return Math.ceil(d.val/3600);
+        })).nice();
+
+    //Define x-axis
+    var xAxis = d3.axisBottom(xScale).ticks(10);
+
+    //Set up X axis
+    legendsvg.append("g")
+        .attr("class", "axis")  //Assign "axis" class
+        .attr("transform", "translate(" + (-legendWidth / 2) + "," + (10 + legendHeight) + ")")
+        .call(xAxis);
+
+    // //Plotting legends (https://gist.github.com/nbremer/5cd07f2cb4ad202a9facfbd5d2bc842e)
+    // var legendWidth = 10,legendHeight = height;
+
+    // //Color Legend container
+    // var legendsvg = g.append("g")
+    //     .attr("class", "legendWrapper")
+    //     .attr("transform", "translate(" + width*0.7 + ",0)");
+
+    // //Draw the Rectangle
+    // legendsvg.append("rect")
+    //     .attr("class", "legendRect")
+    //     .attr("x", width*0.7)
+    //     .attr("y", 10)
+    //     //.attr("rx", legendHeight/2)
+    //     .attr("width", legendWidth)
+    //     .attr("height", legendHeight)
+    //     .style("fill", "url(#gradient-rainbow-colors)");
+
+    // //Set scale for x-axis
+    // var xScale = d3.scaleLinear()
+    //     .range([0, legendHeight])
+    //     .domain(d3.extent(data, function (d) {
+    //         return d.val;
+    //     })).nice();
+
+    // //Define x-axis
+    // var yAxis = d3.axisLeft(xScale).ticks(10);
+
+    // //Set up X axis
+    // legendsvg.append("g")
+    //     .attr("class", "axis")  //Assign "axis" class
+    //     .attr("transform", "translate(" + width*0.7 + "," + (10 + legendWidth) + ")")
+    //     .call(yAxis);
+
+}
