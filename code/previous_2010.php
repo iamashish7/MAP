@@ -16,12 +16,13 @@
 
     <style>
         .main_chart{
-            //height: 80%;
-            //width: 80%;
+            /* height: 80%;
+            width: 80%;
             margin-left: 10%;
-            //border-style: solid;
+            border-style: solid; */
+            text-align:center;
         }
-        .tooltip {	
+        /* .tooltip {	
             position: absolute;			
             text-align: center;			
             width: 60px;					
@@ -32,8 +33,8 @@
             border: 0px;		
             border-radius: 8px;			
             pointer-events: none;			
-        }
-	.tooltip2{
+        } */
+	    .tooltip2{
             position: absolute;			
             text-align: left;
             font-size:12px;			  
@@ -81,6 +82,35 @@
             font-size: 15px;
         }
          */
+        .hide{
+            display: none;
+        }
+        .center_text{
+            margin: 0 auto;
+            text-align: center;
+            /* transform: translate(-50%, -50%); */
+        }
+        .loader {
+            margin: 0 auto;
+            transform: translate(-50%, -50%);
+            border: 6px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 6px  solid black;
+            border-bottom: 6px  solid black;
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
     </style>
 </head>
 <body>
@@ -131,6 +161,7 @@
             <input type="text" class="form-control" id="to" placeholder="Enter end date" name="to">&nbsp;&nbsp;
             <label for="chart_type">Type : </label>&nbsp;
             <select id="chart" name="chart">
+                <optgroup label="Solo Charts">
                 <option value="1">Jobs Executing per day</option>
                 <option value="2">Jobs per month</option>
                 <option value="3">Job count per job status</option>
@@ -138,7 +169,11 @@
                 <option value="5">Execution Time vs #Jobs</option>
                 <option value="6">Variation of wait-times by day</option>
                 <option value="7">Wait Time vs #Jobs</option>
+                <option value="10">Job status per queue</option>
+                <optgroup label="Multiple Correlating Graphs">
                 <option value="8">Variation of wait-times by requirement</option>
+                <option value="9">Running, Completed and Failed Jobs</option>
+                <option value="11">Global and per queue job count per status</option>
             </select>&nbsp;&nbsp;
             <button type='button' id="date-submit-btn" class="btn btn-primary">Submit</button>
         </form>
@@ -146,8 +181,10 @@
         </div>
     </div>
     <br>
-    <div id="chart_container" class="justify-content-center">
+    <div id="chart_container" class="justify-content-center"  style="text-align:center;">
         <svg id="chart1" class="main_chart"></svg>
+        <div id='loader_circle' class="loader hide"></div>
+        <p id='loader_text' class="center_text hide"> Loading... </p>
     </div>
 </body>
 <script src="js/d3.v4.min.js"></script>
@@ -157,6 +194,9 @@
     $(document).ready(function () {
         init_calender(2010,2020);
     	$("#date-submit-btn").click(function(event){
+            document.getElementById("loader_circle").classList.remove('hide');
+            document.getElementById("loader_text").classList.remove('hide');
+            document.getElementById("chart1").classList.add('hide');
             var chartId = $("#chart").val();
             var toDate = $("#to").val().split("/").reverse().join("-");
             var fromDate = $("#from").val().split("/").reverse().join("-");
@@ -167,6 +207,9 @@
                 method:"POST",
                 data:{to:toDate,from:fromDate,chart:chartId,db:"SavedLogs",table:"HPC2010"},
                 success:function(returnData){
+                    document.getElementById("loader_circle").classList.add('hide');
+                    document.getElementById("loader_text").classList.add('hide');
+                    document.getElementById("chart1").classList.remove('hide');
                     myDrawChart(returnData);
                 },
                 error:function(err){
