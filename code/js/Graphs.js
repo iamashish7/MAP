@@ -15,7 +15,6 @@ function getFormedDate(date) {
 
 function BarGraph(data,ID,cfg)
 {
-    console.log(data);
     var svgWidth = cfg.width , svgHeight = cfg.height;
     var margin = cfg.margin;
     var width = svgWidth - margin.left - margin.right;
@@ -30,15 +29,16 @@ function BarGraph(data,ID,cfg)
     // moves the 'group' element to the top left margin
 
     var svg = d3.select("#" + ID).append('svg').attr("width", svgWidth).attr("height", svgHeight);
-    svg.append("text")
-        .attr("x", (svgWidth / 2))
-        .attr("y", margin.top-10)
+    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    g.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0)
         .attr("text-anchor", "middle")
         .style("font-size", "18px")
         .text(cfg.title);
 
-    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+    
     // Scale the range of the data in the domains
     x.domain(data.map(function (d) {
         return d.name;
@@ -71,7 +71,7 @@ function BarGraph(data,ID,cfg)
     g.append("g").attr("class", "text2").call(d3.axisLeft(y));
 
     //text label for x axis
-    g.append("text").attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight - margin.top - 20) + ")").style("text-anchor", "middle").text(cfg.labelx);
+    g.append("text").attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom - 10) + ")").style("text-anchor", "middle").text(cfg.labelx);
 
     //text label for y axis
     g.append("text").attr("transform", "rotate(-90)").attr("y", 0 - margin.left).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text(cfg.labely);
@@ -79,11 +79,10 @@ function BarGraph(data,ID,cfg)
 
 function LineChart(data,ID,cfg)
 {
-    console.log(dates,months,years,ID);
     var svgWidth = cfg.width, svgHeight = cfg.height;
     var margin = cfg.margin;
     if (cfg.months <= 3) {
-        margin.bottom = 130;
+        margin.bottom = margin.bottom + 40;
     }
     var width = svgWidth - margin.left - margin.right;
     var height = svgHeight - margin.top - margin.bottom;
@@ -98,12 +97,10 @@ function LineChart(data,ID,cfg)
     var x = d3.scaleTime().rangeRound([0, width]);
     var y;
     if(cfg.noLines==2)
-    {
-        console.log("LOGScale");
         y = d3.scaleLog().base(10).range([height, 0]).nice();
-    }
     else
         y = d3.scaleLinear().rangeRound([height, 0]);
+    
     x.domain(d3.extent(data, function (d) {
         return d.name;
     })).nice();
@@ -162,9 +159,16 @@ function LineChart(data,ID,cfg)
         .attr("d", lines[i]);
     }
 
+    var placeylable = 0;
+    if(cfg.months<=3){
+        placeylable = height + 80;
+    } else {
+        placeylable =  height + 40;
+    }
+
     //text label for x axis
     g.append("text")
-        .attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight - margin.top - 20) + ")")
+        .attr("transform", "translate(" + (width / 2) + " ," + (placeylable) + ")")
         .attr("dy", "0.2em")
         .style("text-anchor", "middle")
         .text(cfg.labelx);
@@ -755,4 +759,112 @@ function heatmap2(data, ID, cfg){
     //     .attr("transform", "translate(" + width*0.7 + "," + (10 + legendWidth) + ")")
     //     .call(yAxis);
 
+}
+
+
+function StackBarChart(data,ID,cfg){
+    var svgWidth = cfg.width, svgHeight = cfg.height;
+    var margin = cfg.margin;
+    var width = svgWidth - margin.left - margin.right;
+    var height = (svgHeight - margin.top - margin.bottom);
+    
+    var svg = d3.select("#" + ID).attr("width", svgWidth).attr("height", svgHeight);
+    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    g.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0)
+        .attr("text-anchor", "middle")
+        .style("font-size", "18px")
+        .text(cfg.title);
+    
+    var keys = ['Completed','Cancelled','Failed'];
+    // Set x, y and colors
+    var x = d3.scaleBand().range([0, width]).padding(0.5);
+    x.domain(data.map(function (d) {
+        return d.id;
+    }));
+    
+    var y = d3.scaleLinear().rangeRound([height, 0]);
+    y.domain([0, 1.1*d3.max(data, function (d) {
+        return d.completed + d.failed + d.cancelled;
+    })]);
+
+    // set the colors
+    var z = d3.scaleOrdinal().range(["#98FB98", "#ffba21","#FF6347"]);
+    
+    var stackedData = d3.stack().keys(['completed','cancelled','failed',])(data);
+    
+    // Prep the tooltip bits, initial display is hidden
+    var tooltip = svg.append("g")
+        .attr("class", "tooltip2");
+        // .style("display", "none");
+        
+    tooltip.append("rect")
+        .attr("width", 60)
+        .attr("height", 20)
+        .attr("fill", "white")
+        .style("opacity", 0.5);
+
+    tooltip.append("text")
+        .attr("x", 30)
+        .attr("dy", "1.2em")
+        .style("text-anchor", "middle")
+        .attr("font-size", "15px")
+        .attr("font-weight", "bold");
+
+    g.append("g")
+        .selectAll("g")
+        .data(stackedData)
+        .enter().append("g")
+        .attr("fill", function(d) { return z(d.key); })
+        .selectAll("rect")
+        .data(function(d) { return d; })
+        .enter().append("rect")
+            .attr("x", function(d) { return x(d.data.id); })
+            .attr("y", function(d) { return y(d[1]); })
+            .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+            .attr("width",x.bandwidth())
+        .on("mouseover", function() { tooltip.style("display", null); })
+        .on("mouseout", function() { tooltip.style("display", "none"); })
+        .on("mousemove", function(d) {
+            var xPosition = d3.mouse(this)[0];
+            var yPosition = d3.mouse(this)[1]+40;
+            tooltip.attr("transform", "translate(" + (margin.left + xPosition) + "," + yPosition + ")");
+            tooltip.select("text").text(d[1]-d[0]);
+        });    
+
+    // add the x Axis
+    g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x)).selectAll("text").style("text-anchor", "end").attr("dx", "-.8em").attr("dy", ".15em").attr("transform", "rotate(-65)");
+
+    // add the y Axis
+    g.append("g").attr("class", "text2").call(d3.axisLeft(y));
+
+    //text label for x axis
+    g.append("text").attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom - 10) + ")").style("text-anchor", "middle").text(cfg.labelx);
+
+    //text label for y axis
+    g.append("text").attr("transform", "rotate(-90)").attr("y", -80).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text(cfg.labely);
+    
+    var legend = g.append("g")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 13)
+        .attr("text-anchor", "end")
+        .selectAll("g")
+        .data(keys.slice())
+        .enter().append("g")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append("rect")
+      .attr("x", width - 25)
+      .attr("width", 25)
+      .attr("height", 25)
+      .attr("fill", z);
+
+    legend.append("text")
+      .attr("x", width - 30)
+      .attr("y", 9.5)
+      .attr("dy", "0.32em")
+      .text(function(d) { return d; });
+    
 }
