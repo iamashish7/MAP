@@ -13,6 +13,22 @@ function getFormedDate(date) {
     return date;
 }
 
+function CompareHeatmapGroups(x,y){
+    x = x.split('-');
+    y = y.split('-');
+    if (parseInt(x[0]) < parseInt(y[0]))
+        return -1;
+    else if (parseInt(x[0]) > parseInt(y[0]))
+        return 1;
+    else if (parseInt(x[0]) == parseInt(y[0]))
+        if (parseInt(x[1]) < parseInt(y[1]))
+            return -1;
+        else if (parseInt(x[1]) > parseInt(y[1]))
+            return 1;
+        else if (parseInt(x[1]) == parseInt(y[1]))
+            return 0;
+}
+
 function BarGraph(data,ID,cfg)
 {
     var svgWidth = cfg.width , svgHeight = cfg.height;
@@ -35,7 +51,8 @@ function BarGraph(data,ID,cfg)
         .attr("x", (width / 2))
         .attr("y", 0)
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
+        .attr("class","graph-title")
+        // .style("font-size", "18px")
         .text(cfg.title);
 
     
@@ -65,20 +82,21 @@ function BarGraph(data,ID,cfg)
         .attr("fill", "steelblue");
 
     // add the x Axis
-    g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x));
+    g.append("g").attr("class", "axis-ticks").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x));
 
     // add the y Axis
-    g.append("g").attr("class", "text2").call(d3.axisLeft(y));
+    g.append("g").attr("class", "axis-ticks").call(d3.axisLeft(y));
 
     //text label for x axis
-    g.append("text").attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom - 10) + ")").style("text-anchor", "middle").text(cfg.labelx);
+    g.append("text").attr("class","axis-labels").attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom - 10) + ")").style("text-anchor", "middle").text(cfg.labelx);
 
     //text label for y axis
-    g.append("text").attr("transform", "rotate(-90)").attr("y", 0 - margin.left).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text(cfg.labely);
+    g.append("text").attr("class","axis-labels").attr("transform", "rotate(-90)").attr("y", 0 - margin.left).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text(cfg.labely);
 }
 
 function LineChart(data,ID,cfg)
 {
+    console.log(dates,months,years);
     var svgWidth = cfg.width, svgHeight = cfg.height;
     var margin = cfg.margin;
     if (cfg.months <= 3) {
@@ -86,21 +104,24 @@ function LineChart(data,ID,cfg)
     }
     var width = svgWidth - margin.left - margin.right;
     var height = svgHeight - margin.top - margin.bottom;
+    console.log(cfg.title,width,svgHeight,margin.top,margin.bottom,height);
     var svg = d3.select("#" + ID).attr("width", svgWidth).attr("height", svgHeight);
     svg.append("text")
         .attr("x", (svgWidth / 2))
         .attr("y", margin.top - 10)
+        .attr("class","graph-title")
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
+        // .style("font-size", "18px")
         .text(cfg.title);
     var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     var x = d3.scaleTime().rangeRound([0, width]);
     var y;
-    if(cfg.noLines==2)
+    if(cfg.noLines === 2){
         y = d3.scaleLog().base(10).range([height, 0]).nice();
-    else
+    }
+    else {
         y = d3.scaleLinear().rangeRound([height, 0]);
-    
+    }
     x.domain(d3.extent(data, function (d) {
         return d.name;
     })).nice();
@@ -114,10 +135,9 @@ function LineChart(data,ID,cfg)
             value_arr = value_arr.concat(temp);
         } 
     }
-    Datarange = d3.extent(value_arr, function (d) {
+    y.domain(d3.extent(value_arr, function (d) {
         return d
-    });
-    y.domain([Datarange[0]*0.9,Datarange[1]*1.1]);
+    }));
     var lines = []
     if (cfg.noLines == 1) {
         var line = d3.line().x(function (d) {
@@ -158,14 +178,12 @@ function LineChart(data,ID,cfg)
         .attr("stroke-width", 1.5)
         .attr("d", lines[i]);
     }
-
     var placeylable = 0;
     if(cfg.months<=3){
         placeylable = height + 80;
     } else {
         placeylable =  height + 40;
     }
-
     //text label for x axis
     g.append("text")
         .attr("transform", "translate(" + (width / 2) + " ," + (placeylable) + ")")
@@ -264,7 +282,7 @@ function LineChart(data,ID,cfg)
         else {
             for (i = 0; i < cfg.noLines; i++) {
                 focus_arr[i].attr("transform", "translate(" + x(d.name) + "," + y(d.value[i]) + ")");
-                focus_arr[i].select(".tooltip-date").text(getFormedDate(d.name));
+                focus_arr[i].select(".tooltip-date").text(d3.timeFormat("%b'%y")(d.name));
                 focus_arr[i].select(".tooltip-likes").text(d.value[i]);
             } 
         }
@@ -283,8 +301,9 @@ function histogramGraph(data,ID,cfg)
     svg.append("text")
         .attr("x", (svgWidth / 2))
         .attr("y", 20)
+        .attr("class","graph-title")
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
+        // .style("font-size", "18px")
         .text(cfg.title);
 
     var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -341,8 +360,9 @@ function heatmap(data,ID,cfg){
     svg.append("text")
         .attr("x", (svgWidth / 2))
         .attr("y", 20)
+        .attr("class","graph-title")
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
+        // .style("font-size", "18px")
         .text(cfg.title);
 
     var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -464,16 +484,16 @@ function HorizontalBarGraph(data, ID, cfg) {
     var svg = d3.select("#" + ID).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-        .attr("transform", 
-            "translate(" + margin.left + "," + margin.top + ")");
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     
     // set title
     svg.append("text")
-        .attr("x", (svgWidth / 2))             
-        .attr("y", (margin.top / 4))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
+        .attr("x", (width / 2.1))
+        .attr("y", 0)
+        .attr("text-anchor", "middle")
+        .attr("class","graph-title")
+        // .style("font-size", "1vw")
         .text(cfg.title);
 
     // Scale the range of the data in the domains
@@ -495,7 +515,7 @@ function HorizontalBarGraph(data, ID, cfg) {
         .data(data)
         .enter()
         .append('text')
-        .attr('class', 'label')
+        .attr('class', 'label axis-labels')
         .attr('alignment-baseline', 'middle')
         .attr('x', function(d) { return x(d.nodes) + 5;})
         .attr('y', function(d) { return y(d.user) + y.bandwidth()/1.5; })
@@ -505,12 +525,11 @@ function HorizontalBarGraph(data, ID, cfg) {
     
     // add the y Axis
     svg.append("g")
+        .attr("class","axis-ticks")
         .call(d3.axisLeft(y));
 }
 
-
 function heatmap2(data, ID, cfg){
-    console.log(data);
     var svgWidth = cfg.width, svgHeight = cfg.height;
     var margin = cfg.margin;
     var width = svgWidth - margin.left - margin.right;
@@ -518,6 +537,8 @@ function heatmap2(data, ID, cfg){
 
     var rtime_groups = d3.map(data, function(d){return d.rtime.join('-');}).keys();
     var proc_groups = d3.map(data, function(d){return d.proc.join('-');}).keys();
+    rtime_groups.sort(CompareHeatmapGroups);
+    proc_groups.sort(CompareHeatmapGroups);
     
     var svg = d3.select("#" + ID).attr("width", svgWidth).attr("height", svgHeight);
     var defs = svg.append("defs");
@@ -552,7 +573,8 @@ function heatmap2(data, ID, cfg){
         .attr("x", (svgWidth / 2))
         .attr("y", 20)
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
+        // .style("font-size", "18px")
+        .attr("class","graph-title")
         .text(cfg.title);
     // Add subtitle to graph
     svg.append("text")
@@ -619,7 +641,6 @@ function heatmap2(data, ID, cfg){
         var x = d3.event.pageX - document.getElementById('chart_container').getBoundingClientRect().x + 10;
         var y = d3.event.pageY - document.getElementById('chart_container').getBoundingClientRect().y + 10;
         var message = '';
-        console.log(margin.top,margin.bottom);
         if(margin.top > margin.bottom)
             message = "<b>Number of Jobs: </b>" + d.val+"<br>"+"<b>Hours Requested: </b>"+d.rtime.join('-')+"<br>"+"<b>CPUs Requested: </b>"+d.proc.join('-');
         else
@@ -725,42 +746,7 @@ function heatmap2(data, ID, cfg){
         .attr("transform", "translate(" + (-legendWidth / 2) + "," + (10 + legendHeight) + ")")
         .call(xAxis);
 
-    // //Plotting legends (https://gist.github.com/nbremer/5cd07f2cb4ad202a9facfbd5d2bc842e)
-    // var legendWidth = 10,legendHeight = height;
-
-    // //Color Legend container
-    // var legendsvg = g.append("g")
-    //     .attr("class", "legendWrapper")
-    //     .attr("transform", "translate(" + width*0.7 + ",0)");
-
-    // //Draw the Rectangle
-    // legendsvg.append("rect")
-    //     .attr("class", "legendRect")
-    //     .attr("x", width*0.7)
-    //     .attr("y", 10)
-    //     //.attr("rx", legendHeight/2)
-    //     .attr("width", legendWidth)
-    //     .attr("height", legendHeight)
-    //     .style("fill", "url(#gradient-rainbow-colors)");
-
-    // //Set scale for x-axis
-    // var xScale = d3.scaleLinear()
-    //     .range([0, legendHeight])
-    //     .domain(d3.extent(data, function (d) {
-    //         return d.val;
-    //     })).nice();
-
-    // //Define x-axis
-    // var yAxis = d3.axisLeft(xScale).ticks(10);
-
-    // //Set up X axis
-    // legendsvg.append("g")
-    //     .attr("class", "axis")  //Assign "axis" class
-    //     .attr("transform", "translate(" + width*0.7 + "," + (10 + legendWidth) + ")")
-    //     .call(yAxis);
-
 }
-
 
 function StackBarChart(data,ID,cfg){
     var svgWidth = cfg.width, svgHeight = cfg.height;
@@ -775,7 +761,8 @@ function StackBarChart(data,ID,cfg){
         .attr("x", (width / 2))
         .attr("y", 0)
         .attr("text-anchor", "middle")
-        .style("font-size", "18px")
+        .attr("class","graph-title")
+        // .style("font-size", "18px")
         .text(cfg.title);
     
     var keys = ['Completed','Cancelled','Failed'];
@@ -785,15 +772,16 @@ function StackBarChart(data,ID,cfg){
         return d.id;
     }));
     
-    var y = d3.scaleLinear().rangeRound([height, 0]);
+    var y = d3.scaleLinear().clamp(true).rangeRound([height, 0]);
     y.domain([0, 1.1*d3.max(data, function (d) {
         return d.completed + d.failed + d.cancelled;
     })]);
 
     // set the colors
-    var z = d3.scaleOrdinal().range(["#98FB98", "#ffba21","#FF6347"]);
+    var z = d3.scaleOrdinal().range(["#98FB98","#FF6347", "#ffba21"]);
     
-    var stackedData = d3.stack().keys(['completed','cancelled','failed',])(data);
+    var stackedData = d3.stack().keys(['completed','failed','cancelled'])(data);
+    console.log(stackedData);
     
     // Prep the tooltip bits, initial display is hidden
     var tooltip = svg.append("g")
@@ -819,11 +807,11 @@ function StackBarChart(data,ID,cfg){
         .enter().append("g")
         .attr("fill", function(d) { return z(d.key); })
         .selectAll("rect")
-        .data(function(d) { return d; })
+        .data(function(d) { console.log(d); return d; })
         .enter().append("rect")
             .attr("x", function(d) { return x(d.data.id); })
             .attr("y", function(d) { return y(d[1]); })
-            .attr("height", function(d) { return y(d[0]) - y(d[1]); })
+            .attr("height", function(d) { console.log(d); return y(d[0]) - y(d[1]); })
             .attr("width",x.bandwidth())
         .on("mouseover", function() { tooltip.style("display", null); })
         .on("mouseout", function() { tooltip.style("display", "none"); })
@@ -866,5 +854,205 @@ function StackBarChart(data,ID,cfg){
       .attr("y", 9.5)
       .attr("dy", "0.32em")
       .text(function(d) { return d; });
+    
+}
+
+function PieChart(data,ID,cfg){
+    // var thickness = screen./width / 65;
+    
+    var svgWidth = cfg.width, svgHeight = cfg.height;
+    var margin = cfg.margin;
+    var width = svgWidth - margin.left - margin.right;
+    var height = (svgHeight - margin.top - margin.bottom);
+    var radius = Math.min(width, height)/2;
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var svg = d3.select("#" + ID)
+        .append('svg')
+        .attr('class', 'pie')
+        .attr('width', svgWidth)
+        .attr('height', svgHeight);
+
+    var g = svg.append('g').attr('transform', 'translate(' + svgWidth/2 + "," + svgHeight/1.8 + ')');
+
+    svg.append("text")
+        .attr("x", (svgWidth / 2))             
+        .attr("y", 15)
+        .attr("text-anchor", "middle")
+        .attr("class","graph-title")  
+        // .style("font-size", "110%") 
+        .text(cfg.title);
+    var arc = d3.arc()
+        .innerRadius(0)
+        .outerRadius(radius);
+
+    var pie = d3.pie()
+        .value(function (d) { return d.value; })
+        .sort(null);
+
+    g.selectAll('mySlices')
+    .data(pie(data))
+    .enter()
+    .append('path')
+        .attr('d', arc)
+        .attr('fill', function(d){ return(color(d.data.name)) })
+        .attr("stroke", "white")
+        .style("stroke-width", "0.5px")
+        .style("opacity", 0.7)
+    
+    // Now add the annotation. Use the centroid method to get the best coordinates
+    g.selectAll('mySlices')
+    .data(pie(data))
+    .enter()
+    .append('text')
+    .text(function(d){ return d.data.name})
+    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")";  })
+    .style("text-anchor", "middle")
+    .style("font-size", 10)
+
+
+    // var path = g.selectAll('path')
+    //     .data(pie(data))
+    //     .enter()
+    //     .append("g")
+    //     .on("mouseover", function (d) {
+            
+    //     })
+    //     .on("mouseout", function (d) {
+            
+    //     })
+    //     .append('path')
+    //     .attr('d', arc)
+    //     .text("Testing text ")
+    //     .attr('fill', function (d, i) { return d.data.name == 'NIL' ? "#e5e5e5" : color(i) })
+    //     .on("mouseover", function (d) {
+            
+    //     })
+    //     .on("mouseout", function (d) {
+            
+    //     })
+    // g.selectAll('path')
+    //     .data(data)
+    //     .enter()
+    //     .append('text')
+    //     .text(function(d){ return "grp " + d.data.name})
+    //     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")";  })
+    //     .style("text-anchor", "middle")
+    //     .style("font-size", 17)
+}
+
+function PieChart2(data,ID,cfg)
+{
+    var svgWidth = cfg.width, svgHeight = cfg.height;
+    var margin = cfg.margin;
+    var width = svgWidth - margin.left - margin.right;
+    var height = (svgHeight - margin.top - margin.bottom);
+    var radius = Math.min(width, height)/2;
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var svg = d3.select("#" + ID).append("svg")
+      .attr("width", svgWidth)
+      .attr("height", svgHeight);
+    
+    var g = svg.append('g').attr('transform', 'translate(' + svgWidth/2 + "," + svgHeight/1.8 + ')');
+    
+    svg.append("text")
+      .attr("x", (svgWidth / 2))             
+      .attr("y", 15)
+      .attr("text-anchor", "middle")
+      .attr("class","graph-title")  
+      // .style("font-size", "110%") 
+      .text(cfg.title);
+
+    g.append("g")
+			.attr("class", "slices");
+    g.append("g")
+      .attr("class", "labels");
+    g.append("g")
+      .attr("class", "lines");
+    
+    var pie = d3.pie().value(function (d) { return d.value; }).sort(null);
+    var arc = d3.arc().innerRadius(0).outerRadius(radius*0.7);
+    
+    var outerArc = d3.arc().outerRadius(radius*0.8).innerRadius(radius*0.8);
+
+    g.attr("transform", "translate(" + svgWidth / 2 + "," + svgHeight / 1.8 + ")");
+    
+    g.selectAll('path')
+    .data(pie(data))
+    .enter()
+    .append('path')
+  	.attr('d', arc)
+    .attr('fill', function(d){ return(color(d.data.name))});
+    g.append('g').classed('labels',true);
+    g.append('g').classed('lines',true);
+     
+
+     var polyline = g.select('.lines')
+                .selectAll('polyline')
+                .data(pie(data))
+              .enter().append('polyline')
+                .attr('points', function(d) {
+                    // see label transform function for explanations of these three lines.
+                    var pos = outerArc.centroid(d);
+                    pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+                    pos[1] = pos[1];
+                    return [arc.centroid(d), outerArc.centroid(d), pos]
+                });
+        
+    	
+	
+       var label = g.select('.labels').selectAll('text')
+                .data(pie(data))
+              .enter().append('text')
+                .attr("class","axis-ticks")
+                .attr('dy', '.35em')
+                .html(function(d) {
+                    return d.data.name + "( " + d.data.value + " )";
+                })
+                .attr('transform', function(d) {
+                    var pos = outerArc.centroid(d);
+                    pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+                    return 'translate(' + pos + ')';
+                })
+                .style('text-anchor', function(d) {
+                    return (midAngle(d)) < Math.PI ? 'start' : 'end';
+                });
+
+        // OVerlapping Text boxes
+        // var prev;
+        // var textOffset = 14;
+        // // var radius = 0;
+        // label.each(function(d, i) {
+        //     if(i > 0) {
+        //     var thisbb = this.getBoundingClientRect(),
+        //         prevbb = prev.getBoundingClientRect();
+        //     // move if they overlap
+        //     if(!(thisbb.right < prevbb.left || thisbb.left > prevbb.right || thisbb.bottom < prevbb.top || thisbb.top > prevbb.bottom)) {
+        //         var ctx = thisbb.left + (thisbb.right - thisbb.left)/2,
+        //             cty = thisbb.top + (thisbb.bottom - thisbb.top)/2,
+        //             cpx = prevbb.left + (prevbb.right - prevbb.left)/2,
+        //             cpy = prevbb.top + (prevbb.bottom - prevbb.top)/2,
+        //             off = Math.sqrt(Math.pow(ctx - cpx, 2) + Math.pow(cty - cpy, 2))/2;
+        //             console.log(Math.cos(((d.startAngle + d.endAngle - Math.PI) / 2))*(radius + textOffset + off));
+        //             console.log(Math.sin((d.startAngle + d.endAngle - Math.PI) / 2)*(radius + textOffset + off));
+        //         d3.select(this).attr("transform",
+        //             "translate(" + Math.cos(((d.startAngle + d.endAngle - Math.PI) / 2)) *
+        //                                     (radius + textOffset + off) + "," +
+        //                             Math.sin((d.startAngle + d.endAngle - Math.PI) / 2) *
+        //                                     (radius + textOffset + off) + ")");
+        //     }
+        //     }
+        //     prev = this;
+        // });
+    
+    //  svg.append('text')
+    //     .attr('class', 'toolCircle')
+    //     .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
+    //     .html('sdfsd') // add text to the circle.
+    //     .style('font-size', '.9em')
+    //     .style('text-anchor', 'middle');
+    
+    function midAngle(d) { return d.startAngle + (d.endAngle - d.startAngle) / 2; } 
     
 }

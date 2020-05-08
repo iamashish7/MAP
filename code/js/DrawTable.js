@@ -82,6 +82,7 @@ function myDrawChart(d) {
         drawChart8(arr, "chart1");
     }
 }
+
 function getFormedDate(date) {
     var dd = date.getDate();
     var mm = date.getMonth() + 1;
@@ -96,6 +97,7 @@ function getFormedDate(date) {
     date = dd + '/' + mm + '/' + yyyy;
     return date;
 }
+
 function drawChart(data, ID) {
     var svgWidth = screen.width * 0.76,
         svgHeight = screen.height * 0.7;
@@ -638,7 +640,6 @@ function drawChart6(data, ID, minn, maxx, n_date, n_wtime) {
         .call(xAxis);
 }
 
-
 function drawChart7(data, ID) {
 
     var svgWidth = screen.width * 0.75, svgHeight = screen.height * 0.7;
@@ -696,13 +697,11 @@ function drawChart7(data, ID) {
 
 function drawDonutChart2(data, id) {
     var thickness = screen.width / 55;
-    console.log("Card width : ", id, document.getElementById('card').offsetWidth);
-    console.log("Card Height : ", id, document.getElementById('card').offsetHeight);
-    console.log("Card width : ", id, document.getElementById('card2').offsetWidth);
-    console.log("Card Height : ", id, document.getElementById('card2').offsetHeight);
-    //var width = screen.width * 0.25 - 50;
+    thickness = 30;
     var width = document.getElementById('card').offsetWidth - 40;
     var height = screen.height * 0.25 - 50;
+    width = 354;
+    height = 186.44;
     var radius = Math.min(width, height) / 2;
     var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -819,16 +818,11 @@ function drawDonutChart2(data, id) {
 function init_calender(startY,endY) {
     console.log("in init_cal");
     $('input[name="from"]').daterangepicker({
-        locale: {
-            format: 'YYYY-MM-DD'
-        },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minDate: startY.toString().concat('-01-01'),
-        maxDate: endY.toString().concat('-12-30')
-        // minYear: startY,
-        // maxYear: endY
+        minYear: startY,
+        maxYear: endY,
     });
     $('input[name="from"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
@@ -838,16 +832,12 @@ function init_calender(startY,endY) {
     });
 
     $('input[name="to"]').daterangepicker({
-        locale: {
-            format: 'YYYY-MM-DD'
-        },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minDate: startY.toString().concat('-01-01'),
-        maxDate: endY.toString().concat('-12-30')
-        // minYear: startY,
-        // maxYear: endY
+        minYear: startY,
+        maxYear: endY,
+        // maxYear: parseInt(moment().format('YYYY'), 10)
     });
     $('input[name="to"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
@@ -856,3 +846,5 @@ function init_calender(startY,endY) {
         $(this).val('');
     });
 }
+// minYear: Number(startY),
+//         maxYear: Number(endY)

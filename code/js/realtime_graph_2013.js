@@ -14,12 +14,13 @@ function drawDonutChart(data, id, text) {
         .attr('height', height);
 
     var g = svg.append('g')
-        .attr('transform', 'translate(' + (radius) + ',' + (height / 2) + ')');
+        .attr('transform', 'translate(' + (radius) + ',' + (height / 1.75) + ')');
     svg.append("text")
         .attr("x", (width / 2))             
         .attr("y", 20)
-        .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
+        .attr("text-anchor", "middle")
+        .attr("class","graph-title")  
+        // .style("font-size", "20px") 
         .text("Jobs Running Status");
     var arc = d3.arc()
         .innerRadius(radius - thickness)
@@ -164,6 +165,7 @@ function drawDonutChart(data, id, text) {
         .style('font-size', screen.width / 150)
         .text("running status");
 }
+
 function preprocess(data, ID, title) {
     var arr = [];
     for (var i in data) {
@@ -185,7 +187,7 @@ function preprocess(data, ID, title) {
 
 function drawBar2(data, ID, title){
     var cfg = {
-        width:(3*screen.availWidth)/8.1,
+        width: (screen.availWidth*0.9)/2,
         height:(3*screen.availHeight)/11,
         margin: { top: 20, right: 1, bottom: 20, left: 100 },
         title:title,

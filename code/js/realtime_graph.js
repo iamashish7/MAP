@@ -14,12 +14,13 @@ function drawDonutChart(data, id, text) {
         .attr('height', height);
 
     var g = svg.append('g')
-        .attr('transform', 'translate(' + (radius) + ',' + (height / 2) + ')');
+        .attr('transform', 'translate(' + (radius) + ',' + (height/1.75) + ')');
     svg.append("text")
         .attr("x", (width / 2))             
-        .attr("y", 20)
-        .attr("text-anchor", "middle")  
-        .style("font-size", "20px") 
+        .attr("y", 15)
+        .attr("text-anchor", "middle")
+        .attr("class","graph-title")  
+        // .style("font-size", "110%") 
         .text("Jobs Running Status");
     var arc = d3.arc()
         .innerRadius(radius - thickness)
@@ -164,7 +165,9 @@ function drawDonutChart(data, id, text) {
         .style('font-size', screen.width / 150)
         .text("running status");
 }
+
 function preprocess(data, ID, title) {
+    console.log("in preprocess");
     var arr = [];
     for (var i in data) {
         arr.push({
@@ -173,9 +176,9 @@ function preprocess(data, ID, title) {
         });
     }
     var cfg = {
-        width:screen.availWidth/2.3,
-        height:screen.availHeight/2.3,
-        margin: { top: 35, right: 20, bottom: 60, left: 70 },
+        width:screen.availWidth/2.1,
+        height:screen.availHeight/2.1,
+        margin: { top: 35, right: 10, bottom: 60, left: 60 },
         title:title,
         labelx:"Queue",
         labely:"#Jobs",
@@ -185,10 +188,20 @@ function preprocess(data, ID, title) {
 
 function drawBar2(data, ID, title){
     var cfg = {
-        width:(3*screen.availWidth)/8.1,
+        width: (screen.availWidth*0.9)/2.2,
         height:(3*screen.availHeight)/11,
-        margin: { top: 20, right: 1, bottom: 20, left: 100 },
+        margin: { top: 20, right: 1, bottom: 20, left: 80 },
         title:title,
     };
     HorizontalBarGraph(data,ID,cfg);
+}
+
+function drawPieChart(data, ID, title){
+    var cfg = {
+        width: (screen.availWidth*0.9)/3.2,
+        height:(screen.availHeight)/4,
+        margin: { top: 20, right: 1, bottom: 10, left: 0 },
+        title:title,
+    };
+    PieChart2(data,ID,cfg);
 }

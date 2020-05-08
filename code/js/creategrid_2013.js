@@ -18,7 +18,7 @@ function addGRID() {
     //For heading
     var tr = document.createElement('TR');
     tableBody.appendChild(tr);
-    for (var j = 0; j < 17; ++j) {
+    for (var j = 0; j < 10; ++j) {
         var th = document.createElement('TH');
         th.setAttribute('class', 'th2 td2');
         th.setAttribute('style', 'font-family: Arial, Helvetica, sans-serif');
@@ -31,7 +31,7 @@ function addGRID() {
         var tr = document.createElement('TR');
         tableBody.appendChild(tr);
 
-        for (var j = 0; j < 17; ++j) {
+        for (var j = 0; j < 10; ++j) {
             for (var k = 0; k < 3; ++k) {
                 var td = document.createElement('TD');
                 td.setAttribute('class', 'td');
@@ -44,7 +44,42 @@ function addGRID() {
 
 
     //2nd row
-    var myTableDiv = document.getElementById("grid2");
+    var table = document.createElement('TABLE');
+    table.setAttribute('class', 'table2');
+    table.setAttribute('style', 'border: 4px solid;border-color:rgb(0, 0, 0)');
+    var tableBody = document.createElement('TBODY');
+    table.appendChild(tableBody);
+
+    //For heading
+    var tr = document.createElement('TR');
+    tableBody.appendChild(tr);
+    for (var j = 0; j < 10; ++j) {
+        var th = document.createElement('TH');
+        th.setAttribute('class', 'th2 td2');
+        th.setAttribute('style', 'font-family: Arial, Helvetica, sans-serif');
+        th.setAttribute('colspan', '3');
+        th.appendChild(document.createTextNode("ENC " + (10 + j + 1).toString()));
+        tr.appendChild(th);
+    }
+
+    for (var i = 0; i < 6; i++) {
+        var tr = document.createElement('TR');
+        tableBody.appendChild(tr);
+
+        for (var j = 0; j < 10; ++j) {
+            for (var k = 0; k < 3; ++k) {
+                var td = document.createElement('TD');
+                td.setAttribute('class', 'td');
+                td.setAttribute('id', 'pc' + pad(180 + i * 3 + j * 18 + k));
+                tr.appendChild(td);
+            }
+        }
+    }
+    myTableDiv.appendChild(table);
+
+
+    //3rd row
+    var myTableDiv = document.getElementById("grid");
 
     var table = document.createElement('TABLE');
     table.setAttribute('class', 'table2');
@@ -55,12 +90,12 @@ function addGRID() {
     //For heading
     var tr = document.createElement('TR');
     tableBody.appendChild(tr);
-    for (var j = 0; j < 17; ++j) {
+    for (var j = 0; j < 10; ++j) {
         var th = document.createElement('TH');
         th.setAttribute('class', 'th2 td2');
         th.setAttribute('style', 'font-family: Arial, Helvetica, sans-serif');
         th.setAttribute('colspan', '3');
-        th.appendChild(document.createTextNode("ENC " + (17+j + 1).toString()));
+        th.appendChild(document.createTextNode("ENC " + (20 + j + 1).toString()));
         tr.appendChild(th);
     }
     
@@ -68,19 +103,21 @@ function addGRID() {
         var tr = document.createElement('TR');
         tableBody.appendChild(tr);
 
-        for (var j = 0; j < 17; ++j) {
+        for (var j = 0; j < 10; ++j) {
             for (var k = 0; k < 3; ++k) {
                 var td = document.createElement('TD');
                 td.setAttribute('class', 'td');
-                td.setAttribute('id', 'pc' + pad(306+i * 3 + j * 18 + k));
+                td.setAttribute('id', 'pc' + pad(360 + i * 3 + j * 18 + k));
                 tr.appendChild(td);
             }
         }
     }
     myTableDiv.appendChild(table);
 
-    //3rd row
-    var myTableDiv2 = document.getElementById("grid3");
+
+    //4th row
+    var myTableDiv = document.getElementById("grid");
+
     var table = document.createElement('TABLE');
     table.setAttribute('class', 'table2');
     table.setAttribute('style', 'border: 4px solid;border-color:rgb(0, 0, 0)');
@@ -90,27 +127,134 @@ function addGRID() {
     //For heading
     var tr = document.createElement('TR');
     tableBody.appendChild(tr);
-
-    for (var j = 0; j < 16; ++j) {
+    for (var j = 0; j < 10; ++j) {
         var th = document.createElement('TH');
         th.setAttribute('class', 'th2 td2');
         th.setAttribute('style', 'font-family: Arial, Helvetica, sans-serif');
         th.setAttribute('colspan', '3');
-        th.appendChild(document.createTextNode("ENC " + (34 + j + 1).toString()));
+        th.appendChild(document.createTextNode("ENC " + (30 + j + 1).toString()));
         tr.appendChild(th);
     }
+    
     for (var i = 0; i < 6; i++) {
         var tr = document.createElement('TR');
         tableBody.appendChild(tr);
 
-        for (var j = 0; j < 16; ++j) {
+        for (var j = 0; j < 10; ++j) {
             for (var k = 0; k < 3; ++k) {
                 var td = document.createElement('TD');
                 td.setAttribute('class', 'td');
-                td.setAttribute('id', 'pc' + pad(612 + i * 3 + j * 18 + k));
+                td.setAttribute('id', 'pc' + pad(540 + i * 3 + j * 18 + k));
                 tr.appendChild(td);
             }
         }
     }
-    myTableDiv2.appendChild(table);
+    myTableDiv.appendChild(table);
+
+    //5th row
+    var myTableDiv = document.getElementById("grid");
+
+    var table = document.createElement('TABLE');
+    table.setAttribute('class', 'table2');
+    table.setAttribute('style', 'border: 4px solid;border-color:rgb(0, 0, 0)');
+    var tableBody = document.createElement('TBODY');
+    table.appendChild(tableBody);
+
+    //For heading
+    var tr = document.createElement('TR');
+    tableBody.appendChild(tr);
+    for (var j = 0; j < 10; ++j) {
+        var th = document.createElement('TH');
+        th.setAttribute('class', 'th2 td2');
+        th.setAttribute('style', 'font-family: Arial, Helvetica, sans-serif');
+        th.setAttribute('colspan', '3');
+        th.appendChild(document.createTextNode("ENC " + (40 + j + 1).toString()));
+        tr.appendChild(th);
+    }
+    
+    for (var i = 0; i < 6; i++) {
+        var tr = document.createElement('TR');
+        tableBody.appendChild(tr);
+
+        for (var j = 0; j < 10; ++j) {
+            for (var k = 0; k < 3; ++k) {
+                var td = document.createElement('TD');
+                td.setAttribute('class', 'td');
+                td.setAttribute('id', 'pc' + pad(720 + i * 3 + j * 18 + k));
+                tr.appendChild(td);
+            }
+        }
+    }
+    myTableDiv.appendChild(table);
+
+    // //2nd row
+    // var myTableDiv = document.getElementById("grid2");
+
+    // var table = document.createElement('TABLE');
+    // table.setAttribute('class', 'table2');
+    // table.setAttribute('style', 'border: 4px solid;border-color:rgb(0, 0, 0)');
+    // var tableBody = document.createElement('TBODY');
+    // table.appendChild(tableBody);
+
+    // //For heading
+    // var tr = document.createElement('TR');
+    // tableBody.appendChild(tr);
+    // for (var j = 0; j < 17; ++j) {
+    //     var th = document.createElement('TH');
+    //     th.setAttribute('class', 'th2 td2');
+    //     th.setAttribute('style', 'font-family: Arial, Helvetica, sans-serif');
+    //     th.setAttribute('colspan', '3');
+    //     th.appendChild(document.createTextNode("ENC " + (17+j + 1).toString()));
+    //     tr.appendChild(th);
+    // }
+    
+    // for (var i = 0; i < 6; i++) {
+    //     var tr = document.createElement('TR');
+    //     tableBody.appendChild(tr);
+
+    //     for (var j = 0; j < 17; ++j) {
+    //         for (var k = 0; k < 3; ++k) {
+    //             var td = document.createElement('TD');
+    //             td.setAttribute('class', 'td');
+    //             td.setAttribute('id', 'pc' + pad(306+i * 3 + j * 18 + k));
+    //             tr.appendChild(td);
+    //         }
+    //     }
+    // }
+    // myTableDiv.appendChild(table);
+
+    // //3rd row
+    // var myTableDiv2 = document.getElementById("grid3");
+    // var table = document.createElement('TABLE');
+    // table.setAttribute('class', 'table2');
+    // table.setAttribute('style', 'border: 4px solid;border-color:rgb(0, 0, 0)');
+    // var tableBody = document.createElement('TBODY');
+    // table.appendChild(tableBody);
+
+    // //For heading
+    // var tr = document.createElement('TR');
+    // tableBody.appendChild(tr);
+
+    // for (var j = 0; j < 16; ++j) {
+    //     var th = document.createElement('TH');
+    //     th.setAttribute('class', 'th2 td2');
+    //     th.setAttribute('style', 'font-family: Arial, Helvetica, sans-serif');
+    //     th.setAttribute('colspan', '3');
+    //     th.appendChild(document.createTextNode("ENC " + (34 + j + 1).toString()));
+    //     tr.appendChild(th);
+    // }
+    // for (var i = 0; i < 6; i++) {
+    //     var tr = document.createElement('TR');
+    //     tableBody.appendChild(tr);
+
+    //     for (var j = 0; j < 16; ++j) {
+    //         for (var k = 0; k < 3; ++k) {
+    //             var td = document.createElement('TD');
+    //             td.setAttribute('class', 'td');
+    //             td.setAttribute('id', 'pc' + pad(612 + i * 3 + j * 18 + k));
+    //             tr.appendChild(td);
+    //         }
+    //     }
+    // }
+    // myTableDiv2.appendChild(table);
 }

@@ -69,8 +69,8 @@ function plot_edges(s,d)
             label:"Edge"+e_no,
             source:d[i],
             target:lvl_1[0].id,
-            size:5,
-            color:"#ff0000",
+            size:1.25,
+            color:"#FB2B11",
             type:"line"
         });
         val += ('E'+e_no)+';';
@@ -105,8 +105,8 @@ function plot_edges(s,d)
             label:"Edge"+e_no,
             source:lvl_1[0].id,
             target:lvl_2[0].id,
-            size:5,
-            color:"#ff0000",
+            size:1.25,
+            color:"#FB2B11",
             type:"line"
         });
         val += ('E'+e_no)+';';
@@ -141,8 +141,8 @@ function plot_edges(s,d)
             label:"Edge"+e_no,
             source:lvl_2[0].id,
             target:lvl_3[0].id,
-            size:5,
-            color:"#ff0000",
+            size:1.25,
+            color:"#FB2B11",
             type:"line"
         });
         val += ('E'+e_no)+';';
@@ -177,8 +177,8 @@ function plot_edges(s,d)
             label:"Edge"+e_no,
             source:lvl_3[0].id,
             target:lvl_4[0].id,
-            size:5,
-            color:"#ff0000",
+            size:1.25,
+            color:"#FB2B11",
             type:"line"
         });
         val += ('E'+e_no)+';';
@@ -195,7 +195,7 @@ function plot_edges(s,d)
         //             label:"Edge"+e_no,
         //             source:map_nodes_inv[k],
         //             target:map_nodes_inv[j],
-        //             size:5,
+        //             size:1.25,
         //             color:"#2e4180",
         //             type:"line"
         //         });

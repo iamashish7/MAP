@@ -6,6 +6,7 @@ function ready_data_plot(){
     $.getJSON("realtime/2013/jsonoutput.json", function (info) {
         var tot_nodes = 0;
         var data4 = {};
+        var data5 = {};
         $.each(info, function (key, value) {
             if (value["State"] == 'R') {
                 tot_nodes = tot_nodes + parseInt(value["Nodes"]);
@@ -68,6 +69,5 @@ function ready_data_plot(){
         drawDonutChart(data2, "chart_1", "HPC 2013");
         preprocess(data3,"chart_4","Queued Jobs");
         drawBar2(data4,"chart_2","Top 5 users with max total nodes")
-
     });
 }

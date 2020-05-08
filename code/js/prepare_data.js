@@ -135,6 +135,7 @@ function get_arr_job_status_per_queue(data)
     }
     return arr;
 }
+
 function myDrawChart(d) {
     // console.log("In prepare data");
     months = Math.min(d.months, 18);
@@ -143,7 +144,6 @@ function myDrawChart(d) {
     // console.log("Months: ", months, "Years : ", years, "Dates : ", dates);
     var data = d.data;
     var ID = Number.parseInt(d.ID);
-    console.log(ID);
     var arr = [];
     var arr2 = [];
     var minn = 100000000, maxx = 0, count2 = 0;
@@ -176,7 +176,6 @@ function myDrawChart(d) {
     } else if (ID === 9) {
         arr = get_arr_jobs_executing_per_day(data['data1']);
         arr2 = get_arr_jobs_per_month(data['data2']);
-        console.log(arr,arr2);
     } else if (ID === 10) {
         arr = get_arr_job_status_per_queue(data);
     } else if (ID === 11) {
@@ -361,18 +360,16 @@ function myDrawChart(d) {
 }
 
 function init_calender(startY,endY) {
-    console.log("in init_cal");
+    console.log("in new init_cal",('01/01/').concat(startY.toString()),('31/12/').concat(endY.toString()));
     $('input[name="from"]').daterangepicker({
         locale: {
-            format: 'YYYY-MM-DD'
-        },
+            format: 'DD/MM/YYYY'
+          },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minDate: startY.toString().concat('-01-01'),
-        maxDate: endY.toString().concat('-12-30')
-        // minYear: startY,
-        // maxYear: endY
+        minDate: ('01/01/').concat(startY.toString()),
+        maxDate: ('31/12/').concat(endY.toString())
     });
     $('input[name="from"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
@@ -382,16 +379,12 @@ function init_calender(startY,endY) {
     });
 
     $('input[name="to"]').daterangepicker({
-        locale: {
-            format: 'YYYY-MM-DD'
-        },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minDate: startY.toString().concat('-01-01'),
-        maxDate: endY.toString().concat('-12-30')
-        // minYear: startY,
-        // maxYear: endY
+        minYear: startY,
+        maxYear: endY
+        // maxYear: parseInt(moment().format('YYYY'), 10)
     });
     $('input[name="to"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));

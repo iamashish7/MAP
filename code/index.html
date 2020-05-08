@@ -14,22 +14,27 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
     <style>
+        html,
+        body {
+            height: 100%;
+        }
         .card {
             margin: 0 auto;
             float: none;
         }
-
+        
         table {
-            border: 1px;
+            border: 0px;
             border-collapse: collapse;
         }
         .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%)
+            height: 100%;
+            /* display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center; */
         }
+        
     </style>
 </head>
 
@@ -54,12 +59,12 @@
                 </li>
             </ul>
         </div>
-        <p style="color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif">Indian Institute of
-            Technology, Kanpur</p>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of
+            Technology, Kanpur</a>
     </nav>
-    <div class="container" style=" text-align: center;">
-        <div class="row" style="text-align: center;">
-            <div class="card" style="width:400px; text-align: center;">
+    <div class="container">
+        <div class="row h-100" style="text-align: center;">
+            <div id="card-wrapper" class="card my-auto">
                 <div id="card" class="card-body">
                     <h4 class="card-title">HPC 2010</h4>
                     <hr>
@@ -102,9 +107,9 @@
                             </tr>
                         </table>
                     </p>
-                    <div id="donut_2010"></div>
+                    <div id="donut_2010" class="donut_chart"></div>
                     <br>
-                    <a href="monitor_2010.html" class="btn btn-primary">Monitor</a>
+                    <a href="monitor_2010_multiple_selection.html" class="btn btn-primary">Monitor</a>
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                         Analysis
                     </button>
@@ -114,8 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <!--<img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">-->
+            <div id="card2-wrapper" class="card my-auto">
                 <div id="card2" class="card-body">
                     <h4 class="card-title">HPC 2013</h4>
                     <hr>
@@ -148,7 +152,7 @@
                             <br>
                         </table>
                     </p>
-                    <div id="donut_2013"></div>
+                    <div id="donut_2013" class="donut_chart"></div>
                     <br>
                     <a href="monitor_2013.html" class="btn btn-primary">Monitor</a>
                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -242,10 +246,7 @@
             document.getElementById("use_2013").innerHTML = ((nodes_2013_1 / 893) * 100).toFixed(2) + '%';
             drawDonutChart2(data2, "donut_2013");
         });
-
-
     });
-
 </script>
 
 </html>

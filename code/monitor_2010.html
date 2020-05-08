@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HPC-Monitor</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <!--<link href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css" rel="stylesheet"
@@ -12,7 +14,7 @@
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     
     <script src="js/tabsfunc.js"></script>
-    <script src="js/plotEdges.js"></script>
+    <script src="js/plotEdges2010.js"></script>
     <script src="js/createtable.js"></script>
     <script src="js/creategrid.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -90,7 +92,7 @@
     td {
         /* border: solid 1px#f345; */
         border-collapse: collapse;
-        padding: 2px 3px;
+        /* padding: 2px 3px; */
         text-align: center;
     }
 
@@ -176,7 +178,7 @@
 
     .th {
         padding: 0px;
-        font-size: 0.8vw;
+        font-size: 0.9vw;
 
     }
 
@@ -192,14 +194,14 @@
         background: #555;
     } */
 
-    #tooltip {
+    /* #tooltip {
         background-color: white;
         padding: 3px 5px;
         border: 1px solid black;
         text-align: center;
-    }
+    } */
 
-    circle,
+    /* circle,
     path {
         cursor: pointer;
     }
@@ -207,7 +209,7 @@
     circle {
         fill: none;
         pointer-events: all;
-    }
+    } */
 
     .header h1 {
         position: relative;
@@ -223,7 +225,7 @@
     }
 
     .td {
-        padding: 0.45vw; /* control the size of grid boxes */
+        padding: 0.66vw; /* control the size of grid boxes */
         margin: 0;
         border: 1px solid;
     }
@@ -259,6 +261,14 @@
         border-collapse: collapse;
         padding: 2px 3px;
         text-align: center;
+    }
+
+    .th2{
+        border: solid 4px;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 3px;
+        font-size: 0.8vw;
     }
 
     th,
@@ -311,11 +321,12 @@
     }
     td.child{
         text-align: left;
+        background-color: white;
     }
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">HPC 2010</a>
 
@@ -339,16 +350,9 @@
                         <a class="dropdown-item" href="previous_2010.php">Past Data Analysis</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="custom.php">Custom Analysis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="wait_time_pred.php">Wait-time Prediction</a>
-                </li>
             </ul>
         </div>
-        <p style="color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif">Indian Institute of
-            Technology, Kanpur</p>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology, Kanpur</a>
     </nav>
     <span class="br"></span>  
     <div class="row no-gutters">
@@ -542,6 +546,9 @@
                 defaultEdgeHoverColor: '#2ecc71',
                 edgeHoverSizeRatio: 2,
                 edgeHoverExtremities: true,
+                labelThreshold: 10.5,
+                minEdgeSize: 1,
+                maxEdgeSize: 1.5
             }
         },function(s){
             this.sig = s;

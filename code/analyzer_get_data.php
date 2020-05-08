@@ -215,11 +215,17 @@ function get_data_job_status_per_queue($table,$from,$to,$conn)
     $sql = "select queue,count(*) as c from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and status='Completed' and queue not like 'R%' and queue not like 'work%' group by queue";
     $sql2 = "select queue,count(*) as c from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and status='cancelled' and queue not like 'R%' and queue not like 'work%' group by queue";
     $sql3 = "select queue,count(*) as c from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and status='Failed' and queue not like 'R%' and queue not like 'work%' group by queue";
+    $q = "select distinct(queue) as queue from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and queue not like 'R%' and queue not like 'work%' group by queue";
+    
+    // forming queues
+    $result = $conn->query($q);
+    while ($row = $result->fetch_assoc()) {
+        $json_array[$row['queue']] = [0,0,0];
+    }
     
     // Completed
     $result = $conn->query($sql);
     while ($row = $result->fetch_assoc()) {
-        $json_array[$row['queue']] = [0,0,0];
         $json_array[$row['queue']][0] = (int)($row['c']);
     }
     // Cancelled
@@ -234,6 +240,7 @@ function get_data_job_status_per_queue($table,$from,$to,$conn)
     }
     return $json_array;
 }
+
 switch ($chart) {
     case "1":
         $json_array = get_data_jobs_executing_per_day($table,$from,$to,$conn);
@@ -275,6 +282,7 @@ switch ($chart) {
     default:
         //echo "Your favorite color is neither red, blue, nor green!";
 }
+
 $conn->close();
 // echo "Here1";
 $returnData['data'] = $json_array;

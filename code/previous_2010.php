@@ -128,7 +128,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="monitor_2010.html">Monitoring</a>
+                    <a class="nav-link" href="monitor_2010_multiple_selection.html">Monitoring</a>
                 </li>
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">

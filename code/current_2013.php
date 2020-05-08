@@ -77,10 +77,122 @@
             border-collapse: collapse;
             padding:0;
         }
-        text {
+        /* text {
             font-family: sans-serif;
             font-size: 15px;
+        } */
+
+        @media screen and (max-width: 540px) {
+            .graph-title {
+                font-size: 2vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 1.9vw;
+            }
+            .axis-ticks{
+                font-size: 1.8vw;
+            }
         }
+
+        /* For Tablets */
+        @media screen and (min-width: 540px) and (max-width: 780px) {
+            .graph-title {
+                font-size: 2vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 1.9vw;
+            }
+            .axis-ticks{
+                font-size: 1.8vw;
+            }
+        }
+        
+        /* For PC */
+        @media screen and and (min-width: 781px) and (max-width: 1020px) {
+            .graph-title {
+                font-size: 1vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 0.9vw;
+            }
+            .axis-ticks{
+                font-size: 0.9vw;
+            }
+        }
+
+        /* For PC */
+        @media screen and (min-width: 1020px) and (max-width: 1260px) {
+            .graph-title {
+                font-size: 1vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 0.9vw;
+            }
+            .axis-ticks{
+                font-size: 0.9vw;
+            }
+        }
+
+        /* For PC */
+        @media screen and  (min-width: 1020px) and (max-width: 1260px) {
+            .graph-title {
+                font-size: 15px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 14px;
+            }
+            .axis-ticks{
+                font-size: 13px;
+            }
+        }
+
+        /* For PC */
+        @media screen and  (min-width: 1261px) and (max-width: 1500px) {
+            .graph-title {
+                font-size: 15px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 14px;
+            }
+            .axis-ticks{
+                font-size: 13px;
+            }
+        }
+
+        /* For PC */
+        @media screen and  (min-width: 1500px)  and (max-width: 1740px){
+            .graph-title {
+                font-size: 17px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 16px;
+            }
+            .axis-ticks{
+                font-size: 15px;
+            }
+        }
+
+        /* For PC */
+        @media screen and  (min-width: 1741px) {
+            .graph-title {
+                font-size: 19px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 17px;
+            }
+            .axis-ticks{
+                font-size: 16px;
+            }
+        }
+        
     </style>
 <body>
 
@@ -107,12 +219,6 @@
                         <a class="dropdown-item" href="#">Current Analysis</a>
                         <a class="dropdown-item" href="previous_2013.php">Past Data Analysis</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="custom.php">Custom Analysis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="wait_time_pred.php">Wait-time Prediction</a>
                 </li>
             </ul>
         </div>

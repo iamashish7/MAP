@@ -6,6 +6,7 @@ function ready_data_plot(){
     $.getJSON("realtime/2010/jsonoutput.json", function (info) {
         var tot_nodes = 0;
         var data4 = {};
+        var data5 = {};
         $.each(info, function (key, value) {
             if (value["State"] == 'R') {
                 tot_nodes = tot_nodes + parseInt(value["Nodes"]);
@@ -17,6 +18,7 @@ function ready_data_plot(){
                     wtime: value["RequiredTime"]
                 });
                 data4[value['Username']] = (value['Username'] in data4)?data4[value['Username']] + parseInt(value["Nodes"]):parseInt(value["Nodes"]);
+                data5[value['Queue']] = (value['Queue'] in data5)?data5[value['Queue']] + parseInt(value["Nodes"]):parseInt(value["Nodes"]);
                 if(value["Queue"] in data1){
                     data1[value["Queue"]] += 1;
                 }
@@ -55,7 +57,6 @@ function ready_data_plot(){
                 nodes: value[1]
             });
         });
-        console.log(data4);
         var empty = 464 - tot_nodes;
         data2.push({
             jobid: '000000',
@@ -64,9 +65,18 @@ function ready_data_plot(){
             rtime: "00:00",
             wtime: "00:00"
         });
+        data5_final = [];
+        for(var index in data5) {
+            data5_final.push({
+                name: index,
+                value: data5[index]
+            });
+        }
         preprocess(data1,"chart_3","Running Jobs");
         drawDonutChart(data2, "chart_1", "HPC 2010");
         preprocess(data3,"chart_4","Queued Jobs");
-        drawBar2(data4,"chart_2","Top 5 users with max total nodes")
+        drawBar2(data4,"chart_2","Top 5 users with max total nodes");
+        console.log(data5_final);
+        drawPieChart(data5_final,"chart_6","Queue Load");
     });
 }

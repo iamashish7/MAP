@@ -196,7 +196,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="monitor_2010.html">HPC2010</a>
+                    <a class="nav-link" href="monitor_2010_multiple_selection.html">HPC2010</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="monitor_2013.html">HPC2013</a>

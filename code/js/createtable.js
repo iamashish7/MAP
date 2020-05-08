@@ -24,6 +24,23 @@ function CreateTable(_page) {
                 destroy: true,
                 responsive: true,
                 data: running_data,
+                dom: 'Bfrtip',
+                buttons: {
+                    buttons:[
+                                { 
+                                    text: 'Reset',
+                                    className: "btn btn-outline-info btn-sm",
+                                    action: function ( e, dt, node, config ) {
+                                        clearEdges(sig);
+                                    }
+                                },
+                            ],
+                    dom:{
+                            button:{
+                                    className: 'btn'
+                                }
+                    }
+                },
                 columns: [
                     // { title: '<input name="select_all" value="1" id="select-all" type="checkbox" />' },
                     { title: "Job ID" },
