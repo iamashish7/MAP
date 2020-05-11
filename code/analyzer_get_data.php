@@ -188,8 +188,8 @@ function get_data_vartn_wtime_by_req($table,$from,$to,$conn)
     $proc_buckets = [[0,1],[2,4],[4,8],[8,16],[16,32],[32,64],[64,128],[128,256],[256,512],[512,1024],[1024,2048]];
     for ($i = 0; $i < count($rtime_buckets); $i++) {
         for ($j = 0; $j < count($proc_buckets); $j++) {
-            $sql = "select avg(wtime) as wtime from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." and status='completed'";
-            $sql2 = "select count(*) as jobs from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." and status='completed'";
+            $sql = "select avg(wtime) as wtime from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." ";
+            $sql2 = "select count(*) as jobs from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." ";
             $result = $conn->query($sql);
             $result2 = $conn->query($sql2);
             $wtime = 0;
@@ -241,6 +241,65 @@ function get_data_job_status_per_queue($table,$from,$to,$conn)
     return $json_array;
 }
 
+function get_data_busy_cpus_per_day($table,$from,$to,$conn)
+{
+    // CPU load per day
+    $sql = "select jobid,start,end,proc_alloc as proc from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and status='completed'";
+    $result = $conn->query($sql);
+    $json_array = array();
+    $from2 = $from;
+    while (strtotime($from) <= strtotime($to)) {
+        $json_array[$from] = 0;
+        $from = date ("Y-m-d", strtotime("+1 days", strtotime($from)));
+    }
+    while ($row = $result->fetch_assoc()) {
+        $start = date('Y-m-d', strtotime($row['start']));
+        $end = date('Y-m-d', strtotime($row['end']));
+        if (strtotime($end) > strtotime($to)){
+            $end = $to;
+        }
+        if (strtotime($start) < strtotime($from2)){
+            $start = $from2;
+        }
+        $json_array[$start] = $json_array[$start] + $row['proc'];
+        $end2 = date ("Y-m-d", strtotime("+1 days", strtotime($end)));
+        if(strtotime($end2) <= strtotime($to))
+            $json_array[$end2] = $json_array[$end2] - $row['proc'];
+    }
+    $keys = array_keys($json_array);
+    usort($keys, date_sort);
+    for($i = 1; $i<sizeof($keys);++$i)
+    {
+        $json_array[$keys[$i]] += $json_array[$keys[$i-1]];
+        if(strtotime($to)<strtotime($keys[$i]) || strtotime($from2)>strtotime($keys[$i]))
+            unset($json_array[$keys[$i]]);
+    }
+    return $json_array;
+}
+
+function get_data_wtime_per_month($table,$from,$to,$conn)
+{
+    // Jobs per month
+    $sql = "select concat(year(date),'-',month(date)) as d, wtime from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and wtime>=0 order by d";
+    
+    $result = $conn->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        $json_array[$row['d']] = [];
+    }
+    $result = $conn->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        array_push($json_array[$row['d']], $row['wtime']);
+    }
+    $keys = array_keys($json_array);
+    usort($keys, date_sort);
+    $json_array_2 = array();
+    for ($x = 0; $x < sizeof($json_array); $x++) {
+        $json_array_2[$keys[$x]] = $json_array[$keys[$x]];
+    }
+    $json_array = $json_array_2;
+    return $json_array;
+}
+
 switch ($chart) {
     case "1":
         $json_array = get_data_jobs_executing_per_day($table,$from,$to,$conn);
@@ -278,6 +337,12 @@ switch ($chart) {
         $json_array = ['data1'=>[],'data2'=>[]];
         $json_array['data1'] = get_data_count_per_status($table,$from,$to,$conn);
         $json_array['data2'] = get_data_job_status_per_queue($table,$from,$to,$conn);
+        break;
+    case "12":
+        $json_array = get_data_busy_cpus_per_day($table,$from,$to,$conn);
+        break;
+    case "13":
+        $json_array = get_data_wtime_per_month($table,$from,$to,$conn);
         break;
     default:
         //echo "Your favorite color is neither red, blue, nor green!";

@@ -12,14 +12,15 @@
     <!-- <script type="text/javascript" src="js/DrawTable.js"></script> -->
     <script type="text/javascript" src="js/prepare_data.js"></script>
     <script type="text/javascript" src="js/Graphs.js"></script>
+    <!-- <script type="text/javascript" src="js/d3-tip.js"></script> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
     <style>
         .main_chart{
-            /* height: 80%;
-            width: 80%;
-            margin-left: 10%;
-            border-style: solid; */
+            //height: 80%;
+            //width: 80%;
+            /* margin-left: 10%; */
+            //border-style: solid;
             text-align:center;
         }
         /* .tooltip {	
@@ -34,7 +35,7 @@
             border-radius: 8px;			
             pointer-events: none;			
         } */
-	    .tooltip2{
+        .tooltip2{
             position: absolute;			
             text-align: left;
             font-size:12px;			  
@@ -56,6 +57,7 @@
 
         .tooltip-date, .tooltip-likes {
             font-weight: bold;
+            font-size: 15px;
         }
 
 	    .bar {
@@ -110,7 +112,114 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        /* .graph-title{
+            font-size:18px;
+        } */
 
+        @media screen and (max-width: 540px) {
+            .graph-title {
+                font-size: 2vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 1.9vw;
+            }
+            .axis-ticks{
+                font-size: 1.8vw;
+            }
+        }
+
+        @media screen and (min-width: 540px) and (max-width: 780px) {
+            .graph-title {
+                font-size: 2vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 1.9vw;
+            }
+            .axis-ticks{
+                font-size: 1.8vw;
+            }
+        }
+        
+        @media screen and and (min-width: 781px) and (max-width: 1020px) {
+            .graph-title {
+                font-size: 1vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 0.9vw;
+            }
+            .axis-ticks{
+                font-size: 0.9vw;
+            }
+        }
+
+        @media screen and (min-width: 1020px) and (max-width: 1260px) {
+            .graph-title {
+                font-size: 1vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 0.9vw;
+            }
+            .axis-ticks{
+                font-size: 0.9vw;
+            }
+        }
+
+        @media screen and  (min-width: 1020px) and (max-width: 1260px) {
+            .graph-title {
+                font-size: 16px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 14px;
+            }
+            .axis-ticks{
+                font-size: 12px;
+            }
+        }
+
+        @media screen and  (min-width: 1261px) and (max-width: 1500px) {
+            .graph-title {
+                font-size: 16px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 14px;
+            }
+            .axis-ticks{
+                font-size: 13px;
+            }
+        }
+
+        @media screen and  (min-width: 1500px)  and (max-width: 1740px){
+            .graph-title {
+                font-size: 18px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 16px;
+            }
+            .axis-ticks{
+                font-size: 14px;
+            }
+        }
+
+        @media screen and  (min-width: 1741px) {
+            .graph-title {
+                font-size: 18px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 17px;
+            }
+            .axis-ticks{
+                font-size: 14px;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -128,7 +237,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="monitor_2010_multiple_selection.html">Monitoring</a>
+                    <a class="nav-link" href="monitor_2010.html">Monitoring</a>
                 </li>
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -139,15 +248,9 @@
                         <a class="dropdown-item" href="#">Past Data Analysis</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="custom.php">Custom Analysis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="wait_time_pred.php">Wait-time Prediction</a>
-                </li>
             </ul>
         </div>
-        <p style="color: white; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif">Indian Institute of Technology, Kanpur</p>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology, Kanpur</a>
     </nav>
     <br>
     
@@ -170,6 +273,8 @@
                 <option value="6">Variation of wait-times by day</option>
                 <option value="7">Wait Time vs #Jobs</option>
                 <option value="10">Job status per queue</option>
+                <option value="12">Busy CPUs per day</option>
+                <!-- <option value="13">Quartiles of wait-time per month</option> -->
                 <optgroup label="Multiple Correlating Graphs">
                 <option value="8">Variation of wait-times by requirement</option>
                 <option value="9">Running, Completed and Failed Jobs</option>
@@ -181,7 +286,7 @@
         </div>
     </div>
     <br>
-    <div id="chart_container" class="justify-content-center"  style="text-align:center;">
+    <div id="chart_container" class="justify-content-center" style="text-align:center;">
         <svg id="chart1" class="main_chart"></svg>
         <div id='loader_circle' class="loader hide"></div>
         <p id='loader_text' class="center_text hide"> Loading... </p>
@@ -191,8 +296,9 @@
 <script src="js/d3.tip.v0.6.3.js"></script>
 
 <script type="text/javascript">
+
     $(document).ready(function () {
-        init_calender(2010,2020);
+        init_calender('2010','2020');
     	$("#date-submit-btn").click(function(event){
             document.getElementById("loader_circle").classList.remove('hide');
             document.getElementById("loader_text").classList.remove('hide');
@@ -201,12 +307,13 @@
             var toDate = $("#to").val().split("/").reverse().join("-");
             var fromDate = $("#from").val().split("/").reverse().join("-");
             $("#chart1").empty();
-            console.log(toDate,fromDate,chartId);
+            // console.log(toDate,fromDate,chartId);
             $.ajax({
                 url:"analyzer_get_data.php",
                 method:"POST",
                 data:{to:toDate,from:fromDate,chart:chartId,db:"SavedLogs",table:"HPC2010"},
                 success:function(returnData){
+                    // console.log(returnData);
                     document.getElementById("loader_circle").classList.add('hide');
                     document.getElementById("loader_text").classList.add('hide');
                     document.getElementById("chart1").classList.remove('hide');

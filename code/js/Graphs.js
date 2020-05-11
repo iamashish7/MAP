@@ -193,7 +193,7 @@ function LineChart(data,ID,cfg)
 
     //text label for y axis
     g.append("text")
-        .attr("transform", "rotate(-90)").attr("y", 0 - margin.left).attr("x", 0 - (height / 2))
+        .attr("transform", "rotate(-90)").attr("y", 10 - margin.left).attr("x", 0 - (height / 2))
         .attr("dy", "0.7em")
         .style("text-anchor", "middle")
         .text(cfg.labely);
@@ -244,7 +244,7 @@ function LineChart(data,ID,cfg)
             .attr("x", 18)
             .attr("y", 18)
             .attr("fill", cfg.TooltipColors[i])
-            .text("Jobs:");
+            .text("Value:");
 
         focus.append("text")
             .attr("class", "tooltip-likes")
@@ -759,13 +759,13 @@ function StackBarChart(data,ID,cfg){
     
     g.append("text")
         .attr("x", (width / 2))
-        .attr("y", 0)
+        .attr("y", -margin.top/2)
         .attr("text-anchor", "middle")
         .attr("class","graph-title")
         // .style("font-size", "18px")
         .text(cfg.title);
     
-    var keys = ['Completed','Cancelled','Failed'];
+    var keys = ['Completed','Failed','Cancelled'];
     // Set x, y and colors
     var x = d3.scaleBand().range([0, width]).padding(0.5);
     x.domain(data.map(function (d) {
@@ -773,9 +773,7 @@ function StackBarChart(data,ID,cfg){
     }));
     
     var y = d3.scaleLinear().clamp(true).rangeRound([height, 0]);
-    y.domain([0, 1.1*d3.max(data, function (d) {
-        return d.completed + d.failed + d.cancelled;
-    })]);
+    y.domain([0, 100]);
 
     // set the colors
     var z = d3.scaleOrdinal().range(["#98FB98","#FF6347", "#ffba21"]);
@@ -807,11 +805,11 @@ function StackBarChart(data,ID,cfg){
         .enter().append("g")
         .attr("fill", function(d) { return z(d.key); })
         .selectAll("rect")
-        .data(function(d) { console.log(d); return d; })
+        .data(function(d) { return d; })
         .enter().append("rect")
             .attr("x", function(d) { return x(d.data.id); })
             .attr("y", function(d) { return y(d[1]); })
-            .attr("height", function(d) { console.log(d); return y(d[0]) - y(d[1]); })
+            .attr("height", function(d) { return y(d[0]) - y(d[1]); })
             .attr("width",x.bandwidth())
         .on("mouseover", function() { tooltip.style("display", null); })
         .on("mouseout", function() { tooltip.style("display", "none"); })
@@ -823,34 +821,35 @@ function StackBarChart(data,ID,cfg){
         });    
 
     // add the x Axis
-    g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x)).selectAll("text").style("text-anchor", "end").attr("dx", "-.8em").attr("dy", ".15em").attr("transform", "rotate(-65)");
+    g.append("g").attr("class", "axis-ticks").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x)).selectAll("text").style("text-anchor", "end").attr("dx", "-.8em").attr("dy", ".15em").attr("transform", "rotate(-65)");
 
     // add the y Axis
-    g.append("g").attr("class", "text2").call(d3.axisLeft(y));
+    g.append("g").attr("class", "axis-ticks").call(d3.axisLeft(y));
 
     //text label for x axis
-    g.append("text").attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom - 10) + ")").style("text-anchor", "middle").text(cfg.labelx);
+    g.append("text").attr("class","axis-labels").attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom - 10) + ")").style("text-anchor", "middle").text(cfg.labelx);
 
     //text label for y axis
-    g.append("text").attr("transform", "rotate(-90)").attr("y", -80).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text(cfg.labely);
+    g.append("text").attr("class","axis-labels").attr("transform", "rotate(-90)").attr("y", -80).attr("x", 0 - (height / 2)).attr("dy", "1em").style("text-anchor", "middle").text(cfg.labely);
     
     var legend = g.append("g")
         .attr("font-family", "sans-serif")
+        .attr("class","axis-ticks")
         .attr("font-size", 13)
-        .attr("text-anchor", "end")
+        .attr("text-anchor", "start")
         .selectAll("g")
         .data(keys.slice())
         .enter().append("g")
         .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
     legend.append("rect")
-      .attr("x", width - 25)
+      .attr("x", width - 20)
       .attr("width", 25)
       .attr("height", 25)
       .attr("fill", z);
 
     legend.append("text")
-      .attr("x", width - 30)
+      .attr("x", width + 8)
       .attr("y", 9.5)
       .attr("dy", "0.32em")
       .text(function(d) { return d; });
@@ -1056,3 +1055,177 @@ function PieChart2(data,ID,cfg)
     function midAngle(d) { return d.startAngle + (d.endAngle - d.startAngle) / 2; } 
     
 }
+
+// function BoxPlot(data,ID,cfg){
+//     console.log(data);
+//     globalCounts = data[0];
+//     groupCounts = data[1];
+//     var svgWidth = cfg.width, svgHeight = cfg.height;
+//     var margin = cfg.margin;
+//     var width = svgWidth - margin.left - margin.right;
+//     var height = (svgHeight - margin.top - margin.bottom);
+//     var barWidth = 40;
+//     var boxPlotColor = "#898989";
+//     var medianLineColor = "#ffffff";
+//     var axisColor = "#898989";
+
+//     var svg = d3.select("#" + ID).attr("width", svgWidth).attr("height", svgHeight);
+//     var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+//     // Move axis to center align the bars with the xAxis ticks
+//     var yAxisBox = svg.append("g").attr("transform", "translate(40,0)");
+//     var xAxisBox = svg.append("g").attr("transform", "translate(40,0)");
+
+//     g.append("text")
+//         .attr("x", (width / 2))
+//         .attr("y", 0)
+//         .attr("text-anchor", "middle")
+//         .attr("class","graph-title")
+//         // .style("font-size", "18px")
+//         .text(cfg.title);
+
+//     // Prepare the data for the box plots
+//     var plotData = [];
+//     var colorIndex = 0.1;
+//     var colorIndexStepSize = 0.08;
+//     for (var [key, groupCount] of Object.entries(groupCounts)) {
+//         var record = {};
+//         var localMin = d3.min(groupCount);
+//         var localMax = d3.max(groupCount);
+
+//         record["key"] = key;
+//         record["counts"] = groupCount;
+//         record["quartile"] = boxQuartiles(groupCount);
+//         record["whiskers"] = [localMax, localMin];
+//         record["color"] = d3.interpolateInferno(colorIndex);
+        
+//         plotData.push(record);
+//         colorIndex += colorIndexStepSize;
+//     }
+//     // // Create Tooltips
+//     // var tip = d3.tip().attr('class', 'd3-tip').direction('e').offset([0,5])
+//     //     .html(function(d) {
+//     //         var content = "<span style='margin-left: 2.5px;'><b>" + d.key + "</b></span><br>";
+//     //         content +=`
+//     //             <table style="margin-top: 2.5px;">
+//     //                     <tr><td>Max: </td><td style="text-align: right">` + d3.format(".2f")(d.whiskers[0]) + `</td></tr>
+//     //                     <tr><td>Q3: </td><td style="text-align: right">` + d3.format(".2f")(d.quartile[0]) + `</td></tr>
+//     //                     <tr><td>Median: </td><td style="text-align: right">` + d3.format(".2f")(d.quartile[1]) + `</td></tr>
+//     //                     <tr><td>Q1: </td><td style="text-align: right">` + d3.format(".2f")(d.quartile[2]) + `</td></tr>
+//     //                     <tr><td>Min: </td><td style="text-align: right">` + d3.format(".2f")(d.whiskers[1]) + `</td></tr>
+//     //             </table>
+//     //             `;
+//     //         return content;
+//     //     });
+//     // svg.call(tip);
+
+//     console.log(Object.keys(groupCounts));
+//     // Compute an ordinal xScale for the keys in plotData
+//     var xScale = d3.scalePoint()
+//     .domain(Object.keys(groupCounts))
+//     .rangeRound([0, width])
+//     .padding([0.5]);
+
+    
+//     // Compute a global y scale based on the global counts
+//     var min = d3.min(globalCounts);
+//     var max = d3.max(globalCounts);
+//     var yScale = d3.scaleLinear()
+//         .range([height, 0])
+//         .domain([min, max])
+//         .nice();
+
+    
+//     // Draw the box plot vertical lines
+//     var verticalLines = g.selectAll(".verticalLines")
+//     .data(plotData)
+//     .enter()
+//     .append("line")
+//     .attr("x1", d => { return xScale(d.key) + barWidth/2; })
+//     .attr("y1", d =>  { return yScale(d.whiskers[0]); })
+//     .attr("x2", d =>  { return xScale(d.key) + barWidth/2; })
+//     .attr("y2", d => { return yScale(d.whiskers[1]); })
+//     .attr("stroke", boxPlotColor)
+//     .attr("stroke-width", 1)
+//     .attr("stroke-dasharray", "5,5")
+//     .attr("fill", "none");
+
+//     // Draw the boxes of the box plot, filled in white and on top of vertical lines
+//     var rects = g.selectAll("rect")
+//     .data(plotData)
+//     .enter()
+//     .append("rect")
+//     .attr("width", barWidth)
+//     .attr("height", d => { return yScale(d.quartile[2]) - yScale(d.quartile[0]); })
+//     .attr("x", d => { return xScale(d.key); })
+//     .attr("y", d => { return yScale(d.quartile[0]); })
+//     .attr("fill", d => { return d.color; })
+//     .attr("stroke", boxPlotColor)
+//     .attr("stroke-width", 1)
+//     // .on('mouseover', tip.show)
+//     // .on('mouseout', tip.hide);
+
+//     // Config for whiskers and median
+//     var horizontalLineConfigs = [
+//     {   // Top whisker
+//         x1: d => { return xScale(d.key) },
+//         y1: d => { return yScale(d.whiskers[0]) },
+//         x2: d => { return xScale(d.key) + barWidth },
+//         y2: d => { return yScale(d.whiskers[0]) },
+//         color: boxPlotColor
+//     },
+//     {   // Median
+//         x1: d => { return xScale(d.key) },
+//         y1: d => { return yScale(d.quartile[1]) },
+//         x2: d => { return xScale(d.key) + barWidth },
+//         y2: d => { return yScale(d.quartile[1]) },
+//         color: medianLineColor
+//     },
+//     {   // Bottom whisker
+//         x1: d => { return xScale(d.key) },
+//         y1: d => { return yScale(d.whiskers[1]) },
+//         x2: d => { return xScale(d.key) + barWidth },
+//         y2: d => { return yScale(d.whiskers[1]) },
+//         color: boxPlotColor
+//     }
+//     ];
+        
+//     // Draw the whiskers and median line
+//     for(var i=0; i < horizontalLineConfigs.length; i++) {
+//         var lineConfig = horizontalLineConfigs[i];
+//         var horizontalLine = g.selectAll(".whiskers")
+//             .data(plotData)
+//             .enter()
+//             .append("line")
+//             .attr("x1", lineConfig.x1)
+//             .attr("y1", lineConfig.y1)
+//             .attr("x2", lineConfig.x2)
+//             .attr("y2", lineConfig.y2)
+//             .attr("stroke", lineConfig.color)
+//             .attr("stroke-width", 1)
+//             .attr("fill", "none");
+//     }
+
+//     // add the Y gridlines
+//     svg.append("g")
+//         .attr("transform", "translate(40,0)")			
+//         .attr("class", "grid")
+//         .call(d3.axisLeft(yScale)
+//             .tickSize(-width)
+//             .tickFormat("")
+//         )
+
+//     // Setup a scale on the left
+//     var yAxis = d3.axisLeft(yScale).ticks(6)
+//     yAxisBox.append("g")
+//         .attr("class", "y axis")
+//         .call(yAxis);
+
+//     // Setup a series axis on the bottom
+//     var xAxis = d3.axisBottom(xScale);
+//     xAxisBox.append("g")
+//         .attr("class", "x axis")
+//         .attr("transform", "translate(0," + height + ")")
+//         .call(xAxis);
+
+// }

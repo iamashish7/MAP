@@ -1,5 +1,18 @@
 var months, years, dates;
 
+// Perform a numeric sort on an array
+function sortNumber(a,b) { return a - b; }
+
+// Quartile definition
+function boxQuartiles(d) 
+{
+    return [
+        d3.quantile(d, .75),
+        d3.quantile(d, .5),
+        d3.quantile(d, .25),
+    ];
+}
+
 function get_arr_jobs_executing_per_day(data)
 {
     var arr = [];
@@ -20,7 +33,7 @@ function get_arr_jobs_per_month(data)
     {
         arr.push({
             name: new Date(i), //date
-            value: [+data[i][0], +data[i][1]] //convert string to number  
+            value: [+data[i][0] + +data[i][1], +data[i][0]] //convert string to number  
         });
     }
     return arr;
@@ -126,14 +139,49 @@ function get_arr_job_status_per_queue(data)
     var arr = [];
     for (var i in data)
     {
+        val = data[i].map(x=>+x);
+        // console.log(val);
         arr.push({
             id: i,
-            completed: +data[i][0],
-            cancelled: +data[i][1],
-            failed: +data[i][2]  
+            completed: ((val[0]/(val[0] + val[1] + val[2]))*100).toFixed(2),
+            cancelled: ((val[1]/(val[0] + val[1] + val[2]))*100).toFixed(2),
+            failed: ((val[2]/(val[0] + val[1] + val[2]))*100).toFixed(2)  
         });
     }
     return arr;
+}
+
+function get_arr_CPU_load_per_day(data)
+{
+    var arr = [];
+    for (var i in data)
+    {
+        arr.push({
+            name: new Date(i), //date
+            value: +data[i] //convert string to number         
+        });
+    }
+    return arr;
+}
+
+function get_arr_wtime_per_month(data){
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    var groupCounts = {};
+    var globalCounts = [];
+    for (var i in data)
+    {
+        var d = new Date(i);
+        var k = monthNames[d.getMonth()].concat("'").concat(d.getFullYear().toString().substr(-2));
+        groupCounts[k] = data[i].map(x=>+x).sort(sortNumber);
+        // groupCounts.push({
+        //     name: new Date(i), //date
+        //     value: data[i].map(x=>+x).sort(sortNumber) //convert string to number  
+        // });
+        globalCounts = globalCounts.concat(data[i].map(x=>+x).sort(sortNumber));
+    }
+    
+    return [globalCounts,groupCounts];
 }
 
 function myDrawChart(d) {
@@ -181,6 +229,10 @@ function myDrawChart(d) {
     } else if (ID === 11) {
         arr = get_arr_count_per_status(data['data1']);
         arr2 = get_arr_job_status_per_queue(data['data2']);
+    } else if (ID === 12) {
+        arr = get_arr_CPU_load_per_day(data);
+    }else if (ID === 13) {
+        arr = get_arr_wtime_per_month(data);
     }
     if (ID === 1) {
         var cfg = {
@@ -208,9 +260,9 @@ function myDrawChart(d) {
             labely:"Jobs",
             months: months,
             noLines: 2,
-            legend_keys:["Jobs Completed", "Jobs Failed"],
-            LineColors: ['green','red'],
-            TooltipColors: ['green','red'],
+            legend_keys:["Jobs Submitted", "Jobs Completed"],
+            LineColors: ['#00abff','#188c09'],
+            TooltipColors: ['#00abff','#188c09'],
             minn: minn,
             maxx: maxx,
         };
@@ -313,14 +365,14 @@ function myDrawChart(d) {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.70,
             margin: { top: screen.availHeight*0.39, right: 20, bottom: 50, left: 70 },
-            title:"Completed and failed jobs per month",
+            title:"Submitted and Completed jobs per month",
             labelx:"Timestamp",
-            labely:"Jobs",
+            labely:"#Jobs",
             months: months,
             noLines: 2,
-            legend_keys:["Jobs Completed", "Jobs Failed"],
-            LineColors: ['green','red'],
-            TooltipColors: ['green','red'],
+            legend_keys:["Jobs Submitted", "Jobs Completed"],
+            LineColors: ['#00abff','#188c09'],
+            TooltipColors: ['#00abff','#188c09'],
             minn: minn,
             maxx: maxx,
         };
@@ -329,33 +381,62 @@ function myDrawChart(d) {
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.68,
-            margin: { top: 30, right: 20, bottom: 70, left: 80 },
+            margin: { top: 50, right: 100, bottom: 70, left: 80 },
             title:"Completed, Cancelled and Failed jobs per queue",
             labelx:"Queue",
-            labely:"#Jobs",
+            labely:"Percentage of Jobs",
         };
         StackBarChart(arr, "chart1",cfg);
         // tempTesting();
     } else if (ID === 11) {
         var cfg = {
-            width:screen.availWidth*0.9,
+            width:screen.availWidth*0.95,
             height:screen.availHeight*0.68,
-            margin: { top: 30, right: screen.availWidth*0.5, bottom: 70, left: 50 },
+            margin: { top: 30, right: screen.availWidth*0.5, bottom: 80, left: 80 },
             title:"Job count per job status",
             labelx:"Status",
             labely:"Percentage of Jobs",
         };
         BarGraph(arr, "chart1",cfg);
         var cfg = {
-            width:screen.availWidth*0.9,
+            width:screen.availWidth*0.95,
             height:screen.availHeight*0.68,
-            margin: { top: 30, right: 50, bottom: 70, left: screen.availWidth*0.5 },
+            margin: { top: 30, right: 100, bottom: 80, left: screen.availWidth*0.5 },
             title:"Completed, Cancelled and Failed jobs per queue",
             labelx:"Queue",
-            labely:"#Jobs",
+            labely:"Percentage of Jobs",
         };
         StackBarChart(arr2, "chart1",cfg);
         // tempTesting();
+
+        
+    } else if (ID === 12) {
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.68,
+            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            title:"No. of CPUs busy per day",
+            labelx:"Timestamp",
+            labely:"#CPUs",
+            months: months,
+            noLines: 1,
+            LineColors: ['steelblue'],
+            TooltipColors: ['black'],
+            minn: minn,
+            max: maxx,
+        };
+        LineChart(arr,"chart1",cfg);
+    } else if (ID === 13) {
+        var cfg = {
+            width:screen.availWidth*0.75,
+            height:screen.availHeight*0.68,
+            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            title:"Quartiles of wait-time per month",
+            labelx:"Timestamp",
+            labely:"wait-time",
+            months: months,
+        };
+        BoxPlot(arr,"chart1",cfg);
     }
 }
 
