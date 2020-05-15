@@ -441,16 +441,16 @@ function myDrawChart(d) {
 }
 
 function init_calender(startY,endY) {
-    console.log("in new init_cal",('01/01/').concat(startY.toString()),('31/12/').concat(endY.toString()));
+    console.log("in new init_cal",startY,endY);
     $('input[name="from"]').daterangepicker({
         locale: {
-            format: 'DD/MM/YYYY'
+            format: 'YYYY-MM-DD'
           },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minDate: ('01/01/').concat(startY.toString()),
-        maxDate: ('31/12/').concat(endY.toString())
+        minDate: startY,
+        maxDate: endY
     });
     $('input[name="from"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));
@@ -460,11 +460,14 @@ function init_calender(startY,endY) {
     });
 
     $('input[name="to"]').daterangepicker({
+        locale: {
+            format: 'YYYY-MM-DD'
+          },
         autoUpdateInput: false,
         singleDatePicker: true,
         showDropdowns: true,
-        minYear: startY,
-        maxYear: endY
+        minDate: startY,
+        maxDate: endY
         // maxYear: parseInt(moment().format('YYYY'), 10)
     });
     $('input[name="to"]').on('apply.daterangepicker', function (ev, picker) {

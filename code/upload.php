@@ -44,7 +44,7 @@ error_reporting(E_ALL);
         }
         else
         {
-            $command = escapeshellcmd('python3 /var/www/html/new/code/parser/parser_swf.py '.$_FILES['fileToUpload']['name']);
+            $command = escapeshellcmd('python3 /var/www/html/new/code/parser/parser_swf_temp.py '.$_FILES['fileToUpload']['name']);
             $output = shell_exec($command);
             echo $output;
         }

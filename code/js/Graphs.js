@@ -159,13 +159,13 @@ function LineChart(data,ID,cfg)
     }
     // x axis relative to date range
     if (cfg.months <= 3) {
-        g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x).ticks(dates).tickFormat(d3.timeFormat("%d-%b-%y"))).selectAll("text").style("text-anchor", "end").attr("dx", "-.8em").attr("dy", ".15em").attr("transform", "rotate(-65)");
+        g.append("g").attr("class", "axis-ticks").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x).ticks(dates).tickFormat(d3.timeFormat("%d-%b-%y"))).selectAll("text").style("text-anchor", "end").attr("dx", "-.8em").attr("dy", ".15em").attr("transform", "rotate(-65)");
     }
     else {
-        g.append("g").attr("class", "text2").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x).ticks(cfg.months).tickFormat(d3.timeFormat("%b'%y")));
+        g.append("g").attr("class", "axis-ticks").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x).ticks(cfg.months).tickFormat(d3.timeFormat("%b'%y")));
     }
     // Y axis
-    g.append("g").attr("class", "text2").call(d3.axisLeft(y));
+    g.append("g").attr("class", "axis-ticks").call(d3.axisLeft(y));
 
     // plotting line(s)
     for (i = 0; i < cfg.noLines; i++) {
@@ -188,6 +188,7 @@ function LineChart(data,ID,cfg)
     g.append("text")
         .attr("transform", "translate(" + (width / 2) + " ," + (placeylable) + ")")
         .attr("dy", "0.2em")
+        .attr("class", "axis-labels")
         .style("text-anchor", "middle")
         .text(cfg.labelx);
 
@@ -195,6 +196,7 @@ function LineChart(data,ID,cfg)
     g.append("text")
         .attr("transform", "rotate(-90)").attr("y", 10 - margin.left).attr("x", 0 - (height / 2))
         .attr("dy", "0.7em")
+        .attr("class", "axis-labels")
         .style("text-anchor", "middle")
         .text(cfg.labely);
 
@@ -204,6 +206,7 @@ function LineChart(data,ID,cfg)
         var lineLegend = g.selectAll(".lineLegend").data(cfg.legend_keys)
             .enter().append("g")
             .attr("class", "lineLegend")
+            .attr("class", "lineLegend axis-ticks")
             .attr("transform", function (d, i) {
                 return "translate(" + width*0.95 + "," + (i * 30) + ")";
             });
@@ -1055,6 +1058,180 @@ function PieChart2(data,ID,cfg)
     function midAngle(d) { return d.startAngle + (d.endAngle - d.startAngle) / 2; } 
     
 }
+
+function PredictionLineChart(data,ID,cfg)
+{
+    console.log(ID);
+    var svgWidth = cfg.width, svgHeight = cfg.height;
+    var margin = cfg.margin;
+    var width = svgWidth - margin.left - margin.right;
+    var height = svgHeight - margin.top - margin.bottom;
+    // console.log(cfg.title,width,svgHeight,margin.top,margin.bottom,height);
+    var svg = d3.select("#" + ID).append("svg").attr("width", svgWidth).attr("height", svgHeight);
+    var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    var x = d3.scaleLinear().rangeRound([0, width]);
+    var y = d3.scaleLinear().rangeRound([height, 0]);
+
+    var value_arr = []
+    if (cfg.noLines == 1) {
+        value_arr = d3.extent(data, function (d) { return d.value });
+    }
+    else {
+        for (i = 0; i < cfg.noLines; i++) {
+            temp = d3.extent(data, function (d) { return d.value[i]});
+            value_arr = value_arr.concat(temp);
+        } 
+    }
+
+    var xExtent = d3.extent(data, function(d) { return d.name; }),
+        xRange = xExtent[1] - xExtent[0],
+        yExtent = d3.extent(value_arr, function(d) { return d; }),
+        yRange = yExtent[1] - yExtent[0];
+
+    x.domain([xExtent[0] - (xRange * .05), xExtent[1] + (xRange * .05)]);
+    y.domain([yExtent[0] - (yRange * .05), yExtent[1] + (yRange * .05)]);
+    
+    var lines = []
+    if (cfg.noLines == 1) {
+        var line = d3.line().x(function (d) {
+            return x(d.name)
+        }).y(function (d) {
+            return y(d.value)
+        });
+        lines.push(line);
+    }
+    else {
+        for (i = 0; i < cfg.noLines; i++) {
+            var line = d3.line().x(function (d) {
+                return x(d.name)
+            }).y(function (d) {
+                return y(d.value[i])
+            });
+            lines.push(line);
+        } 
+    }
+    g.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(x));
+    g.append("g").call(d3.axisLeft(y));
+
+    // plotting line(s)
+    for (i = 0; i < cfg.noLines; i++) {
+        g.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", cfg.LineColors[i])
+        .attr("stroke-linejoin", "round")
+        .attr("stroke-linecap", "round")
+        .attr("stroke-width", 1.5)
+        .attr("d", lines[i]);
+    }
+    //text label for x axis
+    g.append("text")
+        .attr("transform", "translate(" + (width / 2) + " ," + (height+10) + ")")
+        .attr("dy", "0.2em")
+        // .attr("class", "axis-labels")
+        .style("text-anchor", "middle")
+        .text(cfg.labelx);
+
+    //text label for y axis
+    g.append("text")
+        .attr("transform", "rotate(-90)").attr("y", -margin.left).attr("x", 0 - (height / 2))
+        .attr("dy", "0.7em")
+        // .attr("class", "axis-labels")
+        .style("text-anchor", "middle")
+        .text(cfg.labely);
+
+    // // Plotting legends if any
+    // if(cfg.noLines > 1)
+    // {
+    //     var lineLegend = g.selectAll(".lineLegend").data(cfg.legend_keys)
+    //         .enter().append("g")
+    //         .attr("class", "lineLegend")
+    //         .attr("class", "lineLegend axis-ticks")
+    //         .attr("transform", function (d, i) {
+    //             return "translate(" + width*0.95 + "," + (i * 30) + ")";
+    //         });
+    //     lineLegend.append("text").text(function (d) { return d; }).attr("transform", "translate(-60,9)"); //align texts with boxes
+    //     lineLegend.append("rect").attr("fill", function (d, i) { return cfg.LineColors[i]; }).attr("width", 10).attr("height", 10).attr("transform", "translate(-80,0)");
+    // }
+
+    // //Divides date for tooltip placement
+    // var bisectDate = d3.bisector(function (d) { return d.name; }).left;
+    
+    // var focus_arr = []
+    // for (i = 0; i < cfg.noLines; i++) {
+    
+    //     var focus = g.append("g")
+    //         .attr("class", "focus")
+    //         .style("display", "none");
+
+    //     focus.append("circle")
+    //         .attr("r", 5)
+    //         .attr("fill", cfg.TooltipColors[i]);
+
+    //     focus.append("rect")
+    //         .attr("class", "tooltip")
+    //         .attr("width", 100)
+    //         .attr("height", 50)
+    //         .attr("x", 10)
+    //         .attr("y", -22)
+    //         .attr("rx", 4)
+    //         .attr("ry", 4);
+
+    //     focus.append("text")
+    //         .attr("class", "tooltip-date")
+    //         .attr("x", 18)
+    //         .attr("y", -2)
+    //         .attr("fill", cfg.TooltipColors[i]);
+
+    //     focus.append("text")
+    //         .attr("x", 18)
+    //         .attr("y", 18)
+    //         .attr("fill", cfg.TooltipColors[i])
+    //         .text("Value:");
+
+    //     focus.append("text")
+    //         .attr("class", "tooltip-likes")
+    //         .attr("x", 60)
+    //         .attr("y", 18)
+    //         .attr("fill", cfg.TooltipColors[i]);
+    //     focus_arr.push(focus);
+    // }
+    // g.append("rect")
+    //     .attr("class", "overlay")
+    //     .attr("width", width)
+    //     .attr("height", height)
+    //     .on("mouseover", function() { 
+    //             for (i = 0; i < cfg.noLines; i++)
+    //                 focus_arr[i].style("display", null); 
+    //         })
+    //     .on("mouseout", function() { 
+    //             for (i = 0; i < cfg.noLines; i++)
+    //                 focus_arr[i].style("display", "none");  
+    //         })
+    //     .on("mousemove", mousemove);
+
+    // function mousemove() {
+    //     console.log("mousemove");
+    //     var x0 = x.invert(d3.mouse(this)[0]),
+    //         i = bisectDate(data, x0, 1),
+    //         d0 = data[i - 1],
+    //         d1 = data[i],
+    //         d = x0 - d0.name > d1.name - x0 ? d1 : d0;
+    //     if (cfg.noLines == 1) {
+    //         focus_arr[0].attr("transform", "translate(" + x(d.name) + "," + y(d.value) + ")");
+    //         focus_arr[0].select(".tooltip-date").text(getFormedDate(d.name));
+    //         focus_arr[0].select(".tooltip-likes").text(d.value);
+    //     }
+    //     else {
+    //         for (i = 0; i < cfg.noLines; i++) {
+    //             focus_arr[i].attr("transform", "translate(" + x(d.name) + "," + y(d.value[i]) + ")");
+    //             focus_arr[i].select(".tooltip-date").text(d3.timeFormat("%b'%y")(d.name));
+    //             focus_arr[i].select(".tooltip-likes").text(d.value[i]);
+    //         } 
+    //     }
+    // }
+}
+
 
 // function BoxPlot(data,ID,cfg){
 //     console.log(data);

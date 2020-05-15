@@ -11,8 +11,9 @@ import os
 from datetime import datetime
 import sys
 import random
+import time
 
-log_file_name = '/var/www/html/new/code/uploads/'+sys.argv[1]
+log_file_name = '/var/www/html/uploads/'+sys.argv[1]
 rand_int = random.randrange(10000, 100000, 1)
 database = "tempLogs"
 rand_int = random.randrange(10000, 100000, 1)
@@ -27,8 +28,8 @@ id_R = 0
 id_S = 0
 id_B = 0
 id_C = 0
-startY = "99999"
-endY = "0"
+startY = "9999-99-99"
+endY = "0000-00-00"
 ## Connect to Database
 connection = pymysql.connect(host='localhost', user='monalys', passwd='monalys', charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
 cursor = connection.cursor()
@@ -238,8 +239,10 @@ def readLog(log_filename):
         row = line.split(';')
         if(len(row)<2):
             continue
-        startY = min(startY,row[0].split()[0].split('/')[2])
-        endY = max(endY,row[0].split()[0].split('/')[2])
+        temp = row[0].split()[0].split('/')
+        temp = temp[2]+'-'+temp[0]+'-'+temp[1]
+        startY = min(startY,temp)
+        endY = max(endY,temp)
         
         if row[1]=='A':
             #print ("A")
@@ -267,4 +270,4 @@ closeConnection()
 print_str += ('#'+startY)
 print_str += ('#'+endY)
 print_str += ('#0')
-print (print_str)
+print (print_str, end ="")

@@ -25,11 +25,18 @@
         .main_chart{
             //height: 80%;
             //width: 80%;
-            margin-left: 10%;
+            /* margin-left: 10%; */
             //border-style: solid;
+            text-align:center;
         }
         .hide{
             display: None;
+        }
+        
+        .tooltip2{
+            position: absolute;			
+            text-align: left;
+            font-size:12px;			  
         }
         
         .loader-wrapper {
@@ -171,6 +178,138 @@
         }
         .no-click {pointer-events: none;}
 
+        .center_text{
+            margin: 0 auto;
+            text-align: center;
+            /* transform: translate(-50%, -50%); */
+        }
+
+        .loader2 {
+            margin: 0 auto;
+            transform: translate(-50%, -50%);
+            border: 6px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 6px  solid black;
+            border-bottom: 6px  solid black;
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media screen and (max-width: 540px) {
+            .graph-title {
+                font-size: 2vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 1.9vw;
+            }
+            .axis-ticks{
+                font-size: 1.8vw;
+            }
+        }
+
+        @media screen and (min-width: 540px) and (max-width: 780px) {
+            .graph-title {
+                font-size: 2vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 1.9vw;
+            }
+            .axis-ticks{
+                font-size: 1.8vw;
+            }
+        }
+        
+        @media screen and and (min-width: 781px) and (max-width: 1020px) {
+            .graph-title {
+                font-size: 1vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 0.9vw;
+            }
+            .axis-ticks{
+                font-size: 0.9vw;
+            }
+        }
+
+        @media screen and (min-width: 1020px) and (max-width: 1260px) {
+            .graph-title {
+                font-size: 1vw;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 0.9vw;
+            }
+            .axis-ticks{
+                font-size: 0.9vw;
+            }
+        }
+
+        @media screen and  (min-width: 1020px) and (max-width: 1260px) {
+            .graph-title {
+                font-size: 16px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 14px;
+            }
+            .axis-ticks{
+                font-size: 12px;
+            }
+        }
+
+        @media screen and  (min-width: 1261px) and (max-width: 1500px) {
+            .graph-title {
+                font-size: 16px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 14px;
+            }
+            .axis-ticks{
+                font-size: 13px;
+            }
+        }
+
+        @media screen and  (min-width: 1500px)  and (max-width: 1740px){
+            .graph-title {
+                font-size: 18px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 16px;
+            }
+            .axis-ticks{
+                font-size: 14px;
+            }
+        }
+
+        @media screen and  (min-width: 1741px) {
+            .graph-title {
+                font-size: 18px;
+                text-align: center;
+            }
+            .axis-labels{
+                font-size: 17px;
+            }
+            .axis-ticks{
+                font-size: 14px;
+            }
+        }
 
         /* *,
         *:before,
@@ -196,16 +335,10 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="monitor_2010_multiple_selection.html">HPC2010</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="monitor_2013.html">HPC2013</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link active" href="#">Custom Analysis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="wait_time_pred.php">Wait-time Prediction</a>
+                    <a class="nav-link" href="#">Wait-time Analysis</a>
                 </li>
             </ul>
         </div>
@@ -220,7 +353,7 @@
                 <button onclick="myFunction()" class="dropbtn btn" id='dropbtn'>Select Data</button>
                 <div id="myDropdown" class="dropdown-content">
                     <label class="file">
-                        <input  onChange="setFile()" style='padding:10px' form = 'fileuploadform' type="file" id="fileToUpload" aria-label="File browser example">
+                        <input  onChange="setFile()" style='padding:8px' form = 'fileuploadform' type="file" id="fileToUpload" aria-label="File browser example">
                         <span class="file-custom"></span>
                     </label>
                     <hr>
@@ -228,7 +361,7 @@
                     <!-- <a onclick="setDB('ANL_intrepid')" href="#">ANL_intrepid</a> -->
                     <a onclick="setDB('SDSC_SP2')" href="#">SDSC_SP2</a>
                     <a onclick="setDB('SDSC_BLUE')" href="#">SDSC_BLUE</a>
-		    <a onclick="setDB('CEA_curie')" href="#">CEA curie</a>
+                    <a onclick="setDB('CEA_curie')" href="#">CEA curie</a>
                     <a onclick="setDB('DAS2')" href="#">DAS2</a>
                     <a onclick="setDB('HPC2N')" href="#">HPC2N</a>
                 </div>
@@ -275,9 +408,17 @@
         </div>
     </div>
     <br>
-    <div class="justify-content-center">
+    <div id="chart_container" class="justify-content-center" style="text-align:center;">
         <svg id="chart1" class="main_chart"></svg>
+        <div id='loader_circle' class="loader2 hide"></div>
+        <p id='loader_text' class="center_text hide"> Loading... </p>
     </div>
+    <div class="container">
+        <div id="error-box-date" class="alert alert-warning hide" style="text-align:center">    
+        </div>
+    </div>
+    
+        
 </body>
 <script>
 
@@ -328,6 +469,12 @@
         this.filename = val[2];
         console.log("got new file");  
     }
+
+    function ShowDateError(startdate,enddate){
+        document.getElementById("error-box-date").innerHTML = "Please select date between ".concat('<b>',startdate,'</b>',' and ','<b>',enddate,'</b>');
+        document.getElementById("error-box-date").classList.remove('hide');
+    }
+
     $(document).ready(function () {
         // init_calender();
         var dbName = "";
@@ -336,13 +483,13 @@
         var startY = "";
         var endY = "";
         var meta = {
-            "CTC_SP2":[1996,1997,1],
+            "CTC_SP2":['1996-06-26','1997-05-31',1],
             // "ANL_intrepid":[2009,2009,1],
-            "SDSC_SP2":[1998,2000,1],
-            "SDSC_BLUE":[2000,2003,1],
-	    "CEA_curie":[2012,2014,1],
-            "DAS2":[2004,2004,1],
-            "HPC2N":[2006,2009,1],
+            "SDSC_SP2":['1998-04-24','2000-04-29',1],
+            "SDSC_BLUE":['2000-04-25','2002-12-30',1],
+            "CEA_curie":['2012-10-17','2014-06-29',1],
+            "DAS2":['2004-01-01','2004-12-30',1],
+            "HPC2N":['2006-01-16','2009-07-08',1],
         };
         $("form#fileuploadform").submit(function(e) {
             e.preventDefault();
@@ -351,6 +498,7 @@
                 console.log("here1");
                 document.getElementById("analysis-form").classList.add('hide');
                 document.getElementById("error-box").classList.add('hide');
+                document.getElementById("error-box-date").classList.add('hide');
                 $("#chart1").empty();
                 $("#from").val('');
                 $("#to").val('');
@@ -361,6 +509,8 @@
                     tableName = db;
                     dbName = "SavedLogs"
                     $("#parser").val(meta[db][2]);
+                    startY = meta[db][0];
+                    endY = meta[db][1];
                     console.log(meta[db][0],meta[db][1]);
                     init_calender(meta[db][0],meta[db][1]);
                     document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
@@ -388,8 +538,8 @@
                             tableName = res[0];
                             dbName = "tempLogs"
                             // this.dbName = dbName;
-                            startY = Number(res[1]);
-                            endY = Number(res[2]);
+                            startY = res[1];
+                            endY = res[2];
                             n_Q = Number(res[3]);
                             init_calender(startY,endY);
                             document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
@@ -411,24 +561,38 @@
         });
     	$("#date-submit-btn").click(function(event){
             // if($("#parser").val()=='1' || 1){
-                console.log("In swf");
+                document.getElementById("error-box-date").classList.add('hide');
+                document.getElementById("chart1").classList.add('hide');    
                 var chartId = $("#chart").val();
                 var toDate = $("#to").val().split("/").reverse().join("-");
                 var fromDate = $("#from").val().split("/").reverse().join("-");
                 $("#chart1").empty();
-                $.ajax({
-                    url:"analyzer_get_data.php",
-                    method:"POST",
-                    data:{to:toDate,from:fromDate,chart:chartId,db:dbName,table:tableName},
-                    success:function(returnData){
-                        console.log("Data fetched")
-                        console.log(returnData)
-                        myDrawChart(returnData);
-                    },
-                    error:function(err){
-                        console.log(err);
-                    }
-                });
+                console.log(fromDate,startY,fromDate<startY);
+                console.log(toDate,endY,toDate>endY);
+                if(fromDate>=startY && toDate<=endY){
+                    document.getElementById("loader_circle").classList.remove('hide');
+                    document.getElementById("loader_text").classList.remove('hide');        
+                    $.ajax({
+                        url:"analyzer_get_data.php",
+                        method:"POST",
+                        data:{to:toDate,from:fromDate,chart:chartId,db:dbName,table:tableName},
+                        success:function(returnData){
+                            console.log("Data fetched")
+                            console.log(returnData)
+                            document.getElementById("loader_circle").classList.add('hide');
+                            document.getElementById("loader_text").classList.add('hide');
+                            document.getElementById("chart1").classList.remove('hide');
+                            myDrawChart(returnData);
+                        },
+                        error:function(err){
+                            console.log(err);
+                        }
+                    });
+                } else {
+                    ShowDateError(startY,endY);
+                    // document.getElementById("error-box-date").classList.remove('hide');
+                }
+                
             // }
             // else{
             //     var chartId = $("#chart").val();

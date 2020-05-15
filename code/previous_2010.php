@@ -298,7 +298,7 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        init_calender('2010','2020');
+        init_calender('2010-12-01','2020-01-09');
     	$("#date-submit-btn").click(function(event){
             document.getElementById("loader_circle").classList.remove('hide');
             document.getElementById("loader_text").classList.remove('hide');

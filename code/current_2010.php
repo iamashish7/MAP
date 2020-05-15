@@ -247,7 +247,7 @@
                 </li>
             </ul>
         </div>
-        <p style="color: white; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif">Indian Institute of Technology, Kanpur</p>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology, Kanpur</a>
     </nav>
     <br>
     <div class="container-fluid">

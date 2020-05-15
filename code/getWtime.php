@@ -1,8 +1,8 @@
 <?php
 if (isset($_POST['Q']))
 {   
-    $command = escapeshellcmd('python3 /var/www/html/new/code/calcWtime.py '.$_POST['nodes'].' '.$_POST['walltime'].' '.$_POST['Q'].' 2> error.txt');
-    echo 'HPC 2010 : '.shell_exec($command).' seconds';
+    $command = escapeshellcmd('python3 -W ignore /var/www/html/new/code/calcWtime2.py '.$_POST['nodes'].' '.$_POST['walltime'].' '.$_POST['Q']);
+    echo shell_exec($command);
 }
 else
 {
