@@ -217,7 +217,7 @@
                     </a>
                     <div class="dropdown-menu ">
                         <a class="dropdown-item" href="#">Current Analysis</a>
-                        <a class="dropdown-item" href="previous_2013.php">Past Data Analysis</a>
+                        <a class="dropdown-item" href="#">Past Data Analysis</a>
                     </div>
                 </li>
             </ul>

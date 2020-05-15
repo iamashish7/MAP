@@ -338,12 +338,11 @@
                     <a class="nav-link active" href="#">Custom Analysis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Wait-time Analysis</a>
+                    <a class="nav-link" href="wait_time_pred.php">Wait-time Analysis</a>
                 </li>
             </ul>
         </div>
-        <p style="color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif">Indian Institute of
-            Technology, Kanpur</p>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology, Kanpur</a>
     </nav>
     <div class="container ">
         <br>

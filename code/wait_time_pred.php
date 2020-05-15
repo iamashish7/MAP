@@ -76,8 +76,7 @@
                 </li>
             </ul>
         </div>
-        <p style="color: white; font-size: 20px; font-family: Arial, Helvetica, sans-serif">Indian Institute of
-            Technology, Kanpur</p>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology, Kanpur</a>
     </nav>
     <div class="container-fluid ">
         <br>
