@@ -1,0 +1,6 @@
+pymysql
+joblib==0.13.2
+datetime
+xgboost==0.90
+sklearn
+numpy

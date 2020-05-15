@@ -36,9 +36,7 @@ $ sudo apt install php libapache2-mod-php php-mysql
 
 4. Now we will install some python libraries
 
-$ pip install pymysql
-$ pip install joblib
-$ pip install datetime
+$ pip install -r requirements.txt
 
 
 5. Modify few php parameters :-
