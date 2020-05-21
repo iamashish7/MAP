@@ -129,7 +129,7 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 206973[].mgmt03 prasanna mediumsb Msb96         --    6  96    --  96:00 H   -- 
     -- 
-206974[].mgmt03 prasanna medium   M96           --   12  96    --  96:00 B   -- 
+206974[].mgmt03 prasanna medium   M96           --   12  96    --  96:00 H   -- 
     -- 
 206977[].mgmt03 thejak   medium   M96           --   12  96    --  96:00 H   -- 
     -- 
@@ -153,159 +153,172 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 207717.mgmt03   bhawan   large    case_10k.d    --   30 240    --  72:00 Q   -- 
     -- 
-207797.mgmt03   aadit    large    case_10k.d   7132  25 200    --  72:00 R 03:47
-   cn067/0*8+cn074/0*8+cn108/0*8+cn146/0*8+cn143/0*8+cn097/0*8+cn085/0*8
-   +cn106/0*8+cn088/0*8+cn174/0*8+cn011/0*8+cn026/0*8+cn133/0*8+cn148/0*8
-   +cn160/0*8+cn071/0*8+cn018/0*8+cn105/0*8+cn087/0*8+cn139/0*8+cn034/0*8
-   +cn039/0*8+cn172/0*8+cn159/0*8+cn032/0*8
 208125.mgmt03   mitesht  large    RT            --   32 256    --  72:00 H   -- 
     -- 
 208832.mgmt03   obharti  small    case_30k.d    --    1  20    --  120:0 Q   -- 
     -- 
 208925.mgmt03   gunvirs  large    Test320       --   32 256    --  72:00 H   -- 
     -- 
-208982.mgmt03   bhavanap medium   4.5         12340   4  32    --  96:00 R 08:50
-   cn236/0*8+cn260/0*8+cn254/0*8+cn201/0*8
-209002.mgmt03   himkv    mediumsb 3.7         38221   4  32    --  96:00 R 83:00
-   cn404/0*8+cn412/0*8+cn375/0*8+cn377/0*8
-209020[].mgmt03 viknesh  medium   R96           --   12  96    --  96:00 B   -- 
+209020[].mgmt03 viknesh  medium   R96           --   12  96    --  96:00 H   -- 
     -- 
-209113.mgmt03   jawahar  mediumsb AoA8_AR6    44365   6  96    --  96:00 R 14:32
-   cn376/0*16+cn395/0*16+cn369/0*16+cn385/0*16+cn387/0*16+cn398/0*16
-209114.mgmt03   jawahar  large    AR15_Un     32368  20 160    --  72:00 R 03:25
-   cn168/0*8+cn144/0*8+cn014/0*8+cn042/0*8+cn060/0*8+cn006/0*8+cn023/0*8
-   +cn081/0*8+cn043/0*8+cn017/0*8+cn116/0*8+cn100/0*8+cn113/0*8+cn040/0*8
-   +cn135/0*8+cn114/0*8+cn158/0*8+cn078/0*8+cn109/0*8+cn044/0*8
-209122[].mgmt03 viknesh  large    R200          --   25 200    --  72:00 B   -- 
-    -- 
-209143.mgmt03   kashishm medium   3.4         25071   4  32    --  96:00 R 14:56
-   cn234/0*8+cn262/0*8+cn216/0*8+cn243/0*8
-209145.mgmt03   kashishm small    3.3         25733   4  32    --  120:0 R 15:02
-   cn317/0*8+cn323/0*8+cn298/0*8+cn286/0*8
-209147.mgmt03   kashishm mediumsb 3.2         39514   4  32    --  96:00 R 10:35
-   cn374/0*8+cn391/0*8+cn393/0*8+cn396/0*8
-209148.mgmt03   kashishm smallsb  3.1         54388   2  16    --  120:0 R 95:32
-   cn461/0*8+cn455/0*8
-209153.mgmt03   waquar   small    AW10.dat     6098   3  24    --  120:0 R 99:21
-   cn331/0*8+cn339/0*8+cn299/0*8
-209154.mgmt03   nidhig   smallsb  kmc_run     58948   1  16    --  120:0 R 99:19
-   cn460/0*16
-209157.mgmt03   rshreya  medium   3.0         32321   4  32    --  96:00 R 14:40
-   cn250/0*8+cn276/0*8+cn225/0*8+cn263/0*8
-209159.mgmt03   rshreya  mediumsb 2.9         65308   4  32    --  96:00 R 07:07
-   cn401/0*8+cn413/0*8+cn371/0*8+cn373/0*8
-209161.mgmt03   rshreya  small    2.8         12913   4  32    --  120:0 R 14:36
-   cn320/0*8+cn292/0*8+cn340/0*8+cn332/0*8
-209163.mgmt03   pkpandey mediumsb 4.3         65439   4  32    --  96:00 R 07:04
-   cn401/1*8+cn413/1*8+cn371/1*8+cn373/1*8
-209165.mgmt03   pkpandey medium   4.4         19739   4  32    --  96:00 R 10:31
-   cn264/0*8+cn229/0*8+cn186/0*8+cn193/0*8
-209167.mgmt03   pkpandey small    4.5         28086   4  32    --  120:0 R 10:03
-   cn335/0*8+cn304/0*8+cn321/0*8+cn295/0*8
-209172.mgmt03   nidhig   small    kmc_run     25818   1   8    --  120:0 R 98:42
-   cn311/0*8
-209176.mgmt03   kritama  medium   4.2         30938   4  32    --  96:00 R 01:58
-   cn258/0*8+cn237/0*8+cn206/0*8+cn245/0*8
-209178.mgmt03   kritama  small    4.1         11141   4  32    --  120:0 R 04:43
-   cn325/0*8+cn296/0*8+cn322/0*8+cn290/0*8
-209179.mgmt03   kritama  mediumsb 4.0         54631   4  32    --  96:00 R 85:38
-   cn411/0*8+cn370/0*8+cn382/0*8+cn383/0*8
-209180.mgmt03   kritama  mediumsb 4.0           --    4  32    --  96:00 Q   -- 
-    -- 
-209181.mgmt03   kritama  smallsb  3.9         41076   2  16    --  120:0 R 98:20
-   cn419/0*8+cn458/0*8
-209182.mgmt03   kritama  smallsb  3.9           --    2  16    --  120:0 Q   -- 
-    -- 
-209184.mgmt03   dmonika  smallsb  kmc_run     18191   1  16    --  120:0 R 98:19
-   cn435/0*16
-209185.mgmt03   dmonika  small    kmc_run     19848   1   8    --  120:0 R 98:16
-   cn330/0*8
-209213.mgmt03   bhavanap mediumsb 3.8         54655   4  32    --  96:00 R 85:38
-   cn411/1*8+cn370/1*8+cn382/1*8+cn383/1*8
-209214.mgmt03   bhavanap mediumsb 3.8           --    4  32    --  96:00 Q   -- 
-    -- 
-209215.mgmt03   bhavanap small    3.7         25783   4  32    --  120:0 R 69:47
-   cn287/0*8+cn288/0*8+cn310/0*8+cn312/0*8
-209216.mgmt03   bhavanap smallsb  3.6         21450   2  16    --  120:0 R 88:25
-   cn459/0*8+cn434/0*8
-209217.mgmt03   bhavanap smallsb  3.6           --    2  16    --  120:0 Q   -- 
-    -- 
-209248.mgmt03   vrahul   medium   umb_1.6     11833  10  80    --  96:00 R 53:44
-   cn227/0*8+cn228/0*8+cn242/0*8+cn223/0*8+cn256/0*8+cn282/0*8+cn233/0*8
-   +cn221/0*8+cn226/0*8+cn208/0*8
-209268.mgmt03   yuvrj    large    AR2_full_w  30073  16 128    --  72:00 R 62:08
-   cn142/0*8+cn020/0*8+cn140/0*8+cn031/0*8+cn092/0*8+cn021/0*8+cn013/0*8
-   +cn012/0*8+cn086/0*8+cn009/0*8+cn015/0*8+cn112/0*8+cn122/0*8+cn164/0*8
-   +cn008/0*8+cn107/0*8
-209277.mgmt03   khanaqib smallsb  M11         27649   2  32    --  120:0 R 54:33
-   cn446/0*16+cn416/0*16
-209279.mgmt03   abhigpt  mediumsb umb_1.8     40452   4  64    --  96:00 R 53:52
-   cn381/0*16+cn386/0*16+cn390/0*16+cn394/0*16
-209280.mgmt03   anjibabu medium   Z-umb_1.4   23660   8  64    --  96:00 R 44:17
-   cn246/0*8+cn239/0*8+cn270/0*8+cn219/0*8+cn231/0*8+cn249/0*8+cn268/0*8
-   +cn212/0*8
-209281.mgmt03   anjibabu large    Z-umb_2.0   16250  16 128    --  72:00 R 51:34
-   cn077/0*8+cn175/0*8+cn098/0*8+cn028/0*8+cn038/0*8+cn048/0*8+cn149/0*8
-   +cn093/0*8+cn029/0*8+cn065/0*8+cn027/0*8+cn051/0*8+cn053/0*8+cn056/0*8
-   +cn182/0*8+cn024/0*8
-209283.mgmt03   khanaqib mediumsb M11         31074   2  32    --  96:00 R 50:46
-   cn414/0*16+cn415/0*16
-209308.mgmt03   sabyasac large    BF4benznoe  32027  16 128    --  72:00 R 45:08
-   cn072/0*8+cn005/0*8+cn176/0*8+cn083/0*8+cn037/0*8+cn095/0*8+cn171/0*8
-   +cn101/0*8+cn089/0*8+cn030/0*8+cn099/0*8+cn082/0*8+cn104/0*8+cn124/0*8
-   +cn125/0*8+cn126/0*8
-209316.mgmt03   waquar   small    AW_4.dat      --    3  24    --  120:0 Q   -- 
-    -- 
-209320.mgmt03   dmonika  medium   kmc_run     30662   4  32    --  96:00 R 43:05
-   cn235/0*8+cn266/0*8+cn248/0*8+cn194/0*8
-209321.mgmt03   dmonika  mediumsb kmc_run     51185   2  32    --  96:00 R 44:09
-   cn410/0*16+cn384/0*16
-209352.mgmt03   nidhig   mediumsb kmc_run     17848   2  32    --  96:00 R 27:35
-   cn389/0*16+cn406/0*16
-209370.mgmt03   banshid  small    test        18169   3  24    --  120:0 R 23:02
-   cn342/0*8+cn300/0*8+cn334/0*8
-209372.mgmt03   ykedar   large    444-N2-1i   22571  16 128    --  72:00 R 21:48
-   cn064/0*8+cn162/0*8+cn041/0*8+cn111/0*8+cn150/0*8+cn103/0*8+cn102/0*8
-   +cn147/0*8+cn047/0*8+cn068/0*8+cn152/0*8+cn033/0*8+cn073/0*8+cn096/0*8
-   +cn156/0*8+cn184/0*8
-209373.mgmt03   farahn   large    333-P-2i      --   16 128    --  72:00 Q   -- 
-    -- 
-209375.mgmt03   banshid  medium   plcom       22664   6  48    --  96:00 R 22:29
-   cn210/0*8+cn202/0*8+cn188/0*8+cn214/0*8+cn222/0*8+cn207/0*8
-209378.mgmt03   jawahar  mediumsb AoA8_AR6      --    6  96    --  96:00 H   -- 
-    -- 
+209378.mgmt03   jawahar  mediumsb AoA8_AR6    22184   6  96    --  96:00 R 48:11
+   cn413/0*16+cn372/0*16+cn379/0*16+cn380/0*16+cn391/0*16+cn393/0*16
 209382.mgmt03   jawahar  large    AR15_Un       --   20 160    --  72:00 H   -- 
     -- 
-209383.mgmt03   abhigpt  medium   umb_1.8     20559   8  64    --  96:00 R 07:10
-   cn213/0*8+cn280/0*8+cn187/0*8+cn265/0*8+cn240/0*8+cn190/0*8+cn191/0*8
-   +cn195/0*8
-209384.mgmt03   vrahul   mediumsb O_u_2.0     44720   4  64    --  96:00 R 07:06
-   cn399/0*16+cn400/0*16+cn403/0*16+cn408/0*16
-209385.mgmt03   anjibabu mediumsb Z-umb_1.2   34221   4  64    --  96:00 R 07:04
-   cn372/0*16+cn380/0*16+cn379/0*16+cn392/0*16
-209386.mgmt03   rshreya  small    2.8           --    4  32    --  120:0 Q   -- 
-    -- 
-209387.mgmt03   rshreya  mediumsb 2.9           --    4  32    --  96:00 Q   -- 
-    -- 
-209388.mgmt03   rshreya  medium   3.0           --    4  32    --  96:00 Q   -- 
-    -- 
-209389.mgmt03   kashishm smallsb  3.1           --    2  16    --  120:0 Q   -- 
-    -- 
-209390.mgmt03   kashishm mediumsb 3.2           --    4  32    --  96:00 Q   -- 
-    -- 
-209391.mgmt03   kashishm small    3.3           --    4  32    --  120:0 Q   -- 
-    -- 
-209392.mgmt03   kashishm medium   3.4           --    4  32    --  96:00 Q   -- 
-    -- 
-209395.mgmt03   nidhig   large    kmc_run       --   16 128    --  72:00 Q   -- 
-    -- 
-209399.mgmt03   sbehera  small    SW.dat      18299   3  24    --  120:0 R 03:09
-   cn309/0*8+cn327/0*8+cn338/0*8
-209400.mgmt03   dmonika  large    kmc_run       --   16 128    --  72:00 Q   -- 
-    -- 
-209402.mgmt03   nidhig   medium   kmc_run      1596   4  32    --  96:00 R 02:36
-   cn199/0*8+cn205/0*8+cn251/0*8+cn196/0*8
+209386.mgmt03   rshreya  small    2.8          2449   4  32    --  120:0 R 72:35
+   cn309/0*8+cn327/0*8+cn316/0*8+cn303/0*8
+209387.mgmt03   rshreya  mediumsb 2.9         31668   4  32    --  96:00 R 56:45
+   cn392/0*8+cn369/0*8+cn376/0*8+cn385/0*8
+209388.mgmt03   rshreya  medium   3.0          2172   4  32    --  96:00 R 72:19
+   cn250/0*8+cn276/0*8+cn234/0*8+cn225/0*8
+209390.mgmt03   kashishm mediumsb 3.2         41894   4  32    --  96:00 R 64:01
+   cn406/0*8+cn389/0*8+cn410/0*8+cn374/0*8
+209391.mgmt03   kashishm small    3.3         24301   4  32    --  120:0 R 72:36
+   cn287/0*8+cn311/0*8+cn306/0*8+cn331/0*8
+209392.mgmt03   kashishm medium   3.4         18950   4  32    --  96:00 R 72:38
+   cn279/0*8+cn262/0*8+cn216/0*8+cn243/0*8
 209405.mgmt03   nirmalh  medium   case_10k.d    --   12  96    --  96:00 Q   -- 
     -- 
-209407.mgmt03   nirmalh  large    case_30k.d    --   16 128    --  72:00 Q   -- 
+209463.mgmt03   razia    small    scf_Rmad_F  19053   4  32    --  120:0 R 112:1
+   cn305/0*8+cn315/0*8+cn285/0*8+cn343/0*8
+209464.mgmt03   razia    smallsb  scf_initia  44939   2  32    --  120:0 R 111:5
+   cn425/0*16+cn431/0*16
+209466.mgmt03   razia    mediumsb scf_F4_2UF  60556   2  32    --  96:00 R 15:44
+   cn402/0*16+cn375/0*16
+209467.mgmt03   razia    smallsb  scf_Wad_F4    --    2  32    --  120:0 Q   -- 
     -- 
+209468.mgmt03   razia    small    scf_Wad_Wo    --    4  32    --  120:0 Q   -- 
+    -- 
+209521.mgmt03   yuvrj    mediumsb AR2_full_w  11322   6  96    --  96:00 R 95:45
+   cn404/0*16+cn381/0*16+cn412/0*16+cn414/0*16+cn415/0*16+cn407/0*16
+209529.mgmt03   kshashi  small    rulcatexci   7873   1   8    --  120:0 R 94:55
+   cn289/0*8
+209552.mgmt03   agaur    mediumsb GrC160-D0.  49087   4  64    --  96:00 R 37:58
+   cn396/0*16+cn378/0*16+cn388/0*16+cn397/0*16
+209553.mgmt03   anjibabu medium   Z-umb_1.3   16556  10  80    --  96:00 R 77:02
+   cn281/0*8+cn236/0*8+cn227/0*8+cn242/0*8+cn228/0*8+cn214/0*8+cn266/0*8
+   +cn248/0*8+cn194/0*8+cn210/0*8
+209565.mgmt03   nidhig   mediumsb kmc_run     46686   2  32    --  96:00 R 66:45
+   cn405/0*16+cn384/0*16
+209567.mgmt03   dmonika  smallsb  kmc_run      2478   1  16    --  120:0 R 66:40
+   cn432/0*16
+209568.mgmt03   dmonika  small    kmc_run      1983   1   8    --  120:0 R 66:38
+   cn313/0*8
+209569.mgmt03   dmonika  medium   kmc_run     29889   4  32    --  96:00 R 64:29
+   cn263/0*8+cn193/0*8+cn229/0*8+cn186/0*8
+209574.mgmt03   sarnali  large    BF4benznoe  26086  16 128    --  72:00 R 64:32
+   cn014/0*8+cn042/0*8+cn060/0*8+cn081/0*8+cn043/0*8+cn017/0*8+cn116/0*8
+   +cn100/0*8+cn113/0*8+cn040/0*8+cn032/0*8+cn067/0*8+cn074/0*8+cn146/0*8
+   +cn108/0*8+cn143/0*8
+209577.mgmt03   waquar   small    AW_4.dat     9665   3  24    --  120:0 R 49:20
+   cn302/0*8+cn337/0*8+cn288/0*8
+209578.mgmt03   rshreya  small    2.8           --    4  32    --  120:0 Q   -- 
+    -- 
+209579.mgmt03   rshreya  medium   3.0           --    4  32    --  96:00 Q   -- 
+    -- 
+209582.mgmt03   anjibabu mediumsb Z-umb_1.2   11704   4  64    --  96:00 R 53:06
+   cn387/0*16+cn395/0*16+cn398/0*16+cn371/0*16
+209584.mgmt03   abhigpt  medium   umb_1.0     24244   8  64    --  96:00 R 53:03
+   cn264/0*8+cn280/0*8+cn187/0*8+cn265/0*8+cn240/0*8+cn190/0*8+cn191/0*8
+   +cn213/0*8
+209587.mgmt03   sabyasac large    fecl4g      16303  16 128    --  72:00 R 51:40
+   cn184/0*8+cn064/0*8+cn162/0*8+cn041/0*8+cn111/0*8+cn150/0*8+cn103/0*8
+   +cn102/0*8+cn147/0*8+cn047/0*8+cn068/0*8+cn152/0*8+cn033/0*8+cn168/0*8
+   +cn144/0*8+cn011/0*8
+209596.mgmt03   dmonika  mediumsb kmc_run     52161   2  32    --  96:00 R 49:07
+   cn373/0*16+cn401/0*16
+209598.mgmt03   nidhig   medium   kmc_run      9465   4  32    --  96:00 R 48:57
+   cn233/0*8+cn221/0*8+cn226/0*8+cn208/0*8
+209599.mgmt03   nidhig   large    kmc_run     11681  16 128    --  72:00 R 48:55
+   cn026/0*8+cn159/0*8+cn133/0*8+cn148/0*8+cn160/0*8+cn071/0*8+cn018/0*8
+   +cn105/0*8+cn087/0*8+cn139/0*8+cn034/0*8+cn039/0*8+cn172/0*8+cn142/0*8
+   +cn140/0*8+cn020/0*8
+209601.mgmt03   jawahar  large    AoA8_AR8     3402  20 160    --  72:00 R 47:58
+   cn031/0*8+cn092/0*8+cn021/0*8+cn013/0*8+cn012/0*8+cn035/0*8+cn115/0*8
+   +cn091/0*8+cn136/0*8+cn132/0*8+cn178/0*8+cn058/0*8+cn129/0*8+cn073/0*8
+   +cn096/0*8+cn156/0*8+cn006/0*8+cn023/0*8+cn135/0*8+cn114/0*8
+209603.mgmt03   arnesh   large    End_End_Ao  26087  20 160    --  72:00 R 47:53
+   cn158/0*8+cn097/0*8+cn085/0*8+cn106/0*8+cn088/0*8+cn078/0*8+cn109/0*8
+   +cn044/0*8+cn174/0*8+cn175/0*8+cn098/0*8+cn028/0*8+cn038/0*8+cn048/0*8
+   +cn093/0*8+cn149/0*8+cn086/0*8+cn009/0*8+cn015/0*8+cn029/0*8
+209605.mgmt03   agajehan small    mnpp         9013   2  16    --  120:0 R 45:55
+   cn312/0*8+cn299/0*8
+209606.mgmt03   agajehan medium   mnppwc       7343   4  32    --  96:00 R 45:46
+   cn200/0*8+cn205/0*8+cn251/0*8+cn196/0*8
+209607.mgmt03   indreshv medium   RepCuLMeO2   4405   4  32    --  96:00 R 43:23
+   cn199/0*8+cn223/0*8+cn197/0*8+cn256/0*8
+209610.mgmt03   shadab   small    D-1         29479   4  32    --  120:0 R 43:28
+   cn286/0*8+cn317/0*8+cn323/0*8+cn298/0*8
+209612.mgmt03   basheer  medium   D-1         25794   8  64    --  96:00 R 38:21
+   cn247/0*8+cn203/0*8+cn218/0*8+cn232/0*8+cn258/0*8+cn202/0*8+cn222/0*8
+   +cn188/0*8
+209613.mgmt03   basheer  small    D-1         10286   4  32    --  120:0 R 43:17
+   cn332/0*8+cn320/0*8+cn292/0*8+cn340/0*8
+209616.mgmt03   gsaxena  medium   D-1         23976   8  64    --  96:00 R 14:33
+   cn268/0*8+cn235/0*8+cn212/0*8+cn217/0*8+cn204/0*8+cn253/0*8+cn241/0*8
+   +cn244/0*8
+209619.mgmt03   swatisi  medium   D-1         25857   8  64    --  96:00 R 12:04
+   cn252/0*8+cn230/0*8+cn207/0*8+cn282/0*8+cn237/0*8+cn206/0*8+cn245/0*8
+   +cn283/0*8
+209621.mgmt03   swatisi  small    D-1           554   4  32    --  120:0 R 42:33
+   cn330/0*8+cn342/0*8+cn336/0*8+cn318/0*8
+209628.mgmt03   mrishi   smallsb  q5mm_30_di  34569   1   8    --  120:0 R 40:51
+   cn419/0*8
+209644.mgmt03   ramsha   smallsb  mm-telo     48886   2  32    --  120:0 R 37:58
+   cn436/0*16+cn417/0*16
+209653.mgmt03   sayanbnj medium   mnpwc       26656   4  32    --  96:00 R 14:34
+   cn261/0*8+cn259/0*8+cn238/0*8+cn215/0*8
+209654.mgmt03   sayanbnj small    mnp         22763   2  16    --  120:0 R 35:37
+   cn310/0*8+cn307/0*8
+209658.mgmt03   priyanka smallsb  xpx         21249   2  32    --  120:0 R 35:19
+   cn450/0*16+cn453/0*16
+209659.mgmt03   priyanka large    ypy         29437  20 160    --  72:00 R 35:15
+   cn112/0*8+cn122/0*8+cn164/0*8+cn008/0*8+cn107/0*8+cn104/0*8+cn124/0*8
+   +cn005/0*8+cn083/0*8+cn176/0*8+cn125/0*8+cn126/0*8+cn037/0*8+cn077/0*8
+   +cn053/0*8+cn056/0*8+cn065/0*8+cn027/0*8+cn051/0*8+cn182/0*8
+209669.mgmt03   akhilesh small    RepCuASBPy  21705   1   8    --  120:0 R 25:11
+   cn325/0*8
+209671.mgmt03   nidhig   small    kmc_run     24661   1   8    --  120:0 R 24:54
+   cn290/0*8
+209673.mgmt03   dmonika  large    kmc_run     21241  16 128    --  72:00 R 24:51
+   cn024/0*8+cn094/0*8+cn095/0*8+cn171/0*8+cn101/0*8+cn089/0*8+cn050/0*8
+   +cn173/0*8+cn001/0*8+cn003/0*8+cn072/0*8+cn030/0*8+cn099/0*8+cn082/0*8
+   +cn057/0*8+cn165/0*8
+209677.mgmt03   mrishi   small    q5mm_30_no  28923   1   8    --  120:0 R 21:58
+   cn300/0*8
+209679.mgmt03   msnaim   medium   Vortex_RIN    --   12  96    --  96:00 Q   -- 
+    -- 
+209681.mgmt03   mrishi   smallsb  q5mm_45_no    --    1   8    --  120:0 Q   -- 
+    -- 
+209683.mgmt03   sayanbnj large    pf6ts         --   32 256    --  72:00 Q   -- 
+    -- 
+209684.mgmt03   abhisidd smallsb  phenol      48310   2  32    --  96:00 R 14:23
+   cn447/0*16+cn441/0*16
+209686.mgmt03   vrahul   mediumsb umb_0.8     49860   4  64    --  96:00 R 04:32
+   cn370/0*16+cn382/0*16+cn400/0*16+cn403/0*16
+209688.mgmt03   abhigpt  mediumsb umb_1.4     16348   4  64    --  96:00 R 05:50
+   cn408/0*16+cn377/0*16+cn383/0*16+cn411/0*16
+209689.mgmt03   khanaqib smallsb  M11         17711   2  32    --  120:0 R 03:43
+   cn457/0*16+cn455/0*16
+209690.mgmt03   kritama  smallsb  3.9         64467   2  16    --  120:0 R 02:05
+   cn430/0*8+cn443/0*8
+209691.mgmt03   kritama  smallsb  3.9           --    2  16    --  120:0 Q   -- 
+    -- 
+209692.mgmt03   kritama  mediumsb 4.0         19720   4  32    --  96:00 R 02:02
+   cn409/0*8+cn386/0*8+cn390/0*8+cn394/0*8
+209693.mgmt03   kritama  mediumsb 4.0           --    4  32    --  96:00 Q   -- 
+    -- 
+209694.mgmt03   kritama  small    4.1         11625   4  32    --  120:0 R 02:02
+   cn301/0*8+cn339/0*8+cn338/0*8+cn333/0*8
+209695.mgmt03   kritama  small    4.1           --    4  32    --  120:0 Q   -- 
+    -- 
+209696.mgmt03   kritama  medium   4.2         20416   4  32    --  96:00 R 01:18
+   cn257/0*8+cn195/0*8+cn246/0*8+cn239/0*8
+209697.mgmt03   kritama  medium   4.2           --    4  32    --  96:00 Q   -- 
+    -- 
+209698.mgmt03   sbehera  workq    STDIN        1152   1   1    --  02:00 R 00:00
+   cn360/0
+209699.mgmt03   sbehera  small    SW.dat       4061   3  24    --  120:0 R 01:16
+   cn319/0*8+cn308/0*8+cn335/0*8
+209700.mgmt03   nirmalh  workq    STDIN        4127   1   1    --  02:00 R 00:01
+   cn363/0

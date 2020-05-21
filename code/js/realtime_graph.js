@@ -133,6 +133,7 @@ function drawDonutChart(data, id, text) {
                 .style("cursor", "none")
                 .style("fill", function (d) { return d.data.jobid != "000000" ? "#e5e5e5" : color(this._current) })
                 .select(".text-group").remove();
+                
         })
         .append('path')
         .attr('d', arc)
@@ -190,7 +191,7 @@ function drawBar2(data, ID, title){
     var cfg = {
         width: (screen.availWidth*0.9)/2.2,
         height:(3*screen.availHeight)/11,
-        margin: { top: 20, right: 1, bottom: 20, left: 80 },
+        margin: { top: 20, right: -30, bottom: 20, left: 90 },
         title:title,
     };
     HorizontalBarGraph(data,ID,cfg);

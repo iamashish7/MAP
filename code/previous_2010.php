@@ -52,7 +52,8 @@
 
         .tooltip {
             fill: white;
-            stroke: #000000;
+            stroke: #000;
+            opacity:1
         }
 
         .tooltip-date, .tooltip-likes {

@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <style>
-        
+        .hide{
+            display: none;
+        }
         .mini_chart{
             width:100%;
             height:100%; 

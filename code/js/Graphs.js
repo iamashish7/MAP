@@ -217,56 +217,58 @@ function LineChart(data,ID,cfg)
     //Divides date for tooltip placement
     var bisectDate = d3.bisector(function (d) { return d.name; }).left;
     
-    var focus_arr = []
-    for (i = 0; i < cfg.noLines; i++) {
-    
-        var focus = g.append("g")
+    // var focus_arr = []
+    var focus = g.append("g")
             .attr("class", "focus")
             .style("display", "none");
 
+    focus.append("rect")
+        .attr("class", "tooltip")
+        .attr("width", 100)
+        .attr("height", 50+(18*(cfg.noLines-1)))
+        .attr("x", 10)
+        .attr("y", -22)
+        .attr("rx", 4)
+        .attr("ry", 4);
+
+    focus.append("text")
+        .attr("class", "tooltip-date")
+        .attr("x", 18)
+        .attr("y", -2)
+        .attr("fill", "black");
+
+    for (i = 0; i < cfg.noLines; i++) {
+    
         focus.append("circle")
+            .attr('id','tooltip_circle'+i)
             .attr("r", 5)
             .attr("fill", cfg.TooltipColors[i]);
 
-        focus.append("rect")
-            .attr("class", "tooltip")
-            .attr("width", 100)
-            .attr("height", 50)
-            .attr("x", 10)
-            .attr("y", -22)
-            .attr("rx", 4)
-            .attr("ry", 4);
-
-        focus.append("text")
-            .attr("class", "tooltip-date")
-            .attr("x", 18)
-            .attr("y", -2)
-            .attr("fill", cfg.TooltipColors[i]);
-
         focus.append("text")
             .attr("x", 18)
-            .attr("y", 18)
+            .attr("y", 18*(i+1))
             .attr("fill", cfg.TooltipColors[i])
             .text("Value:");
 
         focus.append("text")
+            .attr('id','tooltip'+i)
             .attr("class", "tooltip-likes")
             .attr("x", 60)
-            .attr("y", 18)
+            .attr("y", 18*(i+1))
             .attr("fill", cfg.TooltipColors[i]);
-        focus_arr.push(focus);
+        // focus_arr.push(focus);
     }
     g.append("rect")
         .attr("class", "overlay")
         .attr("width", width)
         .attr("height", height)
         .on("mouseover", function() { 
-                for (i = 0; i < cfg.noLines; i++)
-                    focus_arr[i].style("display", null); 
+                // for (i = 0; i < cfg.noLines; i++)
+                    focus.style("display", null); 
             })
         .on("mouseout", function() { 
-                for (i = 0; i < cfg.noLines; i++)
-                    focus_arr[i].style("display", "none");  
+                // for (i = 0; i < cfg.noLines; i++)
+                    focus.style("display", "none");  
             })
         .on("mousemove", mousemove);
 
@@ -278,16 +280,21 @@ function LineChart(data,ID,cfg)
             d1 = data[i],
             d = x0 - d0.name > d1.name - x0 ? d1 : d0;
         if (cfg.noLines == 1) {
-            focus_arr[0].attr("transform", "translate(" + x(d.name) + "," + y(d.value) + ")");
-            focus_arr[0].select(".tooltip-date").text(getFormedDate(d.name));
-            focus_arr[0].select(".tooltip-likes").text(d.value);
+            focus.attr("transform", "translate(" + x(d.name) + "," + y(d.value) + ")");
+            focus.select(".tooltip-date").text(getFormedDate(d.name));
+            focus.select("#tooltip0").text(d.value);
         }
         else {
+            var y_corr = 0;
             for (i = 0; i < cfg.noLines; i++) {
-                focus_arr[i].attr("transform", "translate(" + x(d.name) + "," + y(d.value[i]) + ")");
-                focus_arr[i].select(".tooltip-date").text(d3.timeFormat("%b'%y")(d.name));
-                focus_arr[i].select(".tooltip-likes").text(d.value[i]);
-            } 
+                focus.select("#tooltip"+i).text(d.value[i]);
+                y_corr += y(d.value[i]);
+            }
+            for (i = 0; i < cfg.noLines; i++) {
+                focus.select('#tooltip_circle'+i).attr("transform", "translate(" + 0 + "," + (y(d.value[i])-(y_corr/2)) + ")");
+            }
+            focus.attr("transform", "translate(" + x(d.name) + "," + y_corr/2 + ")");
+            focus.select(".tooltip-date").text(d3.timeFormat("%b'%y")(d.name));     
         }
     }
 }
@@ -1232,6 +1239,268 @@ function PredictionLineChart(data,ID,cfg)
     // }
 }
 
+function DonutChart(data, id, text, data2) {
+    console.log(data2['users']);
+    var thickness = screen.width / 65;
+    
+    var width = screen.width / 4 - 20;
+    var widthPie = screen.width / 8 - 10;
+    var height = screen.height / 4;
+    var radius = Math.min(widthPie, height) / 2.2;
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var svg = d3.select("#" + id)
+        .append('svg')
+        .attr('class', 'pie')
+        .attr('width', width)
+        .attr('height', height);
+
+    var g = svg.append('g')
+        .attr('transform', 'translate(' + (radius) + ',' + (height/1.75) + ')');
+    svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 15)
+        .attr("text-anchor", "middle")
+        .attr("class","graph-title")  
+        // .style("font-size", "110%") 
+        .text("Jobs Running Status");
+    var arc = d3.arc()
+        .innerRadius(radius - thickness)
+        .outerRadius(radius);
+
+    var pie = d3.pie()
+        .value(function (d) { return d.nodes; })
+        .sort(null);
+
+    var path = g.selectAll('path')
+        .data(pie(data))
+        .enter()
+        .append("g")
+        .on("mouseover", function (d) {
+            document.getElementById('stats').classList.add('hide');
+            let g = d3.select(this)
+                .style("cursor", "pointer")
+                .style("fill", "black")
+                .append("g")
+                .attr('transform', 'translate(' + (1.8 * radius) + ',' + (-30) + ')')
+                .attr("class", "text-group");
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text("JobId : ")
+                .style("font-weight", "bold")
+                .attr('text-anchor', 'left')
+                .attr('dy', '-1.2em')
+                .style('font-size', screen.width / 120)
+                .attr('dx', '-3.5em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text(d.data.jobid)
+                .attr('text-anchor', 'left')
+                .attr('dx', '0.5em')
+                .style('font-size', screen.width / 120)
+                .attr('dy', '-1.2em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text("Nodes : ")
+                .style("font-weight", "bold")
+                .attr('text-anchor', 'left')
+                .attr('dy', '.6em')
+                .style('font-size', screen.width / 120)
+                .attr('dx', '-3.5em');
+
+            g.append("text")
+                .attr("class", "value-text")
+                .text(d.data.nodes)
+                .attr('text-anchor', 'left')
+                .attr('dx', '1em')
+                .style('font-size', screen.width / 120)
+                .attr('dy', '.6em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text("Queue : ")
+                .style("font-weight", "bold")
+                .attr('text-anchor', 'left')
+                .attr('dy', '2.4em')
+                .style('font-size', screen.width / 120)
+                .attr('dx', '-3.5em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text(d.data.queue)
+                .attr('text-anchor', 'left')
+                .attr('dx', '1.2em')
+                .style('font-size', screen.width / 120)
+                .attr('dy', '2.4em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text("Running Time : ")
+                .style("font-weight", "bold")
+                .attr('text-anchor', 'left')
+                .attr('dy', '4.2em')
+                .style('font-size', screen.width / 120)
+                .attr('dx', '-3.5em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text(d.data.rtime)
+                .attr('text-anchor', 'left')
+                .attr('dx', '5.2em')
+                .style('font-size', screen.width / 120)
+                .attr('dy', '4.2em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text("Wall Time : ")
+                .style("font-weight", "bold")
+                .attr('text-anchor', 'left')
+                .attr('dy', '6em')
+                .style('font-size', screen.width / 120)
+                .attr('dx', '-3.5em');
+
+            g.append("text")
+                .attr("class", "name-text")
+                .text(d.data.wtime)
+                .attr('text-anchor', 'left')
+                .style('font-size', screen.width / 120)
+                .attr('dx', '3em')
+                .attr('dy', '6em');
+
+        })
+        .on("mouseout", function (d) {
+            d3.select(this)
+                .style("cursor", "none")
+                .style("fill", function (d) { return d.data.jobid != "000000" ? "#e5e5e5" : color(this._current) })
+                .select(".text-group").remove();
+            document.getElementById('stats').classList.remove('hide');
+                
+        })
+        .append('path')
+        .attr('d', arc)
+        .attr('fill', function (d, i) { return d.data.jobid == '000000' ? "#e5e5e5" : color(i) })
+        .on("mouseover", function (d) {
+            d3.select(this)
+                .style("cursor", "pointer")
+                .style("fill", function (d, i) { return d.data.jobid == '000000' ? "#e5e5e5" : "black" });
+        })
+        .on("mouseout", function (d) {
+            d3.select(this)
+                .style("cursor", "none")
+                .style("fill", function (d) { return d.data.jobid == '000000' ? "#e5e5e5" : color(this._current) });
+        })
+        .each(function (d, i) { this._current = i; });
+
+    g.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('dy', '0.0em')
+        .style('font-size', screen.width / 120)
+        .text(text);
+    g.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('dy', '1.1em')
+        .style('font-size', screen.width / 150)
+        .text("Mouse over to check");
+    g.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('dy', '2em')
+        .style('font-size', screen.width / 150)
+        .text("running status");
+
+    let g2 = g.append("g")
+        .attr('id','stats')
+        .attr('transform', 'translate(' + (1.8 * radius) + ',' + (-30) + ')')
+        .attr("class", "text-group");
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text("#Running Jobs : ")
+        .style("font-weight", "bold")
+        .attr('text-anchor', 'left')
+        .attr('dy', '-1.2em')
+        .style('font-size', screen.width / 120)
+        .attr('dx', '-3.5em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text(data2['running'])
+        .attr('text-anchor', 'left')
+        .attr('dx', '5em')
+        .style('font-size', screen.width / 120)
+        .attr('dy', '-1.2em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text("#Queued Jobs : ")
+        .style("font-weight", "bold")
+        .attr('text-anchor', 'left')
+        .attr('dy', '.6em')
+        .style('font-size', screen.width / 120)
+        .attr('dx', '-3.5em');
+
+    g2.append("text")
+        .attr("class", "value-text")
+        .text(data2['queued'])
+        .attr('text-anchor', 'left')
+        .attr('dx', '5em')
+        .style('font-size', screen.width / 120)
+        .attr('dy', '.6em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text("Active Nodes : ")
+        .style("font-weight", "bold")
+        .attr('text-anchor', 'left')
+        .attr('dy', '2.4em')
+        .style('font-size', screen.width / 120)
+        .attr('dx', '-3.5em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text(data2['active'])
+        .attr('text-anchor', 'left')
+        .attr('dx', '5em')
+        .style('font-size', screen.width / 120)
+        .attr('dy', '2.4em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text("Active Users : ")
+        .style("font-weight", "bold")
+        .attr('text-anchor', 'left')
+        .attr('dy', '4.2em')
+        .style('font-size', screen.width / 120)
+        .attr('dx', '-3.5em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text(data2['users'])
+        .attr('text-anchor', 'left')
+        .attr('dx', '5em')
+        .style('font-size', screen.width / 120)
+        .attr('dy', '4.2em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text("Machine Usage : ")
+        .style("font-weight", "bold")
+        .attr('text-anchor', 'left')
+        .attr('dy', '6em')
+        .style('font-size', screen.width / 120)
+        .attr('dx', '-3.5em');
+
+    g2.append("text")
+        .attr("class", "name-text")
+        .text(data2['usage'])
+        .attr('text-anchor', 'left')
+        .style('font-size', screen.width / 120)
+        .attr('dx', '5em')
+        .attr('dy', '6em');
+    // document.getElementById('stats').classList.add('hide');
+}
 
 // function BoxPlot(data,ID,cfg){
 //     console.log(data);

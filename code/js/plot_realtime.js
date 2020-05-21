@@ -7,6 +7,9 @@ function ready_data_plot(){
         var tot_nodes = 0;
         var data4 = {};
         var data5 = {};
+        var data2_2 = {};
+        var user_2010 = new Set();
+        var no_queued = 0;
         $.each(info, function (key, value) {
             if (value["State"] == 'R') {
                 tot_nodes = tot_nodes + parseInt(value["Nodes"]);
@@ -28,6 +31,7 @@ function ready_data_plot(){
             }
             else if (value["State"] == 'Q'){
                 
+                no_queued++;
                 if(value["Queue"] in data3){
                     data3[value["Queue"]] += 1;
                 }
@@ -35,6 +39,7 @@ function ready_data_plot(){
                     data3[value["Queue"]] = 1;    
                 }
             }
+            user_2010.add(value["Username"]);
         });
         var items = Object.keys(data4).map(function(key) {
             return [key, data4[key]];
@@ -72,8 +77,14 @@ function ready_data_plot(){
                 value: data5[index]
             });
         }
+        data2_2['running'] = data2.length;
+        data2_2['queued'] = no_queued;
+        data2_2['active'] = tot_nodes;
+        data2_2['users'] = user_2010.size;
+        data2_2['usage'] = ((tot_nodes / 464) * 100).toFixed(2) + '%';
+
         preprocess(data1,"chart_3","Running Jobs");
-        drawDonutChart(data2, "chart_1", "HPC 2010");
+        DonutChart(data2, "chart_1", "HPC 2010",data2_2);
         preprocess(data3,"chart_4","Queued Jobs");
         drawBar2(data4,"chart_2","Top 5 users with max total nodes");
         console.log(data5_final);

@@ -238,7 +238,7 @@ function myDrawChart(d) {
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.68,
-            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            margin: { top: 30, right: 25, bottom: 50, left: 70 },
             title:"Number of Jobs executing per day",
             labelx:"Timestamp",
             labely:"Jobs",
@@ -254,7 +254,7 @@ function myDrawChart(d) {
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.68,
-            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            margin: { top: 30, right: 25, bottom: 50, left: 70 },
             title:"Completed and failed jobs per month",
             labelx:"Timestamp",
             labely:"Jobs",
@@ -349,7 +349,7 @@ function myDrawChart(d) {
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.70,
-            margin: { top: 30, right: 20, bottom: screen.availHeight*0.42, left: 70 },
+            margin: { top: 30, right: 25, bottom: screen.availHeight*0.42, left: 70 },
             title:"Number of Jobs executing per day",
             labelx:"Timestamp",
             labely:"Jobs",
@@ -364,7 +364,7 @@ function myDrawChart(d) {
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.70,
-            margin: { top: screen.availHeight*0.39, right: 20, bottom: 50, left: 70 },
+            margin: { top: screen.availHeight*0.39, right: 25, bottom: 50, left: 70 },
             title:"Submitted and Completed jobs per month",
             labelx:"Timestamp",
             labely:"#Jobs",
@@ -414,7 +414,7 @@ function myDrawChart(d) {
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.68,
-            margin: { top: 30, right: 20, bottom: 50, left: 70 },
+            margin: { top: 30, right: 25, bottom: 50, left: 70 },
             title:"No. of CPUs busy per day",
             labelx:"Timestamp",
             labely:"#CPUs",
