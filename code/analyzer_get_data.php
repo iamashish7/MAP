@@ -1,8 +1,9 @@
 <?php
 header('Content-Type: application/json');
 // ini_set('display_errors',1);
-// ini_set('max_execution_time',300);
 // error_reporting(E_ALL);
+
+ini_set('max_execution_time',300);
 ini_set('memory_limit', '256M');
 
 
@@ -185,27 +186,51 @@ function get_data_wtime_vs_jobs($table,$from,$to,$conn)
 
 function get_data_vartn_wtime_by_req($table,$from,$to,$conn)
 {
+    // $rtime_buckets = [[0,1],[1,2],[2,4],[4,7],[7,10],[10,13],[13,15],[15,17],[17,20],[20,24],[24,27],[27,30],[30,33],[33,36],[36,40],[40,44],[44,50],[50,57],[57,65],[65,80],[80,90],[90,100],[100,117],[117,121],[121,152],[152,1000]];
+    // $proc_buckets = [[0,1],[2,4],[4,8],[8,16],[16,32],[32,64],[64,128],[128,256],[256,512],[512,1024],[1024,2048]];
+    // for ($i = 0; $i < count($rtime_buckets); $i++) {
+    //     for ($j = 0; $j < count($proc_buckets); $j++) {
+    //         $sql = "select avg(wtime) as wtime from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." ";
+    //         $sql2 = "select count(*) as jobs from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." ";
+    //         $result = $conn->query($sql);
+    //         $result2 = $conn->query($sql2);
+    //         $wtime = 0;
+    //         $jobs = 0;
+    //         while ($row = $result->fetch_assoc()) {
+    //             $wtime = $row['wtime']; 
+    //         }
+    //         while ($row = $result2->fetch_assoc()) {
+    //             $jobs = $row['jobs']; 
+    //         }
+    //         if($jobs){
+    //             $index_merge['rtime'] = [$rtime_buckets[$i][0],$rtime_buckets[$i][1]];
+    //             $index_merge['proc'] = [$proc_buckets[$j][0],$proc_buckets[$j][1]];
+    //             $json_array[json_encode($index_merge)] = [$wtime,$jobs];
+    //         }
+    //     }
+    // }
+
     $rtime_buckets = [[0,1],[1,2],[2,4],[4,7],[7,10],[10,13],[13,15],[15,17],[17,20],[20,24],[24,27],[27,30],[30,33],[33,36],[36,40],[40,44],[44,50],[50,57],[57,65],[65,80],[80,90],[90,100],[100,117],[117,121],[121,152],[152,1000]];
     $proc_buckets = [[0,1],[2,4],[4,8],[8,16],[16,32],[32,64],[64,128],[128,256],[256,512],[512,1024],[1024,2048]];
+    $sql = " SELECT avg(wtime) as wtime,count(*) as jobs, CASE ";
     for ($i = 0; $i < count($rtime_buckets); $i++) {
         for ($j = 0; $j < count($proc_buckets); $j++) {
-            $sql = "select avg(wtime) as wtime from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." ";
-            $sql2 = "select count(*) as jobs from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>=".$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." ";
-            $result = $conn->query($sql);
-            $result2 = $conn->query($sql2);
-            $wtime = 0;
-            $jobs = 0;
-            while ($row = $result->fetch_assoc()) {
-                $wtime = $row['wtime']; 
+            $temp_str = "WHEN req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>="
+            .$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." THEN '".$rtime_buckets[$i][0].";".$rtime_buckets[$i][1].";".$proc_buckets[$j][0].";".$proc_buckets[$j][1]."'\n";
+            $sql .= $temp_str;
+        }
+    }
+    $sql .= "END AS groups FROM HPC2010 where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' group by groups order by groups;"; 
+    $result = $conn->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        if($row['groups']!='NULL') {
+            $grouparr = explode(";", $row['groups']);
+            if(sizeof($grouparr)==4) {
+                $index_merge['rtime'] = [(int)$grouparr[0],(int)$grouparr[1]];
+                $index_merge['proc'] = [(int)$grouparr[2],(int)$grouparr[3]];
+                $json_array[json_encode($index_merge)] = [$row['wtime'],$row['jobs']]; 
             }
-            while ($row = $result2->fetch_assoc()) {
-                $jobs = $row['jobs']; 
-            }
-            if($jobs){
-                $index_merge['rtime'] = [$rtime_buckets[$i][0],$rtime_buckets[$i][1]];
-                $index_merge['proc'] = [$proc_buckets[$j][0],$proc_buckets[$j][1]];
-                $json_array[json_encode($index_merge)] = [$wtime,$jobs];
-            }
+            
         }
     }
     return $json_array;

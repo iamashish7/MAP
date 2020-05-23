@@ -161,7 +161,7 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 314505.un05     kkkumar  medium   M2            --    6 120    --  96:00 H   -- 
     -- 
-531589.un05     kkkumar  large    _L18_KKKK   20834   6 120    --  96:00 R 11:12
+531589.un05     kkkumar  large    _L18_KKKK   20834   6 120    --  96:00 R 56:42
    hpc257/0*20+hpc358/0*20+hpc481/0*20+hpc021/0*20+hpc175/0*20+hpc176/0*20
 321330.un05     bhanuday medium   M2_Panga      --    6 120    --  96:00 H   -- 
     -- 
@@ -517,8 +517,6 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 505655.un05     abisingh large    POOL_FIRE     --   10 200    --  96:00 H   -- 
     -- 
-505895.un05     vvmk     large    L1            --    6 120    --  96:00 H   -- 
-    -- 
 506528.un05     gaman    small    test          --    2  40    --  120:0 H   -- 
     -- 
 506856.un05     amritag  large    run1_l        --   10 200    --  96:00 H   -- 
@@ -595,8 +593,8 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 514951.un05     dgoswami large    runL2No       --    6 120    --  96:00 H   -- 
     -- 
-515163.un05     akhilkm  medium   M21           --    6 120    --  96:00 H   -- 
-    -- 
+515163.un05     akhilkm  medium   M21         44500   6 120    --  96:00 R 40:29
+   hpc589/0*20+hpc592/0*20+hpc664/0*20+hpc668/0*20+hpc647/0*20+hpc651/0*20
 515292.un05     jayantks small    run1_s        --    2  40    --  120:0 H   -- 
     -- 
 515293.un05     jayantks small    run2_s        --    2  40    --  120:0 H   -- 
@@ -655,13 +653,9 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 518360.un05     halderp  large    runL12-3      --    6 120    --  96:00 H   -- 
     -- 
-519387.un05     mitesht  large    static_y1    4124  15 300    --  96:00 R 62:06
-   hpc476/0*20+hpc272/0*20+hpc104/0*20+hpc105/0*20+hpc203/0*20+hpc228/0*20
-   +hpc236/0*20+hpc246/0*20+hpc297/0*20+hpc330/0*20+hpc334/0*20+hpc335/0*20
-   +hpc347/0*20+hpc348/0*20+hpc368/0*20
-520022.un05     amitver  medium   20deg_cse     --    6 120    --  96:00 H   -- 
+520022.un05     amitver  medium   20deg_cse     --    6 120    --  96:00 Q   -- 
     -- 
-531316.un05     akhilkm  large    water       27066   6 120    --  96:00 R 37:15
+531316.un05     akhilkm  large    water       27066   6 120    --  96:00 R 82:47
    hpc443/0*20+hpc447/0*20+hpc441/0*20+hpc096/0*20+hpc098/0*20+hpc100/0*20
 520540.un05     avisingh medium   TiO2med       --    4  80    --  96:00 H   -- 
     -- 
@@ -687,11 +681,9 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 521500.un05     dgoswami medium   run2_m        --    6 120    --  96:00 H   -- 
     -- 
-521970.un05     gargp    large    large2        --    6 120    --  96:00 H   -- 
-    -- 
 522036.un05     amitver  medium   20deg_cse     --    6 120    --  96:00 H   -- 
     -- 
-522186.un05     oshubham medium   mrun          --    6 120    --  96:00 H   -- 
+522186.un05     oshubham medium   mrun          --    6 120    --  96:00 Q   -- 
     -- 
 522854.un05     avisingh large    PdCO2cal      --   10 200    --  72:00 H   -- 
     -- 
@@ -733,16 +725,14 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 503704.un05     adityad  medium   restart       --    6 120    --  96:00 H   -- 
     -- 
-524744.un05     spiyush  medium   Re175kr15     --    6 120    --  96:00 H   -- 
-    -- 
-524745.un05     vaidehib medium   Re50kr16      --    6 120    --  96:00 H   -- 
-    -- 
+524744.un05     spiyush  medium   Re175kr15   25094   6 120    --  96:00 R 43:50
+   hpc541/0*20+hpc539/0*20+hpc513/0*20+hpc514/0*20+hpc524/0*20+hpc525/0*20
+524745.un05     vaidehib medium   Re50kr16    15694   6 120    --  96:00 R 42:10
+   hpc653/0*20+hpc655/0*20+hpc656/0*20+hpc661/0*20+hpc666/0*20+hpc669/0*20
 524875.un05     vishnuar large    flatsstkw.    --    6 240    --  96:00 Q   -- 
     -- 
-524969.un05     gargp    large    large2        --    6 120    --  96:00 H   -- 
-    -- 
-525036.un05     alokm    medium   25_les        --    6 120    --  96:00 H   -- 
-    -- 
+525036.un05     alokm    medium   25_les      15334   6 120    --  96:00 R 14:01
+   hpc676/0*20+hpc683/0*20+hpc672/0*20+hpc516/0*20+hpc632/0*20+hpc634/0*20
 525039.un05     amitver  medium   20deg_cse     --    6 120    --  96:00 H   -- 
     -- 
 525233.un05     ragamaye small    sma3          --    2  40    --  120:0 H   -- 
@@ -761,21 +751,23 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 511046.un05     debartha medium   Re1k          --    6 120    --  96:00 H   -- 
     -- 
-526832.un05     akhilkm  medium   M24          3879   6 120    --  96:00 R 49:02
+526832.un05     akhilkm  medium   M24          3879   6 120    --  96:00 R 94:32
    hpc723/0*20+hpc724/0*20+hpc725/0*20+hpc727/0*20+hpc734/0*20+hpc740/0*20
 527120.un05     vaidehib medium   Re50kr16      --    6 120    --  96:00 H   -- 
     -- 
-527129.un05     kashisht large    Re400kr23     --    9 180    --  96:00 H   -- 
-    -- 
-527136.un05     spiyush  large    Re275kr16     --   10 200    --  96:00 H   -- 
-    -- 
+527129.un05     kashisht large    Re400kr23    5593   9 180    --  96:00 R 43:52
+   hpc304/0*20+hpc272/0*20+hpc083/0*20+hpc084/0*20+hpc264/0*20+hpc298/0*20
+   +hpc306/0*20+hpc308/0*20+hpc313/0*20
+527136.un05     spiyush  large    Re275kr16   41781  10 200    --  96:00 R 43:35
+   hpc314/0*20+hpc322/0*20+hpc323/0*20+hpc329/0*20+hpc426/0*20+hpc108/0*20
+   +hpc109/0*20+hpc111/0*20+hpc131/0*20+hpc133/0*20
 527141.un05     spiyush  medium   Re175kr15     --    6 120    --  96:00 H   -- 
     -- 
 515344.un05     amanpar  medium   Re50_run1     --    4  80    --  96:00 H   -- 
     -- 
 514630.un05     amanpar  medium   Re10k_s_1     --    3  60    --  96:00 H   -- 
     -- 
-527305.un05     soughosh large    run10_1.5e  43951  10 200    --  96:00 R 01:08
+527305.un05     soughosh large    run10_1.5e  43951  10 200    --  96:00 R 46:38
    hpc285/0*20+hpc265/0*20+hpc122/0*20+hpc221/0*20+hpc266/0*20+hpc267/0*20
    +hpc271/0*20+hpc286/0*20+hpc287/0*20+hpc289/0*20
 492121.un05     arkadipd medium   hold_2        --    5 100    --  96:00 H   -- 
@@ -784,13 +776,9 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 527408.un05     alokm    medium   25_les        --    6 120    --  96:00 H   -- 
     -- 
-527415.un05     alokm    large    20_les       2911   6 120    --  96:00 R 74:17
-   hpc074/0*20+hpc073/0*20+hpc075/0*20+hpc076/0*20+hpc077/0*20+hpc078/0*20
-527416.un05     amitver  large    20deg_med     --    6 120    --  96:00 H   -- 
+527416.un05     amitver  large    20deg_med     --    6 120    --  96:00 Q   -- 
     -- 
 527494.un05     amitver  large    20deg_med     --    6 120    --  96:00 H   -- 
-    -- 
-527502.un05     oshubham large    20mkklw       --    6 120    --  96:00 H   -- 
     -- 
 527542.un05     mfurquan large    run7          --   10 200    --  96:00 H   -- 
     -- 
@@ -800,23 +788,16 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 520882.un05     debartha large    Re1k          --   12 240    --  96:00 H   -- 
     -- 
-528080.un05     sagar    small    3mtd-dist   41584   2  40    --  120:0 R 119:5
-   hpc824/0*20+hpc828/0*20
 528246.un05     kanika   large    lrun2         --    6 120    --  96:00 H   -- 
     -- 
-528333.un05     alokkr   hyperthr mycode_500  44889   2  80    --  120:0 R 115:4
-   hpc848/0*40+hpc843/0*40
-528628.un05     vaidehib large    Re400kr19     --    9 180    --  96:00 H   -- 
-    -- 
-529085.un05     alokm    large    20_les        --    6 120    --  96:00 H   -- 
+528628.un05     vaidehib large    Re400kr19   63875   9 180    --  96:00 R 44:49
+   hpc246/0*20+hpc297/0*20+hpc330/0*20+hpc334/0*20+hpc335/0*20+hpc347/0*20
+   +hpc348/0*20+hpc368/0*20+hpc476/0*20
+529085.un05     alokm    large    20_les        --    6 120    --  96:00 Q   -- 
     -- 
 529104.un05     oshubham large    20mkklw       --    6 120    --  96:00 H   -- 
     -- 
-529415.un05     santanup hyperthr job901-120  27896   1  40    --  120:0 R 91:24
-   hpc844/0*40
-529424.un05     bhavanap small    job3601-39  42212   1  20    --  120:0 R 83:56
-   hpc764/0*20
-531324.un05     amanpar  large    Re10k_u_1   15856  10 200    --  96:00 R 27:32
+531324.un05     amanpar  large    Re10k_u_1   15856  10 200    --  96:00 R 73:03
    hpc461/0*20+hpc213/0*20+hpc223/0*20+hpc229/0*20+hpc230/0*20+hpc232/0*20
    +hpc243/0*20+hpc244/0*20+hpc284/0*20+hpc318/0*20
 529541.un05     spiyush  large    Re275kr16     --   10 200    --  96:00 H   -- 
@@ -827,65 +808,27 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 529729.un05     mrishi   medium   qM_2_5.sh     --    2  40    --  96:00 H   -- 
     -- 
-529834.un05     kritama  medium   2.7         38502   2  40    --  96:00 R 51:53
-   hpc626/0*20+hpc630/0*20
-529858.un05     sougata  large    TCl3.a      20284   6 120    --  96:00 R 94:04
-   hpc108/0*20+hpc109/0*20+hpc111/0*20+hpc131/0*20+hpc133/0*20+hpc134/0*20
-529938.un05     barung   large    PtTe2.1     13910  10 200    --  96:00 R 39:16
+529938.un05     barung   large    PtTe2.1     13910  10 200    --  96:00 R 84:47
    hpc384/0*20+hpc401/0*20+hpc249/0*20+hpc321/0*20+hpc052/0*20+hpc054/0*20
    +hpc193/0*20+hpc220/0*20+hpc233/0*20+hpc262/0*20
-529940.un05     bikashg  large    MD3         55581   6 120    --  96:00 R 74:15
-   hpc364/0*20+hpc365/0*20+hpc429/0*20+hpc430/0*20+hpc210/0*20+hpc071/0*20
-529962.un05     anjibabu large    m1_y2_571_  30154  10 200    --  96:00 R 63:00
-   hpc372/0*20+hpc477/0*20+hpc419/0*20+hpc317/0*20+hpc373/0*20+hpc374/0*20
-   +hpc389/0*20+hpc406/0*20+hpc415/0*20+hpc446/0*20
-529964.un05     gsaxena  large    I-9         45447  10 200    --  96:00 R 67:42
-   hpc388/0*20+hpc403/0*20+hpc451/0*20+hpc087/0*20+hpc086/0*20+hpc224/0*20
-   +hpc239/0*20+hpc240/0*20+hpc242/0*20+hpc245/0*20
-529973.un05     mrishi   small    qS_2_5.sh   59660   1  20    --  120:0 R 43:46
+529973.un05     mrishi   small    qS_2_5.sh   59660   1  20    --  120:0 R 89:16
    hpc760/0*20
-529980.un05     dmonika  large    R_Mar_ML_F  11109  10 200    --  96:00 R 27:33
+529980.un05     dmonika  large    R_Mar_ML_F  11109  10 200    --  96:00 R 73:03
    hpc428/0*20+hpc059/0*20+hpc060/0*20+hpc061/0*20+hpc085/0*20+hpc117/0*20
    +hpc409/0*20+hpc456/0*20+hpc155/0*20+hpc444/0*20
-529988.un05     nidhig   large    R3_341_4x4  24101  20 400    --  96:00 R 23:57
+529988.un05     nidhig   large    R3_341_4x4  24101  20 400    --  96:00 R 69:28
    hpc445/0*20+hpc449/0*20+hpc450/0*20+hpc454/0*20+hpc295/0*20+hpc315/0*20
    +hpc316/0*20+hpc324/0*20+hpc480/0*20+hpc129/0*20+hpc132/0*20+hpc139/0*20
    +hpc356/0*20+hpc387/0*20+hpc395/0*20+hpc411/0*20+hpc448/0*20+hpc453/0*20
    +hpc464/0*20+hpc034/0*20
-530000.un05     sagar    large    R4_Wad_F4_  34075  12 240    --  96:00 R 74:14
-   hpc273/0*20+hpc135/0*20+hpc171/0*20+hpc172/0*20+hpc379/0*20+hpc435/0*20
-   +hpc436/0*20+hpc164/0*20+hpc207/0*20+hpc208/0*20+hpc209/0*20+hpc391/0*20
-530077.un05     vrahul   medium   mtd-2        5690   2  40    --  96:00 R 38:21
+530077.un05     vrahul   medium   mtd-2        5690   2  40    --  96:00 R 83:53
    hpc576/0*20+hpc580/0*20
 530078.un05     vrahul   medium   mtd-3         --    2  40    --  96:00 H   -- 
     -- 
-530142.un05     varman   medium   A_3mm       21831   4  80    --  96:00 R 74:51
-   hpc549/0*20+hpc557/0*20+hpc561/0*20+hpc562/0*20
-530196.un05     owaism   large    E-8           730  12 240    --  96:00 R 72:03
-   hpc426/0*20+hpc083/0*20+hpc084/0*20+hpc264/0*20+hpc298/0*20+hpc306/0*20
-   +hpc308/0*20+hpc313/0*20+hpc314/0*20+hpc322/0*20+hpc323/0*20+hpc329/0*20
 468360.un05     koleyb   large    hold_large    --   13 260    --  96:00 H   -- 
     -- 
-530201.un05     sbehera  large    FD-4         2330  12 240    --  96:00 R 61:53
-   hpc227/0*20+hpc247/0*20+hpc275/0*20+hpc013/0*20+hpc016/0*20+hpc017/0*20
-   +hpc045/0*20+hpc046/0*20+hpc051/0*20+hpc065/0*20+hpc070/0*20+hpc069/0*20
-530228.un05     nirmalh  small    case_10k.d   3264   2  40    --  120:0 R 91:00
-   hpc801/0*20+hpc788/0*20
-530232.un05     nirmalh  small    case_80k.d  22202   2  40    --  120:0 R 90:59
-   hpc778/0*20+hpc784/0*20
-530233.un05     nirmalh  small    case_90k.d  60738   2  40    --  120:0 R 77:11
-   hpc823/0*20+hpc836/0*20
-530255.un05     arkadipd large    10kssa4_BP  60295  12 240    --  96:00 R 71:54
-   hpc385/0*20+hpc157/0*20+hpc158/0*20+hpc177/0*20+hpc178/0*20+hpc212/0*20
-   +hpc331/0*20+hpc333/0*20+hpc345/0*20+hpc359/0*20+hpc362/0*20+hpc416/0*20
-530257.un05     akhilesh small    niivoxo     20509   1  20    --  120:0 R 118:0
-   hpc838/0*20
-530302.un05     sayeed   small    rulcat2ox2  55519   1  20    --  120:0 R 116:0
-   hpc763/0*20
-530339.un05     arnesh   large    AoA15       32629   6 120    --  96:00 R 10:19
+530339.un05     arnesh   large    AoA15       32629   6 120    --  96:00 R 55:51
    hpc326/0*20+hpc048/0*20+hpc136/0*20+hpc270/0*20+hpc301/0*20+hpc305/0*20
-530341.un05     akhilesh small    rulcat2ox2  55029   1  20    --  120:0 R 114:1
-   hpc798/0*20
 530410.un05     anshulya medium   triple1a      --    2  80    --  96:00 Q   -- 
     -- 
 530411.un05     anshulya medium   triple1b      --    2  80    --  96:00 Q   -- 
@@ -894,8 +837,6 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 530413.un05     anshulya medium   triple1d      --    2  80    --  96:00 Q   -- 
     -- 
-530423.un05     gargp    small    N16S159     25566   2  40    --  120:0 R 99:15
-   hpc807/0*20+hpc808/0*20
 530428.un05     raghavsg medium   triple2a      --    2  80    --  96:00 Q   -- 
     -- 
 530429.un05     raghavsg medium   triple2b      --    2  80    --  96:00 Q   -- 
@@ -906,206 +847,109 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 530443.un05     vaidehib large    Re400kr19     --    9 180    --  96:00 H   -- 
     -- 
-530446.un05     akhilkm  large    Re225kr12   20924   9 180    --  96:00 R 74:14
-   hpc198/0*20+hpc211/0*20+hpc258/0*20+hpc259/0*20+hpc260/0*20+hpc268/0*20
-   +hpc418/0*20+hpc465/0*20+hpc486/0*20
-530466.un05     surajkm  large    run2_noPar  61696   6 120    --  96:00 R 72:32
-   hpc332/0*20+hpc186/0*20+hpc202/0*20+hpc280/0*20+hpc350/0*20+hpc351/0*20
-530468.un05     surajkm  medium   run1MnoPar  52611   6 120    --  96:00 R 73:42
-   hpc737/0*20+hpc579/0*20+hpc640/0*20+hpc492/0*20+hpc674/0*20+hpc657/0*20
-530507.un05     sbehera  small    s-5         47642   2  40    --  120:0 R 99:40
-   hpc815/0*20+hpc820/0*20
-530510.un05     swatisi  small    s-5         28870   2  40    --  120:0 R 99:38
-   hpc812/0*20+hpc822/0*20
-530517.un05     kritama  small    2.6         22020   2  40    --  120:0 R 04:21
+530517.un05     kritama  small    2.6         22020   2  40    --  120:0 R 49:53
    hpc747/0*20+hpc755/0*20
 530518.un05     kritama  small    2.6           --    2  40    --  120:0 H   -- 
     -- 
-530519.un05     kritama  medium   2.7           --    2  40    --  96:00 H   -- 
-    -- 
-530524.un05     rshreya  medium   3.0         61115   2  40    --  96:00 R 10:27
+530519.un05     kritama  medium   2.7         26372   2  40    --  96:00 R 02:29
+   hpc626/0*20+hpc630/0*20
+530524.un05     rshreya  medium   3.0         61115   2  40    --  96:00 R 55:58
    hpc698/0*20+hpc699/0*20
-530564.un05     sbehera  medium   NN-2        51123   5 100    --  96:00 R 75:12
-   hpc513/0*20+hpc514/0*20+hpc524/0*20+hpc525/0*20+hpc528/0*20
-530570.un05     basheer  large    I-9         16811  10 200    --  96:00 R 13:57
+530570.un05     basheer  large    I-9         16811  10 200    --  96:00 R 59:29
    hpc241/0*20+hpc281/0*20+hpc397/0*20+hpc137/0*20+hpc138/0*20+hpc194/0*20
    +hpc234/0*20+hpc235/0*20+hpc237/0*20+hpc437/0*20
-530575.un05     abhigpt  large    R9_461_3x3  64388  10 200    --  96:00 R 64:07
-   hpc278/0*20+hpc279/0*20+hpc357/0*20+hpc377/0*20+hpc378/0*20+hpc381/0*20
-   +hpc050/0*20+hpc125/0*20+hpc141/0*20+hpc142/0*20
-530576.un05     abhigpt  medium   R2_MarI_FR   3185   6 120    --  96:00 R 47:30
+530576.un05     abhigpt  medium   R2_MarI_FR   3185   6 120    --  96:00 R 93:00
    hpc726/0*20+hpc728/0*20+hpc730/0*20+hpc733/0*20+hpc736/0*20+hpc739/0*20
-530579.un05     anjibabu medium   R2_m1_x1_5  23183   6 120    --  96:00 R 92:39
-   hpc653/0*20+hpc655/0*20+hpc656/0*20+hpc661/0*20+hpc666/0*20+hpc669/0*20
-530584.un05     indreshv medium   rulcatox2h  50369   2  40    --  96:00 R 92:39
-   hpc705/0*20+hpc706/0*20
-530590.un05     anjibabu medium   m1_y1x1_57   2209   6 120    --  96:00 R 37:58
+530590.un05     anjibabu medium   m1_y1x1_57   2209   6 120    --  96:00 R 83:29
    hpc645/0*20+hpc635/0*20+hpc636/0*20+hpc637/0*20+hpc638/0*20+hpc639/0*20
-530593.un05     nidhig   large    R1_Mar_FR_  18605  10 200    --  96:00 R 73:50
-   hpc188/0*20+hpc040/0*20+hpc041/0*20+hpc130/0*20+hpc145/0*20+hpc147/0*20
-   +hpc159/0*20+hpc161/0*20+hpc162/0*20+hpc231/0*20
-530598.un05     indreshv medium   rulcatexci  59935   2  40    --  96:00 R 92:40
-   hpc712/0*20+hpc713/0*20
-530615.un05     juhisri  medium   CNT-80_2    14337   4  80    --  96:00 R 92:34
-   hpc642/0*20+hpc644/0*20+hpc647/0*20+hpc651/0*20
-530616.un05     juhisri  small    Check       52558   2  40    --  120:0 R 94:28
-   hpc777/0*20+hpc771/0*20
-530618.un05     sougata  large    TCl3c       13246   6 120    --  96:00 R 54:52
-   hpc102/0*20+hpc121/0*20+hpc123/0*20+hpc422/0*20+hpc485/0*20+hpc472/0*20
 530625.un05     gunvirs  large    AUSMDNS_16    --    8 160    --  96:00 H   -- 
     -- 
-530627.un05     kmanohar large    ep4h2       40770  16 256    --  96:00 R 62:06
-   hpc369/0*16+hpc375/0*16+hpc434/0*16+hpc019/0*16+hpc024/0*16+hpc028/0*16
-   +hpc029/0*16+hpc067/0*16+hpc068/0*16+hpc099/0*16+hpc103/0*16+hpc354/0*16
-   +hpc355/0*16+hpc360/0*16+hpc370/0*16+hpc380/0*16
-530664.un05     varman   small    A_14mm      38172   2  40    --  120:0 R 74:51
-   hpc772/0*20+hpc786/0*20
-530698.un05     akhilesh medium   FABIVScan   21023   2  40    --  96:00 R 86:14
-   hpc506/0*20+hpc508/0*20
-530717.un05     alokm    medium   25_les      14688   6 120    --  96:00 R 85:09
-   hpc554/0*20+hpc547/0*20+hpc548/0*20+hpc550/0*20+hpc559/0*20+hpc560/0*20
-530729.un05     amitver  large    20deg_med   40187   6 120    --  96:00 R 82:49
-   hpc127/0*20+hpc149/0*20+hpc150/0*20+hpc463/0*20+hpc467/0*20+hpc469/0*20
 530730.un05     alokm    large    20_les        --    6 120    --  96:00 H   -- 
     -- 
-530732.un05     amitver  medium   20deg_cse   59740   6 120    --  96:00 R 82:25
-   hpc593/0*20+hpc595/0*20+hpc585/0*20+hpc596/0*20+hpc598/0*20+hpc600/0*20
-530737.un05     oshubham medium   mrun        31504   6 120    --  96:00 R 81:46
-   hpc673/0*20+hpc677/0*20+hpc680/0*20+hpc683/0*20+hpc672/0*20+hpc681/0*20
-530787.un05     ahilan   medium   8D_120D     29675   4  80    --  96:00 R 75:28
-   hpc530/0*20+hpc531/0*20+hpc533/0*20+hpc535/0*20
-530794.un05     rmalik   hyperthr code        55875   1  40    --  120:0 R 73:10
-   hpc842/0*40
-530796.un05     rmalik   small    code        50537   1  20    --  120:0 R 74:42
-   hpc776/0*20
-530804.un05     swatisi  large    P-1         14241  12 240    --  96:00 R 68:05
-   hpc043/0*20+hpc044/0*20+hpc474/0*20+hpc106/0*20+hpc146/0*20+hpc189/0*20
-   +hpc190/0*20+hpc192/0*20+hpc274/0*20+hpc283/0*20+hpc328/0*20+hpc386/0*20
-530805.un05     swatisi  large    E-1         62506  12 240    --  96:00 R 66:52
-   hpc342/0*20+hpc383/0*20+hpc390/0*20+hpc346/0*20+hpc179/0*20+hpc269/0*20
-   +hpc276/0*20+hpc277/0*20+hpc294/0*20+hpc300/0*20+hpc309/0*20+hpc462/0*20
-530806.un05     arnesh   large    AoA16        3681   6 120    --  96:00 R 74:11
-   hpc483/0*20+hpc407/0*20+hpc410/0*20+hpc413/0*20+hpc414/0*20+hpc424/0*20
-530809.un05     sbehera  medium   s-2         21367   5 100    --  96:00 R 74:08
-   hpc678/0*20+hpc685/0*20+hpc686/0*20+hpc688/0*20+hpc676/0*20
-530810.un05     sbehera  medium   s-4         57959   5 100    --  96:00 R 01:12
+530810.un05     sbehera  medium   s-4         57959   5 100    --  96:00 R 46:43
    hpc602/0*20+hpc604/0*20+hpc605/0*20+hpc607/0*20+hpc609/0*20
-530816.un05     paditya  large    15fb        11812   6 120    --  96:00 R 66:45
-   hpc039/0*20+hpc047/0*20+hpc049/0*20+hpc088/0*20+hpc116/0*20+hpc144/0*20
-530820.un05     surajkm  large    run3_noPar  62589   6 120    --  96:00 R 20:18
+530820.un05     surajkm  large    run3_noPar  62589   6 120    --  96:00 R 65:51
    hpc340/0*20+hpc343/0*20+hpc344/0*20+hpc349/0*20+hpc471/0*20+hpc066/0*20
-530822.un05     surajkm  medium   run4MnoPar  11498   6 120    --  96:00 R 68:29
-   hpc597/0*20+hpc583/0*20+hpc584/0*20+hpc586/0*20+hpc587/0*20+hpc599/0*20
-530848.un05     arun     small    gas_1st     54951   2  40    --  120:0 R 72:25
-   hpc773/0*20+hpc780/0*20
-530856.un05     arun     small    gasano      20958   2  40    --  120:0 R 72:12
+530856.un05     arun     small    gasano      20958   2  40    --  120:0 R 117:4
    hpc769/0*20+hpc774/0*20
-530873.un05     kmanohar large    ep4h4       35592  16 256    --  96:00 R 20:19
+530873.un05     kmanohar large    ep4h4       35592  16 256    --  96:00 R 65:50
    hpc191/0*16+hpc205/0*16+hpc222/0*16+hpc399/0*16+hpc400/0*16+hpc152/0*16
    +hpc154/0*16+hpc206/0*16+hpc291/0*16+hpc292/0*16+hpc296/0*16+hpc310/0*16
    +hpc311/0*16+hpc312/0*16+hpc338/0*16+hpc339/0*16
-530912.un05     arun     medium   gas_1st     25381   4  80    --  96:00 R 69:18
-   hpc606/0*20+hpc608/0*20+hpc613/0*20+hpc616/0*20
-530936.un05     owaism   large    DF-1        56179  12 240    --  96:00 R 66:40
-   hpc163/0*20+hpc195/0*20+hpc196/0*20+hpc197/0*20+hpc180/0*20+hpc302/0*20
-   +hpc303/0*20+hpc325/0*20+hpc341/0*20+hpc352/0*20+hpc475/0*20+hpc482/0*20
-530945.un05     surajkm  medium   run3MnoPar    --    6 120    --  96:00 H   -- 
-    -- 
-530951.un05     gsaxena  small    case_30k.d   5624   2  40    --  120:0 R 62:01
+530945.un05     surajkm  medium   run3MnoPar  13813   6 120    --  96:00 R 34:38
+   hpc547/0*20+hpc548/0*20+hpc550/0*20+hpc559/0*20+hpc560/0*20+hpc554/0*20
+530951.un05     gsaxena  small    case_30k.d   5624   2  40    --  120:0 R 107:3
    hpc748/0*20+hpc757/0*20
-530952.un05     gsaxena  small    case_40k.d   5651   2  40    --  120:0 R 44:15
+530952.un05     gsaxena  small    case_40k.d   5651   2  40    --  120:0 R 89:46
    hpc829/0*20+hpc832/0*20
-530956.un05     eshans   medium   E-syn-CLIP  27920   3  60    --  96:00 R 67:06
-   hpc519/0*20+hpc518/0*20+hpc523/0*20
-530975.un05     sbehera  small    case_60k.d  24562   2  40    --  120:0 R 02:14
+530975.un05     sbehera  small    case_60k.d  24562   2  40    --  120:0 R 47:44
    hpc743/0*20+hpc749/0*20
-530995.un05     skrathor large    ep4h0r32    21803  16 256    --  96:00 R 61:59
-   hpc382/0*16+hpc466/0*16+hpc431/0*16+hpc011/0*16+hpc012/0*16+hpc014/0*16
-   +hpc015/0*16+hpc119/0*16+hpc118/0*16+hpc120/0*16+hpc143/0*16+hpc167/0*16
-   +hpc185/0*16+hpc187/0*16+hpc201/0*16+hpc225/0*16
-531003.un05     agaur    hyperthr AA-2.5_D0.    571   2  80    --  120:0 R 64:26
-   hpc855/0*40+hpc852/0*40
-531018.un05     sabyasac large    BF4ts       11187   6 120    --  96:00 R 42:47
-   hpc261/0*20+hpc458/0*20+hpc460/0*20+hpc215/0*20+hpc216/0*20+hpc217/0*20
 531020.un05     mitesht  large    static_y1     --   15 300    --  96:00 H   -- 
     -- 
-531024.un05     abhigpt  large    R1_m1_341_  21351  12 240    --  96:00 R 01:02
+531024.un05     abhigpt  large    R1_m1_341_  21351  12 240    --  96:00 R 46:35
    hpc290/0*20+hpc420/0*20+hpc140/0*20+hpc160/0*20+hpc165/0*20+hpc166/0*20
    +hpc168/0*20+hpc169/0*20+hpc170/0*20+hpc218/0*20+hpc442/0*20+hpc018/0*20
 531031.un05     rshreya  medium   2.9           --    2  40    --  96:00 H   -- 
     -- 
-531039.un05     anjibabu large    R_m1_y1_57   7029  10 200    --  96:00 R 25:08
+531039.un05     anjibabu large    R_m1_y1_57   7029  10 200    --  96:00 R 70:38
    hpc320/0*20+hpc033/0*20+hpc038/0*20+hpc042/0*20+hpc468/0*20+hpc473/0*20
    +hpc484/0*20+hpc153/0*20+hpc053/0*20+hpc238/0*20
-531045.un05     nidhig   large    R2_Mar_FR_    --   10 200    --  96:00 Q   -- 
-    -- 
-531054.un05     shivaniv large    X_3.9m2     12162   6 120    --  96:00 R 05:16
+531045.un05     nidhig   large    R2_Mar_FR_  37845  10 200    --  96:00 R 35:59
+   hpc159/0*20+hpc161/0*20+hpc162/0*20+hpc231/0*20+hpc188/0*20+hpc043/0*20
+   +hpc044/0*20+hpc106/0*20+hpc146/0*20+hpc189/0*20
+531054.un05     shivaniv large    X_3.9m2     12162   6 120    --  96:00 R 50:48
    hpc361/0*20+hpc412/0*20+hpc173/0*20+hpc182/0*20+hpc183/0*20+hpc184/0*20
-531055.un05     shivaniv medium   X_5.8eqm    34423   2  40    --  70:00 R 20:53
+531058.un05     shivaniv medium   X_5.7eqm    48473   2  40    --  70:00 R 25:50
    hpc489/0*20+hpc491/0*20
-531058.un05     shivaniv medium   X_5.7eqm      --    2  40    --  70:00 H   -- 
-    -- 
-531060.un05     gsaxena  large    IN-9        57096  10 200    --  96:00 R 23:04
-   hpc035/0*20+hpc036/0*20+hpc072/0*20+hpc101/0*20+hpc398/0*20+hpc148/0*20
-   +hpc288/0*20+hpc299/0*20+hpc337/0*20+hpc408/0*20
-531061.un05     gsaxena  large    I-9           --   10 200    --  96:00 Q   -- 
-    -- 
-531064.un05     razia    large    Wad_R111_F  17857  12 240    --  96:00 R 21:27
+531061.un05     gsaxena  large    I-9         31987  10 200    --  96:00 R 35:49
+   hpc196/0*20+hpc197/0*20+hpc302/0*20+hpc303/0*20+hpc325/0*20+hpc341/0*20
+   +hpc352/0*20+hpc475/0*20+hpc482/0*20+hpc087/0*20
+531064.un05     razia    large    Wad_R111_F  17857  12 240    --  96:00 R 66:57
    hpc478/0*20+hpc026/0*20+hpc093/0*20+hpc107/0*20+hpc110/0*20+hpc112/0*20
    +hpc113/0*20+hpc114/0*20+hpc115/0*20+hpc126/0*20+hpc128/0*20+hpc151/0*20
-531067.un05     razia    large    221_last_R    --   14 280    --  96:00 Q   -- 
-    -- 
-531068.un05     sougata  large    TCl3.b        --    6 120    --  96:00 Q   -- 
-    -- 
-531089.un05     kshashi  small    RepCuLMeO2  55784   1  20    --  120:0 R 51:10
+531067.un05     razia    large    221_last_R  10061  14 280    --  96:00 R 45:26
+   hpc030/0*20+hpc031/0*20+hpc363/0*20+hpc392/0*20+hpc393/0*20+hpc394/0*20
+   +hpc402/0*20+hpc457/0*20+hpc470/0*20+hpc104/0*20+hpc105/0*20+hpc203/0*20
+   +hpc228/0*20+hpc236/0*20
+531068.un05     sougata  large    TCl3.b      43595   6 120    --  96:00 R 35:58
+   hpc190/0*20+hpc192/0*20+hpc274/0*20+hpc283/0*20+hpc328/0*20+hpc386/0*20
+531089.un05     kshashi  small    RepCuLMeO2  55784   1  20    --  120:0 R 96:42
    hpc795/0*20
-531099.un05     sbehera  large    s-1         17209  10 200    --  96:00 R 21:43
+531099.un05     sbehera  large    s-1         17209  10 200    --  96:00 R 67:14
    hpc417/0*20+hpc089/0*20+hpc090/0*20+hpc091/0*20+hpc092/0*20+hpc094/0*20
    +hpc095/0*20+hpc097/0*20+hpc214/0*20+hpc319/0*20
-531118.un05     bchat    medium   S7M11symM1  22058   4  80    --  96:00 R 48:53
+531118.un05     bchat    medium   S7M11symM1  22058   4  80    --  96:00 R 94:23
    hpc588/0*20+hpc590/0*20+hpc591/0*20+hpc594/0*20
-531122.un05     arkadipd large    Re10kBP3    35772  12 240    --  96:00 R 18:45
+531122.un05     arkadipd large    Re10kBP3    35772  12 240    --  96:00 R 64:15
    hpc204/0*20+hpc376/0*20+hpc421/0*20+hpc432/0*20+hpc440/0*20+hpc020/0*20
    +hpc022/0*20+hpc023/0*20+hpc025/0*20+hpc027/0*20+hpc032/0*20+hpc037/0*20
-531127.un05     ksaurb   hyperthr 22fb        15071   2  40    --  120:0 R 48:06
-   hpc851/0*20+hpc850/0*20
-531144.un05     himkv    hyperthr amoeba14    34469   1  40    --  120:0 R 30:49
+531144.un05     himkv    hyperthr amoeba14    34469   1  40    --  120:0 R 76:19
    hpc846/0*40
-531169.un05     paditya  small    Feb01       51143   2  40    --  120:0 R 45:07
+531169.un05     paditya  small    Feb01       51143   2  40    --  120:0 R 90:39
    hpc751/0*20+hpc758/0*20
-531170.un05     santanup medium   job9301-96  17458   2  40    --  96:00 R 45:04
-   hpc527/0*20+hpc516/0*20
-531171.un05     santanup medium   job9601-99   8064   2  40    --  96:00 R 45:04
-   hpc552/0*20+hpc564/0*20
-531172.un05     santanup medium   job6001-63  64734   2  40    --  96:00 R 45:01
-   hpc632/0*20+hpc634/0*20
-531173.un05     paditya  small    feb15       49353   2  40    --  120:0 R 44:38
+531173.un05     paditya  small    feb15       49353   2  40    --  120:0 R 90:08
    hpc787/0*20+hpc800/0*20
-531185.un05     ksaurb   small    22fb        29004   2  40    --  120:0 R 44:09
+531185.un05     ksaurb   small    22fb        29004   2  40    --  120:0 R 89:39
    hpc816/0*20+hpc817/0*20
-531198.un05     pyadav   large    phonon1     56330   6 120    --  96:00 R 40:16
+531198.un05     pyadav   large    phonon1     56330   6 120    --  96:00 R 85:45
    hpc459/0*20+hpc058/0*20+hpc254/0*20+hpc255/0*20+hpc282/0*20+hpc336/0*20
-531200.un05     pyadav   large    phonon3     32583   6 120    --  96:00 R 22:47
+531200.un05     pyadav   large    phonon3     32583   6 120    --  96:00 R 68:18
    hpc427/0*20+hpc079/0*20+hpc080/0*20+hpc082/0*20+hpc081/0*20+hpc156/0*20
-531201.un05     pyadav   medium   Pb1         39369   4  80    --  96:00 R 43:59
+531201.un05     pyadav   medium   Pb1         39369   4  80    --  96:00 R 89:28
    hpc717/0*20+hpc708/0*20+hpc709/0*20+hpc715/0*20
-531202.un05     ksaurb   small    22fb        45515   2  40    --  120:0 R 43:58
+531202.un05     ksaurb   small    22fb        45515   2  40    --  120:0 R 89:29
    hpc809/0*20+hpc810/0*20
-531203.un05     pyadav   medium   Pb2         37923   4  80    --  96:00 R 43:58
+531203.un05     pyadav   medium   Pb2         37923   4  80    --  96:00 R 89:28
    hpc498/0*20+hpc500/0*20+hpc501/0*20+hpc502/0*20
-531204.un05     pyadav   medium   Pbm3        31741   4  80    --  96:00 R 35:49
+531204.un05     pyadav   medium   Pbm3        31741   4  80    --  96:00 R 81:19
    hpc517/0*20+hpc515/0*20+hpc521/0*20+hpc522/0*20
-531220.un05     obharti  small    case_30k.d  60168   2  40    --  120:0 R 02:15
+531220.un05     obharti  small    case_30k.d  60168   2  40    --  120:0 R 47:45
    hpc825/0*20+hpc833/0*20
-531221.un05     obharti  small    case_10k.d  28338   2  40    --  120:0 R 02:15
-   hpc803/0*20+hpc799/0*20
-531222.un05     obharti  small    case_20k.d    789   2  40    --  120:0 R 02:13
+531222.un05     obharti  small    case_20k.d    789   2  40    --  120:0 R 47:43
    hpc789/0*20+hpc802/0*20
-531236.un05     anshulya small    triple1b     7945   1  20    --  120:0 R 12:36
-   hpc831/0*20
 531278.un05     bhanuday large    L3_Panga      --    6 120    --  96:00 H   -- 
     -- 
-531294.un05     sagar    medium   mtd10-cn     4500   2  40    --  96:00 R 37:48
+531294.un05     sagar    medium   mtd10-cn     4500   2  40    --  96:00 R 83:20
    hpc487/0*20+hpc494/0*20
 531321.un05     akhilkm  large    L23_Panga     --    6 120    --  96:00 H   -- 
     -- 
@@ -1113,165 +957,383 @@ Job ID          Username Queue    Jobname    SessID NDS TSK Memory Time  S Time
     -- 
 531326.un05     amanpar  large    Re10k_u_1     --   10 200    --  96:00 H   -- 
     -- 
-531333.un05     agajehan medium   mnuwc        8492   2  40    --  96:00 R 35:50
+531333.un05     agajehan medium   mnuwc        8492   2  40    --  96:00 R 81:20
    hpc620/0*20+hpc623/0*20
 531335.un05     pyadav   medium   PbiC4         --    4  80    --  96:00 Q   -- 
     -- 
-531336.un05     agajehan small    mnu         13764   1  20    --  120:0 R 35:48
+531336.un05     agajehan small    mnu         13764   1  20    --  120:0 R 81:19
    hpc752/0*20
-531367.un05     gargp    highmem  N16S034      9979   1   2    --  120:0 R 27:05
+531367.un05     gargp    highmem  N16S034      9979   1   2    --  120:0 R 72:35
    hm001/0*2
-531387.un05     waquar   small    AW.dat      14478   1  20    --  120:0 R 02:09
+531387.un05     waquar   small    AW.dat      14478   1  20    --  120:0 R 47:40
    hpc767/0*20
-531404.un05     abhigpt  medium   R5_FR_GaII  37709   6 120    --  96:00 R 24:33
+531404.un05     abhigpt  medium   R5_FR_GaII  37709   6 120    --  96:00 R 70:04
    hpc567/0*20+hpc581/0*20+hpc566/0*20+hpc575/0*20+hpc565/0*20+hpc569/0*20
-531406.un05     abhigpt  medium   R2_Mar_FR_  42746   6 120    --  96:00 R 22:58
+531406.un05     abhigpt  medium   R2_Mar_FR_  42746   6 120    --  96:00 R 68:29
    hpc617/0*20+hpc628/0*20+hpc618/0*20+hpc624/0*20+hpc627/0*20+hpc631/0*20
-531407.un05     anjibabu large    R9_571_3x3    --   11 220    --  96:00 Q   -- 
-    -- 
-531413.un05     anjibabu medium   R_m1_x2_57  32692   6 120    --  96:00 R 22:40
+531407.un05     anjibabu large    R9_571_3x3  60348  11 220    --  96:00 R 11:34
+   hpc019/0*20+hpc024/0*20+hpc028/0*20+hpc029/0*20+hpc067/0*20+hpc068/0*20
+   +hpc099/0*20+hpc103/0*20+hpc354/0*20+hpc355/0*20+hpc360/0*20
+531413.un05     anjibabu medium   R_m1_x2_57  32692   6 120    --  96:00 R 68:11
    hpc582/0*20+hpc571/0*20+hpc568/0*20+hpc570/0*20+hpc572/0*20+hpc574/0*20
-531415.un05     dmonika  medium   R3_GaII_FR  22872   6 120    --  96:00 R 24:09
+531415.un05     dmonika  medium   R3_GaII_FR  22872   6 120    --  96:00 R 69:38
    hpc504/0*20+hpc507/0*20+hpc497/0*20+hpc499/0*20+hpc509/0*20+hpc510/0*20
-531417.un05     dmonika  large    R1_Mar_BN_  43531  10 200    --  96:00 R 16:52
+531417.un05     dmonika  large    R1_Mar_BN_  43531  10 200    --  96:00 R 62:24
    hpc405/0*20+hpc423/0*20+hpc452/0*20+hpc293/0*20+hpc353/0*20+hpc366/0*20
    +hpc367/0*20+hpc396/0*20+hpc404/0*20+hpc425/0*20
-531419.un05     nidhig   medium   R1_Rmad_Ga  58405   6 120    --  96:00 R 23:32
+531419.un05     nidhig   medium   R1_Rmad_Ga  58405   6 120    --  96:00 R 69:02
    hpc611/0*20+hpc619/0*20+hpc622/0*20+hpc629/0*20+hpc610/0*20+hpc612/0*20
 531422.un05     abhigpt  medium   R4_m11_FR_    --    6 120    --  96:00 Q   -- 
     -- 
-531423.un05     anjibabu medium   R4_Dis_GaI    --    6 120    --  96:00 Q   -- 
-    -- 
-531436.un05     swatisi  medium   Y-55        24763   6 120    --  96:00 R 21:44
+531423.un05     anjibabu medium   R4_Dis_GaI  46924   6 120    --  96:00 R 42:03
+   hpc705/0*20+hpc706/0*20+hpc712/0*20+hpc713/0*20+hpc642/0*20+hpc644/0*20
+531436.un05     swatisi  medium   Y-55        24763   6 120    --  96:00 R 67:15
    hpc511/0*20+hpc512/0*20+hpc526/0*20+hpc503/0*20+hpc505/0*20+hpc495/0*20
-531437.un05     sbehera  large    I-8           --   10 200    --  96:00 Q   -- 
-    -- 
-531438.un05     swatisi  medium   Y-00        47319   6 120    --  96:00 R 21:38
+531437.un05     sbehera  large    I-8         23128  10 200    --  96:00 R 35:57
+   hpc462/0*20+hpc013/0*20+hpc016/0*20+hpc017/0*20+hpc045/0*20+hpc046/0*20
+   +hpc051/0*20+hpc065/0*20+hpc070/0*20+hpc069/0*20
+531438.un05     swatisi  medium   Y-00        47319   6 120    --  96:00 R 67:10
    hpc691/0*20+hpc692/0*20+hpc693/0*20+hpc695/0*20+hpc697/0*20+hpc700/0*20
-531439.un05     gsaxena  medium   A-44        16396   6 120    --  96:00 R 21:37
+531439.un05     gsaxena  medium   A-44        16396   6 120    --  96:00 R 67:08
    hpc659/0*20+hpc654/0*20+hpc663/0*20+hpc658/0*20+hpc660/0*20+hpc662/0*20
-531441.un05     basheer  medium   Y-22        63039   6 120    --  96:00 R 21:36
+531441.un05     basheer  medium   Y-22        63039   6 120    --  96:00 R 67:08
    hpc707/0*20+hpc710/0*20+hpc714/0*20+hpc711/0*20+hpc716/0*20+hpc718/0*20
-531476.un05     kumaran  workq    STDIN       11414   1   1    --  24:00 R 19:00
-   hpc840/0
-531479.un05     msnaim   medium   Vortex_RIN  38972   6 120    --  96:00 R 18:30
+531479.un05     msnaim   medium   Vortex_RIN  38972   6 120    --  96:00 R 64:01
    hpc551/0*20+hpc553/0*20+hpc555/0*20+hpc556/0*20+hpc558/0*20+hpc563/0*20
-531482.un05     sarnali  large    ts1         51219   6 120    --  96:00 R 15:15
+531482.un05     sarnali  large    ts1         51219   6 120    --  96:00 R 60:46
    hpc433/0*20+hpc438/0*20+hpc479/0*20+hpc174/0*20+hpc181/0*20+hpc226/0*20
-531483.un05     sougata  medium   TCl3.1      13279   4  80    --  96:00 R 18:02
+531483.un05     sougata  medium   TCl3.1      13279   4  80    --  96:00 R 63:34
    hpc601/0*20+hpc614/0*20+hpc615/0*20+hpc603/0*20
-531484.un05     sougata  medium   TCl3.2      23115   2  40    --  96:00 R 18:02
+531484.un05     sougata  medium   TCl3.2      23115   2  40    --  96:00 R 63:32
    hpc488/0*20+hpc493/0*20
-531496.un05     vmayank  workq    STDIN       47897   1   1    --  24:00 R 17:27
-   hpc004/0
-531507.un05     gargp    medium   N21S000     31459   2  40    --  96:00 R 16:30
+531507.un05     gargp    medium   N21S000     31459   2  40    --  96:00 R 62:01
    hpc741/0*20+hpc742/0*20
-531508.un05     gargp    medium   N29S054      4009   2  40    --  96:00 R 16:31
+531508.un05     gargp    medium   N29S054      4009   2  40    --  96:00 R 62:01
    hpc702/0*20+hpc704/0*20
-531512.un05     vvmk     large    SMA2         5379   6 120    --  96:00 R 14:34
-   hpc250/0*20+hpc251/0*20+hpc252/0*20+hpc253/0*20+hpc256/0*20+hpc263/0*20
-531521.un05     sayanbnj large    sbf6ts      17145   6 120    --  96:00 R 13:49
+531521.un05     sayanbnj large    sbf6ts      17145   6 120    --  96:00 R 59:19
    hpc055/0*20+hpc056/0*20+hpc057/0*20+hpc062/0*20+hpc063/0*20+hpc064/0*20
-531524.un05     jawahar  medium   AoA10_AR10  52821   6 120    --  96:00 R 15:53
+531524.un05     jawahar  medium   AoA10_AR10  52821   6 120    --  96:00 R 61:25
    hpc540/0*20+hpc538/0*20+hpc546/0*20+hpc542/0*20+hpc544/0*20+hpc529/0*20
-531526.un05     jawahar  medium   AoA12_AR10  27613   6 120    --  96:00 R 15:53
+531526.un05     jawahar  medium   AoA12_AR10  27613   6 120    --  96:00 R 61:24
    hpc652/0*20+hpc641/0*20+hpc643/0*20+hpc670/0*20+hpc667/0*20+hpc646/0*20
-531527.un05     gargp    medium   N16S159_Sm  13920   2  40    --  96:00 R 15:52
+531527.un05     gargp    medium   N16S159_Sm  13920   2  40    --  96:00 R 61:24
    hpc687/0*20+hpc675/0*20
-531542.un05     msnaim   medium   Vortex_RIN    389   6 120    --  96:00 R 14:39
+531542.un05     msnaim   medium   Vortex_RIN    389   6 120    --  96:00 R 60:10
    hpc729/0*20+hpc738/0*20+hpc720/0*20+hpc721/0*20+hpc722/0*20+hpc735/0*20
-531544.un05     eshans   medium   AVG-D-syn-  59105   3  60    --  96:00 R 04:15
+531544.un05     eshans   medium   AVG-D-syn-  59105   3  60    --  96:00 R 49:46
    hpc648/0*20+hpc649/0*20+hpc650/0*20
-531547.un05     msnaim   medium   Vortex_RIN  23596   6 120    --  96:00 R 14:25
+531547.un05     msnaim   medium   Vortex_RIN  23596   6 120    --  96:00 R 59:55
    hpc633/0*20+hpc577/0*20+hpc621/0*20+hpc625/0*20+hpc496/0*20+hpc665/0*20
-531554.un05     vvmk     small    SM1_0.05_h  47673   2  40    --  120:0 R 13:57
+531554.un05     vvmk     small    SM1_0.05_h  47673   2  40    --  120:0 R 59:28
    hpc756/0*20+hpc745/0*20
-531555.un05     vvmk     small    SM1_0.03    41943   2  40    --  120:0 R 13:54
+531555.un05     vvmk     small    SM1_0.03    41943   2  40    --  120:0 R 59:24
    hpc750/0*20+hpc753/0*20
-531557.un05     vvmk     small    SM1_0.08    16943   2  40    --  120:0 R 13:48
+531557.un05     vvmk     small    SM1_0.08    16943   2  40    --  120:0 R 59:20
    hpc759/0*20+hpc762/0*20
 531567.un05     msnaim   large    Vortex_RIN    --   30 600    --  96:00 Q   -- 
     -- 
 531568.un05     msnaim   large    Vortex_RIN    --   30 600    --  96:00 Q   -- 
     -- 
-531576.un05     basheer  large    I-6         11720  10 200    --  96:00 R 12:48
+531576.un05     basheer  large    I-6         11720  10 200    --  96:00 R 58:19
    hpc439/0*20+hpc455/0*20+hpc307/0*20+hpc005/0*20+hpc006/0*20+hpc007/0*20
    +hpc008/0*20+hpc009/0*20+hpc010/0*20+hpc219/0*20
 531577.un05     basheer  large    I-9           --   10 200    --  96:00 Q   -- 
     -- 
 247289.un05     kkkumar  large    L2            --    6 120    --  96:00 H   -- 
     -- 
-531594.un05     vipinm   small    nacl_7585   24512   2  40    --  120:0 R 05:58
+531594.un05     vipinm   small    nacl_7585   24512   2  40    --  120:0 R 51:29
    hpc744/0*20+hpc754/0*20
-531595.un05     vipinm   small    nabr_7585   31335   2  40    --  120:0 R 05:56
+531595.un05     vipinm   small    nabr_7585   31335   2  40    --  120:0 R 51:26
    hpc835/0*20+hpc834/0*20
-531596.un05     vipinm   medium   nabr1_7585  34334   2  40    --  96:00 R 05:50
+531596.un05     vipinm   medium   nabr1_7585  34334   2  40    --  96:00 R 51:21
    hpc701/0*20+hpc703/0*20
-531597.un05     vipinm   medium   4gdmcl       5834   2  40    --  96:00 R 05:40
+531597.un05     vipinm   medium   4gdmcl       5834   2  40    --  96:00 R 51:12
    hpc689/0*20+hpc690/0*20
-531601.un05     vipinm   small    6gdmcl      57577   2  40    --  120:0 R 05:38
+531601.un05     vipinm   small    6gdmcl      57577   2  40    --  120:0 R 51:08
    hpc837/0*20+hpc830/0*20
-531603.un05     vipinm   medium   2tmacl      13652   2  40    --  96:00 R 05:36
+531603.un05     vipinm   medium   2tmacl      13652   2  40    --  96:00 R 51:08
    hpc694/0*20+hpc696/0*20
-531604.un05     vipinm   hyperthr 4tmacl      13170   1  40    --  120:0 R 00:52
+531604.un05     vipinm   hyperthr 4tmacl      13170   1  40    --  120:0 R 46:23
    hpc849/0*40
-531606.un05     vipinm   highmem  6tmacl      32471   1  20    --  120:0 R 05:31
+531606.un05     vipinm   highmem  6tmacl      32471   1  20    --  120:0 R 51:01
    hm005/0*20
-531609.un05     shashku  large    run_0.5alp  30977   6 120    --  96:00 R 02:15
+531609.un05     shashku  large    run_0.5alp  30977   6 120    --  96:00 R 47:45
    hpc327/0*20+hpc371/0*20+hpc124/0*20+hpc199/0*20+hpc200/0*20+hpc248/0*20
-531610.un05     anjibabu workq    STDIN       57263   1   1    --  24:00 R 04:02
-   hpc839/0
-531615.un05     kanya    medium   runtol56ch  44256   2  40    --  96:00 R 03:43
-   hpc664/0*20+hpc668/0*20
-531617.un05     kanya    medium   runtol56qt  54065   2  40    --  96:00 R 03:37
-   hpc731/0*20+hpc732/0*20
-531619.un05     kanya    medium   runtol56qt  32719   2  40    --  96:00 R 03:33
-   hpc573/0*20+hpc578/0*20
-531623.un05     ahilan   workq    STDIN       60061   1   1    --  24:00 R 03:13
-   hpc839/2
-531634.un05     eshans   medium   D-syn-1L5E  63229   3  60    --  96:00 R 02:19
+531634.un05     eshans   medium   D-syn-1L5E  63229   3  60    --  96:00 R 47:51
    hpc545/0*20+hpc532/0*20+hpc537/0*20
 531637.un05     soughosh large    run11_1.5e    --   10 200    --  96:00 H   -- 
     -- 
 531638.un05     soughosh large    run12_1.5e    --   10 200    --  96:00 H   -- 
     -- 
-531642.un05     anshulya small    triple1c    13248   1  20    --  120:0 R 02:09
-   hpc827/0*20
-531643.un05     anshulya small    triple1d    45520   1  20    --  120:0 R 02:09
-   hpc790/0*20
-531644.un05     anshulya small    triple1e      --    1  20    --  120:0 Q   -- 
-    -- 
-531645.un05     raghavsg small    triple2b    13042   1  20    --  120:0 R 02:07
-   hpc792/0*20
-531646.un05     raghavsg small    triple2c    16212   1  20    --  120:0 R 02:07
-   hpc775/0*20
-531647.un05     raghavsg small    triple2d    28431   1  20    --  120:0 R 02:07
-   hpc779/0*20
-531648.un05     raghavsg small    triple2e      --    1  20    --  120:0 Q   -- 
-    -- 
-531649.un05     dgautam  medium   2.4         60704   2  40    --  96:00 R 02:04
+531644.un05     anshulya small    triple1e    58808   1  20    --  120:0 R 24:29
+   hpc746/0*20
+531648.un05     raghavsg small    triple2e    34718   1  20    --  120:0 R 14:05
+   hpc763/0*20
+531649.un05     dgautam  medium   2.4         60704   2  40    --  96:00 R 47:35
    hpc534/0*20+hpc536/0*20
-531652.un05     varman   workq    STDIN       20718   1   1    --  24:00 R 02:00
-   hpc003/0
 531658.un05     dmonika  large    R4_dis_sur    --   10 200    --  96:00 Q   -- 
     -- 
-531659.un05     nlpingua workq    STDIN       22721   1   1    --  24:00 R 01:01
-   hpc003/1
-531665.un05     praphul  workq    STDIN        4545   1   1    --  24:00 R 00:52
-   hpc840/1
-531667.un05     shivaniv workq    STDIN       16357   1   1    --  24:00 R 00:30
-   hpc004/1
-531668.un05     cabhi    workq    STDIN       24192   1   1    --  24:00 R 00:24
-   hpc003/2
-531671.un05     gargp    small    N16S034     14942   2  40    --  120:0 R 00:10
+531671.un05     gargp    small    N16S034     14942   2  40    --  120:0 R 45:40
    hpc765/0*20+hpc761/0*20
-531672.un05     akashagg medium   4000mA160m  19882   2  40    --  96:00 R 00:18
-   hpc541/0*20+hpc539/0*20
-531673.un05     surender workq    STDIN        6221   1   1    --  24:00 R 00:18
-   hpc840/2
-531674.un05     arnesh   medium   AoA13        3924   6 120    --  96:00 R 00:14
+531674.un05     arnesh   medium   AoA13        3924   6 120    --  96:00 R 45:45
    hpc490/0*20+hpc520/0*20+hpc719/0*20+hpc671/0*20+hpc679/0*20+hpc682/0*20
-531675.un05     gargp    small    N16S068      6926   2  40    --  120:0 R 00:08
+531675.un05     gargp    small    N16S068      6926   2  40    --  120:0 R 45:39
    hpc766/0*20+hpc768/0*20
-531676.un05     akashagg medium   4000mA160m  29390   2  40    --  96:00 R 00:05
-   hpc589/0*20+hpc592/0*20
+531679.un05     shivaniv medium   X_5.4eqm     3358   2  40    --  50:00 R 04:45
+   hpc681/0*20+hpc684/0*20
+531680.un05     shivaniv small    X_5.3eqm      --    2  40    --  50:00 H   -- 
+    -- 
+531685.un05     vaidehib large    Re400kr19     --    9 180    --  96:00 H   -- 
+    -- 
+531686.un05     shivaniv small    X_5.2eqm      --    2  40    --  50:00 H   -- 
+    -- 
+531688.un05     shivaniv small    X_5.1eqm      --    2  40    --  50:00 H   -- 
+    -- 
+531689.un05     kashisht large    Re400kr23     --    9 180    --  96:00 H   -- 
+    -- 
+531690.un05     spiyush  large    Re275kr16     --   10 200    --  96:00 H   -- 
+    -- 
+531691.un05     owaism   large    E-8          8687  12 240    --  96:00 R 35:57
+   hpc474/0*20+hpc179/0*20+hpc269/0*20+hpc276/0*20+hpc277/0*20+hpc294/0*20
+   +hpc300/0*20+hpc309/0*20+hpc342/0*20+hpc346/0*20+hpc383/0*20+hpc390/0*20
+531692.un05     sbehera  medium   NN-2        16824   5 100    --  96:00 R 35:22
+   hpc527/0*20+hpc506/0*20+hpc508/0*20+hpc552/0*20+hpc564/0*20
+531697.un05     oshubham large    20mkklw       --    6 120    --  96:00 H   -- 
+    -- 
+531713.un05     dolly    medium   sORN        31938   2  40    --  96:00 R 42:25
+   hpc528/0*20+hpc518/0*20
+531716.un05     bapans   small    sLYSposN3   28149   1  20    --  120:0 R 42:25
+   hpc824/0*20
+531717.un05     bapans   medium   sHISp       40648   2  40    --  96:00 R 42:24
+   hpc519/0*20+hpc523/0*20
+531721.un05     agajehan small    rrCHDAn     32158   1  20    --  120:0 R 42:19
+   hpc828/0*20
+531725.un05     prabodh  small    I_TB1       42295   1  20    --  120:0 R 42:01
+   hpc785/0*20
+531728.un05     akhilkm  medium   M23           --    6 120    --  96:00 H   -- 
+    -- 
+531731.un05     ykedar   large    333-N1-2i   49907  16 160    --  96:00 R 21:25
+   hpc280/0*10+hpc332/0*10+hpc350/0*10+hpc351/0*10+hpc157/0*10+hpc158/0*10
+   +hpc177/0*10+hpc178/0*10+hpc212/0*10+hpc331/0*10+hpc333/0*10+hpc345/0*10
+   +hpc359/0*10+hpc362/0*10+hpc385/0*10+hpc416/0*10
+531742.un05     jawahar  large    AoA10_AR10    --    6 120    --  96:00 H   -- 
+    -- 
+531743.un05     jawahar  large    AoA12_AR10    --    6 120    --  96:00 H   -- 
+    -- 
+531782.un05     kmanohar large    ep4h0       48720  16 256    --  96:00 R 11:28
+   hpc369/0*16+hpc370/0*16+hpc375/0*16+hpc380/0*16+hpc434/0*16+hpc011/0*16
+   +hpc012/0*16+hpc014/0*16+hpc015/0*16+hpc119/0*16+hpc118/0*16+hpc120/0*16
+   +hpc143/0*16+hpc167/0*16+hpc185/0*16+hpc187/0*16
+531783.un05     skrathor large    ep4h6r32    12545  16 256    --  96:00 R 04:54
+   hpc041/0*16+hpc130/0*16+hpc435/0*16+hpc436/0*16+hpc273/0*16+hpc071/0*16
+   +hpc134/0*16+hpc145/0*16+hpc147/0*16+hpc210/0*16+hpc364/0*16+hpc074/0*16
+   +hpc073/0*16+hpc075/0*16+hpc076/0*16+hpc077/0*16
+531784.un05     skrathor large    ep4h8r32      --   16 256    --  96:00 Q   -- 
+    -- 
+531790.un05     surender small    1           20478   1  20    --  120:0 R 36:57
+   hpc782/0*20
+531791.un05     surender small    2             913   1  20    --  120:0 R 36:54
+   hpc783/0*20
+531797.un05     surajkm  large    run1_noPar  47937   6 120    --  96:00 R 22:00
+   hpc299/0*20+hpc337/0*20+hpc398/0*20+hpc408/0*20+hpc186/0*20+hpc202/0*20
+531803.un05     sougata  large    TCl3.a       7268   6 120    --  96:00 R 04:19
+   hpc078/0*20+hpc102/0*20+hpc121/0*20+hpc123/0*20+hpc422/0*20+hpc485/0*20
+531805.un05     eshans   large    F-syn-fm01  10228   6 120    --  96:00 R 35:57
+   hpc227/0*20+hpc247/0*20+hpc275/0*20+hpc163/0*20+hpc180/0*20+hpc195/0*20
+531806.un05     sbehera  small    case_50k.d  21435   2  40    --  120:0 R 36:09
+   hpc770/0*20+hpc781/0*20
+531808.un05     sbehera  small    case_70k.d  59241   2  40    --  120:0 R 24:21
+   hpc813/0*20+hpc814/0*20
+531812.un05     swatisi  large    P-1         36087  12 240    --  96:00 R 34:41
+   hpc086/0*20+hpc224/0*20+hpc239/0*20+hpc240/0*20+hpc242/0*20+hpc245/0*20
+   +hpc388/0*20+hpc403/0*20+hpc451/0*20+hpc215/0*20+hpc216/0*20+hpc217/0*20
+531813.un05     swatisi  large    E-1          2340  12 240    --  96:00 R 30:49
+   hpc135/0*20+hpc463/0*20+hpc467/0*20+hpc469/0*20+hpc164/0*20+hpc171/0*20
+   +hpc172/0*20+hpc207/0*20+hpc208/0*20+hpc209/0*20+hpc379/0*20+hpc391/0*20
+531814.un05     owaism   large    DF-1        32240  12 240    --  96:00 R 23:44
+   hpc365/0*20+hpc429/0*20+hpc430/0*20+hpc198/0*20+hpc211/0*20+hpc258/0*20
+   +hpc259/0*20+hpc260/0*20+hpc268/0*20+hpc418/0*20+hpc465/0*20+hpc486/0*20
+531815.un05     sbehera  large    FD-4          --   12 240    --  96:00 Q   -- 
+    -- 
+531853.un05     ahilan   medium   8D_120D     20896   4  80    --  96:00 R 27:10
+   hpc530/0*20+hpc531/0*20+hpc533/0*20+hpc535/0*20
+531857.un05     vthakkur medium   X_5.9-m1    18950   4  80    --  96:00 R 24:21
+   hpc549/0*20+hpc557/0*20+hpc561/0*20+hpc562/0*20
+531868.un05     sabyasac large    BF4ts       21404   6 120    --  96:00 R 23:41
+   hpc407/0*20+hpc410/0*20+hpc413/0*20+hpc414/0*20+hpc424/0*20+hpc483/0*20
+531872.un05     varman   medium   lb_5mm      12248   4  80    --  96:00 R 23:36
+   hpc678/0*20+hpc685/0*20+hpc686/0*20+hpc688/0*20
+531880.un05     ragamaye small    sma1        13398   2  40    --  120:0 R 24:52
+   hpc805/0*20+hpc806/0*20
+531887.un05     vthakkur medium   X_5.8m1     63270   4  80    --  96:00 R 23:10
+   hpc640/0*20+hpc657/0*20+hpc674/0*20+hpc492/0*20
+531902.un05     dolly    small    18DA        17238   1  20    --  120:0 R 23:01
+   hpc820/0*20
+531916.un05     ompg     highmem  I_SB3         342   1  20    --  120:0 R 22:15
+   hm003/0*20
+531924.un05     arun     small    gas_1st     48147   2  40    --  120:0 R 21:37
+   hpc794/0*20+hpc793/0*20
+531929.un05     abhigpt  large    R2_II_FR_6  60526  10 200    --  96:00 R 13:36
+   hpc050/0*20+hpc125/0*20+hpc141/0*20+hpc142/0*20+hpc278/0*20+hpc279/0*20
+   +hpc357/0*20+hpc377/0*20+hpc378/0*20+hpc381/0*20
+531931.un05     anjibabu medium   R3_m1_x1_5    --    6 120    --  96:00 Q   -- 
+    -- 
+531937.un05     surender medium   4           58295   2  40    --  96:00 R 21:00
+   hpc731/0*20+hpc732/0*20
+531938.un05     surender medium   5            9804   2  40    --  96:00 R 20:58
+   hpc579/0*20+hpc737/0*20
+531940.un05     surender medium   6           16226   2  40    --  96:00 R 18:47
+   hpc606/0*20+hpc608/0*20
+531944.un05     sagar    large    R5_Wad_F4_    --   12 240    --  96:00 Q   -- 
+    -- 
+531965.un05     juhisri  medium   GC-1        41792   4  80    --  96:00 R 13:02
+   hpc573/0*20+hpc578/0*20+hpc593/0*20+hpc595/0*20
+531977.un05     juhisri  small    Check       24818   2  40    --  120:0 R 17:32
+   hpc771/0*20+hpc777/0*20
+531980.un05     gargp    hyperthr N16S159     34649   1  40    --  120:0 R 17:22
+   hpc856/0*40
+531981.un05     prabodh  hyperthr A_TB3       63571   1  40    --  120:0 R 17:18
+   hpc853/0*40
+531989.un05     surajkm  large    run2_noPar    --    6 120    --  96:00 H   -- 
+    -- 
+531992.un05     surajkm  medium   run4MnoPar  46613   6 120    --  96:00 R 04:09
+   hpc583/0*20+hpc584/0*20+hpc586/0*20+hpc587/0*20+hpc597/0*20+hpc599/0*20
+531994.un05     surajkm  medium   run1MnoPar    --    6 120    --  96:00 Q   -- 
+    -- 
+531998.un05     gsaxena  large    IN-9        20266  10 200    --  96:00 R 12:30
+   hpc317/0*20+hpc372/0*20+hpc373/0*20+hpc374/0*20+hpc389/0*20+hpc406/0*20
+   +hpc415/0*20+hpc419/0*20+hpc446/0*20+hpc477/0*20
+531999.un05     gsaxena  large    I-9           --   10 200    --  96:00 Q   -- 
+    -- 
+532001.un05     sateeshk hyperthr vaild       58429   2  80    --  120:0 R 16:30
+   hpc842/0*40+hpc850/0*40
+532002.un05     sateeshk hyperthr vaild         --    2  80    --  120:0 Q   -- 
+    -- 
+532007.un05     anshulya small    triple1f    31745   1  20    --  120:0 R 14:19
+   hpc764/0*20
+532016.un05     vvmk     large    SMA2         5112   6 120    --  96:00 R 15:11
+   hpc039/0*20+hpc047/0*20+hpc049/0*20+hpc088/0*20+hpc116/0*20+hpc144/0*20
+532020.un05     surender large    Cmc3        36374   6 120    --  96:00 R 14:22
+   hpc127/0*20+hpc149/0*20+hpc150/0*20+hpc261/0*20+hpc458/0*20+hpc460/0*20
+532021.un05     ddebasis large    blackP.1    32145   6 120    --  96:00 R 13:16
+   hpc250/0*20+hpc251/0*20+hpc252/0*20+hpc253/0*20+hpc256/0*20+hpc263/0*20
+532022.un05     ddebasis large    large.2      2909   6 120    --  96:00 R 10:51
+   hpc201/0*20+hpc225/0*20+hpc382/0*20+hpc466/0*20+hpc431/0*20+hpc035/0*20
+532023.un05     ddebasis medium   blueP.1     38206   4  80    --  96:00 R 11:46
+   hpc598/0*20+hpc600/0*20+hpc673/0*20+hpc677/0*20
+532024.un05     alokm    medium   25_les        --    6 120    --  96:00 H   -- 
+    -- 
+532025.un05     alokm    medium   25_les        --    6 120    --  96:00 H   -- 
+    -- 
+532027.un05     vvmk     large    SMA1        18098   6 120    --  96:00 R 10:18
+   hpc036/0*20+hpc072/0*20+hpc101/0*20+hpc148/0*20+hpc288/0*20+hpc040/0*20
+532033.un05     raghavsg small    triple2f    14436   1  20    --  120:0 R 13:32
+   hpc827/0*20
+532042.un05     surajkm  medium   run2MnoPar    --    6 120    --  96:00 Q   -- 
+    -- 
+532046.un05     gargp    large    SM1           --    6 120    --  96:00 H   -- 
+    -- 
+532048.un05     gargp    large    SM1           --    6 120    --  96:00 H   -- 
+    -- 
+532049.un05     gargp    large    SM2           --    6 120    --  96:00 H   -- 
+    -- 
+532054.un05     eshans   medium   D-syn-CLIP  42344   3  60    --  96:00 R 11:06
+   hpc585/0*20+hpc596/0*20+hpc680/0*20
+532059.un05     ramsha   medium   fix-core    35696   2  40    --  96:00 R 08:21
+   hpc613/0*20+hpc616/0*20
+532063.un05     ramsha   medium   relax_evry    --    2  40    --  96:00 H   -- 
+    -- 
+532064.un05     shitansh small    REST2-20re  51385   2  40    --  120:0 R 11:24
+   hpc821/0*20+hpc819/0*20
+532109.un05     amahajan medium   FE_FM         --    2  40    --  96:00 Q   -- 
+    -- 
+532112.un05     sougata  large    TCl3c         --    6 120    --  96:00 Q   -- 
+    -- 
+532117.un05     varman   workq    STDIN       27891   1   1    --  24:00 R 03:23
+   hpc839/0
+532122.un05     ahilan   workq    STDIN        1536   1   1    --  24:00 R 03:09
+   hpc004/0
+532128.un05     agaur    workq    STDIN       52837   1   1    --  24:00 R 02:55
+   hpc003/0
+532136.un05     agaur    workq    STDIN        3038   1   1    --  24:00 R 02:38
+   hpc004/1
+532137.un05     rmalik   small    code        16725   1  20    --  120:0 R 02:37
+   hpc831/0*20
+532138.un05     rmalik   small    code        38632   1  20    --  120:0 R 02:37
+   hpc823/0*20
+532139.un05     rmalik   small    code        10581   1  20    --  120:0 R 02:35
+   hpc836/0*20
+532141.un05     vthakkur medium   X_5.5m1       --    4  80    --  96:00 Q   -- 
+    -- 
+532145.un05     shivaniv medium   X_3.4eqm      --    2  40    --  50:00 Q   -- 
+    -- 
+532146.un05     shivaniv medium   X_3.5eqm      --    2  40    --  50:00 H   -- 
+    -- 
+532149.un05     shivaniv large    X_3.9m3       --    6 120    --  96:00 H   -- 
+    -- 
+532151.un05     dibpanja small    abu223      19094   1  20    --  120:0 R 01:59
+   hpc773/0*20
+532152.un05     prabodh  highmem  A_SB1       52668   1  20    --  120:0 R 01:52
+   hm002/0*20
+532153.un05     dibpanja small    mep223      23346   1  20    --  120:0 R 01:49
+   hpc780/0*20
+532154.un05     prabodh  small    I_TB2       34170   1  20    --  120:0 R 01:38
+   hpc838/0*20
+532155.un05     amahajan large    VTiOCl2       --    6 120    --  96:00 Q   -- 
+    -- 
+532156.un05     kumaran  workq    STDIN       31410   1   1    --  24:00 R 01:28
+   hpc839/1
+532157.un05     prabodh  small    I_SB2       22212   1  20    --  120:0 R 01:26
+   hpc779/0*20
+532158.un05     pravink  workq    STDIN       10336   1   1    --  24:00 R 01:24
+   hpc003/1
+532159.un05     vrahul   workq    STDIN       50868   1   1    --  24:00 R 01:20
+   hpc840/2
+532160.un05     sonuv    workq    STDIN        6160   1   1    --  24:00 R 01:18
+   hpc004/2
+532161.un05     sonuv    hyperthr SnS         11207   2  40    --  120:0 R 00:58
+   hpc843/0*20+hpc844/0*20
+532162.un05     sonuv    medium   SnS           --    2  40    --  96:00 Q   -- 
+    -- 
+532163.un05     sonuv    large    SnS           --    6 120    --  96:00 Q   -- 
+    -- 
+532164.un05     rmalik   hyperthr code         3657   1  40    --  120:0 R 00:52
+   hpc847/0*40
+532165.un05     sarkar   medium   Sb1           --    4  80    --  96:00 Q   -- 
+    -- 
+532166.un05     sarkar   medium   Bi2           --    4  80    --  96:00 Q   -- 
+    -- 
+532167.un05     sarkar   medium   BiC3          --    4  80    --  96:00 Q   -- 
+    -- 
+532168.un05     sarkar   large    SbTe1         --    6 120    --  96:00 Q   -- 
+    -- 
+532169.un05     sarkar   large    Sb2           --    6 120    --  96:00 Q   -- 
+    -- 
+532170.un05     sonuv    mini     SnS         51302   2  40    --  02:00 R 00:48
+   hpc857/0*20+hpc858/0*20
+532171.un05     alokm    large    20_les        --    6 120    --  96:00 H   -- 
+    -- 
+532172.un05     oshubham medium   mrun          --    6 120    --  96:00 H   -- 
+    -- 
+532173.un05     sonuv    small    SnS         29587   1  20    --  120:0 R 00:42
+   hpc784/0*20
+532175.un05     amitver  medium   20deg_cse     --    6 120    --  96:00 H   -- 
+    -- 
+532176.un05     basheer  small    case_30k.d  24262   2  40    --  120:0 R 00:36
+   hpc776/0*20+hpc778/0*20
+532177.un05     swatisi  small    case_20k.d  46142   2  40    --  120:0 R 00:24
+   hpc807/0*20+hpc812/0*20
+532178.un05     barung   large    PtTe2.2       --    6 120    --  96:00 Q   -- 
+    -- 
+532179.un05     barung   large    PtTe2.3       --   10 200    --  96:00 Q   -- 
+    -- 
+532180.un05     kamaldas large    phonon.1      --    6 120    --  96:00 Q   -- 
+    -- 
+532181.un05     kamaldas large    phonon.2      --   10 200    --  96:00 Q   -- 
+    -- 
+532182.un05     amitver  large    20deg_med     --    6 120    --  96:00 H   -- 
+    -- 
+532183.un05     kamaldas large    la3           --    6 120    --  96:00 Q   -- 
+    -- 
+532184.un05     nlpingua workq    STDIN       53177   1   1    --  24:00 R 00:03
+   hpc840/0
