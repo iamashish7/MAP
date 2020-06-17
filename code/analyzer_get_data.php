@@ -174,7 +174,7 @@ function get_data_vartn_wtime_by_day($table,$from,$to,$conn)
 
 function get_data_wtime_vs_jobs($table,$from,$to,$conn)
 {
-    $sql = "select jobid,wtime/(3600) as wtime from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' and wtime >= 0";
+    $sql = "select jobid,wtime/(3600) as wtime from ".$table." where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "'";
     
     $result = $conn->query($sql);
     while ($row = $result->fetch_assoc()) {

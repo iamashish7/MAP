@@ -317,7 +317,7 @@ function myDrawChart(d) {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.68,
             margin: { top: 30, right: 20, bottom: 50, left: 70 },
-            title:"Wait-Time time vs #Jobs",
+            title:"Wait-Time vs #Jobs",
             labelx:"Wait-Time (hours)",
             labely:"#Jobs",
         };
@@ -468,7 +468,6 @@ function init_calender(startY,endY) {
         showDropdowns: true,
         minDate: startY,
         maxDate: endY
-        // maxYear: parseInt(moment().format('YYYY'), 10)
     });
     $('input[name="to"]').on('apply.daterangepicker', function (ev, picker) {
         $(this).val(picker.startDate.format('DD/MM/YYYY'));

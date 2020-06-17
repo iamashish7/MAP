@@ -20,7 +20,8 @@
     <script type="text/javascript" src="js/prepare_data.js"></script>
     <script type="text/javascript" src="js/Graphs.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
+    <!-- <script src="lib/daterangepicker/daterangepicker.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="lib/daterangepicker/daterangepicker.css" /> -->
     <style>
         .main_chart{
             //height: 80%;
@@ -122,6 +123,8 @@
         .tooltip {
             fill: white;
             stroke: #000000;
+            opacity:1
+
         }
 
         .tooltip-date, .tooltip-likes {
@@ -157,6 +160,7 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
+            width: 29vw;
             }
 
             /* Links inside the dropdown */
@@ -338,7 +342,7 @@
                     <a class="nav-link active" href="#">Custom Analysis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="wait_time_pred.php">Wait-time Analysis</a>
+                    <a class="nav-link" href="wait_time_pred.php">Wait-time Prediction</a>
                 </li>
             </ul>
         </div>
@@ -356,13 +360,13 @@
                         <span class="file-custom"></span>
                     </label>
                     <hr>
-                    <a onclick="setDB('CTC_SP2')" href="#">CTC_SP2</a>
+                    <a onclick="setDB('CTC_SP2')" href="#">Cornell Theory Center (CTC), IBM SP2 (Jun'96 - May'97)</a>
                     <!-- <a onclick="setDB('ANL_intrepid')" href="#">ANL_intrepid</a> -->
-                    <a onclick="setDB('SDSC_SP2')" href="#">SDSC_SP2</a>
-                    <a onclick="setDB('SDSC_BLUE')" href="#">SDSC_BLUE</a>
-                    <a onclick="setDB('CEA_curie')" href="#">CEA curie</a>
-                    <a onclick="setDB('DAS2')" href="#">DAS2</a>
-                    <a onclick="setDB('HPC2N')" href="#">HPC2N</a>
+                    <a onclick="setDB('SDSC_SP2')" href="#">SDSC, IBM SP2 (Apr'98 - Apr'00)</a>
+                    <a onclick="setDB('SDSC_BLUE')" href="#">SDSC Blue Horizon, IBM SP (Apr'00 - Jan'03)</a>
+                    <a onclick="setDB('CEA_curie')" href="#">CEA Curie Cluster (Feb'11 - Oct'12)</a>
+                    <a onclick="setDB('DAS2')" href="#">Vrije University, Distributed ASCI Supercomputer 2 (Jan'03 - Jan'04)</a>
+                    <a onclick="setDB('HPC2N')" href="#">High Performance Computing Center North, Linux cluster (Jul'02 - Jan'06)</a>
                 </div>
             </div> 
             &nbsp;&nbsp;
@@ -393,15 +397,23 @@
                 <input type="text" class="form-control" id="to" placeholder="Enter end date" name="to">&nbsp;&nbsp;
                 <label for="chart_type">Type : </label>&nbsp;
                 <select id="chart" name="chart">
-                    <option value="1">Jobs Executing per day</option>
-                    <option value="2">Jobs per month</option>
-                    <option value="3">Job count per job status</option>
-                    <option value="4">Avg. waiting time per queue</option>
-                    <option value="5">Execution Time vs #Jobs</option>
-                    <option value="6">Variation of wait-times by day</option>
-                    <option value="7">Wait Time vs #Jobs</option>
-                </select>&nbsp;&nbsp;
-                <button type='button' id="date-submit-btn" class="btn btn-primary">Submit</button>
+                <optgroup label="Solo Charts">
+                <option value="1">Jobs Executing per day</option>
+                <option value="2">Jobs per month</option>
+                <option value="3">Job count per job status</option>
+                <option value="4">Avg. waiting time per queue</option>
+                <option value="5">Execution Time vs #Jobs</option>
+                <option value="6">Variation of wait-times by day</option>
+                <option value="7">Wait Time vs #Jobs</option>
+                <option value="10">Job status per queue</option>
+                <option value="12">Busy CPUs per day</option>
+                <!-- <option value="13">Quartiles of wait-time per month</option> -->
+                <optgroup label="Multiple Correlating Graphs">
+                <!-- <option value="8">Variation of wait-times by requirement</option> -->
+                <option value="9">Running, Completed and Failed Jobs</option>
+                <option value="11">Global and per queue job count per status</option>
+            </select>&nbsp;&nbsp;
+            <button type='button' id="date-submit-btn" class="btn btn-primary">Submit</button>
             </form>
             <br>
         </div>
@@ -420,13 +432,19 @@
         
 </body>
 <script>
-
     var dbName = '';
     var tableName = '';
     var filename = '';
-
     var db = '';
-
+    var mapDB = {
+            "CTC_SP2":'CTC, IBM SP2',
+            // "ANL_intrepid":[2009,2009,1],
+            "SDSC_SP2":'SDSC, IBM SP2',
+            "SDSC_BLUE":'SDSC Blue, IBM SP',
+            "CEA_curie":'CEA Curie',
+            "DAS2":'DAS 2',
+            "HPC2N":'HPC2N',
+        };
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
@@ -459,7 +477,7 @@
         this.filename = '';
         console.log("filename = ",this.filename,"db = ",this.db);
         document.getElementById("parser").disabled = true;
-        document.getElementById("dropbtn").innerHTML = db;
+        document.getElementById("dropbtn").innerHTML = mapDB[db];
     }
 
     function setFile(){
@@ -476,6 +494,7 @@
 
     $(document).ready(function () {
         // init_calender();
+        console.log("here1");
         var dbName = "";
         var tableName = '';
         var n_Q = 0;
@@ -490,11 +509,11 @@
             "DAS2":['2004-01-01','2004-12-30',1],
             "HPC2N":['2006-01-16','2009-07-08',1],
         };
+        
         $("form#fileuploadform").submit(function(e) {
             e.preventDefault();
             if(db.length>0 || filename.length>0)
             {
-                console.log("here1");
                 document.getElementById("analysis-form").classList.add('hide');
                 document.getElementById("error-box").classList.add('hide');
                 document.getElementById("error-box-date").classList.add('hide');
@@ -512,6 +531,12 @@
                     endY = meta[db][1];
                     console.log(meta[db][0],meta[db][1]);
                     init_calender(meta[db][0],meta[db][1]);
+                    var Fromdrp = $('input[name="from"]').data('daterangepicker');
+                    var Todrp = $('input[name="to"]').data('daterangepicker');            
+                    Fromdrp.setStartDate(meta[db][0]);
+                    Fromdrp.setEndDate(meta[db][0]);
+                    Todrp.setStartDate(meta[db][0]);
+                    Todrp.setEndDate(meta[db][0]);
                     document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
                     document.getElementById("analysis-form").classList.remove('hide');
                 }
@@ -541,6 +566,12 @@
                             endY = res[2];
                             n_Q = Number(res[3]);
                             init_calender(startY,endY);
+                            var Fromdrp = $('input[name="from"]').data('daterangepicker');
+                            var Todrp = $('input[name="to"]').data('daterangepicker');            
+                            Fromdrp.setStartDate(startY);
+                            Fromdrp.setEndDate(startY);
+                            Todrp.setStartDate(endY);
+                            Todrp.setEndDate(endY);        
                             document.getElementsByClassName("loader-wrapper")[0].style.display = 'none';
                             console.log(dbName,startY,endY,n_Q);
                             document.getElementById("analysis-form").classList.remove('hide');

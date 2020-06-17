@@ -82,7 +82,7 @@ function plotLineChart()
         PredictionLineChart(arr,"lr",cfg);
         console.log(chart.offsetWidth,chart.offsetHeight);
         
-    },'http://172.27.28.153/new/code/predict_models/new/Linear/last100.json');
+    },'http://localhost/new/code/predict_models/new2/Linear/last100.json');
     
     // Logistic Regression
     loadJSON(function(response) {
@@ -121,7 +121,7 @@ function plotLineChart()
         PredictionLineChart(arr,"logr",cfg);
         console.log(chart.offsetWidth,chart.offsetHeight);
         
-    },'http://172.27.28.153/new/code/predict_models/new/Logistic/last100.json');
+    },'http://localhost/new/code/predict_models/new2/Logistic/last100.json');
     
     // Decision Tree
     loadJSON(function(response) {
@@ -160,7 +160,7 @@ function plotLineChart()
         PredictionLineChart(arr,"dt",cfg);
         console.log(chart.offsetWidth,chart.offsetHeight);
         
-    },'http://172.27.28.153/new/code/predict_models/new/Decision_tree/last100.json');
+    },'http://localhost/new/code/predict_models/new2/Decision_tree/last100.json');
     
     // XGB
     loadJSON(function(response) {
@@ -199,6 +199,6 @@ function plotLineChart()
         PredictionLineChart(arr,"xgb",cfg);
         console.log(chart.offsetWidth,chart.offsetHeight);
         
-    },'http://172.27.28.153/new/code/predict_models/new/XGB/last100.json');
+    },'http://localhost/new/code/predict_models/new2/XGB/last100.json');
     
 }
