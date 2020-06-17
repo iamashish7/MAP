@@ -72,7 +72,7 @@
                     <a class="nav-link" href="custom.php">Custom Analysis</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Wait-time Analysis</a>
+                    <a class="nav-link active" href="#">Wait-time Prediction</a>
                 </li>
             </ul>
         </div>
