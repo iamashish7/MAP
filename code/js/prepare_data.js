@@ -324,25 +324,46 @@ function myDrawChart(d) {
         histogramGraph(arr, "chart1",cfg);
     } else if (ID === 8) {
         var cfg = {
-            width:screen.availWidth*0.75,
+            width:screen.availWidth*0.8,
             height:screen.availHeight*0.70,
-            margin: { top: 30, right: 20, bottom: screen.availHeight*0.42, left: 70 },
-            title:"Variation of wait-times by requirement",
-            labelx:"Required wall-time(Hours)",
-            labely:"Required cpus",
+            margin: { top: 30, right: 85, bottom: screen.availHeight*0.365, left: 80 },
+            title:"Variation of wait-times by CPU-hours",
+            labelx:"Required wall-time (Hours)",
+            labely:"Required CPUs",
             subtitle:"Average wait-time",
         };
-        heatmap2(arr, "chart1",cfg);
+        heatmap3(arr, "chart1",cfg);
         var cfg = {
-            width:screen.availWidth*0.75,
+            width:screen.availWidth*0.8,
             height:screen.availHeight*0.70,
-            margin: { top: screen.availHeight*0.4, right: 20, bottom: 50, left: 70 },
+            margin: { top: screen.availHeight*0.37, right: 85, bottom: 10, left: 80 },
             title:"",
-            labelx:"Required wall-time(Hours)",
-            labely:"Required cpus",
+            labelx:"Required wall-time (Hours)",
+            labely:"Required CPUs",
             subtitle:"Total number of jobs",
         };
-        heatmap2(arr2, "chart1",cfg);
+        heatmap3(arr2, "chart1",cfg);
+
+        // var cfg = {
+        //     width:screen.availWidth*0.95,
+        //     height:screen.availHeight*0.70,
+        //     margin: { top: 30, right: 80, bottom: screen.availHeight*0.4, left: 130 },
+        //     title:"Variation of wait-times by CPU-hours",
+        //     labelx:"Required wall-time (Hours)",
+        //     labely:"Required CPUs",
+        //     subtitle:"Average wait-time",
+        // };
+        // heatmap3(arr, "chart1",cfg);
+        // var cfg = {
+        //     width:screen.availWidth*0.95,
+        //     height:screen.availHeight*0.70,
+        //     margin: { top: screen.availHeight*0.37, right: 80, bottom: 60, left: 130 },
+        //     title:"",
+        //     labelx:"Required wall-time (Hours)",
+        //     labely:"Required CPUs",
+        //     subtitle:"Total number of jobs",
+        // };
+        // heatmap3(arr2, "chart1",cfg);
     }
     else if (ID === 9) {
         console.log("Margin bottom in prepare data",screen.availHeight*0.42);
@@ -414,7 +435,7 @@ function myDrawChart(d) {
         var cfg = {
             width:screen.availWidth*0.75,
             height:screen.availHeight*0.68,
-            margin: { top: 30, right: 25, bottom: 50, left: 70 },
+            margin: { top: 30, right: 25, bottom: 50, left: 80 },
             title:"No. of CPUs busy per day",
             labelx:"Timestamp",
             labely:"#CPUs",

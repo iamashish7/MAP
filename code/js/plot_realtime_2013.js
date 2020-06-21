@@ -7,6 +7,9 @@ function ready_data_plot(){
         var tot_nodes = 0;
         var data4 = {};
         var data5 = {};
+        var data2_2 = {};	
+        var user_2013 = new Set();	
+        var no_queued = 0;
         $.each(info, function (key, value) {
             if (value["State"] == 'R') {
                 tot_nodes = tot_nodes + parseInt(value["Nodes"]);
@@ -18,6 +21,7 @@ function ready_data_plot(){
                     wtime: value["RequiredTime"]
                 });
                 data4[value['Username']] = (value['Username'] in data4)?data4[value['Username']] + parseInt(value["Nodes"]):parseInt(value["Nodes"]);
+                data5[value['Queue']] = (value['Queue'] in data5)?data5[value['Queue']] + parseInt(value["Nodes"]):parseInt(value["Nodes"]);
                 if(value["Queue"] in data1){
                     data1[value["Queue"]] += 1;
                 }
@@ -27,6 +31,7 @@ function ready_data_plot(){
             }
             else if (value["State"] == 'Q'){
                 
+                no_queued++;    
                 if(value["Queue"] in data3){
                     data3[value["Queue"]] += 1;
                 }
@@ -34,6 +39,7 @@ function ready_data_plot(){
                     data3[value["Queue"]] = 1;    
                 }
             }
+            user_2013.add(value["Username"]);
         });
         var items = Object.keys(data4).map(function(key) {
             return [key, data4[key]];
@@ -65,9 +71,25 @@ function ready_data_plot(){
             rtime: "00:00",
             wtime: "00:00"
         });
+        data5_final = [];	
+        for(var index in data5) {	
+            data5_final.push({	
+                name: index,	
+                value: data5[index]	
+            });	
+        }	
+        data2_2['running'] = data2.length;	
+        data2_2['queued'] = no_queued;	
+        data2_2['active'] = tot_nodes;	
+        data2_2['users'] = user_2013.size;	
+        data2_2['usage'] = ((tot_nodes / 893) * 100).toFixed(2) + '%';
+            
         preprocess(data1,"chart_3","Running Jobs");
-        drawDonutChart(data2, "chart_1", "HPC 2013");
+        DonutChart(data2, "chart_1", "HPC 2013",data2_2);
+        // drawDonutChart(data2, "chart_1", "HPC 2013");
         preprocess(data3,"chart_4","Queued Jobs");
-        drawBar2(data4,"chart_2","Top 5 users with max total nodes")
+        drawBar2(data4,"chart_2","Top 5 users with max total nodes");
+        console.log(data5_final);	
+	    drawPieChart(data5_final,"chart_6","Queue Load");
     });
 }

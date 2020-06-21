@@ -86,7 +86,6 @@ function ColorLuminance(hex, lum) {
       c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
       rgb += ("00"+c).substr(c.length);
     }
-  
     return rgb;
 }
 
@@ -134,7 +133,7 @@ function eucDistance(a, b) {
 
 function plot_edges(s,d)
 {
-    console.log("In plot edges");
+    console.log("In plot multiple edges 2010");
     var key = "";
     var val = "";
     var color = getColor();

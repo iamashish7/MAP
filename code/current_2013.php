@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <style>
-        
+        .hide{
+            display: none;
+        }
         .mini_chart{
             width:100%;
             height:100%; 
@@ -76,6 +78,36 @@
             table-layout: fixed;
             border-collapse: collapse;
             padding:0;
+        }
+        /* text {
+            font-family: sans-serif;
+            font-size: 15px;
+        } */
+
+        /* Add shadow effect to chart. If you don't like it, get rid of it. */
+        /* svg {
+            -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.3) );
+            filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.25) );
+        } */
+
+        /*Styling for the lines connecting the labels to the slices*/
+        polyline{
+            opacity: .3;
+            stroke: black;
+            stroke-width: 2px;
+            fill: none;
+        }
+
+        /* Make the percentage on the text labels bold*/
+        .labelName tspan {
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        /* In biology we generally italicise species names. */
+        .labelName {
+            font-size: 0.9em;
+            font-style: italic;
         }
         /* text {
             font-family: sans-serif;
@@ -209,7 +241,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="monitor_2013.html">Monitoring</a>
+                    <a class="nav-link" href="monitor_2013_multiple_selection.html">Monitoring</a>
                 </li>
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">

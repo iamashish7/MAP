@@ -14,8 +14,14 @@
     <script type="text/javascript" src="js/Graphs.js"></script>
     <!-- <script type="text/javascript" src="js/d3-tip.js"></script> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     <style>
+        
         .main_chart{
             //height: 80%;
             //width: 80%;
@@ -223,7 +229,7 @@
                 font-size: 32px;
             }
             .axis-ticks{
-                font-size: 28px;
+                font-size: 24px;
             } */
         }
         
@@ -272,7 +278,7 @@
             <label for="chart_type">Type : </label>&nbsp;
             <select id="chart" name="chart">
                 <optgroup label="Solo Charts">
-                <option value="1">Jobs Executing per day</option>
+                <option value="1">Jobs Executing per day <i class="fa fa-info-circle" aria-hidden="true"></i> </option>
                 <option value="2">Jobs per month</option>
                 <option value="3">Job count per job status</option>
                 <option value="4">Avg. waiting time per queue</option>
@@ -289,6 +295,38 @@
             </select>&nbsp;&nbsp;
             <button type='button' id="date-submit-btn" class="btn btn-primary">Submit</button>
         </form>
+        <!-- <ul id="menu">
+            <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+            <li><div>Books</div><a href="#"><i class="fa fa-info-circle" aria-hidden="true" ></i></a></li>
+            <li><div>Clothing</div></li>
+            <li><div>Electronics</div>
+                <ul>
+                <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+                <li><div>Car Hifi</div></li>
+                <li><div>Utilities</div></li>
+                </ul>
+            </li>
+            <li><div>Movies</div></li>
+            <li><div>Music</div>
+                <ul>
+                <li><div>Rock</div>
+                    <ul>
+                    <li><div>Alternative</div></li>
+                    <li><div>Classic</div></li>
+                    </ul>
+                </li>
+                <li><div>Jazz</div>
+                    <ul>
+                    <li><div>Freejazz</div></li>
+                    <li><div>Big Band</div></li>
+                    <li><div>Modern</div></li>
+                    </ul>
+                </li>
+                <li><div>Pop</div></li>
+                </ul>
+            </li>
+            <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+        </ul> -->
         <br>
         </div>
     </div>
@@ -303,7 +341,9 @@
 <script src="js/d3.tip.v0.6.3.js"></script>
 
 <script type="text/javascript">
-
+//   $( function() {
+//     $( "#menu" ).menu();
+//   } );
     $(document).ready(function () {
         init_calender('2010-12-01','2020-01-09');
     	$("#date-submit-btn").click(function(event){

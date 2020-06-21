@@ -236,6 +236,99 @@ function get_data_vartn_wtime_by_req($table,$from,$to,$conn)
     return $json_array;
 }
 
+function get_data_vartn_wtime_by_req2($table,$from,$to,$conn)
+{
+    $rtime_min = 0;
+    $rtime_max = 0;
+    $proc_min = 0;
+    $proc_max = 0;
+    $no_buckets = 50;
+    $boundary_percent = 0.8;
+    $sql = " SELECT min(req_rtime) as minn,max(req_rtime) as maxx FROM HPC2010 where wtime>=0 and req_rtime>=0 and date >= '" . $from . "' and date <= '" . $to . "'";
+    $result = $conn->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        $rtime_min = floor($row['minn']/3600);
+        $rtime_max = ceil($row['maxx']/3600);
+    }
+    
+    $sql = " SELECT min(req_proc) as minn,max(req_proc) as maxx FROM HPC2010 where wtime>=0 and req_proc>0 and date >= '" . $from . "' and date <= '" . $to . "'";
+    $result = $conn->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        $proc_min = (int)$row['minn'];
+        $proc_max = (int)$row['maxx'];
+    }
+    $rtime_range = $rtime_max-$rtime_min;
+    $rtime_buckets = [];
+    if((($rtime_range*$boundary_percent)/$no_buckets)>1){
+        // Greater than with last class ranging to 80%
+        $end_range_value = $rtime_min + $rtime_range*$boundary_percent;
+        $interval = floor(($rtime_range*$boundary_percent)/$no_buckets);
+        $i = $interval;
+        $prev = 0;
+        while($i <= $end_range_value){
+            array_push($rtime_buckets,[$prev,$i]);
+            $prev = $i;
+            $i += $interval;
+        }
+        array_push($rtime_buckets,[$prev,$rtime_max]);
+    }
+    else if(($rtime_range/$no_buckets)>1){
+        // No greater than
+        $interval = floor($rtime_range/$no_buckets);
+        $i = $interval;
+        $prev = 0;
+        while($i <= $rtime_max){
+            array_push($rtime_buckets,[$prev,$i]);
+            $prev = $i;
+            $i += $interval;
+        }
+    }
+    else {
+        // One value per bucket
+        $interval = 1;
+        $i = $interval;
+        $prev = 0;
+        while($i <= $rtime_max){
+            array_push($rtime_buckets,[$prev,$i]);
+            $prev = $i;
+            $i += $interval;
+        }
+    }
+    // $rtime_buckets = [[0,1],[1,2],[2,4],[4,7],[7,10],[10,13],[13,15],[15,17],[17,20],[20,24],[24,27],[27,30],[30,33],[33,36],[36,40],[40,44],[44,50],[50,57],[57,65],[65,80],[80,90],[90,100],[100,117],[117,121],[121,152],[152,1000]];
+    $proc_buckets = [[0,1],[2,4],[4,8],[8,16],[16,32],[32,64],[64,128],[128,256],[256,512],[512,1024],[1024,2048]];
+    $sql = " SELECT avg(wtime) as wtime,count(*) as jobs, CASE ";
+    for ($i = 0; $i < count($rtime_buckets); $i++) {
+        for ($j = 0; $j < count($proc_buckets); $j++) {
+            $temp_str = "WHEN req_rtime>=".($rtime_buckets[$i][0]*3600)." and req_rtime<".($rtime_buckets[$i][1]*3600)." and req_proc>="
+            .$proc_buckets[$j][0]." and req_proc<".$proc_buckets[$j][1]." THEN '".$rtime_buckets[$i][0].";".$rtime_buckets[$i][1].";".$proc_buckets[$j][0].";".$proc_buckets[$j][1]."'\n";
+            $sql .= $temp_str;
+        }
+    }
+    $sql .= "END AS groups FROM HPC2010 where wtime>=0 and date >= '" . $from . "' and date <= '" . $to . "' group by groups order by groups;"; 
+    // echo $sql;
+    $result = $conn->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        if($row['groups']!='NULL') {
+            // echo $row['groups'];
+            // echo "|";
+            // echo $row['wtime'];
+            // echo "|";
+            // echo $row['jobs'];
+            // echo "##";
+            $grouparr = explode(";", $row['groups']);
+            if(sizeof($grouparr)==4) {
+                $index_merge['rtime'] = [(int)$grouparr[0],(int)$grouparr[1]];
+                $index_merge['proc'] = [(int)$grouparr[2],(int)$grouparr[3]];
+
+                $json_array[json_encode($index_merge)] = [$row['wtime'],$row['jobs']]; 
+            }
+            
+        }
+    }
+    // print_r($json_array);
+    return $json_array;
+}
+
 function get_data_job_status_per_queue($table,$from,$to,$conn)
 {
     $sql = "select queue,count(*) as c from ".$table." where date >= '" . $from . "' and date <= '" . $to . "' and status='Completed' and queue not like 'R%' and queue not like 'work%' group by queue";
@@ -349,7 +442,7 @@ switch ($chart) {
     	$json_array = get_data_wtime_vs_jobs($table,$from,$to,$conn);
         break;
     case "8":
-        $json_array = get_data_vartn_wtime_by_req($table,$from,$to,$conn);
+        $json_array = get_data_vartn_wtime_by_req2($table,$from,$to,$conn);
         break;
     case "9":
         $json_array = ['data1'=>[],'data2'=>[]];

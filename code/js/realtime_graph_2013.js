@@ -195,3 +195,13 @@ function drawBar2(data, ID, title){
     HorizontalBarGraph(data,ID,cfg);
 }
 
+function drawPieChart(data, ID, title){
+    var cfg = {
+        width: (screen.availWidth*0.9)/3.2,
+        height:(screen.availHeight)/4,
+        margin: { top: 20, right: 1, bottom: 10, left: 0 },
+        title:title,
+    };
+    PieChart2(data,ID,cfg);
+}
+

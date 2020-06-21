@@ -9,12 +9,17 @@
     <!--<link href="https://cdn.datatables.net/responsive/2.1.0/css/responsive.dataTables.min.css" rel="stylesheet"
         media="screen">-->
     <link href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
+
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css" rel="stylesheet" media="screen">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-    
+        
     <script src="js/tabsfunc.js"></script>
-    <script src="js/plotEdges2013.js"></script>
+    <script src="js/plotEdges2013_multiple_selection.js"></script>
     <script src="js/createtable.js"></script>
     <script src="js/creategrid_2013.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -316,6 +321,7 @@
         text-align: left;
         background-color: white;
     }
+    
 </style>
 
 <body>
@@ -458,74 +464,16 @@
                 remove_edges(sig,d);
             }
             else {
-                var t0 = performance.now();
-                if ( table.rows( '.selected' ).any() ){
-                    table.rows().iterator( 'row', function ( context, index ) {
-                        if($( this.row( index ).node() ).hasClass( 'selected' )){
-                            var d2 = table.row(index).data()[7].split(', ');
-                            table.row(index).child.hide();
-                            remove_edges(sig,d2);
-                        }
-                    } );
-                }
-                var t1 = performance.now();
-                table.$('tr.selected').removeClass('selected');
-                var t2 = performance.now();
                 $(this).addClass('selected');
                 plot_edges(sig,d);
-                var t3 = performance.now();
-                console.log("First part " + (t1 - t0) + " milliseconds.");
-                console.log("Second part " + (t2 - t1) + " milliseconds.");
-                console.log("plot_edges() " + (t3 - t2) + " milliseconds.");
-                console.log("Total " + (t3 - t0) + " milliseconds.");
             }
         }
     } );
+
     $(document).ready(function () {
         addGRID();
         setInterval(CreateTable('2013'), 5000);
-        // jQuery('.dataTable').wrap('<div class ="dataTables_scroll" />');
-        // sigma.parsers.json('./config_json/data2010.json', {
-        //     renderer: {
-        //         container: document.getElementById("graph-container"),
-        //         type: 'canvas'
-        //     },
-        //     settings: {
-        //         // minEdgeSize: 1,
-        //         // maxEdgeSize: 100,
-        //         // minNodeSize: 2,
-        //         // maxNodeSize: 50,
-        //         // edgeColor: 'default',
-        //         // defaultLabelColor: '#ecf0f1',
-        //         // defaultEdgeColor: '#FFFFFF',
-        //         // defaultEdgeType: 'arrow',
-        //         // defaultNodeColor: '#e74c3c',
-        //         // autoRescale: ['nodePosition', 'nodeSize', 'edgeSize'],
-        //         // animationsTime: 1000,
-        //         borderSize: 2,
-        //         outerBorderSize: 3,
-        //         enableEdgeHovering: true,
-        //         edgeHoverColor: '#2ecc71',
-        //         defaultEdgeHoverColor: '#2ecc71',
-        //         edgeHoverSizeRatio: 2,
-        //         edgeHoverExtremities: true,
-        //         // drawEdges: false
-        //         // scalingMode: 'outside'
-        //     }
-        // },function(s){
-        //     console.log(s.graph.nodes());
-        //     // s.graph.addEdge({
-        //     //     id:'e1',
-        //     //     label:"Edge1",
-        //     //     source:"0x0002c90300aacae0",
-        //     //     target:"mic003",
-        //     //     size:5,
-        //     //     color:"#2e4180",
-        //     //     type:"line"
-        //     // });
-        //     // s.refresh();
-        // });
-
+        
         sigma.parsers.json('./config_json/data2013.json', {
             renderer: {
                 container: document.getElementById("graph-container"),
