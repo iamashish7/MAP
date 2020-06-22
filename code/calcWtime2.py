@@ -31,7 +31,7 @@ predicted_cluster = kmeans.predict([test])[0]
 predicted_wt = reg_models[predicted_cluster].predict([test])[0]
 print (predicted_wt)
 '''
-
+avg_queue_load = {'small':5,'medium':6,'large':8,'smallsb':3,'mediumsb':5}
 output = ''
 
 #For Linear Regression
@@ -52,7 +52,10 @@ queue = str(sys.argv[3])
 # [8298112      19     355      32] [0 1 0 1]
 maxx = np.asarray([8298112,19,355,32])
 minn = np.asarray([0,1,0,1])
-test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+if(queue in QState['qstate'].keys()):
+    test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+else:
+    test = [nodes*walltime,avg_queue_load[queue],QState['status']['R'],nodes]
 test = (test-minn)/(maxx-minn)
 predicted_cluster = kmeans.predict([test])[0]
 predicted_wt = reg_models[predicted_cluster].predict([test])[0]
@@ -76,7 +79,10 @@ queue = str(sys.argv[3])
 
 maxx = np.asarray([8298112,19,355,32])
 minn = np.asarray([0,1,0,1])
-test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+if(queue in QState['qstate'].keys()):
+    test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+else:
+    test = [nodes*walltime,avg_queue_load[queue],QState['status']['R'],nodes]
 test = (test-minn)/(maxx-minn)
 predicted_cluster = kmeans.predict([test])[0]
 predicted_wt = reg_models[predicted_cluster].predict([test])[0]
@@ -100,7 +106,10 @@ queue = str(sys.argv[3])
 
 maxx = np.asarray([8298112,19,355,32])
 minn = np.asarray([0,1,0,1])
-test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+if(queue in QState['qstate'].keys()):
+    test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+else:
+    test = [nodes*walltime,avg_queue_load[queue],QState['status']['R'],nodes]
 test = (test-minn)/(maxx-minn)
 predicted_cluster = kmeans.predict([test])[0]
 predicted_wt = reg_models[predicted_cluster].predict([test])[0]
@@ -126,7 +135,10 @@ queue = str(sys.argv[3])
 
 maxx = np.asarray([8298112,19,355,32])
 minn = np.asarray([0,1,0,1])
-test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+if(queue in QState['qstate'].keys()):
+    test = [nodes*walltime,QState['qstate'][queue],QState['status']['R'],nodes]
+else:
+    test = [nodes*walltime,avg_queue_load[queue],QState['status']['R'],nodes]
 test = (test-minn)/(maxx-minn)
 predicted_cluster = kmeans.predict([test])[0]
 predicted_wt = reg_models[predicted_cluster].predict(np.asarray([test]))[0]
