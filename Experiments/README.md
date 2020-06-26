@@ -9,3 +9,5 @@ Experiment - 4 => Traning and testing on 50000 selected jobs with 60-40 split fo
 Experiment - 5 => Traning and testing on 50000 selected jobs with 80-20 split for training and testing respectively.
 
 Experiment 6 and 7 consists one specific experiment along with it, min,max,median and total time to execute the experiment.
+
+Experiment_5Fold => Traning and testing on 50000 selected jobs with 20-80 split for training and testing respectively. Using 5-fold cross validation for all 10 logs.

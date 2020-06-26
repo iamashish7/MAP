@@ -289,7 +289,7 @@
                 <option value="12">Busy CPUs per day</option>
                 <!-- <option value="13">Quartiles of wait-time per month</option> -->
                 <optgroup label="Multiple Correlating Graphs">
-                <option value="8">Variation of wait-times by requirement</option>
+                <option value="8">Variation of wait-times and #CPUS by CPU-hours</option>
                 <option value="9">Running, Completed and Failed Jobs</option>
                 <option value="11">Global and per queue job count per status</option>
             </select>&nbsp;&nbsp;

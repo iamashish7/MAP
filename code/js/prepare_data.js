@@ -327,7 +327,7 @@ function myDrawChart(d) {
             width:screen.availWidth*0.8,
             height:screen.availHeight*0.70,
             margin: { top: 30, right: 85, bottom: screen.availHeight*0.365, left: 80 },
-            title:"Variation of wait-times by CPU-hours",
+            title:"Variation of wait-times and number of jobs by CPU-hours",
             labelx:"Required wall-time (Hours)",
             labely:"Required CPUs",
             subtitle:"Average wait-time",
