@@ -1,6 +1,6 @@
-# MONALYS
+# MAP
 
-MONALYS is a web based application for monitoring and analyzing HPC systems. It has broadly 3 features :-
+MAP is a web based application for monitoring and analyzing HPC systems. It has broadly 3 features :-
 1.  Job Monitoring : This feature allows you to monitor the job currently in queued, running and hold state including visualization of node allocations using topology visualization. 
 2.  Job Analysis : Analyzing jobs for different parameters is possible through this feature. Using this feature user can analyze past data as well as provide his/her custom logs for the analysis. Analysis is done by providing different effective visualization.
 3.  Job Predictions : This feature predicts the wait-time for the job user is yet to submit. wait-time prediction helps in planning and better scheduling decisions.
@@ -45,7 +45,7 @@ Before proceding further please make sure you have passwordless ssh for HPC2010 
 $ sudo ./setup.sh
 ```
  
-## Running MONALYS
+## Running MAP
 
-Your system is now a MONALYS server and your IP can be used by hosts on same network to view MONALYS.
+Your system is now a MAP server and your IP can be used by hosts on same network to view MAP.
 use link : http://localhost/new/code/
