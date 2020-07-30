@@ -1,8 +1,0 @@
-No. of clusters formed in ALCF_DJC_THETA =  7
-No. of jobs in #Cluster0 =  2165
-No. of jobs in #Cluster1 =  2622
-No. of jobs in #Cluster2 =  109
-No. of jobs in #Cluster3 =  1001
-No. of jobs in #Cluster4 =  886
-No. of jobs in #Cluster5 =  2150
-No. of jobs in #Cluster6 =  1067

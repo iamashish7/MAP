@@ -1,7 +1,0 @@
-No. of clusters formed in HPC2N =  6
-No. of jobs in #Cluster0 =  2622
-No. of jobs in #Cluster1 =  947
-No. of jobs in #Cluster2 =  1599
-No. of jobs in #Cluster3 =  716
-No. of jobs in #Cluster4 =  3884
-No. of jobs in #Cluster5 =  232
