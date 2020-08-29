@@ -289,9 +289,8 @@ function remove_edges(s,d)
 {
     var key = "";
     for (let i = 0; i < d.length; i++) {
-        key += d[i];
+        key += 'h'+d[i];
     }
-    // console.log(key);
     var val = edges_placed[key];
     var color = color_placed[key];
     val = val.split(";");

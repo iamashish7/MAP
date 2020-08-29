@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>HPC-Analysis</title>
+    <title>MAP</title>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -247,9 +247,12 @@
                         <a class="dropdown-item" href="previous_2010.php">Past Data Analysis</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wait_time_pred.php">Prediction</a>
+                </li>
             </ul>
         </div>
-        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology, Kanpur</a>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology Kanpur</a>
     </nav>
     <br>
     <div class="container-fluid">

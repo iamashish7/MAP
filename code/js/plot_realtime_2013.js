@@ -90,6 +90,6 @@ function ready_data_plot(){
         preprocess(data3,"chart_4","Queued Jobs");
         drawBar2(data4,"chart_2","Top 5 users with max total nodes");
         console.log(data5_final);	
-	    drawPieChart(data5_final,"chart_6","Queue Load");
+	    drawPieChart(data5_final,"chart_6","Queue Load (Busy nodes)");
     });
 }

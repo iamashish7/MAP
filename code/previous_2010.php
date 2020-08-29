@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>HPC-Analysis</title>
+    <title>MAP</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
@@ -261,9 +261,12 @@
                         <a class="dropdown-item" href="#">Past Data Analysis</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wait_time_pred.php">Prediction</a>
+                </li>
             </ul>
         </div>
-        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology, Kanpur</a>
+        <a class="navbar-brand" style="color: white; font-family: Arial, Helvetica, sans-serif">Indian Institute of Technology Kanpur</a>
     </nav>
     <br>
     

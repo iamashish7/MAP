@@ -191,7 +191,7 @@ function drawBar2(data, ID, title){
     var cfg = {
         width: (screen.availWidth*0.9)/2.2,
         height:(3*screen.availHeight)/11,
-        margin: { top: 20, right: -30, bottom: 20, left: 90 },
+        margin: { top: 20, right: -30, bottom: 20, left: 100 },
         title:title,
     };
     HorizontalBarGraph(data,ID,cfg);
