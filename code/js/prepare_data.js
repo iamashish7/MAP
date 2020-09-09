@@ -293,7 +293,7 @@ function myDrawChart(d) {
             height:screen.availHeight*0.68,
             margin: { top: 30, right: 20, bottom: 50, left: 70 },
             title:"Execution time vs #Jobs",
-            labelx:"Execution-Time (hours)",
+            labelx:"Execution time (hours)",
             labely:"#Jobs",
         };
         histogramGraph(arr, "chart1",cfg);
@@ -304,7 +304,7 @@ function myDrawChart(d) {
             margin: { top: 30, right: 20, bottom: 50, left: 70 },
             title:"Variation of wait-times by day",
             labelx:"Timestamp",
-            labely:"Wait Time (hours)",
+            labely:"Wait-time (hours)",
             minn: minn,
             maxx: maxx,
             n_date : set_date.size,
@@ -318,7 +318,7 @@ function myDrawChart(d) {
             height:screen.availHeight*0.68,
             margin: { top: 30, right: 20, bottom: 50, left: 70 },
             title:"Wait-Time vs #Jobs",
-            labelx:"Wait-Time (hours)",
+            labelx:"Wait-time (hours)",
             labely:"#Jobs",
         };
         histogramGraph(arr, "chart1",cfg);

@@ -1194,10 +1194,23 @@ function PieChart2(data, ID, cfg) {
 
     var svg = d3.select("#" + ID).append("svg")
         .attr("width", svgWidth)
+        .attr("class", "parent-svg")
         .attr("height", svgHeight);
+    svg.append("text")
+        .attr("x", (svgWidth / 2))
+        .attr("y", 15)
+        .attr("text-anchor", "middle")
+        .attr("class", "graph-title makeGinline")
+        // .style("font-size", "110%") 
+        .text(cfg.title);
+    var titlebb = document.querySelectorAll(".graph-title")[2].getBoundingClientRect();
+    var hTranslate = svgHeight/2 + titlebb.height;
 
-    var g = svg.append('g').attr('transform', 'translate(' + svgWidth / 2 + "," + svgHeight / 1.8 + ')');
+    var g = svg.append('g')
+        .attr('transform', 'translate(' + svgWidth / 2 + "," + svgHeight/2 + ')')
+        .attr("class", "makeGinline");
 
+    
     svg.append("text")
         .attr("x", (svgWidth / 2))
         .attr("y", 15)
@@ -1218,7 +1231,7 @@ function PieChart2(data, ID, cfg) {
 
     var outerArc = d3.arc().outerRadius(radius * 0.8).innerRadius(radius * 0.8);
 
-    g.attr("transform", "translate(" + svgWidth / 2 + "," + svgHeight / 1.8 + ")");
+    // g.attr("transform", "translate(" + svgWidth / 2 + "," + svgHeight / 1.8 + ")");
 
     g.selectAll('path')
         .data(pie(data))
@@ -1229,92 +1242,73 @@ function PieChart2(data, ID, cfg) {
     g.append('g').classed('labels', true);
     g.append('g').classed('lines', true);
 
-
+    var increment = 10;
     var polyline = g.select('.lines')
         .selectAll('polyline')
         .data(pie(data))
         .enter().append('polyline')
-        .attr('points', function (d) {
+        .attr('points', function (d,i) {
             // see label transform function for explanations of these three lines.
             var pos = outerArc.centroid(d);
+            var outerarc_center = outerArc.centroid(d);
             pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
-            pos[1] = pos[1];
-            return [arc.centroid(d), outerArc.centroid(d), pos]
+            var percent = (d.endAngle - d.startAngle) / (2 * Math.PI) * 100;
+            if(percent<3)
+            {
+                var negative = 1;
+                if(outerarc_center[1]<0)
+                    negative = -1;
+                outerarc_center[1] += (increment*negative);
+                pos[1] += (increment*negative);
+                increment += 15;
+            }
+            return [arc.centroid(d), outerarc_center, pos];
         });
-
+    increment = 10;
     var label = g.select('.labels').selectAll('text')
         .data(pie(data))
         .enter().append('text')
         .attr("class", "axis-ticks")
         .attr('dy', '.35em')
         .html(function (d) {
-            return d.data.name + "( " + d.data.value + " )";
+            return d.data.name + " (" + d.data.value + ")";
         })
         .attr('transform', function (d) {
             var pos = outerArc.centroid(d);
             pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+            var percent = (d.endAngle - d.startAngle) / (2 * Math.PI) * 100;
+            if(percent<3)
+            {
+                var negative = 1;
+                if(pos[1]<0)
+                    negative = -1;
+                pos[1] += (increment*negative);
+                increment += 15;
+            }
             return 'translate(' + pos + ')';
         })
         .style('text-anchor', function (d) {
             return (midAngle(d)) < Math.PI ? 'start' : 'end';
         });
 
-
-    // OVerlapping Text boxes
-    // var prev;
-    // var textOffset = 14;
-    // // var radius = 0;
-    // label.each(function(d, i) {
-    //     if(i > 0) {
-    //     var thisbb = this.getBoundingClientRect(),
-    //         prevbb = prev.getBoundingClientRect();
-    //     // move if they overlap
-    //     if(!(thisbb.right < prevbb.left || thisbb.left > prevbb.right || thisbb.bottom < prevbb.top || thisbb.top > prevbb.bottom)) {
-    //         var ctx = thisbb.left + (thisbb.right - thisbb.left)/2,
-    //             cty = thisbb.top + (thisbb.bottom - thisbb.top)/2,
-    //             cpx = prevbb.left + (prevbb.right - prevbb.left)/2,
-    //             cpy = prevbb.top + (prevbb.bottom - prevbb.top)/2,
-    //             off = Math.sqrt(Math.pow(ctx - cpx, 2) + Math.pow(cty - cpy, 2))/2;
-    //             console.log(Math.cos(((d.startAngle + d.endAngle - Math.PI) / 2))*(radius + textOffset + off));
-    //             console.log(Math.sin((d.startAngle + d.endAngle - Math.PI) / 2)*(radius + textOffset + off));
-    //         d3.select(this).attr("transform",
-    //             "translate(" + Math.cos(((d.startAngle + d.endAngle - Math.PI) / 2)) *
-    //                                     (radius + textOffset + off) + "," +
-    //                             Math.sin((d.startAngle + d.endAngle - Math.PI) / 2) *
-    //                                     (radius + textOffset + off) + ")");
-    //     }
-    //     }
-    //     prev = this;
-    // });
-
-    //  svg.append('text')
-    //     .attr('class', 'toolCircle')
-    //     .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
-    //     .html('sdfsd') // add text to the circle.
-    //     .style('font-size', '.9em')
-    //     .style('text-anchor', 'middle');
-
+    svgbb = document.querySelectorAll("svg")[2].getBoundingClientRect();
+    gbb = document.querySelectorAll("svg > g")[2].getBoundingClientRect();
+    titlebb = document.querySelectorAll(".graph-title")[2].getBoundingClientRect();
+    if((titlebb.height+gbb.height) > svgbb.height)
+    {
+        document.querySelectorAll("svg")[2].setAttribute("height", titlebb.height+gbb.height);
+    }
+    if(gbb.top < (titlebb.top + titlebb.height))
+    {
+        var diff = (titlebb.top + titlebb.height) - gbb.top + svgHeight/2;
+        g.attr("transform", "translate(" + svgWidth/2 + "," + diff + ")");
+    }
     function midAngle(d) { return d.startAngle + (d.endAngle - d.startAngle) / 2; }
-
-    // const nodes = this.texts.nodes();
-    // console.log(label._parents);
-    // for (let i = 0; i < nodes.length; i++) {
-    //     for (let j = i + 1; j < nodes.length; j++) {
-    //     const previous = nodes[i];
-    //     const elem = nodes[j];
-    //     const thisbb = elem.getBoundingClientRect(),
-    //         prevbb = previous.getBoundingClientRect();
-    //     if (!(thisbb.right < prevbb.left ||
-    //         thisbb.left > prevbb.right ||
-    //         thisbb.bottom < prevbb.top ||
-    //         thisbb.top > prevbb.bottom)) {
-    //         const matrix = previous.transform.baseVal.consolidate().matrix;
-    //         d3.select(elem).attr('transform', `translate(${matrix.e}, ${matrix.f + prevbb.bottom - prevbb.top})`);
-
-    //     }
-    //     const elemMatrix = elem.transform.baseVal.consolidate().matrix;
-    //     pieData[j].pos = [elemMatrix.e, elemMatrix.f];
-    // }
+    function isOverlapping(curr,prev) {
+        if(!(thisbb.right < prevbb.left || thisbb.left > prevbb.right || thisbb.bottom < prevbb.top || thisbb.top > prevbb.bottom))
+            return true;
+        return false;
+    }
 }
 
 function PieChart3(data, ID, cfg) {
